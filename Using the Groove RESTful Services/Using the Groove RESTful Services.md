@@ -5,7 +5,7 @@ Topics in this section describe how to use the RESTful services of the Groove Se
 ###In this section
 
 [Obtaining a Developer Access Token]  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to register your app and obtain a token for developer authentication.This mechanism is unrelated to [User Authentication], an additional authentication layer is used to authenticate Groove users in  order to access some features such as collection management and streaming.     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How to register your app and obtain a token for developer authentication. This mechanism is unrelated to [User Authentication], an additional authentication layer is used to authenticate Groove users in  order to access some features such as collection management and streaming.     
 [Deep Link]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deep link that opens content on a Groove client.  
 [Image Service]  
