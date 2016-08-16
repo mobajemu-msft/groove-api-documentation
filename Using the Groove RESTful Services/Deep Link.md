@@ -60,8 +60,10 @@ To ensure the best experience and minimize redirection, you can start the Groove
 Following are two code samples that demonstrate how:    
 
 + [Windows Store application](#windows-store-application)  
-+ [Windows Phone application](#windows-phone-application)
++ [Windows Phone application](#windows-phone-application)  
+
 ###Windows Store application
+
 ```
  // In your xaml code, create a hidden WebView.
 <WebView x:Name="HiddenWebView" Visibility="Collapsed" />
