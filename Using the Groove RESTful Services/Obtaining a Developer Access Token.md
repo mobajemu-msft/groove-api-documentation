@@ -140,7 +140,8 @@ Once it is in possession of a valid authentication token, a third-party applicat
 + As the value of the **Authorization** HTTP header; however, we discourage the use of the **Authorization** header for developer authentication in favor of the query parameter instead, because the **Authorization** header will be used for user authentication in the future functions that will require it.  
 
   >**Note** 
-The standard OAuth prefix "Bearer " must be prepended to the contents of the actual token retrieved from Azure.
+The standard OAuth prefix "Bearer " must be prepended to the contents of the actual token retrieved from Azure.  
+
 
   <a name="renew">
 ##Renewing the token before it expires
