@@ -10,74 +10,49 @@ The template of the redirect URL is as follows:
 
 The parameters *type* and *Id* are the only mandatory parameters to identify the content to point to.  
  
-Parameter
-Type
-Description
-type
-enum
-Type of content being redirected to; see table of enumerations in this topic.
-id
-string
-ID of the item. Parameter type depends on the value of the type parameter.
-action
-enum
-Optional action to apply when opening the content. See the table below for possible values and corresponding actions. 
-target
-enum
-Optional choice of preferred target application. This parameter depends on a lot of different factors, so it is honored only as best-effort. See the table below for possible values and corresponding actions.  
+|Parameter|Type|Description|
+|:----|:----|:----|
+|type|enum|Type of content being redirected to; see table of enumerations in this topic.|
+|id|string|ID of the item. Parameter type depends on the value of the type parameter.|
+|action|enum|Optional action to apply when opening the content. See the table below for possible values and corresponding actions. |
+|target|enum|Optional choice of preferred target application. This parameter depends on a lot of different factors, so it is honored only as best-effort. See the table below for possible values and corresponding actions.|
 
 ####Type parameter list of possible values for deep links   
 
-Value
-Description
-Album
-Music album
-Artist
-Music artist
-Playlist
-List of tracks and their metadata
-Track
-Music song
-The action parameter is optional.
+|Value|Description|
+|:----|:----|
+|Album|Music album|
+|Artist|Music artist|
+|Playlist|List of tracks and their metadata|
+|Track|Music song|
+
+
+The *action* parameter is optional.
 ####Action parameter 
-Value
-Description
-Fallback when not supported
-view
-Default. Launches the content details view.
-Groove marketing page
-play
-Launches playback of the media content.
-"view" experience
-addtocollection
-Opens the "add to collection" screen on the Groove service.
-"view" experience
-buy
-Opens the appropriate purchase flow on the Groove service.
-"view" experience
-The target parameter is optional.
+|Value|Description|Fallback when not supported|
+|:----|:----|:----|
+|view|Default. Launches the content details view.|Groove marketing page|
+|play|Launches playback of the media content.|"view" experience|
+|addtocollection|Opens the "add to collection" screen on the Groove service.|"view" experience|
+|buy|Opens the appropriate purchase flow on the Groove service.|"view" experience|
+The *target* parameter is optional.  
+
 You can influence the behavior of the redirect by adding the target query parameter in the deep link. The redirect will try to honor that parameter if it makes sense and is possible. However, it is a best effort and might be overridden by our spec choices (for example, on Windows Phone 8, since the Groove app is always installed, we will always try to redirect to it). You shouldn't assume this parameter will always be honored.
-If the target parameter is not provided, the redirect will by default open the best available experience on the user's device.
+  
+  If the target parameter is not provided, the redirect will by default open the best available experience on the user's device.
 ####Target parameter 
-Value
-Description
-app
-Force opening a rich application if available on the user's device.
-web
-Force opening the web client if supported on the user's web browser.
+|Value|Description|
+|:----|:----|
+|app|Force opening a rich application if available on the user's device.|
+|web|Force opening the [web client](http://www.music.microsoft.com) if supported on the user's web browser.
+
 ####Examples 
-Entity
-URL pattern
-Example URL
-Artist
-http://music.xbox.com/Artist/xxx
-http://music.xbox.com/Artist/07070000-0200-11db-89ca-0019b92a3933
-Album
-http://music.xbox.com/Album/xxx?action=yyy
-http://music.xbox.com/Album/bcafef07-0100-11db-89ca-0019b92a3933?action=play
-Track
-http://music.xbox.com/Track/xxx?action=yyy
-http://music.xbox.com/Track/c1afef07-0100-11db-89ca-0019b92a3933?action=buy
+|Entity|URL pattern|Example URL|
+|:----|:----|:----|
+|Artist|http://music.xbox.com/Artist/xxx|http://music.xbox.com/Artist/07070000-0200-11db-89ca-0019b92a3933|
+|Album|http://music.xbox.com/Album/xxx?action=yyy|http://music.xbox.com/Album/bcafef07-0100-11db-89ca-0019b92a3933?action=play|
+|Track|http://music.xbox.com/Track/xxx?action=yyy|http://music.xbox.com/Track/c1afef07-0100-11db-89ca-0019b92a3933?action=buy|
+
 ##App-to-app direct linking
 To ensure the best experience and minimize redirection, you can start the Groove application directly without going through a browser window. Just use the Link parameter you got from the API response in an invisibly instantiated WebView in your app. You can still use the action parameter in the Link to trigger a play—as described in Deep Link, for example.  
 
