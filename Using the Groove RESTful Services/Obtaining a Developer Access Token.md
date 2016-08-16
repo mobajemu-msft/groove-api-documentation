@@ -143,7 +143,7 @@ Once it is in possession of a valid authentication token, a third-party applicat
 The standard OAuth prefix "Bearer " must be prepended to the contents of the actual token retrieved from Azure.  
 
 
-  <a name="renew">
+<a name="renew">
 ##Renewing the token before it expires
 </a>
 Because the access tokens are only valid for 10 minutes, they must be refreshed by sending a second request to the Azure Data Market service (located at <https://datamarket.accesscontrol.windows.net/v2/OAuth2-13>). We recommended that your code refresh them proactively before the end of the 10 minutes in order to avoid having a period of time when the Groove Service can't be used.  
