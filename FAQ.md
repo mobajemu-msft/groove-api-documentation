@@ -98,7 +98,8 @@ Please refer to [Guidelines].
 On Windows Phone 8.1, images associated with local files are not available. Instead, call the image service with the MediaID you get from the local library when requesting the image.
 
 
-    Example: http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200 
+    Example:   
+    http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200 
 
 See also [Windows Media Library](https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.media.medialibrary.aspx).
 
