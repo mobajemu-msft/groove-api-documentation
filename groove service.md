@@ -46,7 +46,7 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 [Support]:http://www.google.com
 [Groove API TERMS OF USE]:http://www.google.com
 [FAQ]:http://www.google.com
-[Groove Service REST Reference]:http://www.google.com
+[Groove Service REST Reference]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
 [Affiliate Program]:http://www.google.com
 [Pilot]:http://www.google.com
 [Blog]:http://www.google.com
