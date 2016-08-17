@@ -39,14 +39,14 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 [Blog] - Microsoft blog focusing on Groove for developers.  
 [Pilot] - How to onboard with the pilot program.
 
-[Getting Started with the Groove SDK]: http://www.google.com
-[SDK and Helpers]: http://www.google.com
-[Using the Groove RESTful Services]:http://www.google.com
-[Privacy]:http://www.google.com
-[Support]:http://www.google.com
-[Groove API TERMS OF USE]:http://www.google.com
-[FAQ]:http://www.google.com
+[Getting Started with the Groove SDK]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Getting%20Started.md
+[SDK and Helpers]: https://github.com/Microsoft/Groove-API-documentation/blob/master/SDK%20and%20helpers/SdK%20and%20Helpers.md
+[Using the Groove RESTful Services]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services.md
+[Privacy]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Privacy.md
+[Support]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Support.md
+[Groove API TERMS OF USE]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20API%20Terms%20of%20Use.md
+[FAQ]:https://github.com/Microsoft/Groove-API-documentation/blob/master/FAQ.md
 [Groove Service REST Reference]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
-[Affiliate Program]:http://www.google.com
-[Pilot]:http://www.google.com
+[Affiliate Program]:http://www.microsoftaffiliates.com/
+[Pilot]:https://music.microsoft.com/developer/pilot
 [Blog]:http://www.google.com
