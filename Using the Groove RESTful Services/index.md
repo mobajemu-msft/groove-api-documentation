@@ -1,3 +1,3 @@
 ---
-redirect_url: /Groove-API-documentation/SDK%20and%20helpers/SdK%20and%20Helpers
+redirect_url: /Groove-API-documentation/Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services
 ---
