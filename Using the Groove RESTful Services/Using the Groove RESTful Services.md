@@ -19,10 +19,10 @@ Topics in this section describe how to use the RESTful services of the Groove Se
 [Badges]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promoting Groove, including use of the Available on Groove and Play on Groove badges.
 
-[Obtaining a Developer Access Token]: http://www.google.fr
-[Deep Link]: http://www.google.fr
-[Image Service]: http://www.google.fr
-[User Authentication]: http://www.google.fr
-[Streaming music]: http://www.google.fr
-[Guidelines]: http://www.google.fr
-[Badges]: http://www.google.fr
+[Obtaining a Developer Access Token]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Obtaining%20a%20Developer%20Access%20Token.md
+[Deep Link]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md
+[Image Service]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
+[User Authentication]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/User%20Authentication.md
+[Streaming music]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Streaming%20music.md
+[Guidelines]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Guidelines.md
+[Badges]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Badges.md
