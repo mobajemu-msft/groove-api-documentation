@@ -1,0 +1,39 @@
+{
+
+  "build": {
+
+    "content":
+
+      [
+
+        {
+
+          "files": ["TOC_usingGroove.yml"],
+
+          "exclude": ["**/obj/**"]
+
+        }
+
+      ],
+
+    "globalMetadata": {
+
+        "ROBOTS": "NOINDEX, NOFOLLOW",
+
+        "ms.sitesec": "library"
+
+        
+
+    },
+
+    "externalReference": [
+
+    ],
+
+    "template": "op.html",
+
+    "dest": "Using the Groove RESTful Services"
+
+  }
+
+}
