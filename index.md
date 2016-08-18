@@ -1,3 +1,3 @@
 ---
-redirect_url: /virtualization/windowscontainers/getting-started
+redirect_url: /Groove-API-documentation//groove%20service
 ---
