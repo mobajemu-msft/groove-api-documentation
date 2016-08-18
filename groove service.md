@@ -11,8 +11,8 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 + Streaming that can be integrated on any platform or browser, as part of the Pilot.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
-[Affiliate Program]: http://www.google.fr
-[image service]: http://www.google.fr
+
+[image service]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
 
 ###In this section
 
