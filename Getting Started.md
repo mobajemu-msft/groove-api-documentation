@@ -4,7 +4,7 @@
 
 The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token]).
 
-[Obtaining a Developer Access Token]: http://www.google.fr
+[Obtaining a Developer Access Token]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Obtaining%20a%20Developer%20Access%20Token.md
 [Azure registration image]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
 [Windows Azure Marketplace]: https://datamarket.azure.com/developer/applications
 [Register your app]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
