@@ -35,7 +35,7 @@ Please visit <http://go.microsoft.com/fwlink/p/?LinkID=396801> if you are intere
 + Your application must list the artist name, song title and album title prior to each stream, and if technically possible, contemporaneously with playback.
 + You must not pre-load (pre-download) more than three songs in advance for streaming, and you may do so only when the currently playing song is 20 seconds or fewer from reaching the end.
 
-[Groove API TERMS OF USE]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20API%20Terms%20of%20use.md
-[Deep Link]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md
-[Badges]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Badges.md
-[Image Service]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
+[Groove API TERMS OF USE]: Groove%20API%20Terms%20of%20use.md
+[Deep Link]: Deep%20Link.md
+[Badges]: Badges.md
+[Image Service]: Image%20Service.md
