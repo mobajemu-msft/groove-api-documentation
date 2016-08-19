@@ -12,7 +12,7 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
 
-[image service]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
+[image service]: Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
 
 ###In this section
 
@@ -39,14 +39,14 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 [Blog] - Microsoft blog focusing on Groove for developers.  
 [Pilot] - How to onboard with the pilot program.
 
-[Getting Started with the Groove SDK]: https://github.com/Microsoft/Groove-API-documentation/blob/master/Getting%20Started.md
-[SDK and Helpers]: https://github.com/Microsoft/Groove-API-documentation/blob/master/SDK%20and%20helpers/SdK%20and%20Helpers.md
-[Using the Groove RESTful Services]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services.md
-[Privacy]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Privacy.md
-[Support]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Support.md
-[Groove API TERMS OF USE]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20API%20Terms%20of%20Use.md
-[FAQ]:https://github.com/Microsoft/Groove-API-documentation/blob/master/FAQ.md
-[Groove Service REST Reference]:https://github.com/Microsoft/Groove-API-documentation/blob/master/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
+[Getting Started with the Groove SDK]: Getting%20Started.md
+[SDK and Helpers]: SDK%20and%20helpers/SdK%20and%20Helpers.md
+[Using the Groove RESTful Services]:Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services.md
+[Privacy]:Privacy.md
+[Support]:Support.md
+[Groove API TERMS OF USE]:Groove%20API%20Terms%20of%20Use.md
+[FAQ]:FAQ.md
+[Groove Service REST Reference]:Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
 [Affiliate Program]:http://www.microsoftaffiliates.com/
 [Pilot]:https://music.microsoft.com/developer/pilot
 [Blog]:http://www.google.com
