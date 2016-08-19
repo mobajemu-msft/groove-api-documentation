@@ -22,4 +22,4 @@ For example:
 **Letterboxed:** *http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=240&h=200&mode=letterbox*
 
 
- [terms of use]: Groove%API%Terms%of%use.md
+ [terms of use]: master/Groove%API%Terms%of%use.md
