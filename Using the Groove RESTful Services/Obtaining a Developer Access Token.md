@@ -150,4 +150,4 @@ Because the access tokens are only valid for 10 minutes, they must be refreshed 
 
 This 10-minute duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the response by Azure Datamarket along with the access token.   
 ##Sample code
-+  [Getting Started with the Groove SDK](https://github.com/Microsoft/Groove-API-documentation/blob/master/Getting%20Started.md)
++  [Getting Started with the Groove SDK](../Getting%20Started.md)
