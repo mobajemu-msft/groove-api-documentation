@@ -8,7 +8,7 @@
 
         {
 
-          "files": ["TOC_usingGroove.yml"],
+          "files": ["**/**.md"],
 
           "exclude": ["**/obj/**"]
 
