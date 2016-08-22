@@ -8,7 +8,7 @@
 
         {
 
-          "files": ["TOC_SDK.yml"],
+          "files": ["**/**.md"],
 
           "exclude": ["**/obj/**"]
 
