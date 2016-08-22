@@ -8,7 +8,7 @@
 
         {
 
-          "files": ["TOC_GrooveRest.yml"],
+          "files": ["**/**.md"],
 
           "exclude": ["**/obj/**"]
 
@@ -20,7 +20,9 @@
 
         "ROBOTS": "NOINDEX, NOFOLLOW",
 
-        "ms.sitesec": "library"
+        "ms.sitesec": "library",
+        
+        "breadcrumb_path": "/Groove service REST Reference/TOC_REST.json""
 
         
 
