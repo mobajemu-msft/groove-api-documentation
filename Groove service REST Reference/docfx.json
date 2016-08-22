@@ -16,15 +16,23 @@
 
       ],
 
+    "resource": [
+
+        {
+
+          "files": ["**/images/**","**/**.html"],
+
+          "exclude": ["**/obj/**"]
+
+        }
+
+    ],
+
     "globalMetadata": {
 
         "ROBOTS": "NOINDEX, NOFOLLOW",
 
         "ms.sitesec": "library",
-        
-        "breadcrumb_path": "/Groove service REST Reference/TOC_grooveRest.json""
-
-        
 
     },
 
@@ -39,3 +47,4 @@
   }
 
 }
+
