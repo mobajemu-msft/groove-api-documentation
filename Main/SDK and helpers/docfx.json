@@ -32,7 +32,7 @@
 
     "template": "op.html",
 
-    "dest": "SDK and helpers"
+    "dest": "Main/SDK and helpers"
 
   }
 
