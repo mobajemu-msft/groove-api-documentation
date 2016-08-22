@@ -12,7 +12,7 @@
 
             "docset_name": "Groove service REST Reference",
 
-            "build_output_subfolder": "Groove-API-documentation/Groove service REST Reference",
+            "build_output_subfolder": "Groove service REST Reference",
 
             "locale": "en-us",
 
@@ -32,7 +32,7 @@
 
             "docset_name": "SDK and helpers",
 
-            "build_output_subfolder": "Groove-API-documentation/SDK and helpers",
+            "build_output_subfolder": "SDK and helpers",
 
             "locale": "en-us",
 
@@ -52,7 +52,7 @@
 
             "docset_name": "Groove RESTful Services",
 
-            "build_output_subfolder": "Groove-API-documentation/Using the Groove RESTful Services",
+            "build_output_subfolder": "Using the Groove RESTful Services",
 
             "locale": "en-us",
 
