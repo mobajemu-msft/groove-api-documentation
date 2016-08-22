@@ -19,7 +19,7 @@ Topics in this section describe how to use the RESTful services of the Groove Se
 [Badges]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promoting Groove, including use of the Available on Groove and Play on Groove badges.
 
-[Obtaining a Developer Access Token]: Obtaining%20a%20Developer%20Access%20Token.md
+[Obtaining a Developer Access Token]: Obtaining%20a%20Developer%20Access%20Token
 [Deep Link]: Deep%20Link.md
 [Image Service]: Image%20Service.md
 [User Authentication]: User%20Authentication.md
