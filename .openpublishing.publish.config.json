@@ -10,9 +10,28 @@
 
         {
 
+            "docset_name": "Maine",
+
+            "build_output_subfolder": "main",
+
+            "locale": "en-us",
+
+            "version": 0,
+
+            "open_to_public_contributors": "false",
+
+            "type_mapping": {
+
+                "Conceptual": "Content"
+
+            }
+
+        },
+{
+
             "docset_name": "Groove service REST Reference",
 
-            "build_output_subfolder": "Groove service REST Reference",
+            "build_output_subfolder": "main/Groove service REST Reference",
 
             "locale": "en-us",
 
@@ -32,7 +51,7 @@
 
             "docset_name": "SDK and helpers",
 
-            "build_output_subfolder": "SDK and helpers",
+            "build_output_subfolder": "main/SDK and helpers",
 
             "locale": "en-us",
 
@@ -52,7 +71,7 @@
 
             "docset_name": "Groove RESTful Services",
 
-            "build_output_subfolder": "Using the Groove RESTful Services",
+            "build_output_subfolder": "main/Using the Groove RESTful Services",
 
             "locale": "en-us",
 
