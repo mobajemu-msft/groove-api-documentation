@@ -22,7 +22,9 @@
 
             "type_mapping": {
 
-                "Conceptual": "Content"
+                "Conceptual": "Content",
+
+                "ManagedReference": "Content"
 
             }
 
