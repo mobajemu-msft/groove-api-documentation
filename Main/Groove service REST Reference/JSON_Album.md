@@ -109,5 +109,5 @@ The Album object has the following specification.
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
+[Groove Service REST Reference](Groove%20Service%20Rest%20Reference.md)
 
