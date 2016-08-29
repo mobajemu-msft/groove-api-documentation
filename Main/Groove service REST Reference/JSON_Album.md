@@ -1,7 +1,8 @@
+#Album  
+A musical recording
 
+##Album
 
-Album
-=====
 
 The Album object has the following specification.
 
@@ -26,8 +27,8 @@ The Album object has the following specification.
 | Artists           | List of [Contributor](../Endpointdocumentation/JSON_Contributor.htm) | The list of contributors (artists and their roles) to the album.                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tracks            | List of [Track](../Endpointdocumentation/JSON_Track.htm)             | A paginated list of the album's tracks. This list is null by default unless requested as extra information in a lookup request. If not null, it should most often be full without the need to use a continuation token; only a few cases of albums containing a very large number of tracks will use pagination. Tracks in this list contain only a few fields, including the ID that should be used in a lookup request in order to have the full track properties. |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+
 
 ```  
 {
@@ -103,8 +104,8 @@ Sample JSON syntax
 }   
 ```  
 
-See also
-========
+##See also
+
 
 #### Parent
 
