@@ -1,4 +1,4 @@
-#Album  
+#Album(JSON)
 A musical recording
 
 ##Album
