@@ -1,21 +1,9 @@
-|                            |
-|----------------------------|
-| TrackAction (JSON)         |
-| [See Also](#seeAlsoToggle) |
+# TrackAction (JSON)        
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+An action (such as add or delete) on a specific track. 
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+##TrackAction
 
-An action (such as add or delete) on a specific track. <span id="ID4EN" class="anchor"></span>
-
-TrackAction
-===========
 
 The TrackAction object has the following specification.
 
@@ -24,8 +12,8 @@ The TrackAction object has the following specification.
 | Id         | string   | ID of the track on which the action should be performed. (You can get the ID by browsing the catalog or collection.) |
 | Action     | string   | Action to perform ("add", "delete", and "remove").                                                                   |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+```
 
 {
 
@@ -34,14 +22,10 @@ Sample JSON syntax
 "Action": "Add"
 
 }
+```
+##See also
 
-See also
-========
 
-#### Parent
+#### Parent  
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST$20Reference.md)

@@ -1,23 +1,9 @@
-|                            |
-|----------------------------|
-| PlaylistAction (JSON)      |
-| [See Also](#seeAlsoToggle) |
+# PlaylistAction (JSON)     
 
-|  Collapse All    Expand All     |
-|---------------------------------|
-
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-The input element for every playlist action request: create, update, and delete.
-
+The input element for every playlist action request: create, update, and delete.  
 A PlaylistAction contains playlist metadata and a list of actions to perform on the tracks in the playlist.
 
-PlaylistAction
-==============
+## PlaylistAction
 
 The PlaylistAction object has the following specification.
 
@@ -30,9 +16,9 @@ The PlaylistAction object has the following specification.
 | InsertBeforeTrackId  | string                                                               | (Optional) When reordering tracks, track before which you want to insert the tracks specified in the TrackActions field. Can be null if you want to insert at the end of the playlist. |
 | TrackActions         | List of [TrackAction](../Endpointdocumentation/JSON_TrackAction.htm) | Optional. List of actions to perform on the playlist's tracks.                                                                                                                         |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
 
+```
 {
 
 "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
@@ -58,20 +44,15 @@ Sample JSON syntax
 \]
 
 }
-
-See also
-========
+```
+##See also
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
+[Groove Service REST Reference](Groove%20Service%20REST$20Reference.md)
 
 #### Reference
 
-[/1/content/{namespace}/collection/playlists/create](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsCreate.htm)
-[/1/content/{namespace}/collection/playlists/delete](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsDelete.htm)
-[/1/content/{namespace}/collection/playlists/update](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsUpdate.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)  
+[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)  
+[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)

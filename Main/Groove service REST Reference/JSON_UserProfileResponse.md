@@ -1,21 +1,8 @@
-|                            |
-|----------------------------|
-| UserProfileResponse (JSON) |
-| [See Also](#seeAlsoToggle) |
+# UserProfileResponse (JSON) 
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+Profile of the user, including subscription, collection, and culture information. 
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-Profile of the user, including subscription, collection, and culture information. <span id="ID4EN" class="anchor"></span>
-
-UserProfileResponse
-===================
+##UserProfileResponse
 
 The UserProfileResponse object has the following specification.
 
@@ -27,8 +14,8 @@ The UserProfileResponse object has the following specification.
 | Culture                            | string                                                               | The culture associated with the request. The culture is obtained from the user authentication token if there is one, the country and language URL parameters if provided, or the caller's IP address. |
 | Collection                         | [CollectionState](../Endpointdocumentation/JSON_CollectionState.htm) | The state of the user's collection (if the request was user-authenticated).                                                                                                                           |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+```
 
 {
 
@@ -49,14 +36,9 @@ Sample JSON syntax
 }
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
-
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST$20Reference.md)

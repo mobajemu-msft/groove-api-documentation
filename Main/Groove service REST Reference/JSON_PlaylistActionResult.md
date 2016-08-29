@@ -1,21 +1,9 @@
-|                             |
-|-----------------------------|
-| PlaylistActionResult (JSON) |
-| [See Also](#seeAlsoToggle)  |
+# PlaylistActionResult (JSON) 
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+The object describing a playlist action result, used by add and delete. 
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+##PlaylistActionResult
 
-The object describing a playlist action result, used by add and delete. <span id="ID4EN" class="anchor"></span>
-
-PlaylistActionResult
-====================
 
 The PlaylistActionResult object has the following specification.
 
@@ -27,8 +15,8 @@ The PlaylistActionResult object has the following specification.
 | IsPublished  | Boolean value                                                                    | Optional. Whether the playlist is public or not.       |
 | TrackActions | List of [TrackActionResult](../Endpointdocumentation/JSON_TrackActionResult.htm) | Optional. Details on the results of track actions.     |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+```
 
 {
 
@@ -53,14 +41,9 @@ Sample JSON syntax
 \]
 
 }
-
-See also
-========
+```
+##See also
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST$20Reference.md)

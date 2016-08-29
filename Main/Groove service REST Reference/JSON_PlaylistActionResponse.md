@@ -1,23 +1,10 @@
-|                               |
-|-------------------------------|
-| PlaylistActionResponse (JSON) |
-| [See Also](#seeAlsoToggle)    |
-
-|  Collapse All    Expand All     |
-|---------------------------------|
-
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+# PlaylistActionResponse (JSON) 
 
 The output element for every playlist action request: create, update, and delete.
 
 Contains an optional Error field if the operation or some sub-operations failed, and an object describing which sub-operations failed and which succeeded.
 
-PlaylistActionResponse
-======================
+##PlaylistActionResponse
 
 The PlaylistActionResponse object has the following specification.
 
@@ -26,8 +13,8 @@ The PlaylistActionResponse object has the following specification.
 | Error                | [Error](../Endpointdocumentation/JSON_Error.htm)                               | Optional. Error if the operation or some sub-operations failed. |
 | PlaylistActionResult | [PlaylistActionResult](../Endpointdocumentation/JSON_PlaylistActionResult.htm) | Details on the playlist action.                                 |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+```
 
 {
 
@@ -56,20 +43,16 @@ Sample JSON syntax
 }
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
+[Groove Service REST Reference](Groove%20Service%20REST$20Reference.md)
 
 #### Reference
 
-[/1/content/{namespace}/collection/playlists/create](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsCreate.htm)
-[/1/content/{namespace}/collection/playlists/delete](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsDelete.htm)
-[/1/content/{namespace}/collection/playlists/update](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsUpdate.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)  
+[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)  
+[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)
