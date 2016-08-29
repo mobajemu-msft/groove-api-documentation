@@ -1,5 +1,5 @@
 # [Getting Started with the Groove SDK](Getting%20Started.md)  
-# [SDK and Helpers] (SDK and Helpers/TOC.md)
+# [SDK and Helpers] (SDK%20and%20Helpers/TOC.md)
 # [Using the Groove RESTful Services](Using%20the%20Groove%20RESTful%20Services/TOC.md)
 # [Affiliate Program](http://aka.ms/MicrosoftAffiliates)
 # [Groove Service REST Reference](Groove%20service%20REST%20Reference/TOC.md)
