@@ -1,21 +1,10 @@
-|                            |
-|----------------------------|
-| CollectionState (JSON)     |
-| [See Also](#seeAlsoToggle) |
+# CollectionState (JSON)     
 
-|  Collapse All    Expand All     |
-|---------------------------------|
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+The state of the user's collection (if the request was user-authenticated). 
 
-The state of the user's collection (if the request was user-authenticated). <span id="ID4EN" class="anchor"></span>
+## CollectionState
 
-CollectionState
-===============
 
 The CollectionState object has the following specification.
 
@@ -27,13 +16,8 @@ The CollectionState object has the following specification.
 | TrackCount             | 32-bit signed integer | The number of tracks in the collection.                     |
 | RemainingTrackCount    | 32-bit signed integer | The number of tracks the user can add to the collection.    |
 
-See also
-========
+##See also
+
 
 #### Parent
-
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)

@@ -1,21 +1,8 @@
-|                            |
-|----------------------------|
 | Contributor (JSON)         |
-| [See Also](#seeAlsoToggle) |
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+An artist and the artist's role 
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-An artist and the artist's role <span id="ID4EN" class="anchor"></span>
-
-Contributor
-===========
+##Contributor
 
 The Contributor object has the following specification.
 
@@ -24,9 +11,9 @@ The Contributor object has the following specification.
 | Artist     | [Artist](../Endpointdocumentation/JSON_Artist.htm) | The contributing artist.                                |
 | Role       | string                                             | The type of contribution, such as "Main" or "Featured". |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
 
+```
 {
 
 "Role": "Main",
@@ -46,14 +33,10 @@ Sample JSON syntax
 }
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)

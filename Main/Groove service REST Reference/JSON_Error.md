@@ -1,21 +1,9 @@
-|                            |
-|----------------------------|
-| Error (JSON)               |
-| [See Also](#seeAlsoToggle) |
-
-|  Collapse All    Expand All     |
-|---------------------------------|
-
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+# Error (JSON)               
 
 The error structure is the same across all APIs. Noteworthy elements are as follows.
 
-Error
-=====
+##Error
+
 
 The Error object has the following specification.
 
@@ -27,12 +15,11 @@ The Error object has the following specification.
 
 These error structures can be optionally embedded in any Groove Platform service response. If an error is reported, the Error.ErrorCode and Error.Description elements will always be provided.
 
-Error codes
-===========
+##Error codes
 
-| Error code table                                
+ Error code table                                
                                                   
- **Name**                                         | **Default HTTP code**     | **Description**                                                                |
+| **Name**                                         | **Default HTTP code**     | **Description**                                                                |
 |-------------------------------------------------|---------------------------|--------------------------------------------------------------------------------|
 | CATALOG\_UNAVAILABLE                            | 502 Bad Gateway           | No response from catalog.                                                      |
 | CATALOG\_NO\_RESULT                             | 404 Not Found             | Item does not exist.                                                           |
@@ -76,8 +63,8 @@ Error codes
 | INTERNAL\_SERVER\_ERROR                         | 500 Internal Server Error | Oops, something went seriously wrong.                                          |
 | TOO\_MANY\_REQUESTS                             | 429 TooManyRequests       | Too Many Requests                                                              |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
+```
 
 {
 
@@ -86,14 +73,10 @@ Sample JSON syntax
 "Description": "Item does not exist"
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)

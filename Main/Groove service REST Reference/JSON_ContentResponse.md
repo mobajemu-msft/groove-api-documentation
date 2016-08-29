@@ -1,21 +1,7 @@
-|                            |
-|----------------------------|
-| ContentResponse (JSON)     |
-| [See Also](#seeAlsoToggle) |
+# ContentResponse (JSON)   
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+##ContentResponse
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-The output element for most content APIs. <span id="ID4EN" class="anchor"></span>
-
-ContentResponse
-===============
 
 The ContentResponse object has the following specification.
 
@@ -30,9 +16,9 @@ The ContentResponse object has the following specification.
 | Genres     | GenreList                                                            | A list of string representing the different possible genres for a given locale. Used in the [Browse Genres](../Endpointdocumentation/URI_ContentNamespaceCatalogGenresGET.htm) API.                                                                                                                                         |
 | Culture    | string                                                               | The culture used for processing the [Browse Genres](../Endpointdocumentation/URI_ContentNamespaceCatalogGenresGET.htm) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
 
+```
 {
 
 "Artists": {
@@ -76,14 +62,10 @@ Sample JSON syntax
 }
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)

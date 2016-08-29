@@ -1,21 +1,11 @@
-|                            |
-|----------------------------|
-| Artist (JSON)              |
-| [See Also](#seeAlsoToggle) |
+# Artist (JSON)              
 
-|  Collapse All    Expand All     |
-|---------------------------------|
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
 
-The creator or creators of a musical recording. <span id="ID4EN" class="anchor"></span>
+The creator or creators of a musical recording. 
 
-Artist
-======
+##Artist
+
 
 The Artist object has the following specification.
 
@@ -34,9 +24,8 @@ The Artist object has the following specification.
 | TopTracks         | List of [Track](../Endpointdocumentation/JSON_Track.htm) | A paginated list of the artist's top tracks, ordered by decreasing order of popularity. This list is null by default unless requested as extra information in a lookup request. Tracks in this list contain only a few fields, including the ID that should be used in a lookup request in order to have the full track properties.                        |
 | Biography         | string                                                   | The artist's biography, if available.                                                                                                                                                                                                                                                                                                                      |
 
-Sample JSON syntax
-==================
-
+##Sample JSON syntax
+```  
 {
 
 "Biography": "Daft Punk is a French house music group consisting \[...\]",
@@ -71,15 +60,11 @@ Sample JSON syntax
 
 "Compatible Sources": "Catalog, Collection"
 
-}
+}  
+``` 
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference)

@@ -1,21 +1,8 @@
-|                            |
-|----------------------------|
-| Playlist (JSON)            |
-| [See Also](#seeAlsoToggle) |
+# Playlist (JSON)           
 
-|  Collapse All    Expand All     |
-|---------------------------------|
+A list of tracks and their metadata. 
 
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-A list of tracks and their metadata. <span id="ID4EN" class="anchor"></span>
-
-Playlist
-========
+##Playlist
 
 The Playlist object has the following specification.
 
@@ -23,8 +10,8 @@ The Playlist object has the following specification.
 |----------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id                   | string                                                                                                                | Identifier for this piece of content. All Ids are of the form {namespace}.{actual identifier} and may be used in any API accepting an ID as input.                                                                                                                                                                                                                          |
 | Name                 | string                                                                                                                | The name of this piece of content.                                                                                                                                                                                                                                                                                                                                          |
-| ImageUrl             | string                                                                                                                | A direct link to the default image associated with this piece of content. See [Image Service](../Endpointdocumentation/imageurl.htm) for details about how these links may be customized to produce different images.                                                                                                                                                       |
-| Link                 | string                                                                                                                | An HTTP link that redirects to a contextual page for this piece of content on the relevant Groove client application, depending on the user's device or operating system. See [DeepLink](../Endpointdocumentation/deeplink.htm) for details about how these links work and how they should be modified for [revenue-sharing](../Endpointdocumentation/atoc_affiliates.htm). |
+| ImageUrl             | string                                                                                                                | A direct link to the default image associated with this piece of content. See [Image Service](../Using%20the%20Groove%20RESTful%20Services/Image%20Service.md) for details about how these links may be customized to produce different images.                                                                                                                                                       |
+| Link                 | string                                                                                                                | An HTTP link that redirects to a contextual page for this piece of content on the relevant Groove client application, depending on the user's device or operating system. See [DeepLink](../Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md) for details about how these links work and how they should be modified for [revenue-sharing](http://www.microsoftaffiliates.com/). |
 | OtherIds             | Dictionary&lt;*string*,*string*&gt;                                                                                   | An optional collection of IDs on top of the main ID, which identify this piece of content. Each key is the namespace or sub-namespace in which the ID belongs, and each value is a secondary ID for this piece of content                                                                                                                                                   |
 | Source               | string                                                                                                                | An indication of the data source for this piece of content. Possible values are **Collection** and **Catalog**.                                                                                                                                                                                                                                                             |
 | CompatibleSources    | string                                                                                                                | An indication of the categories of APIs and actions that this piece of content can be used with. Comma-separated list of one or multiple values among "Catalog", "Collection". Most items are compatible with both Catalog and Collection actions, but playlists for example or some collection items are not valid in a Catalog context.                                   |
@@ -35,11 +22,11 @@ The Playlist object has the following specification.
 | IsPublished          | Boolean value                                                                                                         | Whether the playlist is publicly visible or not.                                                                                                                                                                                                                                                                                                                            |
 | UserIsOwner          | Boolean value                                                                                                         | Whether the current user is the actual owner of the playlist.                                                                                                                                                                                                                                                                                                               |
 | CollectionStateToken | string                                                                                                                | Token indicating the current version of the collection.                                                                                                                                                                                                                                                                                                                     |
-| Tracks               | [Paginated list](../Endpointdocumentation/JSON_PaginatedList.htm) of [Track](../Endpointdocumentation/JSON_Track.htm) | A paginated list of the tracks in the playlist. In case of a browse, this list is null, and you'll need a lookup on that playlist to get its tracks.                                                                                                                                                                                                                        |
+| Tracks               | [Paginated list](JSON_PaginatedList.md) of [Track](JSON_Track.md) | A paginated list of the tracks in the playlist. In case of a browse, this list is null, and you'll need a lookup on that playlist to get its tracks.                                                                                                                                                                                                                        |
 
-Sample JSON syntax
-==================
+##Sample JSON syntax
 
+```
 {
 
 "TrackCount": 2,
@@ -283,14 +270,10 @@ Sample JSON syntax
 "Compatible Sources": "Catalog, Collection"
 
 }
+```
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)

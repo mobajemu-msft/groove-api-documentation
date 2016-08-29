@@ -1,16 +1,4 @@
-|                            |
-|----------------------------|
-| PaginatedList (JSON)       |
-| [See Also](#seeAlsoToggle) |
-
-|  Collapse All    Expand All     |
-|---------------------------------|
-
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
+# PaginatedList (JSON)       
 
 Describes paginated lists, a type of response from the Groove Service that can be continued by using a token.
 
@@ -28,8 +16,7 @@ This topic describes the **PaginatedList** object and provides examples of its u
 
 -   [Continuation response (artists only)](#continuation-response-artists-only)
 
-PaginatedList
-=============
+##PaginatedList
 
 All the paginated lists in responses from the Groove Service use the same data structure, a **PaginatedList** object, which is described in the following table.
 
@@ -41,8 +28,7 @@ All the paginated lists in responses from the Groove Service use the same data s
 
 A continuation token is an opaque string that should never be modified by the client, only passed as-is in subsequent requests. To obtain the continuation of a particular paginated list, the client should call the exact same URL as in the original request whose response produced the continuation token, except that it should add that continuation token in the optional **continuationToken** query parameter that those APIs support and remove all the other optional API parameters. The response from that call respects the same data structure as the original response, but most of the fields are null to avoid repeating the same information. Only the few fields critical for identification of the item (such as ID) are populated, as is the paginated list that the continuation token applies to. This paginated list contains the elements that immediately follow the ones from the original request. This second paginated list may also itself be incomplete and come with its own continuation token, so the same concept can be applied to more than two pages.
 
-Sample JSON syntax
-==================
+## Sample JSON syntax
 
 -   [Lookup with tracks on an album that has more than 25 tracks](#lookup-with-tracks-on-an-album-that-has-more-than-25-tracks)
 
@@ -50,11 +36,11 @@ Sample JSON syntax
 
 -   [Continuation response (contains the rest of the tracks)](#continuation-response-contains-the-rest-of-the-tracks)
 
-Lookup with tracks on an album that has more than 25 tracks
------------------------------------------------------------
+### Lookup with tracks on an album that has more than 25 tracks
 
-#### First Request
 
+##### First Request
+```
 GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
 
 **extras=Tracks**&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
@@ -70,9 +56,9 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
 %253a%252f%252fmusic.xboxlive.com%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4
 
 %253d HTTP/1.1
-
+``` 
 #### First response
-
+```
 {
 
 "Albums": {
@@ -325,10 +311,10 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
 %26Issuer%3dhttps%253a%252f%252fmusic.xboxlive.com%26HMACSHA256
 
 %3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+``` 
+###Continuation response (contains the rest of the tracks)
 
-Continuation response (contains the rest of the tracks)
--------------------------------------------------------
-
+```
 {
 
 "Albums": {
@@ -558,13 +544,13 @@ Continuation response (contains the rest of the tracks)
 }
 
 }
+``` 
+##Search and continue (artists)
 
-Search and continue (artists)
-=============================
 
-Initial search request
-----------------------
+### Initial search request
 
+```
 GET /1/content/music/search?**q=bob**&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
 
 %252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dPlatformServiceTestsSubscriber
@@ -578,10 +564,10 @@ GET /1/content/music/search?**q=bob**&accessToken=Bearer+http%253a%252f%252fsche
 %3dhttps%253a%252f%252ftest.music.xboxlive.com%26HMACSHA256%3d0pVJ3
 
 %252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```
+### First response
 
-First response
---------------
-
+```
 {
 
 "Artists": {
@@ -1019,10 +1005,10 @@ First response
 }
 
 }
+```
+## Artists continuation
 
-Artists continuation
-====================
-
+```
 GET /1/content/music/search?**continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ**
 
 &accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
@@ -1038,10 +1024,9 @@ GET /1/content/music/search?**continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ**
 %3d1609459199%26Issuer%3dhttps%253a%252f%252ftest.music.xboxlive.com%26HMACSHA256
 
 %3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
-
-Continuation response (artists only)
-====================================
-
+```
+## Continuation response (artists only)
+```
 {
 
 "Artists": {
@@ -1127,14 +1112,10 @@ Continuation response (artists only)
 }
 
 }
+``` 
+##See also
 
-See also
-========
 
 #### Parent
 
-[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
-
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
+[Groove Service REST Reference](Groove%20Service%20REST%20Reference.md)
