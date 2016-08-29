@@ -99,7 +99,8 @@ Sample JSON syntax
 
 "CompatibleSources": "Catalog, Collection"
 
-} ```  
+}   
+```  
 
 See also
 ========
