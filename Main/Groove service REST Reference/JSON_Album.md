@@ -29,7 +29,8 @@ The Album object has the following specification.
 Sample JSON syntax
 ==================
 
-```{
+```  
+{
 
 "ReleaseDate": "2013-05-09T00:00:00Z",
 
