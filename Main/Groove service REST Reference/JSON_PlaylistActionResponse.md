@@ -1,0 +1,75 @@
+|                               |
+|-------------------------------|
+| PlaylistActionResponse (JSON) |
+| [See Also](#seeAlsoToggle)    |
+
+|  Collapse All    Expand All     |
+|---------------------------------|
+
+Visual Basic (Usage)
+Visual Basic (Declaration)
+C\#
+C++
+JavaScript
+
+The output element for every playlist action request: create, update, and delete.
+
+Contains an optional Error field if the operation or some sub-operations failed, and an object describing which sub-operations failed and which succeeded.
+
+PlaylistActionResponse
+======================
+
+The PlaylistActionResponse object has the following specification.
+
+| **Member**           | **Type**                                                                       | **Description**                                                 |
+|----------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| Error                | [Error](../Endpointdocumentation/JSON_Error.htm)                               | Optional. Error if the operation or some sub-operations failed. |
+| PlaylistActionResult | [PlaylistActionResult](../Endpointdocumentation/JSON_PlaylistActionResult.htm) | Details on the playlist action.                                 |
+
+Sample JSON syntax
+==================
+
+{
+
+"PlaylistActionResult": {
+
+"Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
+
+"TrackActionResults": \[
+
+{
+
+"InputId": "music.AQQfj2DtARB5ZkGFCMHea2k8Xge5PqgAAQ"
+
+},
+
+{
+
+"InputId": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
+
+"Id": "music.AQQfDfTrflAB2k60n3MOVkAyXQfq6y0AAQ"
+
+}
+
+\]
+
+}
+
+}
+
+See also
+========
+
+#### Parent
+
+[Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
+
+#### Reference
+
+[/1/content/{namespace}/collection/playlists/create](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsCreate.htm)
+[/1/content/{namespace}/collection/playlists/delete](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsDelete.htm)
+[/1/content/{namespace}/collection/playlists/update](../Endpointdocumentation/URI_ContentNamespaceCollectionPlaylistsUpdate.htm)
+
+© 2016 Microsoft Corporation. All rights reserved.
+Submit feedback on <https://forums.xboxlive.com/>.
+Version: 2.0.100825.0 \[private build\]
