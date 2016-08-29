@@ -1,18 +1,4 @@
-|                            |
-|----------------------------|
-| Album (JSON)               |
-| [See Also](#seeAlsoToggle) |
 
-|  Collapse All    Expand All     |
-|---------------------------------|
-
-Visual Basic (Usage)
-Visual Basic (Declaration)
-C\#
-C++
-JavaScript
-
-A musical recording. <span id="ID4EN" class="anchor"></span>
 
 Album
 =====
@@ -43,7 +29,7 @@ The Album object has the following specification.
 Sample JSON syntax
 ==================
 
-{
+```{
 
 "ReleaseDate": "2013-05-09T00:00:00Z",
 
@@ -113,7 +99,7 @@ Sample JSON syntax
 
 "CompatibleSources": "Catalog, Collection"
 
-}
+} ```  
 
 See also
 ========
@@ -122,6 +108,3 @@ See also
 
 [Groove Service REST Reference](../Endpointdocumentation/atoc_xbm_reference.htm)
 
-© 2016 Microsoft Corporation. All rights reserved.
-Submit feedback on <https://forums.xboxlive.com/>.
-Version: 2.0.100825.0 \[private build\]
