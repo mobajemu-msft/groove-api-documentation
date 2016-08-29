@@ -34,73 +34,39 @@ The Album object has the following specification.
 {
 
 "ReleaseDate": "2013-05-09T00:00:00Z",
-
 "Duration": "01:14:24",
-
 "TrackCount": 13,
-
 "IsExplicit": false,
-
 "LabelName": "Columbia",
-
 "Genres": \[
-
 "Pop"
-
 \],
-
 "Subgenres": \[
-
 "Contemporary Pop"
-
 \],
-
 "AlbumType": "Album",
-
 "Artists": \[
-
 {
-
 "Role": "Main",
-
 "Artist": {
-
 "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
-
 "Name": "Daft Punk",
-
 "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-
 "Link": "http://music.xbox.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
 "Source": "Catalog"
-
 "CompatibleSources": "Catalog, Collection"
-
 }
-
 }
-
 \],
-
 "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
-
 "Name": "Random Access Memories",
-
 "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-
 "Link": "http://music.xbox.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
 "OtherIds": {
-
 "music.amg": "R 2749955"
-
 },
-
 "Source": "Catalog"
-
 "CompatibleSources": "Catalog, Collection"
-
 }   
 ```  
 
