@@ -2,11 +2,8 @@
 Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).
 
 -   [Remarks](#remarks)
-
 -   [URI parameters](#uri-parameters)
-
 -   [Response object](#response-object)
-
 -   [Examples](#examples)
 
 ##Remarks
@@ -53,19 +50,13 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 This call obtains the exact same result as /1/content/music.2F531400-0200-11DB-89CA-0019B92A3933/lookup?extras=albums.
 
 #### Request
-```
+```http
 GET /1/content/music.2F531400-0200-11DB-89CA-0019B92A3933/catalog/artist/albums/browse?
-accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27Sm
-QItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+accessToken=Bearer+[...]
 ```
 
 #### Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -164,17 +155,12 @@ QItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 
 
 #### Request
-```
+```http
 GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/browse?maxItems=3
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a
-%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+&accessToken=Bearer+[...]
 ```
 #### Response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -338,7 +324,7 @@ GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/b
 
 
 #### Request
-```
+```http
 GET /1/content/music.AQPRiQGUVID-ANj02JdwYA\_R/collection/playlist/tracks/browse?
 accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
 %252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
@@ -349,7 +335,7 @@ accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB\[...\]
 ```
 #### Response
-```
+```json
 {
   "Playlists": {
     "Items": [
@@ -477,7 +463,7 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB\[...\]
 
 
 #### Request
-```
+```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptracks/browse
 ?maxItems=5&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005
 %252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f
@@ -490,7 +476,7 @@ QItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 
 
 #### Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -611,18 +597,13 @@ QItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 ```
 
 #### Continuation Request
-```
+```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptracks/browse
-?maxItems=5&page=1&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005
-%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252f
-schemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252f
-music.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.
-accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+?maxItems=5&page=1&accessToken=Bearer+[...]
 ```
 
 #### Continuation Response
-```
+```json
 {
   "Artists": {
     "Items": [
