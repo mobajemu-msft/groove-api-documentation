@@ -8,7 +8,7 @@ Update a playlist on behalf of a user.
 ##Remarks
 The full update request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 
-```
+```http
 /1/content/{namespace}/collection/playlists/update?accessToken={accessToken}
 ```
 You can update only one playlist at a time. Provide the ID of the playlist to be updated, the metadata you want to update, and a list of actions to perform on the playlist's tracks.
@@ -33,17 +33,11 @@ Response object: [PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)
 ###Update playlist metadata
 
 
-You can use this API to update the name of a playlist and control whether it's published, read-only, or both..
+You can use this API to update the name of a playlist and control whether it's published, read-only, or both.
 
 #### Request
-```
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3d
-AwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=138432095;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] 
 
@@ -56,7 +50,7 @@ Content-Type: application/json
 }
 ```
 #### Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.88195f49-8008-00fe-a87e-5774b0384ad1",
@@ -73,15 +67,8 @@ You can update both metadata and tracks in the same call. Provide a list of acti
 In this example, we add a track and delete one. Both operations are successful.
 
 #### Request
-```
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252f
-identity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a
-%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.
-windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn
-%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=138432095;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] 
 
@@ -103,7 +90,7 @@ Content-Type: application/json
 }
 ```
 #### Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.88195f49-8008-00fe-a87e-5774b0384ad1",
@@ -128,14 +115,8 @@ If you add an invalid track to a playlist, you'll receive a non-null [Error](Err
 In this example, we try to add a random GUID as a track ID to a playlist.
 
 #### Request
-```
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+http%253a%252f
-%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.
-windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27
-SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=138432095;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] 
 
@@ -152,7 +133,7 @@ Content-Type: application/json
 }
 ```
 #### Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.88195f49-8008-00fe-a87e-5774b0384ad1",
@@ -182,8 +163,8 @@ A reorder operation must match an atomic user input: selecting a list of tracks 
 Use the InsertBeforeTrackId field for the track before which you want to insert, and fill the TrackActions field with the tracks that should move to that new position.
 
 #### Request
-```
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1285729083;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Ii[...] 
 
@@ -201,7 +182,7 @@ Content-Type: application/json
 }
 ```
 #### Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.3fd92a44-8004-00fe-ad98-7e49091a6bd1"
