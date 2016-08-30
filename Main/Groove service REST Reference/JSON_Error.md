@@ -64,14 +64,10 @@ These error structures can be optionally embedded in any Groove Platform service
 | TOO\_MANY\_REQUESTS                             | 429 TooManyRequests       | Too Many Requests                                                              |
 
 ##Sample JSON syntax
-```
-
+```json
 {
-
    "ErrorCode": "CATALOG\_NO\_RESULT",
-
    "Description": "Item does not exist"
-
 }
 ```
 ##See also
