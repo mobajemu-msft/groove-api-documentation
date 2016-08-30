@@ -66,7 +66,7 @@ These error structures can be optionally embedded in any Groove Platform service
 ##Sample JSON syntax
 ```json
 {
-   "ErrorCode": "CATALOG\_NO\_RESULT",
+   "ErrorCode": "CATALOG_NO_RESULT",
    "Description": "Item does not exist"
 }
 ```
