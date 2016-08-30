@@ -44,21 +44,15 @@ The following parameters are not available on the Common Parameters page.
 
 
 #### Request
-```
+```http
 GET /1/content/music/collection/artists/browse?orderBy=ArtistName
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05
-%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252f
-schemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252f
-music.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4
-%253d HTTP/1.1 
+&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1852535598;eyJlbmMiOiJB[...]
 ```
       
 ####Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -89,20 +83,15 @@ Authorization: XBL3.0 x=1852535598;eyJlbmMiOiJB[...]
 ```
 ###Browse artists with invalid orderBy
 ####Request
-```
+```http
 GET /1/content/music/collection/artists/browse?orderBy=AlbumTitle&accessToken=
-Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
       
 ####Response
-```
+```json
 400 BadRequest 
 
 {
@@ -116,21 +105,15 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 
 ###Browse albums
 ####Request
-```
+```http
 GET /1/content/music/collection/albums/browse?orderBy=AlbumTitle&accessToken=
-Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps
-%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f
-%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+Bearer+[...] 
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
       
 ####Response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -217,20 +200,15 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ###Browse playlists
 This request specifies maxItems=1 and uses the continuation token to get the second one afterwards.
 ####Request
-```
+```http
 GET /1/content/music/collection/playlists/browse?maxItems=1&
-accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252f
-identity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
      
 ####Response
-```
+```json
 {
   "Playlists": {
     "Items": [
@@ -248,21 +226,15 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 }
 ```
 ####Continuation Request
-```
+```http
 GET /1/content/music/collection/playlists/browse?continuationToken=ASQ6p3IBCQQADQcDAgABMQ
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05
-%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252f
-schemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f
-%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTz
-SEbEmmDFG4%253d HTTP/1.1 
+&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
       
 ####Continuation Response
-```
+```json
 {
   "Playlists": {
     "Items": [
@@ -281,20 +253,15 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
       
 ###Browse tracks
 ####Request
-```
+```http
 GET /1/content/music/collection/tracks/browse?orderBy=TrackTitle&accessToken=
-Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a
-%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```     
 
 ####Response
-```
+```json
 {
   "Tracks": {
     "Items": [
@@ -460,19 +427,13 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
       
 ###Browse tracks with invalid maxItems
 ####Request
-```
-GET /1/content/music/collection/tracks/browse?maxItems=42&accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims
-%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp
-%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+GET /1/content/music/collection/tracks/browse?maxItems=42&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```      
 ####Response
-```
+```json
 400 BadRequest 
 
 {
