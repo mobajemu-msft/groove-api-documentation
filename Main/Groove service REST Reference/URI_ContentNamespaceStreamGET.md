@@ -43,20 +43,15 @@ For playing streams from your application on windows versions prior to Windows 1
 Only Groove Pass subscribers may play full streams.
 
 #### Request
-```
+```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream
 ?clientInstanceId=5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer
-+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3dLagMcZR0PUeZGILbC0yREl40VqDBiJg1QE43joplt18%253d HTTP/1.1 
++[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
 #### Response
-```
+```json
 403 Forbidden 
 
 {
@@ -73,20 +68,14 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 The user authentication token identifies a user who has a Music Pass.
 
 #### Request
-```
+```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream?clientInstanceId=
-5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer+http%253a%252f%252fschemas.
-xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims
-%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a
-%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3dLagMcZR0PUeZGILbC0yREl40VqDBiJ
-g1QE43joplt18%253d HTTP/1.1 
+5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 ```
 #### Response
-```
+```json
 {
   "Url": "https://webstream-vh.akamaihd.net/i/129/580/712/155/audio.mp4/master.m3u8?
 rid=40117aff-3edc-432a-a81d-1967a61e826d_i2_fr-FR_music_asset_location&hdnea=exp=1398443951~
