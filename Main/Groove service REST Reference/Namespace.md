@@ -20,4 +20,4 @@ See also
 
 #### Parent 
 
-[Groove Service REST Reference](atoc_xbm_reference.htm)
+[Groove Service REST Reference](Groove Service REST Reference.md)
