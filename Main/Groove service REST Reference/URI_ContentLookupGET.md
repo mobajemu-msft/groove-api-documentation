@@ -15,14 +15,14 @@ Look up one or several items from a media catalog and/or user's collection.
 
 
 A lookup request is composed of mandatory and optional URL parts and query parameters, as described in the following table. A lookup request containing all parameters would look like the following string:
-```
+```http
 /1/content/{id1+id2+id3}/lookup?language={language}&country={country}&extras={extras}&source={source}
 &contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
  
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-| **Note **                                                                                               |
+| Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|
 | Using the **collection** source requires [user authentication](../Using the Groove RESTful Services/User Authentication.md). |
 
@@ -33,9 +33,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ids           | string   | Required. The ID or IDs to be looked up. Each ID is prefixed by a namespace and ".". Multiple IDs are separated by "+". The total length of all IDs must be less than or equal to 250 characters. 
                                                                                                                                                                                                                                
-                            | **Note **   |                                                                                                                                                            
-                            |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                  
-                            | ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
+| Note   |                          
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                  
+ | ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
 
 ##Response object
 
@@ -57,17 +57,12 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 
 
 #### Request
-```
-GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn
-%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
 ```
 
 #### Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -95,16 +90,11 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
 
 
 #### Request
-```
-GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+http%253a
-%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010
-%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp
-%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
 ```
 #### Response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -151,18 +141,12 @@ GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
 
 
 #### Request
-```
-GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+http%253a%252f
-%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010
-%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
 ```
 
 #### Response
-```
+```json
 {
   "Tracks": {
     "Items": [
@@ -219,17 +203,12 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
 
 
 #### Request
-```
-GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a
-%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn
-%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bearer+[...]
 ```
 
 #### Response
-```
+```json
 HTTP/1.1 404 Not Found
 { 
  "Error": {
@@ -251,7 +230,7 @@ The following examples use the following optional features:
 -   Passing the developer authentication token as a header instead of query parameter
 
 #### Request
-```
+```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933+music.B13EB907-0100-11DB-89CA-0019B92A3933
 +music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup HTTP/1.1
 
@@ -264,7 +243,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
 ```
 
 #### Response
-```
+```json
 <ContentResponse xmlns="http://schemas.microsoft.com/xboxmusic/2013/10/platform" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <Albums>
     <Items>
@@ -389,7 +368,7 @@ Batch lookup with extra details
 -------------------------------
 
 #### Request
-```
+```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933+
 music.B13EB907-0100-11DB-89CA-0019B92A3933+music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?
 
@@ -403,7 +382,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
 ```
 
 #### Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -819,18 +798,12 @@ ISRC is a standard music identifier that can be used as input to the Lookup API 
 
 ###Request
 
-```
-GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.
-accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f
-%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.
-windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```json
+GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
 ```
 ###Response
 
-```
+```json
 {
   "Tracks": {
     "Items": [
@@ -890,18 +863,13 @@ ICPN is a standard music identifier that can be used as input to the Lookup API 
 
 ###Request
 
-```
-GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f
-%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f
-%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.
-accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
 ```
 
 ###Response
 
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -951,20 +919,15 @@ accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSE
 
 
 #### Request
-```
+```http
 GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?source=collection&
-accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f
-%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9\[...\]
 ```
 
 #### Response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -981,25 +944,21 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
       }
     ]
   }
-}```
+}
+```
 
 ###Collection playlist lookup
 
 #### Request
-```
+```http
 GET /1/content/music.AQM2egu7ioD-AI-GF3usCeHQ/lookup?source=collection&
-accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f
-%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9\[...\]
 ```
 
 #### Response
-```
+```json
 {
   "Playlists": {
     "Items": [
@@ -1138,7 +1097,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
 Each of the input IDs is looked up in the collection first, and then in the catalog if not found in the collection. The "Source" field of each returned item indicates whether the item comes from the Collection or the Catalog.
 
 #### Request
-```
+```http
 GET /1/content/music.3770F306-0100-11DB-89CA-0019B92A3933+music.AQIPAAAcxgAC3GpkUPzr8EQ/lookup?
 
 source=collection+catalog
@@ -1154,7 +1113,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
 ```
 
 #### Response
-```
+```json
 {
   "Artists": {
     "Items": [
