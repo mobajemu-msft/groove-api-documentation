@@ -10,15 +10,15 @@ The PlaylistAction object has the following specification.
 | **Member**           | **Type**                                                             | **Description**                                                                                                                                                                        |
 |----------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id                   | string                                                               | Required. ID of the playlist (required for update and delete).                                                                                                                         |
-| CollectionStateToken | string                                                               | Optional. Token indicating the current version of the collection.                                                                                                                      |
-| Name                 | string                                                               | Optional. Name of the playlist.                                                                                                                                                        |
-| IsPublished          | Boolean value                                                        | Optional. Whether the playlist is public or not.                                                                                                                                       |
-| InsertBeforeTrackId  | string                                                               | (Optional) When reordering tracks, track before which you want to insert the tracks specified in the TrackActions field. Can be null if you want to insert at the end of the playlist. |
-| TrackActions         | List of [TrackAction](../Endpointdocumentation/JSON_TrackAction.htm) | Optional. List of actions to perform on the playlist's tracks.                                                                                                                         |
+| CollectionStateToken | string                                                               | *Optional*. Token indicating the current version of the collection.                                                                                                                      |
+| Name                 | string                                                               | *Optional*. Name of the playlist.                                                                                                                                                        |
+| IsPublished          | Boolean value                                                        | *Optional.* Whether the playlist is public or not.                                                                                                                                       |
+| InsertBeforeTrackId  | string                                                               | *Optional* When reordering tracks, track before which you want to insert the tracks specified in the TrackActions field. Can be null if you want to insert at the end of the playlist. |
+| TrackActions         | List of [TrackAction](JSON_TrackAction.md) | Optional. List of actions to perform on the playlist's tracks.                                                                                                                         |
 
 ##Sample JSON syntax
 
-```
+```json
 {
   "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
   "TrackActions": [

@@ -36,18 +36,12 @@ A continuation token is an opaque string that should never be modified by the cl
 
 
 ##### First Request
-```
+```http
 GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
-extras=Tracks&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fmusic.xboxlive.com%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps
-%253a%252f%252fmusic.xboxlive.com%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4
-%253d HTTP/1.1 
+extras=Tracks&accessToken=Bearer+[...]
 ``` 
 #### First response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -167,22 +161,15 @@ extras=Tracks&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
 ```
 ### Continuation request (same URL, "extras" optional parameter removed, "continuationToken" from initial track list passed instead)
 
-```
+```html
 GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
 
 continuationToken=AXHsdfMACQQIAAcCB7U_gwAB2xGJygAZuSo5MwEAAjI1
 
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fmusic.xboxlive.com
-%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199
-%26Issuer%3dhttps%253a%252f%252fmusic.xboxlive.com%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
-``` 
+&accessToken=Bearer+../Using the Groove RESTful Services``` 
 ###Continuation response (contains the rest of the tracks)
 
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -304,18 +291,12 @@ continuationToken=AXHsdfMACQQIAAcCB7U_gwAB2xGJygAZuSo5MwEAAjI1
 
 ### Initial search request
 
-```
-GET /1/content/music/search?q=bob&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dPlatformServiceTestsSubscriber
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims
-%252fidentityprovider%3dhttps%253a%252f%252ftest.music.xboxlive.com%26Audience%3dhttp%253a
-%252f%252fmusic.test.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252ftest.music.xboxlive.com%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```html
+GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
 ```
 ### First response
 
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -538,18 +519,12 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+http%253a%252f%252fschemas.
 ```
 ## Artists continuation
 
-```
+```http
 GET /1/content/music/search?continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dPlatformServiceTestsSubscriber
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252ftest.music.xboxlive.com
-%26Audience%3dhttp%253a%252f%252fmusic.test.xboxlive.com%252f%26ExpiresOn
-%3d1609459199%26Issuer%3dhttps%253a%252f%252ftest.music.xboxlive.com%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+&accessToken=Bearer+[...]
 ```
 ## Continuation response (artists only)
-```
+```json
 {
   "Artists": {
     "Items": [

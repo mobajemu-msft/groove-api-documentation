@@ -13,7 +13,7 @@ The TrackAction object has the following specification.
 | Action     | string   | Action to perform ("add", "delete", and "remove").                                                                   |
 
 ##Sample JSON syntax
-```
+```json
 {
    "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
    "Action": "Add"

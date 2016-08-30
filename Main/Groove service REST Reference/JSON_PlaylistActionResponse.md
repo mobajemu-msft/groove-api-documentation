@@ -10,12 +10,11 @@ The PlaylistActionResponse object has the following specification.
 
 | **Member**           | **Type**                                                                       | **Description**                                                 |
 |----------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| Error                | [Error](../Endpointdocumentation/JSON_Error.htm)                               | Optional. Error if the operation or some sub-operations failed. |
-| PlaylistActionResult | [PlaylistActionResult](../Endpointdocumentation/JSON_PlaylistActionResult.htm) | Details on the playlist action.                                 |
+| Error                | [Error](JSON_Error.md)                               | Optional. Error if the operation or some sub-operations failed. |
+| PlaylistActionResult | [PlaylistActionResult](JSON_PlaylistActionResult.md) | Details on the playlist action.                                 |
 
 ##Sample JSON syntax
-```
-
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",

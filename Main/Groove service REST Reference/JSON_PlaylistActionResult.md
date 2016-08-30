@@ -10,13 +10,13 @@ The PlaylistActionResult object has the following specification.
 | **Member**   | **Type**                                                                         | **Description**                                        |
 |--------------|----------------------------------------------------------------------------------|--------------------------------------------------------|
 | Id           | string                                                                           | Required. ID of the playlist.                          |
-| Name         | string                                                                           | Optional. Name of the playlist.                        |
-| IsReadOnly   | Boolean value                                                                    | Optional. Whether the playlist can be modified or not. |
-| IsPublished  | Boolean value                                                                    | Optional. Whether the playlist is public or not.       |
-| TrackActions | List of [TrackActionResult](../Endpointdocumentation/JSON_TrackActionResult.htm) | Optional. Details on the results of track actions.     |
+| Name         | string                                                                           | *Optional*. Name of the playlist.                        |
+| IsReadOnly   | Boolean value                                                                    | *Optional*. Whether the playlist can be modified or not. |
+| IsPublished  | Boolean value                                                                    | *Optional*. Whether the playlist is public or not.       |
+| TrackActions | List of [TrackActionResult](JSON_TrackActionResult.md) | *Optional*. Details on the results of track actions.     |
 
 ##Sample JSON syntax
-```
+```json
 {
   "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
   "TrackActionResults": [

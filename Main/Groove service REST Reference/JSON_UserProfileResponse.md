@@ -8,14 +8,14 @@ The UserProfileResponse object has the following specification.
 
 | **Member**                         | **Type**                                                             | **Description**                                                                                                                                                                                       |
 |------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Error                              | [Error](../Endpointdocumentation/JSON_Error.htm)                     | Optional error object.                                                                                                                                                                                |
+| Error                              | [Error](JSON_Error.md)                     | Optional error object.                                                                                                                                                                                |
 | HasSubscription                    | Boolean value                                                        | The user's subscription state (if the request was user-authenticated). It is safe to assume that subscription state can only change on user authentication token refreshes.                           |
 | IsSubscriptionAvailableForPurchase | Boolean value                                                        | Whether Groove subscriptions are available in the request's country or not.                                                                                                                           |
 | Culture                            | string                                                               | The culture associated with the request. The culture is obtained from the user authentication token if there is one, the country and language URL parameters if provided, or the caller's IP address. |
-| Collection                         | [CollectionState](../Endpointdocumentation/JSON_CollectionState.htm) | The state of the user's collection (if the request was user-authenticated).                                                                                                                           |
+| Collection                         | [CollectionState](JSON_CollectionState.mD) | The state of the user's collection (if the request was user-authenticated).                                                                                                                           |
 
 ##Sample JSON syntax
-```
+```json
 {
   "HasSubscription": true,
   "IsSubscriptionAvailableForPurchase": true,

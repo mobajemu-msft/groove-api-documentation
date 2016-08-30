@@ -12,13 +12,13 @@ The ContentResponse object has the following specification.
 | Albums     | List of [Album](JSON_Album.md)             | A paginated list of Albums that matched the request criteria.                                                                                                                                                                                                                                                               |
 | Tracks     | List of [Track](JSON_Track.md)             | A paginated list of Tracks that matched the request criteria.                                                                                                                                                                                                                                                               |
 | Playlists  | List of [Playlist](JSON_Playlist.md)       | A paginated list of Playlists that matched the request criteria.                                                                                                                                                                                                                                                            |
-| Results    | List of [ContentItem](../Endpointdocumentation/JSON_ContentItem.htm) | A paginated list of ContentItems that matched the request criteria. These items are used for ordered lists mixing multiple types of content such as the [Spotlight](../Endpointdocumentation/URI_ContentNamespaceSpotlightGET.htm) and [NewReleases](../Endpointdocumentation/URI_ContentNamespaceNewreleasesGET.htm) APIs. |
-| Genres     | GenreList                                                            | A list of string representing the different possible genres for a given locale. Used in the [Browse Genres](../Endpointdocumentation/URI_ContentNamespaceCatalogGenresGET.htm) API.                                                                                                                                         |
-| Culture    | string                                                               | The culture used for processing the [Browse Genres](../Endpointdocumentation/URI_ContentNamespaceCatalogGenresGET.htm) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
+| Results    | List of [ContentItem](JSON_ContentItem.md) | A paginated list of ContentItems that matched the request criteria. These items are used for ordered lists mixing multiple types of content such as the [Spotlight](URI_ContentNamespaceSpotlightGET.md) and [NewReleases](URI_ContentNamespaceNewreleasesGET.md) APIs. |
+| Genres     | GenreList                                                            | A list of string representing the different possible genres for a given locale. Used in the [Browse Genres](URI_ContentNamespaceCatalogGenresGET.md) API.                                                                                                                                         |
+| Culture    | string                                                               | The culture used for processing the [Browse Genres](URI_ContentNamespaceCatalogGenresGET.md) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
 
 ##Sample JSON syntax
 
-```
+```json
 {
   "Artists": {
     "Items": [

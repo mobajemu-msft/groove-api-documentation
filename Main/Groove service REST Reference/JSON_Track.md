@@ -4,7 +4,6 @@ Describes a *track*, an individual piece of musical content from an album.
 This topic describes *track*, an individual piece of musical content from an album.
 
 -   [Specification of **Track**](#specification-of-track)
-
 -   [Sample JSON syntax](#sample-json-syntax)
 
 ##Specification of Track
@@ -34,7 +33,7 @@ The **Track** object has the following specification.
 
 ##Sample JSON syntax
 
-```
+```json
 {
   "ReleaseDate": "2013-05-09T00:00:00Z",
   "Duration": "00:06:09",

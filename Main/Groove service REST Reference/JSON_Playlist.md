@@ -26,7 +26,7 @@ The Playlist object has the following specification.
 
 ##Sample JSON syntax
 
-```
+```json
 {
   "TrackCount": 2,
   "UserIsOwner": true,
