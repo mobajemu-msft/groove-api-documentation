@@ -50,17 +50,11 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 
 
 #### Request
-```
-GET /1/content/music/search?q=daft+punk&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org
-%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner
-%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music/search?q=daft+punk&accessToken=Bearer+[...]
 ```
 ####Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -295,19 +289,13 @@ GET /1/content/music/search?q=daft+punk&accessToken=Bearer+http%253a%252f%252fsc
  
 ###Searching for only albums and tracks
 ####Request
-```
+```http
 GET /1/content/music/search?q=daft+punk&filters=Albums+tracks
-&accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005
-%252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http
-%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199
-%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+&accessToken=Bearer+[...]
 ```
   
 ####Response
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -490,20 +478,14 @@ GET /1/content/music/search?q=daft+punk&filters=Albums+tracks
 ###Searching in both the Collection and the Catalog
 The response for a Collection+Catalog search will contain for each item type (artists, albums, tracks) up to 25 (or maxItems if specified to a lower value) results per source. Collection items are returned before Catalog items, and if a continuation token is present for an incomplete list it is common to both sources if they have remaining items (which means the continuation response may also contain up to 25 Collection and 25 Catalog items). In this particular example, our user's collection is quite small and the only Collection result is one artist, followed by up to 10 Catalog artists, albums and tracks. Using one of the response continuation token would then produce only Catalog results because all Collection results are included in the first response. 
 ####Request
-```
-GET /1/content/music/search?q=daft+punk&source=collection+catalog&maxItems=10&accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier%3d
-AwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music/search?q=daft+punk&source=collection+catalog&maxItems=10&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
   
 ####Response
-```
+```json
 {
   "Artists": {
     "Items": [
