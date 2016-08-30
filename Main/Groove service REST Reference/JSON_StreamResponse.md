@@ -7,7 +7,7 @@ The StreamResponse object has the following specification.
 
 | **Member**  | **Type**                                         | **Description**                                                                           |
 |-------------|--------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Error       | [Error](../Endpointdocumentation/JSON_Error.htm) | Error returned.                                                                           |
+| Error       | [Error](JSON_Error.md) | Error returned.                                                                           |
 | Url         | string                                           | The URL of the stream.                                                                    |
 | ContentType | string                                           | The stream's content type. Can be one of the following:                                   
                                                                                                                                                              
