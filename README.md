@@ -53,6 +53,6 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 [Groove Service REST Reference]:Main/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
 [Affiliate Program]:http://www.microsoftaffiliates.com/
 [Pilot]:https://music.microsoft.com/developer/pilot
-[Blog]:http://www.google.com
+[Blog]:https://blogs.msdn.microsoft.com/b/xboxmusic/
 
 
