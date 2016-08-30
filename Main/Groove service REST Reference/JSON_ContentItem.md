@@ -16,7 +16,7 @@ The ContentItem object has the following specification.
 
 ##Sample JSON syntax
 
-``` 
+```json 
 {
   "Type": "Artists",
   "Artist": {
