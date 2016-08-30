@@ -3,7 +3,6 @@
 Retrieve a user's profile or the features available in a given region.
 
 -   [Remarks](#remarks)
-
 -   [Examples](#examples)
 
 ##Remarks
@@ -36,7 +35,8 @@ GET /1/user/music/profile?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.
 %3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
 %3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
 
-Authorization: XBL3.0 x=847278487;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] ```
+Authorization: XBL3.0 x=847278487;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] 
+```
 #### Response
 ```
 GET (/1/user/{namespace}/profile)
@@ -61,8 +61,9 @@ GET /1/user/music/profile?accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.
 %3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
 
 Authorization: XBL3.0 x=847278487;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...] 
-      
-Response
+``` 
+#### Response
+```
 {
   "HasSubscription": false,
   "IsSubscriptionAvailableForPurchase": true,

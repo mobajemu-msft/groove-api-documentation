@@ -3,11 +3,8 @@
 Browse the music catalog.
 
 -   [Remarks](#remarks)
-
 -   [Response object](#response-object)
-
 -   [Query string parameters](#query-string-parameters)
-
 -   [Examples](#examples)
 
 ##Remarks

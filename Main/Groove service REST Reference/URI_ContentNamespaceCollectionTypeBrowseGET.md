@@ -3,11 +3,8 @@
 Browse a user's collection or playlists.
 
 -   [Remarks](#remarks)
-
 -   [Response object](#response-object)
-
 -   [Query string parameters](#query-string-parameters)
-
 -   [Examples](#examples)
 
 ##Remarks

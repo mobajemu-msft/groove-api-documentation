@@ -3,19 +3,12 @@
 Look up one or several items from a media catalog and/or user's collection.
 
 -   [Remarks](#remarks)
-
 -   [URI parameters](#uri-parameters)
-
 -   [Response object](#response-object)
-
 -   [Query string parameters](#query-string-parameters)
-
 -   [Catalog lookup examples](#catalog-lookup-examples)
-
 -   [Lookup by ISRC](#lookup-by-isrc)
-
 -   [Lookup by ICPN](#lookup-by-icpn)
-
 -   [Collection lookup examples](#collection-lookup-examples)
 
 ##Remarks

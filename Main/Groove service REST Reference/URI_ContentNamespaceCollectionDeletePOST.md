@@ -3,11 +3,8 @@
 Delete tracks from a user's collection.
 
 -   [Remarks](#remarks)
-
 -   [Response object](#response-object)
-
 -   [URI parameters](#uri-parameters)
-
 -   [Examples](#examples)
 
 ##Remarks

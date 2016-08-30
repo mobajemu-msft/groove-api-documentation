@@ -3,9 +3,7 @@
 Get a list of genres available for a locale.
 
 -   [Remarks](#remarks)
-
 -   [Response object](#response-object)
-
 -   [Examples](#examples)
 
 ##Remarks

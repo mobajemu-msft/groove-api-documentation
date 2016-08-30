@@ -3,9 +3,7 @@
 Add tracks to a user's collection.
 
 -   [Remarks](#remarks)
-
 -   [URI parameters](#uri-parameters)
-
 -   [Examples](#examples)
 
 ##Remarks
