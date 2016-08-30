@@ -13,7 +13,7 @@ A Sub-Browse API call is equivalent to a Lookup call on the parent item with one
 
 The Sub-Browse request is composed of mandatory and optional URL parts and query parameters, described in the table below. A Sub-Browse request containing all parameters would resemble the following:
 
-```  
+```http  
 /1/content/{id}/{source}/{browseType}/{extra}/browse?orderBy={orderBy}&maxItems={maxItems}&page={page}
 &language={language}&country={country}&continuationToken={continuationToken}&accessToken={accessToken}
 &contentType={contentType}&jsonp={jsonp}
