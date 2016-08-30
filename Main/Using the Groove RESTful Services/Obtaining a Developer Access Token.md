@@ -83,7 +83,7 @@ The secret value should be hidden from the client. The secret value should be us
 
 ![Registeredapp2]     
 
-    >**Note**  
+    >Note  
          These are the credentials that you will use to authenticate with the Groove RESTful API. Do not confuse t  these client ID and secret with the customer ID and account key you received in the earlier step "Create a developer account on Azure Marketplace".   
 
 ##Sign up
