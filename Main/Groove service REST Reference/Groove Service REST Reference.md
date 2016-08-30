@@ -4,8 +4,8 @@ The Groove Service delivers Groove functionality to third-party application deve
 
 The API follows the REST API convention and returns JSON (or XML) results. The following calling conventions are used:  
 
- + Parameters are provided as query parameters in the GET HTTP method. Response content is serialized in JSON by default, but can be switched to XML if the HTTP header ``` Accept: application/xm ``` l is provided.  
- + The API is versioned. Version is to be prepended to the URI. Currently, all Groove RESTful API calls must begin with **|GET|/1/.**
+ + Parameters are provided as query parameters in the GET HTTP method. Response content is serialized in JSON by default, but can be switched to XML if the HTTP header ``` Accept: application/xml ```  is provided.  
+ + The API is versioned. Version is to be prepended to the URI. Currently, all Groove RESTful API calls must begin with **/1/.**
  + Third-party developer authentication is mandatory in all methods and is done by passing an Azure Data Market OAuth token as a mandatory query parameter in all methods.
  +  GZIP compression is supported and responses are compressed if the HTTP header ``` Accept-Encoding: gzip ``` is provided in the request.
  +   CORS is supported in the standard way, by using the headers  ```Origin ``` and  ```Access-Control-Request-*. ```
@@ -20,7 +20,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 | :---|:-----|:----------| :---|:---|  
 |GET|[/1/content/{id}/{source}/{browseType}/{extra}/browse](URI_ContentIdSourceBrowsetypeExtraBrowseGET.md)|Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).|[ContentResponse (JSON)](JSON_ContentResponse.md)||
 |GET|[/1/content/{namespace}/catalog/genres](URI_ContentNamespaceCatalogGenresGET.md)|Get a list of genres available for a locale.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{namespace}/catalog/{type}/browse](URI_ContentNamespaceCatalogTypeBrowseGET.md))|Browse the music catalog.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{namespace}/catalog/{type}/browse](URI_ContentNamespaceCatalogTypeBrowseGET.md)|Browse the music catalog.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
 |POST|[/1/content/{namespace}/collection/add](URI_ContentNamespaceCollectionAddPOST.md)|Add tracks to a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
 |POST|[/1/content/{namespace}/collection/delete](URI_ContentNamespaceCollectionDeletePOST.md)|Delete tracks from a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
 |POST|[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)|Create a playlist on behalf of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
