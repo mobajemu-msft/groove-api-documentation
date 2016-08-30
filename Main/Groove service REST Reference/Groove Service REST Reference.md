@@ -18,22 +18,22 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 
 |METHOD  | ENDPOINT |  USAGE | RETURNS| |
 | :---|:-----|:----------| :---|:---|  
-|GET|[/1/content/{id}/{source}/{browseType}/{extra}/browse](URI_ContentIdSourceBrowsetypeExtraBrowse.md)|Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{namespace}/catalog/genres](URI_ContentNamespaceCatalogGenres.md)|Get a list of genres available for a locale.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{namespace}/catalog/{type}/browse](URI_ContentNamespaceCatalogTypeBrowse.md))|Browse the music catalog.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|POST|[/1/content/{namespace}/collection/add](URI_ContentNamespaceCollectionAdd.md)|Add tracks to a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|POST|[/1/content/{namespace}/collection/delete](URI_ContentNamespaceCollectionDelete.md)|Delete tracks from a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|POST|[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreate.md)|Create a playlist on behalf of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|POST|[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDelete.md)|Delete a playlist of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|POST|[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdate.md)|Update a playlist on behalf of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md).|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|GET|[/1/content/{namespace}/collection/{type}/browse](URI_ContentNamespaceCollectionTypeBrowse.md)|Browse a user's collection or playlists.|||
-|GET|[/1/content/{id}/lookup](URI_ContentLookup.md)|Look up one or several items from a media catalog and/or user's collection.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{namespace}/newreleases](URI_ContentNamespaceNewreleases.md)|Discover new releases.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{id}/preview](URI_ContentNamespacePreview.md)|Request preview streaming.|[StreamResponse (JSON)](JSON_StreamResponse.md)||
-|GET|[/1/content/{namespace}/search?q={query}](URI_ContentSearch.md)|Search for items in a media catalog, user's collection, or both.|[ContentResponse (JSON)](JSON_ContentResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|GET|[/1/content/{namespace}/spotlight](URI_ContentNamespaceSpotlight.md)|Discover content for a specified language or culture.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
-|GET|[/1/content/{id}/stream](URI_ContentNamespaceStream.md)|Request streaming.|[StreamResponse (JSON)](JSON_StreamResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
-|GET|[/1/user/{namespace}/profile](URI_UserNamespaceProfile.md)|Access a user's profile.||[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|GET|[/1/content/{id}/{source}/{browseType}/{extra}/browse](URI_ContentIdSourceBrowsetypeExtraBrowseGET.md)|Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{namespace}/catalog/genres](URI_ContentNamespaceCatalogGenresGET.md)|Get a list of genres available for a locale.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{namespace}/catalog/{type}/browse](URI_ContentNamespaceCatalogTypeBrowseGET.md))|Browse the music catalog.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|POST|[/1/content/{namespace}/collection/add](URI_ContentNamespaceCollectionAddPOST.md)|Add tracks to a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|POST|[/1/content/{namespace}/collection/delete](URI_ContentNamespaceCollectionDeletePOST.md)|Delete tracks from a user's collection.|[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|POST|[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)|Create a playlist on behalf of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|POST|[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)|Delete a playlist of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|POST|[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)|Update a playlist on behalf of a user.|[PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md).|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|GET|[/1/content/{namespace}/collection/{type}/browse](URI_ContentNamespaceCollectionTypeBrowseGET.md)|Browse a user's collection or playlists.|||
+|GET|[/1/content/{id}/lookup](URI_ContentLookupGET.md)|Look up one or several items from a media catalog and/or user's collection.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{namespace}/newreleases](URI_ContentNamespaceNewreleasesGET.md)|Discover new releases.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{id}/preview](URI_ContentNamespacePreviewGET.md)|Request preview streaming.|[StreamResponse (JSON)](JSON_StreamResponse.md)||
+|GET|[/1/content/{namespace}/search?q={query}](URI_ContentSearchGET.md)|Search for items in a media catalog, user's collection, or both.|[ContentResponse (JSON)](JSON_ContentResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|GET|[/1/content/{namespace}/spotlight](URI_ContentNamespaceSpotlightGET.md)|Discover content for a specified language or culture.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
+|GET|[/1/content/{id}/stream](URI_ContentNamespaceStreamGET.md)|Request streaming.|[StreamResponse (JSON)](JSON_StreamResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
+|GET|[/1/user/{namespace}/profile](URI_UserNamespaceProfileGET.md)|Access a user's profile.||[Auth](../Using the Groove RESTful Services/User Authentication.md)|
  
 ##JSON (to be generated automatically if relevant)
 |OBJECT|DESCRIPTION|
