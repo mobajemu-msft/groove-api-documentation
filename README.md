@@ -16,7 +16,7 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
 
-[image service]: main/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
+[image service]: Main/Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
 
 ###In this section
 
@@ -43,14 +43,14 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 [Blog] - Microsoft blog focusing on Groove for developers.  
 [Pilot] - How to onboard with the pilot program.
 
-[Getting Started with the Groove SDK]: main/Getting%20Started.md
-[SDK and Helpers]: main/SDK%20and%20helpers/SdK%20and%20Helpers.md
-[Using the Groove RESTful Services]:main/Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services.md
-[Privacy]:main/Privacy.md
-[Support]:main/Support.md
-[Groove API TERMS OF USE]:main/Groove%20API%20Terms%20of%20Use.md
-[FAQ]:main/FAQ.md
-[Groove Service REST Reference]:main/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
+[Getting Started with the Groove SDK]: Main/Getting%20Started.md
+[SDK and Helpers]: Main/SDK%20and%20helpers/SdK%20and%20Helpers.md
+[Using the Groove RESTful Services]:Main/Using%20the%20Groove%20RESTful%20Services/Using%20the%20Groove%20RESTful%20Services.md
+[Privacy]:Main/Privacy.md
+[Support]:Main/Support.md
+[Groove API TERMS OF USE]:Main/Groove%20API%20Terms%20of%20Use.md
+[FAQ]:Main/FAQ.md
+[Groove Service REST Reference]:Main/Groove%20service%20REST%20Reference/Groove%20Service%20REST%20Reference.md
 [Affiliate Program]:http://www.microsoftaffiliates.com/
 [Pilot]:https://music.microsoft.com/developer/pilot
 [Blog]:http://www.google.com
