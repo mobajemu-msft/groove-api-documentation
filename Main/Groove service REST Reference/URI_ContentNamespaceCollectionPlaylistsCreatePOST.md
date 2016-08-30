@@ -36,14 +36,8 @@ Response object: [PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md)
 You can use this API to create a playlist with only its metadata. For this, you must provide at least a name for the playlist. The API will then return the ID of the newly-created playlist.
 
 #### Request
-```
-POST /1/content/music/collection/playlists/create?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.
-accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f
-%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/create?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1291659333;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Ii[...] 
 
@@ -56,7 +50,7 @@ Content-Type: application/json
 ```
       
 ####Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.72d0fb33-8027-00fe-746f-abe4d8374ad1",
@@ -70,14 +64,8 @@ Content-Type: application/json
 You can also use this API to create a playlist and directly add tracks to it, with track IDs received from other Platform calls. In order to match your request to the API's response, the response contains InputId fields that are exactly the track IDs you provided. Along with this field, if the add operation was successful, the API also returns the new ID of that track in the playlist.
 
 ####Request
-```
-POST /1/content/music/collection/playlists/create?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.
-windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI
-27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/create?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1291659333;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Ii[...] 
 
@@ -100,7 +88,7 @@ Content-Type: application/json
 ```
       
 ####Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.d7e2d6b8-8028-00fe-a58d-423bda374ad1",
@@ -124,15 +112,8 @@ Content-Type: application/json
 As with other edit APIs, when some sub-operations fail, you will receive an HTTP 200 error with failure details for each sub-operation. Here we'll create a playlist adding a valid track and an invalid one with a randomly-generated ID.
 
 ####Request
-```
-POST /1/content/music/collection/playlists/create?accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
-%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252f
-schemas.microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims
-%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199
-%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/playlists/create?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1291659333;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Ii[...] 
 
@@ -155,7 +136,7 @@ Content-Type: application/json
 ```
       
 ####Response
-```
+```json
 {
   "PlaylistActionResult": {
     "Id": "music.playlist.f5d71c61-8029-00fe-acee-09c6db374ad1",
