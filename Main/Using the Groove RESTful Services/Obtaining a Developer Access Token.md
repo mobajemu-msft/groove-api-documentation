@@ -75,7 +75,7 @@ After subscribing to the Groove RESTful API, you must register your application 
 You can define your own client ID and application name. You must supply a URI for redirection to obtain the access code. A description is optional.    
 ![Register your app]   
 
-    >**Note**  
+    >Note  
       The client secret value is not shown in the preceding screenshot.
 
 5. Take a note of the client ID and the client secret value.  
