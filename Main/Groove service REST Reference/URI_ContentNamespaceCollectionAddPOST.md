@@ -39,15 +39,8 @@ Response object: [TrackActionResponse (JSON)](JSON_TrackActionResponse.md).
 We will add one valid track ID, and one invalid ID (random-generated).
 
 #### Request
-```
-POST /1/content/music/collection/add?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252f
-nameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider
-%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199
-%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=945039495;eyJlbmMiOiJB\[...\]
 
@@ -60,7 +53,7 @@ Content-Type: application/json
 }
 ```
 #### Response
-```
+```json
 {
   "TrackActionResults": [
     {
@@ -88,15 +81,8 @@ Content-Type: application/json
 The batch size is limited to 100 items.
 
 #### Request
-```
-POST /1/content/music/collection/add?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252f
-nameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3d
-https%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3d
-http%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3d
-https%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3
-%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=663179813;eyJlbmMiOiJB\[...\]
 
@@ -211,7 +197,7 @@ Content-Type: application/json
 ```
 
 #### Response
-```
+```json
 400 BadRequest
 
 {
@@ -227,14 +213,8 @@ Content-Type: application/json
 
 
 #### Request
-```
-POST /1/content/music/collection/add?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=663179813;eyJlbmMiOiJB[...]
 
@@ -248,7 +228,7 @@ Content-Type: application/xml
 ```
 
 #### Response
-```
+```json
 &lt;TrackActionResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xboxmusic/2013/10/platform"&gt;
   &lt;TrackActionResults&gt;
     &lt;TrackActionResult&gt;
@@ -264,14 +244,8 @@ Content-Type: application/xml
 The batch size is limited to 100 items.
 
 #### Request
-```
-POST /1/content/music/collection/add?accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252f
-datamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+POST /1/content/music/collection/add?accessToken=Bearer+[...] 
 
 Content-Type: application/json 
 
@@ -283,7 +257,7 @@ Content-Type: application/json
 ```
 
 #### Response
-```
+```json
 401 Unauthorized
 
 {
