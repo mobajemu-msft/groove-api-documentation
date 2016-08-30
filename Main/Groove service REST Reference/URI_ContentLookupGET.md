@@ -33,9 +33,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ids           | string   | Required. The ID or IDs to be looked up. Each ID is prefixed by a namespace and ".". Multiple IDs are separated by "+". The total length of all IDs must be less than or equal to 250 characters. 
                                                                                                                                                                                                                                
-| Note   |                          
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                  
- | ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
+| Note|                       
+|------------------------|                  
+| ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
 
 ##Response object
 
@@ -243,7 +243,8 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
 ```
 
 #### Response
-```json
+
+```xml
 <ContentResponse xmlns="http://schemas.microsoft.com/xboxmusic/2013/10/platform" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <Albums>
     <Items>
