@@ -24,6 +24,6 @@ The table provides a list of status codes returned by Groove API, and their typi
 | 502      | Bad Gateway                     | A backend dependency is unavailable or returning errors.                                               |
 | 503      | Service Unavailable             | The server is refusing the request due to excessive load.                                              |
 
-| **Note **                                                                                                                                                                                                                                     |
+| Note                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Some resources and methods provide specific information about the meaning of particular status codes in the context of that resource or method. For more details, refer to the documentation for the resources or methods that you are using. |
