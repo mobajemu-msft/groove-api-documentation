@@ -31,7 +31,7 @@ The tokens have a validity period of 10 minutes, and there is a mechanism for re
 ##Using valid tokens from Azure Marketplace
 In order to be able to use the Groove RESTful API, a third-party developer must first create a developer account on Azure Marketplace and then subscribe to the Groove Platform offer (for free).   
 
-Once properly subscribed, the third-party app should obtain authentication tokens from the ADM service by using the procedure in this section; the scope to use is http://music.xboxlive.com/. The tokens have a validity   
+Once properly subscribed, the third-party app should obtain authentication tokens from the ADM service by using the procedure in this section; the scope to use is ``` http://music.xboxlive.com/``` . The tokens have a validity   
 period of 10 minutes and must be renewed after they expire—or ideally, before they expire.   
 
 You must obtain an access token to use the Groove RESTful API. The access token is passed with each API call and is used to authenticate your access to the Groove RESTful API. It provides a secure access to the Groove RESTful API and allows the API to associate your application's requests to the Groove Service with your account on Azure Marketplace.   
