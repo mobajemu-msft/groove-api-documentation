@@ -48,19 +48,12 @@ The following parameters are not available on the Common Parameters page.
 
 ###Browse the most popular catalog artists in your region
 ####Request
-```
-GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims
-%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps
-%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f
-%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27
-SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bearer+[...]
 ```      
 
 ####Response
-```
+```json
 {
   "Artists": {
     "Items": [
@@ -110,20 +103,15 @@ SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 
 ####Request
 
-```
+```http
 GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&accessToken=Bearer
-+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEb
-EmmDFG4%253d HTTP/1.1
++[...]
 ```
       
       
 ####Response
 
-```
+```json
 {
   "Albums": {
     "Items": [
@@ -203,18 +191,12 @@ EmmDFG4%253d HTTP/1.1
       
 ###Browse the 50 most played tracks in France
 ####Request
-```
-GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4
-%253d HTTP/1.1 
+```http
+GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&accessToken=Bearer+[...]
 ```
       
 ####Response
-```
+```json
 {
   "Tracks": {
     "Items": [
@@ -312,18 +294,12 @@ http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fc
       
 ####Continuation Request (using "page=1", but it could also have used the ContinuationToken from the first response instead)
 
-```
-GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&page=1&accessToken=Bearer+
-http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010%252f07
-%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience
-%3dhttp%253a%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4
-%253d HTTP/1.1 
+```http
+GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&page=1&accessToken=Bearer+[...]
 ```
       
 ####Response
-```
+```json
 {
   "Tracks": {
     "Items": [
