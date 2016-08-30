@@ -9,7 +9,7 @@ Add tracks to a user's collection.
 ##Remarks
 
 
-| **Important **                                                                           |
+| Important                                                                            |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using the Groove RESTful Services/User Authentication.md) is mandatory for this API. |
 
@@ -228,7 +228,7 @@ Content-Type: application/xml
 ```
 
 #### Response
-```json
+```xml
 &lt;TrackActionResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xboxmusic/2013/10/platform"&gt;
   &lt;TrackActionResults&gt;
     &lt;TrackActionResult&gt;
