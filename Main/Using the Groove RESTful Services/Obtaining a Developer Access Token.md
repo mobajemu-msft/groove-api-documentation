@@ -11,7 +11,7 @@ Developer authentication is mandatory for all functions in the Groove API. All t
  
 + [Authentication token](#authentication-token)
 + [Using valid tokens from Azure Marketplace](#using-valid-tokens-from-azure-marketplace)
-+ [Create a developer account on Azure Marketplace](#create-a-developer-account-on-azure-marletplace)
++ [Create a developer account on Azure Marketplace](#create-a-developer-account-on-azure-marketplace)
 + [Register your application with Azure Marketplace](#register)
 + [Sign up](#sign-up)
 + [Make an HTTP POST request to the token service](#httppost)
@@ -83,8 +83,8 @@ The secret value should be hidden from the client. The secret value should be us
 
 ![Registeredapp2]     
 
-    >Note  
-         These are the credentials that you will use to authenticate with the Groove RESTful API. Do not confuse t  these client ID and secret with the customer ID and account key you received in the earlier step "Create a developer account on Azure Marketplace".   
+  >**Note** 
+These are the credentials that you will use to authenticate with the Groove RESTful API. Do not confuse  these client ID and secret with the customer ID and account key you received in the earlier step [Create a developer account on Azure Marketplace]. 
 
 ##Sign up
 Sign up to the Groove RESTful API in the Azure Marketplace by visiting [the final page](https://datamarket.azure.com/dataset/xboxmusic/XboxMusicPlatform) and clicking **SIGN UP**.
