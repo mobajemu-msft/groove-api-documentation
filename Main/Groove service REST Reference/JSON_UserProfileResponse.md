@@ -16,25 +16,15 @@ The UserProfileResponse object has the following specification.
 
 ##Sample JSON syntax
 ```
-
 {
-
-"HasSubscription": true,
-
-"IsSubscriptionAvailableForPurchase": true,
-
-"Culture": "fr-FR",
-
-"Collection": {
-
-"Token": "3.0.0.0.0.0.0",
-
-"RemainingPlaylistCount": 100,
-
-"RemainingTrackCount": 50000
-
-}
-
+  "HasSubscription": true,
+  "IsSubscriptionAvailableForPurchase": true,
+  "Culture": "fr-FR",
+  "Collection": {
+    "Token": "3.0.0.0.0.0.0",
+    "RemainingPlaylistCount": 100,
+    "RemainingTrackCount": 50000
+  }
 }
 ```
 ##See also

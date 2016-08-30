@@ -68,9 +68,9 @@ These error structures can be optionally embedded in any Groove Platform service
 
 {
 
-"ErrorCode": "CATALOG\_NO\_RESULT",
+   "ErrorCode": "CATALOG\_NO\_RESULT",
 
-"Description": "Item does not exist"
+   "Description": "Item does not exist"
 
 }
 ```

@@ -15,29 +15,17 @@ The TrackActionResponse object has the following specification.
 
 ##Sample JSON syntax
 ```
-
 {
-
-"TrackActionResults": \[
-
-{
-
-"InputId": "music.873FB507-0100-11DB-89CA-0019B92A3933",
-
-"Id": "music.AQQfLejCjRp0CUSXL6Ksx2WU6Ae1P4cAAQ"
-
-},
-
-{
-
-"InputId": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
-
-"Id": "music.AQQfnOQ4L9wx0ESVhqqExHAdSge5PqgAAQ"
-
-}
-
-\]
-
+  "TrackActionResults": [
+    {
+      "InputId": "music.873FB507-0100-11DB-89CA-0019B92A3933",
+      "Id": "music.AQQfLejCjRp0CUSXL6Ksx2WU6Ae1P4cAAQ"
+    },
+    {
+      "InputId": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+      "Id": "music.AQQfnOQ4L9wx0ESVhqqExHAdSge5PqgAAQ"
+    }
+  ]
 }
 ```
 ##See also

@@ -18,21 +18,13 @@ The StreamResponse object has the following specification.
 
 ##Sample JSON syntax
 ```
-
 {
-
-"Url": "https://webstream-vh.akamaihd.net/i/129/580/712/155/audio.mp4/
-
-master.m3u8?rid=b56194dd-1720-4984-a9e8-0666cb717a5d-i2-fr-FR-music-asset-location&
-
-hdnea=exp=1405687092~acl=/i/129/580/712/155/audio.mp4\*~
-
-hmac=4fd5bc2e422b8cb152cc40169f9f4a883c6cda372236f6a12e3985061bcdfa31",
-
-"ContentType": "application/vnd.apple.mpegurl",
-
-"ExpiresOn": "2014-07-18T12:38:12.349Z"
-
+  "Url": "https://webstream-vh.akamaihd.net/i/129/580/712/155/audio.mp4/
+    master.m3u8?rid=b56194dd-1720-4984-a9e8-0666cb717a5d-i2-fr-FR-music-asset-location&
+    hdnea=exp=1405687092~acl=/i/129/580/712/155/audio.mp4*~
+    hmac=4fd5bc2e422b8cb152cc40169f9f4a883c6cda372236f6a12e3985061bcdfa31",
+  "ContentType": "application/vnd.apple.mpegurl",
+  "ExpiresOn": "2014-07-18T12:38:12.349Z"
 }
 ```
 ##See also

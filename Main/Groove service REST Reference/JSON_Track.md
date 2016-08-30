@@ -36,99 +36,52 @@ The **Track** object has the following specification.
 
 ```
 {
-
-"ReleaseDate": "2013-05-09T00:00:00Z",
-
-"Duration": "00:06:09",
-
-"TrackNumber": 8,
-
-"IsExplicit": false,
-
-"Genres": \[
-
-"Pop"
-
-\],
-
-"Subgenres": \[
-
-"Contemporary Pop"
-
-\],
-
-"Rights": \[
-
-"Purchase",
-
-"Stream",
-
-"FreeStream"
-
-\],
-
-"Subtitle": "feat. Pharrell Williams",
-
-"Album": {
-
-"Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
-
-"Name": "Random Access Memories",
-
-"ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-
-"Link": "http://music.xbox.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
-"Source": "Catalog"
-
-"CompatibleSources": "Catalog, Collection"
-
-},
-
-"Artists": \[
-
-{
-
-"Role": "Main",
-
-"Artist": {
-
-"Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
-
-"Name": "Daft Punk",
-
-"ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-
-"Link": "http://music.xbox.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
-"Source": "Catalog"
-
-"CompatibleSources": "Catalog, Collection"
-
-}
-
-}
-
-\],
-
-"Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
-
-"Name": "Get Lucky",
-
-"ImageUrl": "http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-
-"Link": "http://music.xbox.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
-"OtherIds": {
-
-"music.amg": "T 29381286"
-
-},
-
-"Source": "Catalog"
-
-"CompatibleSources": "Catalog, Collection"
-
+  "ReleaseDate": "2013-05-09T00:00:00Z",
+  "Duration": "00:06:09",
+  "TrackNumber": 8,
+  "IsExplicit": false,
+  "Genres": [
+    "Pop"
+  ],
+  "Subgenres": [
+    "Contemporary Pop"
+  ],
+  "Rights": [
+    "Purchase",
+    "Stream",
+    "FreeStream"
+  ],
+  "Subtitle": "feat. Pharrell Williams",
+  "Album": {
+    "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
+    "Name": "Random Access Memories",
+    "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+    "Link": "http://music.xbox.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+    "Source": "Catalog"
+    "CompatibleSources": "Catalog, Collection"
+  },
+  "Artists": [
+    {
+      "Role": "Main",
+      "Artist": {
+        "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
+        "Name": "Daft Punk",
+        "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "Link": "http://music.xbox.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Source": "Catalog"
+        "CompatibleSources": "Catalog, Collection"
+      }
+    }
+  ],
+  "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+  "Name": "Get Lucky",
+  "ImageUrl": "http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+  "Link": "http://music.xbox.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+  "OtherIds": {
+    "music.amg": "T 29381286"
+  },
+  "Source": "Catalog"
+  "CompatibleSources": "Catalog, Collection"
 }
 ```
 ##See Also

@@ -12,17 +12,11 @@ The TrackActionRequest object has the following specification.
 
 ##Sample JSON syntax
 ```
-
 {
-
-"TrackIds": \[
-
-"music.873FB507-0100-11DB-89CA-0019B92A3933",
-
-"music.A83EB907-0100-11DB-89CA-0019B92A3933"
-
-\]
-
+  "TrackIds": [
+    "music.873FB507-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933"
+  ]
 }
 ```
 ##See also

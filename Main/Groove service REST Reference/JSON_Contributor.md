@@ -1,4 +1,4 @@
-| Contributor (JSON)         |
+# Contributor (JSON)        
 
 An artist and the artist's role 
 
@@ -15,24 +15,15 @@ The Contributor object has the following specification.
 
 ```
 {
-
-"Role": "Main",
-
-"Artist": {
-
-"Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
-
-"Name": "Daft Punk",
-
-"ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-
-"Link": "http://music.xbox.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-
-"Source": "Catalog"
-
-}
-
-}
+  "Role": "Main",
+  "Artist": {
+    "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
+    "Name": "Daft Punk",
+    "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+    "Link": "http://music.xbox.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+    "Source": "Catalog"
+  }
+} 
 ```
 ##See also
 

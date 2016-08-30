@@ -14,13 +14,9 @@ The TrackAction object has the following specification.
 
 ##Sample JSON syntax
 ```
-
 {
-
-"Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
-
-"Action": "Add"
-
+   "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+   "Action": "Add"
 }
 ```
 ##See also

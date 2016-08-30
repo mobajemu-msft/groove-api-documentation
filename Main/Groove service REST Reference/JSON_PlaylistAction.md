@@ -20,29 +20,17 @@ The PlaylistAction object has the following specification.
 
 ```
 {
-
-"Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
-
-"TrackActions": \[
-
-{
-
-"Id": "music.AQQfj2DtARB5ZkGFCMHea2k8Xge5PqgAAQ",
-
-"Action": "Delete"
-
-},
-
-{
-
-"Id": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
-
-"Action": "Add"
-
-}
-
-\]
-
+  "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
+  "TrackActions": [
+    {
+      "Id": "music.AQQfj2DtARB5ZkGFCMHea2k8Xge5PqgAAQ",
+      "Action": "Delete"
+    },
+    {
+      "Id": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
+      "Action": "Add"
+    }
+  ]
 }
 ```
 ##See also

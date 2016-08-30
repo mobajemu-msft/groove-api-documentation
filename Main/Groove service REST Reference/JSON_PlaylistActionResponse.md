@@ -17,31 +17,18 @@ The PlaylistActionResponse object has the following specification.
 ```
 
 {
-
-"PlaylistActionResult": {
-
-"Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
-
-"TrackActionResults": \[
-
-{
-
-"InputId": "music.AQQfj2DtARB5ZkGFCMHea2k8Xge5PqgAAQ"
-
-},
-
-{
-
-"InputId": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
-
-"Id": "music.AQQfDfTrflAB2k60n3MOVkAyXQfq6y0AAQ"
-
-}
-
-\]
-
-}
-
+  "PlaylistActionResult": {
+    "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
+    "TrackActionResults": [
+      {
+        "InputId": "music.AQQfj2DtARB5ZkGFCMHea2k8Xge5PqgAAQ"
+      },
+      {
+        "InputId": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
+        "Id": "music.AQQfDfTrflAB2k60n3MOVkAyXQfq6y0AAQ"
+      }
+    ]
+  }
 }
 ```
 ##See also
