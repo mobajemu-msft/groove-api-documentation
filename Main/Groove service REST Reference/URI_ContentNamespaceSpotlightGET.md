@@ -27,19 +27,12 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 
 #### Request
 
-```
-GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+http
-%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims
-%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
-%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps
-%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a
-%252f%252fmusic.xboxlive.com%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps
-%253a%252f%252fdatamarket.accesscontrol.windows.net%26HMACSHA256
-%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1 
+```http
+GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ```
 
 #### Response
-```
+```json
 {
   "Results": {
     "Items": [
@@ -263,18 +256,12 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+http
       
 ###Spotlight for a specific culture
 ####Request
-```
-GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+http%253a%252f%252f
-schemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims%252fnameidentifier
-%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice
-%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
-%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
-%252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
-%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
+```http
+GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ```
       
 ####Response
-```
+```json
 {
   "Results": {
     "Items": [
