@@ -17,12 +17,15 @@ For example:
 
 **Default image:**  
 *http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US*  
+![Default Image](http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US)
 
 **Square image:**  
-*http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=200&h=200*
+*http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=200&h=200*  
+![Square image](http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=200&h=200)
 
 **Letterboxed:**   
-*http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=240&h=200&mode=letterbox*
+*http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=240&h=200&mode=letterbox*  
+![Letterboxed](http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=240&h=200&mode=letterbox)
 
 
  [terms of use]: ../Groove%20API%20Terms%20of%20Use.md
