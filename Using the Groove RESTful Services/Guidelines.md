@@ -26,7 +26,7 @@ Following are some important rules you must respect when using the Groove Servic
 
 + If Microsoft provides you with an authentication token, your application may enable users to sign in to their Groove Pass premium subscription accounts and stream audio content. Your application must not enable download of audio content from the Groove Pass service, or any other form of unauthorized reproduction such as stream capture.  
 
-## Pilot Program
+## Pilot Program (to be deleted)
 The Pilot Program is a limited beta for developers who wish to stream content from Groove Pass through an authorized application.   
 
 Please visit <http://go.microsoft.com/fwlink/p/?LinkID=396801> if you are interested in learning more about the requirements to participate in one of the limited slots. The following guidelines apply to all Pilot Program applications in addition to the guidelines above.   
