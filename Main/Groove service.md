@@ -7,7 +7,7 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 
 + An [Affiliate Program] that encompasses both streaming premium subscriptions and on-demand purchases.  
 + A best in class [image service].
-+ Streaming that can be integrated on any platform or browser, as part of the Pilot.
++ Streaming that can be integrated on any platform or browser.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
 
