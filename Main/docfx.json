@@ -1,0 +1,77 @@
+{
+
+
+
+  "build": {
+
+
+
+    "content":
+
+
+
+      [
+
+
+
+        {
+
+
+
+          "files": ["**/**.md"],
+
+
+
+          "exclude": ["**/obj/**"]
+
+
+
+        }
+
+
+
+      ],
+
+
+
+    "globalMetadata": {
+
+
+
+        "ROBOTS": "NOINDEX, NOFOLLOW",
+
+
+
+        "ms.sitesec": "library"
+
+
+
+        
+
+
+
+    },
+
+
+
+    "externalReference": [
+
+
+
+    ],
+
+
+
+    "template": "op.html",
+
+
+
+    "dest": "Main"
+
+
+
+  }
+
+
+
+}

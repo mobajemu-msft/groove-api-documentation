@@ -10,9 +10,30 @@
 
         {
 
-            "docset_name": "openpublishingdocs",
+            "docset_name": "Main",
 
-            "build_output_subfolder": "openpublishing/docs",
+            "build_output_subfolder": "Main",
+
+            "locale": "en-us",
+
+            "version": 0,
+
+            "open_to_public_contributors": "false",
+
+            "type_mapping": {
+
+                "Conceptual": "Content",
+
+                "ManagedReference": "Content"
+
+            }
+
+        },
+{
+
+            "docset_name": "Groove service REST Reference",
+
+            "build_output_subfolder": "Main/Groove service REST Reference",
 
             "locale": "en-us",
 
@@ -30,9 +51,29 @@
 
         {
 
-            "docset_name": "openpublishingdocs_ServiceDelivery",
+            "docset_name": "SDK and helpers",
 
-            "build_output_subfolder": "openpublishing/servicedelivery",
+            "build_output_subfolder": "Main/SDK and helpers",
+
+            "locale": "en-us",
+
+            "version": 0,
+
+            "open_to_public_contributors": "false",
+
+            "type_mapping": {
+
+                "Conceptual": "Content"
+
+            }
+
+        },
+        
+        {
+
+            "docset_name": "Groove RESTful Services",
+
+            "build_output_subfolder": "Main/Using the Groove RESTful Services",
 
             "locale": "en-us",
 
@@ -50,7 +91,7 @@
 
     ],
 
-    "notification_subscribers": ["OPBuild@microsoft.com"],
+    "notification_subscribers": ["sakley@microsoft.com"],
 
     "branches_to_filter": [""]
 
