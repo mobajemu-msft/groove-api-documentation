@@ -12,6 +12,22 @@ The Groove API uses the standard [OAuth 2.0](http://oauth.net/2/) authentication
 
 Note that you'll still also need to provide a [developer access token](Obtaining a Developer Access Token.md) in the *accessToken* query parameter.
 
+## Register a Microsoft Account application
+
+To register your app to connect with Groove, you'll need a Microsoft account.
+
+1. Go to the [Microsoft Application Registration Portal](https://account.live.com/developers/applications)
+2. When prompted, sign in with your Microsoft account credentials.
+3. Find My applications and click Add an app.
+4. Enter your app's name and click Create application.
+5. Scroll to the bottom of the page and check the Live SDK support box.
+
+After you've completed these steps, an application ID and application secret are created for your app and displayed on your new app's properties page.
+
+**Important** Treat the value of client secret the same as you would a user's password. The secret represents the key to your application and, if made available, can be used to impersonate your application.
+
+Under the Platforms header, configure details about your app. By default a new app is created as a web app and needs one or more redirect URIs. To enable native client flows for your app as well, click the Add Platform button and choose Mobile.
+
 ## Sign users in
 
 Your app must initiate the sign-in process by contacting the
@@ -45,11 +61,9 @@ There are two supported authentication flows to choose from:
 
 ## Token flow
 The easiest authentication flow is the token flow. This flow is useful for quickly
-obtaining an access token to use the OneDrive API in an interactive fashion. This flow
+obtaining an access token to use the Groove API in an interactive fashion. This flow
 does not provide a refresh token, so it can't be used for long term access to the
 Groove API.
-
-TODO: update the images
 
 ![Token Flow Diagram](../site-images/msa-implicit-grant-flow.png)
 
@@ -94,8 +108,6 @@ The code flow for authentication is a three-step process with separate calls to 
 the application and to generate an access token to use the Groove API. This also
 allows your application to receive a refresh token that will enable long-term
 use of the API in some scenarios, to allow access when the user isn't actively using your application.
-
-TODO: create a new image
 
 ![Authorization Code Flow Diagram](../site-images/msa-authorization-code-flow.png)
 
