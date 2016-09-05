@@ -65,7 +65,7 @@ obtaining an access token to use the Groove API in an interactive fashion. This 
 does not provide a refresh token, so it can't be used for long term access to the
 Groove API.
 
-![Token Flow Diagram](/Main/site-images/msa-implicit-grant-flow.png)
+![Token Flow Diagram](/Main/site-images/msa-implicit-grant-flow.PNG)
 
 To start the sign-in process with the token flow, use a web browser or web-browser
 control to load a URL request.
@@ -109,7 +109,7 @@ the application and to generate an access token to use the Groove API. This also
 allows your application to receive a refresh token that will enable long-term
 use of the API in some scenarios, to allow access when the user isn't actively using your application.
 
-![Authorization Code Flow Diagram](/Main/site-images/msa-authorization-code-flow.png)
+![Authorization Code Flow Diagram](/Main/site-images/msa-authorization-code-flow.PNG)
 
 ### Step 1. Get an authorization code
 To start the sign-in process with the code flow, use a web browser or web-browser
