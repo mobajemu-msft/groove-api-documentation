@@ -1,4 +1,4 @@
-# Groove users authentication
+# Groove User Authentication
 
 To use the user-authenticated APIs, you need to have an access token that authenticates
 your app to a particular set of permissions for a user. In this section, you'll learn how to:
@@ -10,7 +10,7 @@ The Groove API uses the standard [OAuth 2.0](http://oauth.net/2/) authentication
 
 * `Authorization: Bearer {token}`
 
-Note that you'll still also need to provide a [developer access token](Obtaining a Developer Access Token.md) in the *accessToken* query parameter.
+Note that you'll still need to provide a [developer access token](Obtaining a Developer Access Token.md) in the *accessToken* query parameter.
 
 ## Register a Microsoft Account application
 
@@ -43,8 +43,8 @@ in.
 
 | Scope name         | Description                                                                                                                                                                                                                   | Required |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
-| offline_access     | Enables your app to work offline even when the user isn't active. This provides your app with a refresh_token that can be used to generate additional access tokens as necessary. This scope is not available for token flow. | No       |
 | MicrosoftMediaServices.GrooveApiAccess  | Grants read and write permission to a user's music collection and playlists along with other user-authenticated scenarios.                                                                                                                       | Yes      |
+| offline_access     | Enables your app to work offline even when the user isn't active. This provides your app with a refresh_token that can be used to generate additional access tokens as necessary. This scope is not available for token flow. | No       |
 
 As an example, a typical application might request the following scopes:
 
