@@ -65,7 +65,7 @@ obtaining an access token to use the Groove API in an interactive fashion. This 
 does not provide a refresh token, so it can't be used for long term access to the
 Groove API.
 
-![Token Flow Diagram](/Main/site-images/msa-implicit-grant-flow.png)
+![Token Flow Diagram](/Main/site-images/msa-implicit-grant-flow.PNG)
 
 To start the sign-in process with the token flow, use a web browser or web-browser
 control to load a URL request.
