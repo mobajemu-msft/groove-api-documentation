@@ -3,14 +3,16 @@
 User authentication for the Groove API is detailed in the [User Authentication documentation](User Authentication.md). Make sure you've read this documentation before using the samples provided here. In case you're building a website you should use OAuth instead of the following samples.
 
 But if you're developing an application, you should try to leverage existing libraries for the platform your application will be running on.
-Such libraries exist on Windows, Windows Phone, Xbox, Android and iOS.
+Such libraries exist on all Windows universal platforms (Windows, Windows Phone, Xbox, HoloLens, etc), Android and iOS.
 
 ## Windows 10 (Universal Application)
-You can use the following sample code in universal applications, which means it can run on Windows 10, Windows Phone 10 and Xbox One.
+You can use the following sample code on all Windows universal platforms.
 
 You can find [here](https://msdn.microsoft.com/en-us/windows/uwp/security/web-account-manager) a detailed documentation on how you should manage user accounts in your application.
 
 More code samples for universal applications can be found on [Github](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement).
+
+***TODO: link to a complete code sample on our Github with error handling and refresh***
 
 ```csharp
 private async Task<WebAccountProviderCommand> CreateWebAccountProviderCommand()
@@ -41,7 +43,7 @@ private async void GetMsaTokenAsync(WebAccountProviderCommand command)
 ```
 
 ## Windows and Windows Phone 8(.1)
-You can use the following sample code on Windows 8, Windows 8.1, Windows Phone 8 and Windows Phone 8.1.
+You can use the following sample code on Windows 8, Windows 8.1, Windows Phone 8 and Windows Phone 8.1. If you plan on supporting Windows 10 universal platforms, it is recommended you use the samples above instead of this one.
 
 ```csharp
 const string scope = "MicrosoftMediaServices.GrooveApiAccess";
