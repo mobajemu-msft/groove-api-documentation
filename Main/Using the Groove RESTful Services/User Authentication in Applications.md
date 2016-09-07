@@ -1,11 +1,9 @@
-# Groove User Authentication Samples
+# Groove User Authentication in your Application
 
-User authentication for the Groove API is detailed in the [User Authentication documentation](User Authentication.md). Make sure you've read this documentation before using the samples provided here. In case you're building a website you should use OAuth instead of the following samples.
-
-But if you're developing an application, you should try to leverage existing libraries for the platform your application will be running on.
-Such libraries exist on all Windows universal platforms (Windows, Windows Phone, Xbox, HoloLens, etc), Android and iOS.
+In this section, you'll learn how to sign your user in on many platforms.
 
 ## Windows 10 (Universal Application)
+
 You can use the following sample code on all Windows universal platforms.
 
 You can find [here](https://msdn.microsoft.com/en-us/windows/uwp/security/web-account-manager) a detailed documentation on how you should manage user accounts in your application.
@@ -43,6 +41,7 @@ private async void GetMsaTokenAsync(WebAccountProviderCommand command)
 ```
 
 ## Windows and Windows Phone 8(.1)
+
 You can use the following sample code on Windows 8, Windows 8.1, Windows Phone 8 and Windows Phone 8.1. If you plan on supporting Windows 10 universal platforms, it is recommended you use the samples above instead of this one.
 
 ```csharp
@@ -59,6 +58,7 @@ return "Bearer " + ticket.Value;
 ```
 
 ## Android
+
 On Android, you can use the [Live SDK for Android](https://msdn.microsoft.com/en-us/library/office/dn631814.aspx).
 
 ```java
@@ -126,6 +126,7 @@ public class JavaCodeSample extends Activity implements LiveAuthListener {
 ```
 
 ## iOS
+
 On iOS, you can use the [Live SDK for iOS](https://msdn.microsoft.com/en-us/library/hh875197.aspx).
 
 ```objc
@@ -180,5 +181,12 @@ NSString* APP_CLIENT_ID=@"000000004406774C";
     [self.infoLabel setText:[NSString stringWithFormat:@"Error: %@", [error localizedDescription]]];
 }
 @end
-
 ```
+
+## Related topics
+
+The following topics contain high-level overviews of other concepts that apply
+to user authentication for the Groove API.
+
+* [User Authentication](User Authentication.md)
+* [User Authentication on the Web](User Authentication on the Web.md)
