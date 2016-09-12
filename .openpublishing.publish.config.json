@@ -22,7 +22,11 @@
 
             "type_mapping": {
 
-                "Conceptual": "Content"
+                "Conceptual": "Content",
+
+               "ManagedReference": "Content"
+
+   
 
                
 
@@ -43,7 +47,11 @@
 
             "type_mapping": {
 
-                "Conceptual": "Content"
+                "Conceptual": "Content",
+
+               "ManagedReference": "Content"
+
+   
 
             }
 
@@ -63,7 +71,11 @@
 
             "type_mapping": {
 
-                "Conceptual": "Content"
+                "Conceptual": "Content",
+
+               "ManagedReference": "Content"
+
+   
 
             }
 
@@ -83,7 +95,11 @@
 
             "type_mapping": {
 
-                "Conceptual": "Content"
+                "Conceptual": "Content",
+
+               "ManagedReference": "Content"
+
+   
 
             }
 
