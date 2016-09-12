@@ -12,7 +12,7 @@
 
 
 # Additional resources
-## [Badges](Badgess.md)
+## [Badges](Badges.md)
 ## [Deep Link](Deep link.md)
 ## [Guidelines](Guidelines.md)
 ## [Image Service](Image Service.md)
