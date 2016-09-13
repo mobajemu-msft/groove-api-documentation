@@ -1,6 +1,6 @@
 {
 
-    "build_entry_point": "Main",
+    "build_entry_point": "",
 
     "need_generate_pdf": false,
 
