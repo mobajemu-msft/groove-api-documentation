@@ -7,14 +7,17 @@ author: bastuc
 In this section, you'll learn how to sign your user in on many platforms.
 
 ## Windows 10 (Universal Application)
+### Reserve an application name
+You will need to reserve an application name to run code that leverages user authentication with the standard libraries. Go to the [Microsoft Developer Center](https://developer.microsoft.com/en-us/dashboard/apps/) and create a new application if you don't already have one. The name you choose will be reserved for your application and will allow you to use the user authentication libraries.
 
+In Visual Studio 2015, you will need to associate your application to the one reserved on the Microsoft Developer Center. To do that, simply right-click on your project and select "Store -> Associate App with the Store...", select your application in the drop-down and follow the steps.
+
+### SDK and sample code
 You can use the following sample code on all Windows universal platforms.
 
-You can find [here](https://msdn.microsoft.com/en-us/windows/uwp/security/web-account-manager) a detailed documentation on how you should manage user accounts in your application.
+You can find [our SDK on Github](https://github.com/Microsoft/groove-api-sdk-csharp) for universal applications. It handles errors and token refresh for you.
 
 More code samples for universal applications can be found on [Github](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WebAccountManagement).
-
-***TODO: link to a complete code sample on our Github with error handling and refresh***
 
 ```csharp
 private async Task<WebAccountProviderCommand> CreateWebAccountProviderCommand()
