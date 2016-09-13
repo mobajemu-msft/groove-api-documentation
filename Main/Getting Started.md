@@ -2,7 +2,7 @@
 
 ##Subscribe to the Groove API on Azure Marketplace
 
-The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](~/Using the Groove RESTful Services/Obtaining a Developer Access Token.md)).
+The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](Using the Groove RESTful Services/Obtaining a Developer Access Token.md)).
 
 [Azure registration image]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
 [Windows Azure Marketplace]: https://datamarket.azure.com/developer/applications
