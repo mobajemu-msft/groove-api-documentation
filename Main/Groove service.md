@@ -15,11 +15,11 @@ We've worked hard to bring you one of the most compelling APIs out there. Here a
 
 ###In this section
 
-[Getting Started with the Groove SDK](Getting Started.md) 
+[Getting Started with the Groove SDK](Getting Started.md)    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
 [SDK and Helpers](SdK and Helpers/SdK and Helpers.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software for programming the Groove Service.    
-[Using the Groove RESTful Services](Using the Groove RESTful Services/Using the Groove RESTful services.md)  
+[Using the Groove RESTful Services](Using the Groove RESTful Services/Using the Groove RESTful Services.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to use the Groove RESTful API.    
 [Affiliate Program](http://www.microsoftaffiliates.com/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to work with Groove service affiliates.    
