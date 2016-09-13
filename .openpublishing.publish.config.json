@@ -1,6 +1,6 @@
 {
 
-    "build_entry_point": "",
+    "build_entry_point": "main",
 
     "need_generate_pdf": false,
 
@@ -32,83 +32,19 @@
 
             }
 
-        },
-{
-
-            "docset_name": "Groove service REST Reference",
-
-            "build_output_subfolder": "Main/Groove service REST Reference",
-
-            "locale": "en-us",
-
-            "version": 0,
-
-            "open_to_public_contributors": "false",
-
-            "type_mapping": {
-
-                "Conceptual": "Content",
-
-               "ManagedReference": "Content"
-
-   
-
-            }
-
-        },
-
-        {
-
-            "docset_name": "SDK and helpers",
-
-            "build_output_subfolder": "Main/SDK and helpers",
-
-            "locale": "en-us",
-
-            "version": 0,
-
-            "open_to_public_contributors": "false",
-
-            "type_mapping": {
-
-                "Conceptual": "Content",
-
-               "ManagedReference": "Content"
-
-   
-
-            }
-
-        },
-        
-        {
-
-            "docset_name": "Groove RESTful Services",
-
-            "build_output_subfolder": "Main/Using the Groove RESTful Services",
-
-            "locale": "en-us",
-
-            "version": 0,
-
-            "open_to_public_contributors": "false",
-
-            "type_mapping": {
-
-                "Conceptual": "Content",
-
-               "ManagedReference": "Content"
-
-   
-
-            }
-
         }
 
     ],
 
     "notification_subscribers": ["sakley@microsoft.com"],
 
-    "branches_to_filter": [""]
+    "branches_to_filter": [""],
+    "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master"
+    }
+  ]
 
 }
