@@ -6,12 +6,12 @@ The Groove Service makes it easy for you to connect your app or website to the w
 We've worked hard to bring you one of the most compelling APIs out there. Here are some great features:  
 
 + An [Affiliate Program] that encompasses both streaming premium subscriptions and on-demand purchases.  
-+ A best in class [image service].
++ A best in class [image service](Using the Groove RESTful Services/Image Service.md).
 + Streaming that can be integrated on any platform or browser.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
 
-[image service]: Using%20the%20Groove%20RESTful%20Services/Image%20Service.md
+
 
 ###In this section
 
