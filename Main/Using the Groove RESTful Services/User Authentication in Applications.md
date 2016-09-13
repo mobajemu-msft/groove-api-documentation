@@ -1,5 +1,5 @@
 ---
-author: basttuc
+author: bastuc
 ---
 
 # Groove User Authentication in your Application
