@@ -38,13 +38,7 @@
 
     "notification_subscribers": ["sakley@microsoft.com"],
 
-    "branches_to_filter": [""],
-    "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master"
-    }
+    "branches_to_filter": [""]
   ]
 
 }
