@@ -1,77 +1,21 @@
 {
-
-
-
   "build": {
-
-
-
     "content":
-
-
-
       [
-
-
-
         {
-
-
-
           "files": ["**/**.md"],
-
-
-
           "exclude": ["**/obj/**"]
-
-
-
         }
-
-
-
       ],
-
-
-
     "globalMetadata": {
-
-
-
         "ROBOTS": "NOINDEX, NOFOLLOW",
-
-
-
-        "ms.sitesec": "library"
-
-
-
-        
-
-
-
+        "ms.sitesec": "library",
+        "layout": "Conceptual",
+        "breadcrumb_path": "/Main/Breadcrumb/toc.json"
     },
-
-
-
     "externalReference": [
-
-
-
     ],
-
-
-
     "template": "op.html",
-
-
-
     "dest": "Main"
-
-
-
   }
-
-
-
 }
