@@ -21,7 +21,7 @@
 
 # [Affiliate Program](http://aka.ms/MicrosoftAffiliates)
 # [Groove Service REST Reference](Groove service REST Reference/Groove Service REST Reference.md)
-## [JSON objects](Groove service REST Reference/Groove Service REST Reference.md)
+## JSON objects
 ###[Album (JSON)](Groove service REST Reference/JSON_Album.md)
 ###[Artist (JSON)](Groove service REST Reference/JSON_Artist.md)
 ###[CollectionState (JSON)](Groove service REST Reference/JSON_CollectionState.md)
@@ -42,7 +42,7 @@
 ###[TrackActionResult (JSON)](JSON_TrackActionResult.md)
 ###[UserProfileResponse (JSON)](JSON_UserProfileResponse.md)
 
-## [Endpoints](Groove service REST Reference/Groove Service REST Reference.md)
+## Endpoints
 ###[/1/content/{id}/{source}/{browseType}/{extra}/browse](Groove service REST Reference/URI_ContentIdSourceBrowsetypeExtraBrowse.md)
 ###[/1/content/{namespace}/catalog/genres](Groove service REST Reference/URI_ContentNamespaceCatalogGenres.md) 
 ###[/1/content/{namespace}/catalog/{type}/browse](Groove service REST Reference/URI_ContentNamespaceCatalogTypeBrowse.md)
@@ -61,7 +61,7 @@
 ###[/1/user/{namespace}/profile](Groove service REST Reference/URI_UserNamespaceProfile.md)
 
 
-## [Additional material](Groove service REST Reference/Groove Service REST Reference.md)
+## Additional material
 ###[Parameters common to every Groove RESTful API](Groove service REST Reference/CommonParameters.md)  
 ###[Extra parameters for Lookup API](Groove service REST Reference/Extras.md) 
 ###[Namespaces supported](Groove service REST Reference/Namespace.md)  
