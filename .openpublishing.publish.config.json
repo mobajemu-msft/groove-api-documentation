@@ -30,7 +30,8 @@
 
                
 
-            }
+            },
+            "template_folder": "_themes"
 
         }
 
