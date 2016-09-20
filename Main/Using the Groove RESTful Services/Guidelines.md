@@ -19,7 +19,7 @@ Following are some important rules you must respect when using the Groove Servic
 
 	These branding guidelines provide detailed information about how Groove assets, naming, references, and linking must be integrated in your application.
 
-+ The application or website may neither integrate nor redistribute the content obtained from the Groove Service to other services similar to Xbox, such as radio services and other music services.
++ The application or website may neither integrate nor redistribute the content obtained from the Groove Service to other services similar to Groove, such as radio services and other music services.
 
 + The application or website may cache the content retrieved through the Groove RESTful API for a limited period of time—a maximum of 24 hours.  
  After 24 hours, the application must update the data by querying the Groove RESTful API again.
