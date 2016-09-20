@@ -3,7 +3,7 @@
 
 The Groove Service makes it easy for you to connect your app or website to the world of Groove. The Groove API provides access to RESTful web services that offer many features and generate useful data:
 
-+ AIt is compatible with the [Microsoft Affiliate Program](http://www.microsoftaffiliates.com/) that encompasses both streaming premium subscriptions and on-demand purchases.  
++ It is compatible with the [Microsoft Affiliate Program](http://www.microsoftaffiliates.com/) that encompasses both streaming premium subscriptions and on-demand purchases.  
 + A best in class [image service](Using the Groove RESTful Services/Image Service.md).
 + Streaming that can be integrated on any platform or browser.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
