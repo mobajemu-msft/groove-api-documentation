@@ -1,7 +1,3 @@
----
-author: bastuc
----
-
 # Groove User Authentication in your Application
 
 In this section, you'll learn how to sign your user in on many platforms.
