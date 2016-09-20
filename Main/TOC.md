@@ -2,21 +2,21 @@
 # [SDK and Helpers](SDK and helpers/SdK and Helpers.md)
 # [Using the Groove RESTful Services](Using the Groove RESTful Services/Using the Groove RESTful Services.md)
 ## Basics
-### [Using the Groove RESTful Services](Using the Groove RESTful Services.md)
-### [Obtaining a Developer Access Token](Obtaining a Developer Access Token.md)
-### [Streaming Music](Streaming Music.md)
+### [Using the Groove RESTful Services](Using the Groove RESTful Services/Using the Groove RESTful Services.md)
+### [Obtaining a Developer Access Token](Using the Groove RESTful Services/Obtaining a Developer Access Token.md)
+### [Streaming Music](Using the Groove RESTful Services/Streaming Music.md)
 
 ## User Authentication
-### [User Authentication Basics](User Authentication.md)
-### [User Authentication in Applications](User Authentication in Applications.md)
-### [User authentication on the web](User Authentication on the web.md)
+### [User Authentication Basics](Using the Groove RESTful Services/User Authentication.md)
+### [User Authentication in Applications](Using the Groove RESTful Services/User Authentication in Applications.md)
+### [User authentication on the web](Using the Groove RESTful Services/User Authentication on the web.md)
 
 
 ## Additional resources
-### [Badges](Badges.md)
-### [Deep Link](Deep link.md)
-### [Guidelines](Guidelines.md)
-### [Image Service](Image Service.md)
+### [Badges](Using the Groove RESTful Services/Badges.md)
+### [Deep Link](Using the Groove RESTful Services/Deep link.md)
+### [Guidelines](Using the Groove RESTful Services/Guidelines.md)
+### [Image Service](Using the Groove RESTful Services/Image Service.md)
 
 # [Affiliate Program](http://aka.ms/MicrosoftAffiliates)
 # [Groove Service REST Reference](Groove service REST Reference/Groove Service REST Reference.md)
