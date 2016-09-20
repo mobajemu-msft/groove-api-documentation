@@ -1,14 +1,12 @@
 #Groove Service
 
 
-The Groove Service makes it easy for you to connect your app or website to the world of Groove. The Groove API provides access to RESTful web services that offer many features and generate useful data. 
+The Groove Service makes it easy for you to connect your app or website to the world of Groove. The Groove API provides access to RESTful web services that offer many features and generate useful data:
 
-+ An [Affiliate Program] that encompasses both streaming premium subscriptions and on-demand purchases.  
++ AIt is compatible with the [Microsoft Affiliate Program](http://www.microsoftaffiliates.com/) that encompasses both streaming premium subscriptions and on-demand purchases.  
 + A best in class [image service](Using the Groove RESTful Services/Image Service.md).
 + Streaming that can be integrated on any platform or browser.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
-
-
 
 
 ###In this section
@@ -34,5 +32,5 @@ The Groove Service makes it easy for you to connect your app or website to the w
 
 ###Online Resources  
 [Blog](http://www.google.com) - Microsoft blog focusing on Groove for developers.  
-[Pilot](https://music.microsoft.com/developer/pilot) - How to onboard with the pilot program.
+
 
