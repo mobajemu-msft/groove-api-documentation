@@ -43,6 +43,23 @@
 ###[UserProfileResponse (JSON)](JSON_UserProfileResponse.md)
 
 ## Endpoints
+###[/1/content/{id}/{source}/{browseType}/{extra}/browse](URI_ContentIdSourceBrowsetypeExtraBrowse.md)
+###[/1/content/{namespace}/catalog/genres](URI_ContentNamespaceCatalogGenres.md) 
+###[/1/content/{namespace}/catalog/{type}/browse](URI_ContentNamespaceCatalogTypeBrowse.md)
+###[/1/content/{namespace}/collection/add](URI_ContentNamespaceCollectionAdd.md)
+###[/1/content/{namespace}/collection/delete](URI_ContentNamespaceCollectionDelete.md)
+###[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreate.md)
+###[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDelete.md)
+###[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdate.md)
+###[/1/content/{namespace}/collection/{type}/browse](URI_ContentNamespaceCollectionTypeBrowse.md)
+###[/1/content/{id}/lookup](URI_ContentLookup.md)
+###[/1/content/{namespace}/newreleases](URI_ContentNamespaceNewreleases.md)
+###[/1/content/{id}/preview](URI_ContentNamespacePreview.md)
+###[/1/content/{namespace}/search?q={query}](URI_ContentSearch.md)
+###[/1/content/{namespace}/spotlight](URI_ContentNamespaceSpotlight.md)
+###[/1/content/{id}/stream](URI_ContentNamespaceStream.md)
+###[/1/user/{namespace}/profile](URI_UserNamespaceProfile.md)
+
 
 ## Additional material
 ###[Parameters common to every Groove RESTful API](CommonParameters.md)  
