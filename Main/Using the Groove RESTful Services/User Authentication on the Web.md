@@ -1,7 +1,3 @@
----
-author: bastuc
----
-
 # Groove User Authentication on the Web
 
 In this section, you'll learn how to:
