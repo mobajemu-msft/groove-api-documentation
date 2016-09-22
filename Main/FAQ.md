@@ -84,7 +84,7 @@ Some features of the APIs require that you authenticate a Groove user. For the m
 Please refer to [Guidelines].
 
 ### <a name="18"> </a>I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?
-Look at the response body. It often contains an [Error](Groove%20service%20REST%20Reference/Error.md) object with a precise description of the error case.
+Look at the response body. It often contains an [Error](Groove%20service%20REST%20Reference/JSON_Error.md) object with a precise description of the error case.
 
 ###<a name="19"> </a> I'm part of the Pilot. May I distribute my application publicly?
 Yes. You may deploy and distribute your application as long as you comply with the TOUs and agreement signed with Microsoft. However, you may not distribute or publish the source code of your application.
