@@ -11,7 +11,7 @@
         "ROBOTS": "NOINDEX, NOFOLLOW",
         "ms.sitesec": "library",
         "layout": "Conceptual",
-        "breadcrumb_path": "/GrooveDoc/Breadcrumb/toc.json"
+        "breadcrumb_path": "/GrooveDoc/Breadcrumb/breadcrumb.json"
     },
     "externalReference": [
     ],
