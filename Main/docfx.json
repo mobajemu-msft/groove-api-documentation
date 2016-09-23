@@ -11,11 +11,11 @@
         "ROBOTS": "NOINDEX, NOFOLLOW",
         "ms.sitesec": "library",
         "layout": "Conceptual",
-        "breadcrumb_path": "/Main/Breadcrumb/toc"
+        "breadcrumb_path": "/GrooveDoc/Breadcrumb/toc"
     },
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "Main"
+    "dest": "GrooveDoc"
   }
 }
