@@ -1,6 +1,6 @@
 - name: Groove Music API 
-  tocHref: /GrooveDoc2/
-  topicHref: /GrooveDoc2/index.html
+  tocHref: /GrooveDoc/
+  topicHref: /GrooveDoc/index
   items:
   - name: Groove service REST Reference
     tocHref: /GrooveDoc/Groove service REST Reference/
