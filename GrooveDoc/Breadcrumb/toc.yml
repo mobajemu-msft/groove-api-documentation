@@ -1,13 +1,13 @@
 - name: Groove Music API 
-  tocHref: /Main/
-  topicHref: /Main/index
+  tocHref: /GrooveDoc/
+  topicHref: /GrooveDoc/index
   items:
   - name: Groove service REST Reference
-    tocHref: /Main/Groove service REST Reference/
-    topicHref: /Main/Groove service REST Reference/Groove Service REST Reference
+    tocHref: /GrooveDoc/Groove service REST Reference/
+    topicHref: /GrooveDoc/Groove service REST Reference/Groove Service REST Reference
   - name: SdK and Helpers
-    tocHref: /Main/SdK and helpers/
-    topicHref: /Main/SdK and helpers/SdK and Helpers
+    tocHref: /GrooveDoc/SdK and helpers/
+    topicHref: /GrooveDoc/SdK and helpers/SdK and Helpers
   - name: Groove service REST Reference
-    tocHref: /Main/Using the Groove RESTful Services/
-    topicHref: /Main/Using the Groove RESTful Services/Using the Groove RESTful Services
+    tocHref: /GrooveDoc/Using the Groove RESTful Services/
+    topicHref: /GrooveDoc/Using the Groove RESTful Services/Using the Groove RESTful Services
