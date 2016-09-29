@@ -1,7 +1,7 @@
 [{
 		"toc_title" : "Groove API",
 		"href" : "/",
-		"homepage" : "/groove/index",
+		"homepage" : "/Groove/index",
 		"level" : 1,
 		"children" : [{
 				"href" : "/groove/Using the Groove RESTful Services/",
