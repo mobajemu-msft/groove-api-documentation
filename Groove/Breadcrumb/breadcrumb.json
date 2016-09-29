@@ -1,17 +1,17 @@
 [{
 		"toc_title" : "Groove API",
 		"href" : "/",
-		"homepage" : "/groovedoc/index",
+		"homepage" : "/groove/index",
 		"level" : 1,
 		"children" : [{
-				"href" : "/groovedoc/Using the Groove RESTful Services/",
-				"homepage" : "/groovedoc/Using the Groove RESTful Services/index",
+				"href" : "/groove/Using the Groove RESTful Services/",
+				"homepage" : "/groove/Using the Groove RESTful Services/index",
 				"toc_title" : "Using the Groove RESTful Services",
 				"level" : 2
 			},
 			{
-				"href" : "/groovedoc/Groove service REST Reference",
-				"homepage" : "/GrooveDoc/Groove service REST Reference/index",
+				"href" : "/groove/Groove service REST Reference",
+				"homepage" : "/Groove/Groove service REST Reference/index",
 				"toc_title" : "Groove service REST Reference",
 				"level" : 2
 			}
