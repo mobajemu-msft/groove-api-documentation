@@ -63,7 +63,7 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
                 "Id": "music.BF100000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Britney Spears",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.BF100000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Artist/BF100000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Artist/BF100000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -71,7 +71,7 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
           "Id": "music.6B37F707-0100-11DB-89CA-0019B92A3933",
           "Name": "Perfume",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.6B37F707-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/6B37F707-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/6B37F707-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2863588"
           },
@@ -100,7 +100,7 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
                 "Id": "music.8E2C0300-0200-11DB-89CA-0019B92A3933",
                 "Name": "B.o.B",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -108,7 +108,7 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
           "Id": "music.A2C7F607-0100-11DB-89CA-0019B92A3933",
           "Name": "All I Want",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.A2C7F607-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/A2C7F607-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/A2C7F607-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },
@@ -155,7 +155,7 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
                 "Id": "music.A3730400-0200-11DB-89CA-0019B92A3933",
                 "Name": "Equilibrium",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.A3730400-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.microsoft.com/Artist/A3730400-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Artist/A3730400-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -163,7 +163,7 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
           "Id": "music.8CB95D08-0100-11DB-89CA-0019B92A3933",
           "Name": "Erdentempel",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.8CB95D08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.microsoft.com/Album/8CB95D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/8CB95D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },
@@ -189,7 +189,7 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
                 "Id": "music.BD1B5A00-0200-11DB-89CA-0019B92A3933",
                 "Name": "Voodoopriest",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.BD1B5A00-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.microsoft.com/Artist/BD1B5A00-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Artist/BD1B5A00-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -197,7 +197,7 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
           "Id": "music.8F855E08-0100-11DB-89CA-0019B92A3933",
           "Name": "Mandu",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.8F855E08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.microsoft.com/Album/8F855E08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/8F855E08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },

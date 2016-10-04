@@ -76,7 +76,7 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
         "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
         "Name": "Daft Punk",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   168791"
         },
@@ -118,7 +118,7 @@ GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
               "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
           }
@@ -126,7 +126,7 @@ GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
         "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
         "Name": "Random Access Memories",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "R  2749955"
         },
@@ -171,7 +171,7 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
           "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
           "Name": "Random Access Memories",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
         "Artists": [
@@ -181,7 +181,7 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
               "Id": "music.CFDD6300-0200-11DB-89CA-0019B92A3933",
               "Name": "Daft Punk feat. Pharrell Williams and Nile Rodgers",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.CFDD6300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/CFDD6300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/CFDD6300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
           }
@@ -189,7 +189,7 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
         "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
         "Name": "Get Lucky",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T 29381286"
         },
@@ -251,7 +251,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
       <Album>
         <Id>music.B13EB907-0100-11DB-89CA-0019B92A3933</Id>
         <ImageUrl>http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-        <Link>http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+        <Link>https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
         <Name>Random Access Memories</Name>
         <OtherIds>
           <OtherId>
@@ -266,7 +266,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
             <Artist>
               <Id>music.C61C0000-0200-11DB-89CA-0019B92A3933</Id>
               <ImageUrl>http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-              <Link>http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+              <Link>https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
               <Name>Daft Punk</Name>
               <Source>Catalog</Source>
             </Artist>
@@ -292,7 +292,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
       <Artist>
         <Id>music.C61C0000-0200-11DB-89CA-0019B92A3933</Id>
         <ImageUrl>http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-        <Link>http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+        <Link>https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
         <Name>Daft Punk</Name>
         <OtherIds>
           <OtherId>
@@ -315,7 +315,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
       <Track>
         <Id>music.A83EB907-0100-11DB-89CA-0019B92A3933</Id>
         <ImageUrl>http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-        <Link>http://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+        <Link>https://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
         <Name>Get Lucky</Name>
         <OtherIds>
           <OtherId>
@@ -327,7 +327,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
         <Album>
           <Id>music.B13EB907-0100-11DB-89CA-0019B92A3933</Id>
           <ImageUrl>http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-          <Link>http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+          <Link>https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
           <Name>Random Access Memories</Name>
           <Source>Catalog</Source>
         </Album>
@@ -336,7 +336,7 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
             <Artist>
               <Id>music.C61C0000-0200-11DB-89CA-0019B92A3933</Id>
               <ImageUrl>http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US</ImageUrl>
-              <Link>http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
+              <Link>https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner</Link>
               <Name>Daft Punk</Name>
               <Source>Catalog</Source>
             </Artist>
@@ -417,7 +417,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -425,7 +425,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.E368C707-0100-11DB-89CA-0019B92A3933",
               "Name": "Get Lucky",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.E368C707-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Album/E368C707-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Album/E368C707-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
             {
@@ -448,7 +448,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -456,7 +456,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
               "Name": "Random Access Memories",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "R  2749955"
               },
@@ -492,7 +492,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                 "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
                 "Name": "Random Access Memories",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               },
               "Artists": [
@@ -502,7 +502,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -510,7 +510,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
               "Name": "Get Lucky",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "T 29381286"
               },
@@ -536,7 +536,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                 "Id": "music.F2E82706-0100-11DB-89CA-0019B92A3933",
                 "Name": "Musique",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.F2E82706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Album/F2E82706-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Album/F2E82706-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               },
               "Artists": [
@@ -546,7 +546,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -554,7 +554,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.5BAF3206-0100-11DB-89CA-0019B92A3933",
               "Name": "Harder, Better, Faster, Stronger",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.5BAF3206-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/5BAF3206-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/5BAF3206-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
             {
@@ -567,7 +567,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
         "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
         "Name": "Daft Punk",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   168791"
         },
@@ -603,7 +603,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "P   168791"
               },
@@ -636,7 +636,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -644,7 +644,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.AA3EB907-0100-11DB-89CA-0019B92A3933",
               "Name": "Give Life Back to Music",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.AA3EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/AA3EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/AA3EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "T 29381293"
               },
@@ -673,7 +673,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                     "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
                 }
@@ -681,7 +681,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.AB3EB907-0100-11DB-89CA-0019B92A3933",
               "Name": "The Game of Love",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.AB3EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/AB3EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/AB3EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "T 29381292"
               },
@@ -696,7 +696,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
         "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
         "Name": "Random Access Memories",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "R  2749955"
         },
@@ -743,7 +743,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
                 "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Daft Punk",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -751,7 +751,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
           "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
           "Name": "Random Access Memories",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2749955"
           },
@@ -770,7 +770,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
               "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "OtherIds": {
                 "music.amg": "P   168791"
               },
@@ -781,7 +781,7 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
         "Id": "music.A83EB907-0100-11DB-89CA-0019B92A3933",
         "Name": "Get Lucky",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/A83EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T 29381286"
         },
@@ -827,7 +827,7 @@ GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
           "Id": "music.51025806-0100-11DB-89CA-0019B92A3933",
           "Name": "Delicate Sound Of Thunder",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.51025806-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/51025806-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/51025806-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
         "Artists": [
@@ -837,7 +837,7 @@ GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
               "Id": "music.D6670000-0200-11DB-89CA-0019B92A3933",
               "Name": "Pink Floyd",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.D6670000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/D6670000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/D6670000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
           }
@@ -845,7 +845,7 @@ GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
         "Id": "music.0EE73B06-0100-11DB-89CA-0019B92A3933",
         "Name": "Shine On You Crazy Diamond (Parts 1-5)",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.0EE73B06-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/0EE73B06-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/0EE73B06-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T  1530616",
           "music.isrc": "GBDJQ8800006"
@@ -893,7 +893,7 @@ GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
               "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
           }
@@ -901,7 +901,7 @@ GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
         "Id": "music.B13EB907-0100-11DB-89CA-0019B92A3933",
         "Name": "Random Access Memories",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "R  2749955",
           "music.icpn": "886443927087"
@@ -940,7 +940,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
         "Id": "music.AQEPB7k-sQABsrFst-olnIY",
         "Name": "Random Access Memories",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       }
     ]
@@ -990,7 +990,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                 "Id": "music.AQEDB7k-sQABAA",
                 "Name": "Random Access Memories",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                 "Source": "Collection"
               },
               "Artists": [
@@ -1000,7 +1000,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                     "Id": "music.AQIDAAAcxgACAA",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                     "Source": "Collection"
                   }
                 },
@@ -1010,7 +1010,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                     "Id": "music.AQIDAABnCAACAA",
                     "Name": "Pharrell Williams",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.08670000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/08670000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/08670000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                     "Source": "Collection"
                   }
                 },
@@ -1020,7 +1020,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                     "Id": "music.AQIDAAAcxgACAA",
                     "Name": "Daft Punk",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                     "Source": "Collection"
                   }
                 }
@@ -1028,7 +1028,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
               "Id": "music.AQQfHgTT3DD6Vkyk1Tk-HDsRBQe5PqgAAQ",
               "Name": "Get Lucky (feat. Pharrell Williams)",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             },
             {
@@ -1049,7 +1049,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                 "Id": "music.AQEDB-rrJgABAA",
                 "Name": "Aleph",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-                "Link": "http://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                "Link": "https://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                 "Source": "Collection"
               },
               "Artists": [
@@ -1059,7 +1059,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                     "Id": "music.AQIDAAdbyQACAA",
                     "Name": "Gesaffelstein",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                     "Source": "Collection"
                   }
                 },
@@ -1069,7 +1069,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
                     "Id": "music.AQIDAAdbyQACAA",
                     "Name": "Gesaffelstein",
                     "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-                    "Link": "http://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+                    "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
                     "Source": "Collection"
                   }
                 }
@@ -1077,14 +1077,14 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
               "Id": "music.AQQf3-wXiuSFS0yqPmC_ZUazfgfq6y0AAQ",
               "Name": "Aleph",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.2debea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
           ]
         },
         "Id": "music.AQM2egu7ioD-AI-GF3usCeHQ",
         "Name": "Playlist1",
-        "Link": "http://music.microsoft.com/Playlist/bb0b7a36-808a-00fe-8f86-177bac09e1d0?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Playlist/bb0b7a36-808a-00fe-8f86-177bac09e1d0?partnerID=AwesomePartner",
         "Source": "Collection"
       }
     ]
@@ -1122,7 +1122,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
         "Id": "music.AQIPAAAcxgAC3GpkUPzr8EQ",
         "Name": "Daft Punk",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       }
     ]
@@ -1145,7 +1145,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
           "Id": "music.3370F306-0100-11DB-89CA-0019B92A3933",
           "Name": "Trust You Again",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.3370F306-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/3370F306-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/3370F306-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
         "Artists": [
@@ -1155,7 +1155,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
               "Id": "music.2E860300-0200-11DB-89CA-0019B92A3933",
               "Name": "Muttonheads",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.2E860300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/2E860300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/2E860300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
           }
@@ -1163,7 +1163,7 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
         "Id": "music.3770F306-0100-11DB-89CA-0019B92A3933",
         "Name": "Trust You Again",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.3770F306-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/3770F306-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/3770F306-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T 23642758"
         },

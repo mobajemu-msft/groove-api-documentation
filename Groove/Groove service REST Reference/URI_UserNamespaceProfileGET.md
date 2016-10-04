@@ -22,7 +22,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 
 ##Examples
 
-### User doesn't have a Groove Pass
+### User doesn't have a Groove Music Pass
 
 
 #### Request
@@ -46,7 +46,7 @@ Authorization: XBL3.0 x=847278487;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
   }
 }
 ```
-###Check Groove Pass availability in France
+###Check Groove Music Pass availability in France
 #### Request
 ```http
 GET /1/user/music/profile?country=fr&accessToken=Bearer+[...]

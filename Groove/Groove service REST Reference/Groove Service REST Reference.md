@@ -1,6 +1,6 @@
 # Groove Service REST Reference  
 
-The Groove Service delivers Groove functionality to third-party application developers for integration within their own apps and possibly for revenue sharing. The role of the service is to abstract and merge all existing Groove entertainment services into a single entry point with a set of consistent and simple APIs that hide the complexity of background services.  
+The Groove Service delivers Groove functionality to third-party application developers for integration within their own apps.
 
 The API follows the REST API convention and returns JSON (or XML) results. The following calling conventions are used:  
 

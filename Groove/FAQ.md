@@ -7,7 +7,6 @@
 - [ Should I actually keep the application Secret secret?](#6)
 - [ How can I link to Groove from my application or website?](#7)
 - [ Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?](#8)
-- [ I'd like to become an affiliate but the documentation asks me to register on an external site called "Linkshare" that doesn't look like Microsoft. Can I trust that site?](#9)
 - [ What is the revenue share of the affiliate program?](#10)
 - [ Can I become an affiliate without using the APIs? Can I use the API and not become an affiliate?](#11)
 - [ Can I put advertising in my application or website if I'm using the data from the API? Can I sell my application?](#12)
@@ -18,6 +17,7 @@
 - [ I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?](#17)
 - [ May I download audio files with my application and provide a download feature to my application users?](#18)
 - [ I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?](#19)
+- [ Where did the Pilot program go?](#20)
 
 ### <a name="1"> </a> I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?
 The Customer ID and Primary Account Key are your Azure Datamarket main account credentials. They cannot be used to authenticate on the Groove API.  
@@ -47,18 +47,16 @@ Most of the API calls return a "Link" item in the response. That Link is an HTTP
 ### <a name="8"> </a>Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?
 Yes, you can use the deep link provided in the API response in an invisible webview control. This will give you the final music protocol Link. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md).
 
-### <a name="9"> </a>I'd like to become an affiliate but the documentation asks me to register on an external site called "Linkshare" that doesn't look like Microsoft. Can I trust that site?
-Yes, Linkshare is the Affiliation platform that Groove is partnering with to provide its affiliation program. Linkshare runs affiliation programs for many companies. The Groove affiliation program will be listed in the Linkshare portal after you register. You can apply to it from there.
-
 ###<a name="10"> </a> What is the revenue share of the affiliate program?
-This is described in the Groove program presentation page on Linkshare.
+Details of the affiliate program can be found [here](http://www.microsoftaffiliates.com/).
 
 ### <a name="11"> </a>Can I become an affiliate without using the APIs? Can I use the API and not become an affiliate?
 Yes, the Groove API and affiliation are independent. The API is free to use for everyone, and gives you access to the features of Groove. There is no need to become an affiliate.  
 
-If you'd like to earn revenue when linking to Groove from your application, then you should register with the Affiliate program. To start earning revenue, you'll need to tweak the Link to Groove with your Linkshare affiliate Id. There are more details available [here](http://www.microsoftaffiliates.com/).  
+If you'd like to earn revenue when linking to Groove from your application, then you should register with the Affiliate program.
+More details are available [here](http://www.microsoftaffiliates.com/).  
 
-You do not need to use the APIs to become an affiliate. You can use the links and promotional resources provided on Linkshare or even build your own links.
+You do not need to use the APIs to become a Microsoft affiliate.
 
 ### <a name="12"> </a>Can I put advertising in my application or website if I'm using the data from the API? Can I sell my application?
 Please refer to [Guidelines].
@@ -93,6 +91,9 @@ On Windows Phone 8.1, images associated with local files are not available. Inst
     http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200
 
 See also [Windows Media Library](https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.media.medialibrary.aspx).
+
+###  <a name="20"> </a>Where did the Pilot program go?
+There is no need for a Pilot program anymore. You can integrate Groove in your application without even notifying us!
 
 [Guidelines]: Using%20the%20Groove%20RESTful%20Services/Guidelines.md
 [User Authentication]: Using%20the%20Groove%20RESTful%20Services/User%20Authentication.md

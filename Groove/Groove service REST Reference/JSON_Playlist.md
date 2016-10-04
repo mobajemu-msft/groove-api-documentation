@@ -1,6 +1,6 @@
 # Playlist (JSON)           
 
-A list of tracks and their metadata. 
+A list of tracks and their metadata.
 
 ##Playlist
 
@@ -11,7 +11,7 @@ The Playlist object has the following specification.
 | Id                   | string                                                                                                                | Identifier for this piece of content. All Ids are of the form {namespace}.{actual identifier} and may be used in any API accepting an ID as input.                                                                                                                                                                                                                          |
 | Name                 | string                                                                                                                | The name of this piece of content.                                                                                                                                                                                                                                                                                                                                          |
 | ImageUrl             | string                                                                                                                | A direct link to the default image associated with this piece of content. See [Image Service](../Using the Groove RESTful Services/Image Service.md) for details about how these links may be customized to produce different images.                                                                                                                                                       |
-| Link                 | string                                                                                                                | An HTTP link that redirects to a contextual page for this piece of content on the relevant Groove client application, depending on the user's device or operating system. See [DeepLink](../Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md) for details about how these links work and how they should be modified for [revenue-sharing](http://www.microsoftaffiliates.com/). |
+| Link                 | string                                                                                                                | An HTTP link that redirects to a contextual page for this piece of content on the relevant Groove client application, depending on the user's device or operating system. See [DeepLink](../Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md) for details about how these links work. |
 | OtherIds             | Dictionary&lt;*string*,*string*&gt;                                                                                   | An optional collection of IDs on top of the main ID, which identify this piece of content. Each key is the namespace or sub-namespace in which the ID belongs, and each value is a secondary ID for this piece of content                                                                                                                                                   |
 | Source               | string                                                                                                                | An indication of the data source for this piece of content. Possible values are **Collection** and **Catalog**.                                                                                                                                                                                                                                                             |
 | CompatibleSources    | string                                                                                                                | An indication of the categories of APIs and actions that this piece of content can be used with. Comma-separated list of one or multiple values among "Catalog", "Collection". Most items are compatible with both Catalog and Collection actions, but playlists for example or some collection items are not valid in a Catalog context.                                   |
@@ -53,7 +53,7 @@ The Playlist object has the following specification.
           "Id": "music.AQEDB7k-sQABAA",
           "Name": "Random Access Memories",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
           "Source": "Collection"
           "CompatibleSources": "Catalog, Collection"
         },
@@ -64,7 +64,7 @@ The Playlist object has the following specification.
               "Id": "music.AQIDAAAcxgACAA",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
               "CompatibleSources": "Catalog, Collection"
             }
@@ -75,7 +75,7 @@ The Playlist object has the following specification.
               "Id": "music.AQIDAAAcxgACAA",
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
               "CompatibleSources": "Catalog, Collection"
             }
@@ -84,7 +84,7 @@ The Playlist object has the following specification.
         "Id": "music.AQQfN4uJ9UrnJkGWQ1G9KcPOkwe5PqgAAQ",
         "Name": "Get Lucky (feat. Pharrell Williams)",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
         "CompatibleSources": "Catalog, Collection"
       },
@@ -104,7 +104,7 @@ The Playlist object has the following specification.
           "Id": "music.AQEDB-rrJgABAA",
           "Name": "Aleph",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-          "Link": "http://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+          "Link": "https://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
           "Source": "Collection"
           "CompatibleSources": "Catalog, Collection"
         },
@@ -115,7 +115,7 @@ The Playlist object has the following specification.
               "Id": "music.AQIDAAdbyQACAA",
               "Name": "Gesaffelstein",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
               "CompatibleSources": "Catalog, Collection"
             }
@@ -126,7 +126,7 @@ The Playlist object has the following specification.
               "Id": "music.AQIDAAdbyQACAA",
               "Name": "Gesaffelstein",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
-              "Link": "http://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+              "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
               "CompatibleSources": "Catalog, Collection"
             }
@@ -135,7 +135,7 @@ The Playlist object has the following specification.
         "Id": "music.AQQfObc7JPSYfEi_EiGVYbdyHAfq6y0AAQ",
         "Name": "Aleph",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.2debea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
-        "Link": "http://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
+        "Link": "https://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
         "CompatibleSources": "Catalog, Collection"
       }
@@ -145,7 +145,7 @@ The Playlist object has the following specification.
   "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
   "Name": "Playlist1",
   "ImageUrl": "http://musicimage.xboxlive.com/content/music.playlist.56c99764-800a-00fe-552f-ee11db9370d1/image?locale=en-US",
-  "Link": "http://music.microsoft.com/Playlist/56c99764-800a-00fe-552f-ee11db9370d1?partnerID=AwesomePartner",
+  "Link": "https://music.microsoft.com/Playlist/56c99764-800a-00fe-552f-ee11db9370d1?partnerID=AwesomePartner",
   "Source": "Collection"
   "Compatible Sources": "Catalog, Collection"
 }

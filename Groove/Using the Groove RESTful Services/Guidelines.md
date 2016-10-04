@@ -7,7 +7,7 @@ Following are some important rules you must respect when using the Groove Servic
 
   For more information about deep links, see [Deep Link].  
 
-+ You may only display an item of album art in connection with an opportunity to purchase the corresponding track in Groove or to promote the availability of the track in Groove Pass.    
++ You may only display an item of album art in connection with an opportunity to purchase the corresponding track in Groove or to promote the availability of the track in Groove Music.    
 
 	These can be created using action deep links (play, buy, view, addtocollection) and/or text and images as described in the [Badges].
 
@@ -25,9 +25,9 @@ Following are some important rules you must respect when using the Groove Servic
 
   After 24 hours, the application must update the data by querying the Groove RESTful API again.
 
-+ If Microsoft provides you with an authentication token, your application may enable users to sign in to their Groove Pass premium subscription accounts and stream audio content. Your application must not enable download of audio content from the Groove Pass service, or any other form of unauthorized reproduction such as stream capture.  
++ If Microsoft provides you with an authentication token, your application may enable users to sign in to their Groove Music Pass premium subscription accounts and stream audio content. Your application must not enable download of audio content from the Groove Music service, or any other form of unauthorized reproduction such as stream capture.  
 
-+ You must authenticate each user as a premium Groove Pass subscriber before streaming content from the Groove Pass catalog as further described in the documentation provided by Microsoft.
++ You must authenticate each user as a premium Groove Music Pass subscriber before streaming content from the Groove Music catalog as further described in the documentation provided by Microsoft.
 
 + Your application must list the artist name, song title and album title prior to each stream, and if technically possible, contemporaneously with playback.
 

@@ -42,7 +42,7 @@ For playing streams from your application on windows versions prior to Windows 1
 
 ###Unauthorized stream
 
-Only Groove Pass subscribers may play full streams.
+Only Groove Music Pass subscribers may play full streams.
 
 #### Request
 ```http
