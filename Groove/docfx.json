@@ -7,6 +7,12 @@
           "exclude": ["**/obj/**"]
         }
       ],
+    "resource": [
+        {
+          "files": ["**/site-images/**","**/**.html"],
+          "exclude": ["**/obj/**"]
+        }
+    ],
     "globalMetadata": {
         "ROBOTS": "NOINDEX, NOFOLLOW",
         "ms.sitesec": "library",
