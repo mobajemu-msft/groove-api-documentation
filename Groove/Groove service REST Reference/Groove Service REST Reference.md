@@ -1,6 +1,6 @@
 # Groove Service REST Reference  
 
-The Groove Service delivers Groove functionality to third-party application developers for integration within their own apps and possibly for revenue sharing. The role of the service is to abstract and merge all existing Xbox entertainment services into a single entry point with a set of consistent and simple APIs that hide the complexity of background services.  
+The Groove Service delivers Groove functionality to third-party application developers for integration within their own apps and possibly for revenue sharing. The role of the service is to abstract and merge all existing Groove entertainment services into a single entry point with a set of consistent and simple APIs that hide the complexity of background services.  
 
 The API follows the REST API convention and returns JSON (or XML) results. The following calling conventions are used:  
 
@@ -13,7 +13,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
  +   Flash cross-domain calls are supported as well.
  +   Locale parameters are the same across all methods; they all have two optional query parameters, *language* and *country*, whose values are two-letter standard language and country codes. When no country information is provided via the country parameter or user authentication, the country is determined by geolocation of the caller's IP address.
  +   All APIs share a common notion of namespace that indicates the type of content referred to. Currently the only supported namespace is music.  
- 
+
 ##URI  
 
 |METHOD  | ENDPOINT |  USAGE | RETURNS| |
@@ -34,7 +34,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 |GET|[/1/content/{namespace}/spotlight](URI_ContentNamespaceSpotlightGET.md)|Discover content for a specified language or culture.|[ContentResponse (JSON)](JSON_ContentResponse.md)||
 |GET|[/1/content/{id}/stream](URI_ContentNamespaceStreamGET.md)|Request streaming.|[StreamResponse (JSON)](JSON_StreamResponse.md)|[Auth](../Using the Groove RESTful Services/User Authentication.md)|
 |GET|[/1/user/{namespace}/profile](URI_UserNamespaceProfileGET.md)|Access a user's profile.||[Auth](../Using the Groove RESTful Services/User Authentication.md)|
- 
+
 ##JSON (to be generated automatically if relevant)
 |OBJECT|DESCRIPTION|
 |:---|:---|

@@ -58,7 +58,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.0A110000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Bruce Springsteen",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.0A110000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/0A110000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/0A110000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -66,7 +66,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.5FAA1008-0100-11DB-89CA-0019B92A3933",
           "Name": "High Hopes",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.5FAA1008-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/5FAA1008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/5FAA1008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2867329"
           },
@@ -95,7 +95,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.847A0000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Switchfoot",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.847A0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/847A0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/847A0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -103,7 +103,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.FD5D0D08-0100-11DB-89CA-0019B92A3933",
           "Name": "Fading West",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.FD5D0D08-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/FD5D0D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/FD5D0D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2867493"
           },
@@ -132,7 +132,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.F4523800-0200-11DB-89CA-0019B92A3933",
                 "Name": "Kid Ink",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.F4523800-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/F4523800-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/F4523800-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -140,7 +140,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.B9490B08-0100-11DB-89CA-0019B92A3933",
           "Name": "My Own Lane",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.B9490B08-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/B9490B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/B9490B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },
@@ -166,7 +166,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.8B740000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Shakira",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.8B740000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/8B740000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/8B740000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -174,7 +174,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.93C81508-0100-11DB-89CA-0019B92A3933",
           "Name": "Can't Remember to Forget You",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.93C81508-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/93C81508-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/93C81508-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },
@@ -200,7 +200,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.3F060200-0200-11DB-89CA-0019B92A3933",
                 "Name": "Sharon Jones & The Dap-Kings",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.3F060200-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/3F060200-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/3F060200-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -208,7 +208,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.3B8BF507-0100-11DB-89CA-0019B92A3933",
           "Name": "Give the People What They Want",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.3B8BF507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/3B8BF507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/3B8BF507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2792311"
           },
@@ -237,7 +237,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.2A020100-0200-11DB-89CA-0019B92A3933",
                 "Name": "Kidz Bop Kids",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.2A020100-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-                "Link": "http://music.xbox.com/Artist/2A020100-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/2A020100-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -245,7 +245,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.BFC80308-0100-11DB-89CA-0019B92A3933",
           "Name": "Kidz Bop 25",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.BFC80308-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
-          "Link": "http://music.xbox.com/Album/BFC80308-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/BFC80308-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       }
@@ -287,7 +287,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.0A110000-0200-11DB-89CA-0019B92A3933",
                 "Name": "Bruce Springsteen",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.0A110000-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.xbox.com/Artist/0A110000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/0A110000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -295,7 +295,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.5FAA1008-0100-11DB-89CA-0019B92A3933",
           "Name": "High Hopes",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.5FAA1008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Album/5FAA1008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/5FAA1008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2867329"
           },
@@ -324,7 +324,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.ABAF5600-0200-11DB-89CA-0019B92A3933",
                 "Name": "Yoann Freget",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.ABAF5600-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.xbox.com/Artist/ABAF5600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/ABAF5600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -332,7 +332,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.BE021008-0100-11DB-89CA-0019B92A3933",
           "Name": "Quelques Heures Avec Moi",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.BE021008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Album/BE021008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/BE021008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2884867"
           },
@@ -351,7 +351,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.CDBE0000-0200-11DB-89CA-0019B92A3933",
           "Name": "Birdy",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.CDBE0000-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Artist/CDBE0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Artist/CDBE0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "P  2502969"
           },
@@ -380,7 +380,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.F4523800-0200-11DB-89CA-0019B92A3933",
                 "Name": "Kid Ink",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.F4523800-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.xbox.com/Artist/F4523800-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/F4523800-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -388,7 +388,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.DC430808-0100-11DB-89CA-0019B92A3933",
           "Name": "My Own Lane",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.DC430808-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Album/DC430808-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/DC430808-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       },
@@ -414,7 +414,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.18921500-0200-11DB-89CA-0019B92A3933",
                 "Name": "James Vincent McMorrow",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.18921500-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.xbox.com/Artist/18921500-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/18921500-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -422,7 +422,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.964A0708-0100-11DB-89CA-0019B92A3933",
           "Name": "Post Tropical",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.964A0708-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Album/964A0708-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/964A0708-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "OtherIds": {
             "music.amg": "R  2844041"
           },
@@ -451,7 +451,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
                 "Id": "music.F18E0100-0200-11DB-89CA-0019B92A3933",
                 "Name": "Anthony Joseph",
                 "ImageUrl": "http://musicimage.xboxlive.com/content/music.F18E0100-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-                "Link": "http://music.xbox.com/Artist/F18E0100-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+                "Link": "http://music.microsoft.com/Artist/F18E0100-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                 "Source": "Catalog"
               }
             }
@@ -459,7 +459,7 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "Id": "music.9611FE07-0100-11DB-89CA-0019B92A3933",
           "Name": "Tamarind",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.9611FE07-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
-          "Link": "http://music.xbox.com/Album/9611FE07-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+          "Link": "http://music.microsoft.com/Album/9611FE07-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         }
       }

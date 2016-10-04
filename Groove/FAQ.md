@@ -12,14 +12,12 @@
 - [ Can I become an affiliate without using the APIs? Can I use the API and not become an affiliate?](#11)
 - [ Can I put advertising in my application or website if I'm using the data from the API? Can I sell my application?](#12)
 - [ Can I cache the content retrieved from the API or save it locally?](#13)
-- [ What's the Groove API Pilot?](#14)
-- [ I want to stream music, but I can't because I need to log in a Groove user. What should I do?](#15)
-- [ I want to access a Groove user's collection, but I can't because I need to log in a Groove user. What should I do?](#16)
-- [ I'm coding a game. Can I use the Groove API?](#17)
-- [ I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?](#18)
-- [ I'm part of the Pilot. May I distribute my application publicly?](#19)
-- [ May I download audio files with my application and provide a download feature to my application users?](#20)
-- [ I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?](#21)
+- [ I want to stream music, but I can't because I need to log in a Groove user. What should I do?](#14)
+- [ I want to access a Groove user's collection, but I can't because I need to log in a Groove user. What should I do?](#15)
+- [ I'm coding a game. Can I use the Groove API?](#16)
+- [ I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?](#17)
+- [ May I download audio files with my application and provide a download feature to my application users?](#18)
+- [ I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?](#19)
 
 ### <a name="1"> </a> I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?
 The Customer ID and Primary Account Key are your Azure Datamarket main account credentials. They cannot be used to authenticate on the Groove API.  
@@ -35,8 +33,8 @@ Subscribe to the Groove API on Azure Datamarket [here](http://go.microsoft.com/f
 
 ###<a name="3"> </a>Can I use the same Client ID and Secret for more than one application?
 No, you should register an application in Azure Datamarket for every application or website that will use the Groove API. Every application should use its assigned Client ID and Secret. Also, make sure the details of your application are accurate.
-###<a name="4"> </a>How long does the API access token last? 
-It lasts for 10 minutes, so you will need to refresh it before it expires. This can be done asynchronously for better performance within your app or server-side code. The expiration time is given in the response along with the token. 
+###<a name="4"> </a>How long does the API access token last?
+It lasts for 10 minutes, so you will need to refresh it before it expires. This can be done asynchronously for better performance within your app or server-side code. The expiration time is given in the response along with the token.
 ### <a name="5"> </a>Why do I get an error when trying to use the Azure Datamarket Explorer and tools?
 The Groove API doesn't make use of the Azure Datamarket explorer and tools. You must use Azure Datamarket only to get the API authentication token. This token should then be used directly on the Groove API endpoint ```https://music.xboxlive.com.```
 
@@ -68,39 +66,33 @@ Please refer to [Guidelines].
 ###<a name="13"> </a> Can I cache the content retrieved from the API or save it locally?
 Please refer to [Guidelines].
 
-### <a name="14"> </a>What's the Groove API Pilot?
-The Pilot is a program that we're running with selected partners. It gives developer access to an extended set of Features. The Pilot was presented at the 2014 //Build conference. You can watch the talk and get more details [here](http://go.microsoft.com/fwlink/p/?LinkID=396764)  
-.
-If you want to be part of the pilot, please visit this [link](https://music.microsoft.com/developer/pilot).
+###<a name="14"> </a> I want to stream music, but I can't because I need to log in a Groove user. What should I do?
+Some features of the APIs require that you authenticate a Groove user.
+Please refer to the [User Authentication] documentation.
 
-###<a name="15"> </a> I want to stream music, but I can't because I need to log in a Groove user. What should I do?
-Some features of the APIs require that you authenticate a Groove user. For the moment, this is restricted to partners that are part of the pilot. To apply follow the process explained [here](https://music.microsoft.com/developer/pilot).
+###<a name="15"> </a> I want to access a Groove user's collection, but I can't because I need to log in a Groove user. What should I do?
+Some features of the APIs require that you authenticate a Groove user.
+Please refer to the [User Authentication] documentation.
 
-
-###<a name="16"> </a> I want to access a Groove user's collection, but I can't because I need to log in a Groove user. What should I do?
-Some features of the APIs require that you authenticate a Groove user. For the moment, this is restricted to partners that are part of the pilot. To apply follow the process explained [here](https://music.microsoft.com/developer/pilot).
-
-###<a name="17"> </a> I'm coding a game. Can I use the Groove API?
+###<a name="16"> </a> I'm coding a game. Can I use the Groove API?
 Please refer to [Guidelines].
 
-### <a name="18"> </a>I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?
+### <a name="17"> </a>I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?
 Look at the response body. It often contains an [Error](Groove%20service%20REST%20Reference/JSON_Error.md) object with a precise description of the error case.
 
-###<a name="19"> </a> I'm part of the Pilot. May I distribute my application publicly?
-Yes. You may deploy and distribute your application as long as you comply with the TOUs and agreement signed with Microsoft. However, you may not distribute or publish the source code of your application.
-
-### <a name="20"> </a>May I download audio files with my application and provide a download feature to my application users?
+### <a name="18"> </a>May I download audio files with my application and provide a download feature to my application users?
 No, this is not allowed according to the TOUs of the APIs. The audio may only be provided in the form of streams. This applies to all of your users, even premium users.  
 
 Please refer to [Guidelines].
 
-###  <a name="21"> </a>I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?
+###  <a name="19"> </a>I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?
 On Windows Phone 8.1, images associated with local files are not available. Instead, call the image service with the MediaID you get from the local library when requesting the image.
 
 
     Example:   
-    http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200 
+    http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200
 
 See also [Windows Media Library](https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.media.medialibrary.aspx).
 
 [Guidelines]: Using%20the%20Groove%20RESTful%20Services/Guidelines.md
+[User Authentication]: Using%20the%20Groove%20RESTful%20Services/User%20Authentication.md

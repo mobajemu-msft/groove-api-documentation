@@ -1,10 +1,10 @@
-# Parameters common to every Groove RESTful API 
+# Parameters common to every Groove RESTful API
 
 This topic describes parameters that are common to all methods in the Groove RESTful API.
 
 | **Parameter**       | **Type** | **Description**                                                                                                                                                                                                                                                                                  |
 |---------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *accessToken*       | string   | Required. A valid [developer authentication](../Using the Groove RESTful Services/User Authentication.md) Access Token obtained from Azure Data Market, used to identify the third-party application using the Groove RESTful API.                                                                     |
+| *accessToken*       | string   | Required. A valid [developer authentication](../Using the Groove RESTful Services/Obtaining a Developer Access Token.md) Access Token obtained from Azure Data Market, used to identify the third-party application using the Groove RESTful API.                                                                     |
 | *language*          | string   | Optional. The two-letter standard code identifying the requested language for the response content. If not specified, defaults to the country's primary language.                                                                                                                                |
 | *country*           | string   | Optional. The standard two-letter code that identifies the country/region of the user. If not specified, the value defaults to the geolocated country/region of the client's IP address. Responses will be filtered to provide only those that match the user's country/region.                  |
 | *contentType*       | string   | Optional. "xml" or "json". Specifies the requested format for response serialization. Default is json. This parameter should be used only when it's not possible to customize standard HTTP headers; otherwise the recommended way to choose serialization format is by using the Accept header. |
@@ -16,6 +16,6 @@ Some of the APIs also require a user authentication token in the Authorization h
 ##See also
 
 
-#### Parent 
+#### Parent
 
 [Groove Service REST Reference](Groove Service REST Reference.md)

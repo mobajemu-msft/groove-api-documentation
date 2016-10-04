@@ -16,7 +16,7 @@ The ContentItem object has the following specification.
 
 ##Sample JSON syntax
 
-```json 
+```json
 {
   "Type": "Artists",
   "Artist": {
@@ -29,14 +29,14 @@ The ContentItem object has the following specification.
     "Id": "music.26BA0500-0200-11DB-89CA-0019B92A3933",
     "Name": "Miley Cyrus",
     "ImageUrl": "http://musicimage.xboxlive.com/content/music.26BA0500-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
-    "Link": "http://music.xbox.com/Artist/26BA0500-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
+    "Link": "http://music.microsoft.com/Artist/26BA0500-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
     "OtherIds": {
       "music.amg": "P   823418"
     },
     "Source": "Catalog"
   }
 }
-``` 
+```
 ##See also
 
 

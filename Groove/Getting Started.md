@@ -8,7 +8,7 @@ The following are the minimal steps you need to complete to start experimenting 
 [Windows Azure Marketplace]: https://datamarket.azure.com/developer/applications
 [Register your app]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
 
-1. Visit <https://datamarket.azure.com>. 
+1. Visit <https://datamarket.azure.com>.
 2. Sign in with your Microsoft account and register to Datamarket by providing the required details.    
 ![Azure registration image]
 
@@ -16,11 +16,11 @@ The following are the minimal steps you need to complete to start experimenting 
   ![Register your app]
 4. Fill in the correct details about your application (or website) carefully.
 5. When done, take note of the provided **ClientID** and the **Secret**. They will be required to authenticate against the API in your code. These are different from the customer ID and account key you got from step 2.
- 
+
 6. Now subscribe to the free plan of the Groove API [here](http://go.microsoft.com/fwlink/?LinkID=389224).
 7. Copy and paste your preferred sample code from below (C#, Windows Runtime or PHP) to start querying the API for Music data.
 
-###C\# 
+### Windows
 ```csharp
  //datamarket authentication endpoint, must be https
 string service = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
@@ -89,7 +89,7 @@ static string ExtractTokenFromJson(string json)
 
  //token to use to authenticate aginst the Groove API
 token = ExtractTokenFromJson(responseString);
-            
+
  //token will be used in the REST call, it hsould be encoded
 tokenEnc = HttpUtility.UrlEncode(token);
 
@@ -106,7 +106,7 @@ tokenEnc = HttpUtility.UrlEncode(token);
   }
 Console.WriteLine(responseString);
 ```
-###Windows Runtime 
+###Windows Runtime
 ```csharp
     using System;
     using System.Net;
@@ -122,7 +122,7 @@ Console.WriteLine(responseString);
           public static async void Go()
           {
               var client = new HttpClient();
-              
+
               // Define the data needed to request an authorization token.
               var service = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
               var clientId = "myClient";
@@ -150,12 +150,12 @@ Console.WriteLine(responseString);
           }
        }
     }
-``` 
-  
+```
+
 ###PHP
 
 ```php
-class Xboxmusic {
+class GrooveMusic {
       var $serviceauth = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
       var $serviceapi = "https://music.xboxlive.com/1/content";
       var $clientId = "yourclientID";
@@ -199,7 +199,7 @@ class Xboxmusic {
   }
 
 //using the class
-$MusicAPI = new Xboxmusic;
+$MusicAPI = new GrooveMusic;
 $token = $MusicAPI->auth();
 $json_response = $MusicAPI->search("madonna", $token);
 ```
