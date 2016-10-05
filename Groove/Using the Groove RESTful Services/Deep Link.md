@@ -56,32 +56,9 @@ You can influence the behavior of the redirect by adding the target query parame
 |Track|https://music.microsoft.com/Track/xxx?action=yyy|https://music.microsoft.com/Track/c1afef07-0100-11db-89ca-0019b92a3933?action=buy|
 
 ##App-to-app direct linking
-To ensure the best experience and minimize redirection, you can start the Groove application directly without going through a browser window. Just use the Link parameter you got from the API response in an invisibly instantiated WebView in your app. You can still use the action parameter in the Link to trigger a play—as described in Deep Link, for example.  
+In Windows 10 we currently don't support direct app-to-app linking. We recommend launching the deeplink in a browser:
 
-Following are two code samples that demonstrate how:    
-
-+ [Windows Store application](#windows-store-application)  
-+ [Windows Phone application](#windows-phone-application)  
-
-###Windows Store application
-
-```xml
- // In your xaml code, create a hidden WebView.
-<WebView x:Name="HiddenWebView" Visibility="Collapsed" />
-
- // Then when you receive the link, just use it in your WebView.
- // On Windows 8, the user will be prompted with a popup saying that your app wants to open "Music",
- // and then it will open in full screen.
- // On Windows 8.1, the user will have a popup as well, and then the Music app will open
- // with your app snapped on the side.
-HiddenWebView.Source = new Uri(grooveMusicRedirectLink);
-```
-
-###Windows Phone application
-```xml
- // In your xaml code, create a hidden WebBrowser control
-<phone:WebBrowser x:Name="HiddenWebBrowser" />
-
- // Then when you receive the link, just use it inside this control
-HiddenWebBrowser.Navigate(new Uri(grooveMusicRedirectLink));
+```csharp
+string deeplink = content.Link;
+await Launcher.LaunchUriAsync(new Uri(deeplink));
 ```
