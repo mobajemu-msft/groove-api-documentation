@@ -45,7 +45,7 @@ Yes, the Secret provided by the Azure Datamarket portal should be kept secret. I
 Most of the API calls return a "Link" item in the response. That Link is an HTTP link designed to automatically redirect to the most appropriate Groove application on the target platform. For example, if you're adding a link to a website, and the user is on a Windows 8 machine, the click from Internet Explorer will open the Groove Native application on Windows 8 (with a browser redirection)
 .
 ### <a name="8"> </a>Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?
-Yes, you can use the deep link provided in the API response in an invisible webview control. This will give you the final music protocol Link. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md).
+No, you currently need to open a browser. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md).
 
 ###<a name="10"> </a> What is the revenue share of the affiliate program?
 Details of the affiliate program can be found [here](http://www.microsoftaffiliates.com/).
