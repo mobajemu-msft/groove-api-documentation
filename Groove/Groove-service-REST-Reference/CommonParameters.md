@@ -11,11 +11,11 @@ This topic describes parameters that are common to all methods in the Groove RES
 | *continuationToken* | string   | Optional. A Continuation Token provided in an earlier service response and optionally passed back to the service to request the continuation of an incomplete list of content.                                                                                                                   |
 | *jsonp*             | string   | Optional. The name of the JavaScript callback function as defined by the JSONP pattern.                                                                                                                                                                                                          |
 
-Some of the APIs also require a user authentication token in the Authorization header of the request in order to access user-authenticated features such as collection management or full track streaming. See [User Authentication](../Using the Groove RESTful Services/User Authentication.md) for more information on how to create a user authentication header.
+Some of the APIs also require a user authentication token in the Authorization header of the request in order to access user-authenticated features such as collection management or full track streaming. See [User Authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) for more information on how to create a user authentication header.
 
 ##See also
 
 
 #### Parent
 
-[Groove Service REST Reference](Groove Service REST Reference.md)
+[Groove Service REST Reference](Groove-Service-REST-Reference.md)

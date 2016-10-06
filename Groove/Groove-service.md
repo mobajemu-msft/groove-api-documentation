@@ -13,7 +13,7 @@ The Groove Service makes it easy for you to connect your app or website to the w
 
 [Getting Started with the Groove SDK](Getting-Started.md)    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
-[SDK and Helpers](SdK and Helpers/SdK and Helpers.md)  
+[SDK and Helpers](SdK-and-Helpers/SdK-and-Helpers.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software for programming the Groove Service.    
 [Using-the-Groove-RESTful-Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to use the Groove RESTful API.    

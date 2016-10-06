@@ -69,7 +69,7 @@
 ###[Groove RESTful API HTTP Status Codes](Groove-service-REST-Reference/HTTPStatusCodes.md)   
 
 # [FAQ](FAQ.md)
-# [Groove API TERMS OF USE](Groove API Terms of Use.md)
+# [Groove API TERMS OF USE](Groove-API-Terms-of-Use.md)
 # [Support](Support.md)
 # [Privacy](Privacy.md)
 
