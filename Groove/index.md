@@ -1,3 +1,3 @@
 ---
-redirect_url: /Groove/groove%20service
+redirect_url: /Groove/groove-service
 ---

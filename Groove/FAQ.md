@@ -45,7 +45,7 @@ Yes, the Secret provided by the Azure Datamarket portal should be kept secret. I
 Most of the API calls return a "Link" item in the response. That Link is an HTTP link designed to automatically redirect to the most appropriate Groove application on the target platform. For example, if you're adding a link to a website, and the user is on a Windows 8 machine, the click from Internet Explorer will open the Groove Native application on Windows 8 (with a browser redirection)
 .
 ### <a name="8"> </a>Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?
-No, you currently need to open a browser. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using%20the%20Groove%20RESTful%20Services/Deep%20Link.md).
+No, you currently need to open a browser. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using-the-Groove-RESTful-Services/Deep-Link.md).
 
 ###<a name="10"> </a> What is the revenue share of the affiliate program?
 Details of the affiliate program can be found [here](http://www.microsoftaffiliates.com/).
@@ -76,7 +76,7 @@ Please refer to the [User Authentication] documentation.
 Please refer to [Guidelines].
 
 ### <a name="17"> </a>I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?
-Look at the response body. It often contains an [Error](Groove%20service%20REST%20Reference/JSON_Error.md) object with a precise description of the error case.
+Look at the response body. It often contains an [Error](Groove-service-REST-Reference/JSON_Error.md) object with a precise description of the error case.
 
 ### <a name="18"> </a>May I download audio files with my application and provide a download feature to my application users?
 No, this is not allowed according to the TOUs of the APIs. The audio may only be provided in the form of streams. This applies to all of your users, even premium users.  
@@ -95,5 +95,5 @@ See also [Windows Media Library](https://msdn.microsoft.com/en-us/library/micros
 ###  <a name="20"> </a>Where did the Pilot program go?
 There is no need for a Pilot program anymore. You can integrate Groove in your application without even notifying us!
 
-[Guidelines]: Using%20the%20Groove%20RESTful%20Services/Guidelines.md
-[User Authentication]: Using%20the%20Groove%20RESTful%20Services/User%20Authentication.md
+[Guidelines]: Using-the-Groove-RESTful-Services/Guidelines.md
+[User Authentication]: Using-the-Groove-RESTful-Services/User-Authentication.md

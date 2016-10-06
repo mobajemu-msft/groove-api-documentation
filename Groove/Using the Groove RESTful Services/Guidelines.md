@@ -1,4 +1,4 @@
-#Guidelines
+﻿#Guidelines
 Following are some important rules you must respect when using the Groove Service. This list is not meant to be exhaustive:   
 
 + Users of the Groove Service must comply with the [Groove API TERMS OF USE].    
@@ -33,7 +33,7 @@ Following are some important rules you must respect when using the Groove Servic
 
 + You must not pre-load (pre-download) more than three songs in advance for streaming, and you may do so only when the currently playing song is 20 seconds or fewer from reaching the end.
 
-[Groove API TERMS OF USE]: ../Groove%20API%20Terms%20of%20Use.md
-[Deep Link]: Deep%20Link.md
+[Groove API TERMS OF USE]: ../Groove-API-Terms-of-Use.md
+[Deep Link]: Deep-Link.md
 [Badges]: Badges.md
-[Image Service]: Image%20Service.md
+[Image Service]: Image-Service.md

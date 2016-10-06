@@ -3,11 +3,11 @@
   topicHref: /Groove/index
   items:
   - name: Groove service REST Reference
-    tocHref: /Groove/Groove service REST Reference/
-    topicHref: /Groove/Groove service REST Reference/Groove Service REST Reference
+    tocHref: /Groove/Groove-service-REST-Reference/
+    topicHref: /Groove/Groove-service-REST-Reference/Groove-Service-REST-Reference
   - name: SdK and Helpers
-    tocHref: /Groove/SdK and helpers/
-    topicHref: /Groove/SdK and helpers/SdK and Helpers
+    tocHref: /Groove/SdK-and-helpers/
+    topicHref: /Groove/SdK-and-helpers/SdK-and-Helpers
   - name: Groove service REST Reference
-    tocHref: /Groove/Using the Groove RESTful Services/
-    topicHref: /Groove/Using the Groove RESTful Services/Using the Groove RESTful Services
+    tocHref: /Groove/Using-the-Groove-RESTful-Services/
+    topicHref: /Groove/Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services
