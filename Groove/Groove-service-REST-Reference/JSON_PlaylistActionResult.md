@@ -1,10 +1,7 @@
-# PlaylistActionResult (JSON) 
+# PlaylistActionResult (JSON)
+The object describing a playlist action result, used by add and delete.
 
-The object describing a playlist action result, used by add and delete. 
-
-##PlaylistActionResult
-
-
+## PlaylistActionResult
 The PlaylistActionResult object has the following specification.
 
 | **Member**   | **Type**                                                                         | **Description**                                        |
@@ -15,7 +12,7 @@ The PlaylistActionResult object has the following specification.
 | IsPublished  | Boolean value                                                                    | *Optional*. Whether the playlist is public or not.       |
 | TrackActions | List of [TrackActionResult](JSON_TrackActionResult.md) | *Optional*. Details on the results of track actions.     |
 
-##Sample JSON syntax
+## Sample JSON syntax
 ```json
 {
   "Id": "music.playlist.56c99764-800a-00fe-552f-ee11db9370d1",
@@ -30,8 +27,6 @@ The PlaylistActionResult object has the following specification.
   ]
 }
 ```
-##See also
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

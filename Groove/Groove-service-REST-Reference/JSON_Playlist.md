@@ -1,9 +1,7 @@
 # Playlist (JSON)           
-
 A list of tracks and their metadata.
 
-##Playlist
-
+## Playlist
 The Playlist object has the following specification.
 
 | **Member**           | **Type**                                                                                                              | **Description**                                                                                                                                                                                                                                                                                                                                                             |
@@ -17,15 +15,13 @@ The Playlist object has the following specification.
 | CompatibleSources    | string                                                                                                                | An indication of the categories of APIs and actions that this piece of content can be used with. Comma-separated list of one or multiple values among "Catalog", "Collection". Most items are compatible with both Catalog and Collection actions, but playlists for example or some collection items are not valid in a Catalog context.                                   |
 | TrackCount           | 32-bit signed integer                                                                                                 | Number of tracks currently in the playlist.                                                                                                                                                                                                                                                                                                                                 |
 | Description          | string                                                                                                                | A short description of the playlist.                                                                                                                                                                                                                                                                                                                                        |
-| Owner                | string                                                                                                                | Gamertag of the owner of the playlist.                                                                                                                                                                                                                                                                                                                                      |
 | IsReadOnly           | Boolean value                                                                                                         | Whether the playlist can be edited or not.                                                                                                                                                                                                                                                                                                                                  |
 | IsPublished          | Boolean value                                                                                                         | Whether the playlist is publicly visible or not.                                                                                                                                                                                                                                                                                                                            |
 | UserIsOwner          | Boolean value                                                                                                         | Whether the current user is the actual owner of the playlist.                                                                                                                                                                                                                                                                                                               |
 | CollectionStateToken | string                                                                                                                | Token indicating the current version of the collection.                                                                                                                                                                                                                                                                                                                     |
 | Tracks               | [Paginated list](JSON_PaginatedList.md) of [Track](JSON_Track.md) | A paginated list of the tracks in the playlist. In case of a browse, this list is null, and you'll need a lookup on that playlist to get its tracks.                                                                                                                                                                                                                        |
 
-##Sample JSON syntax
-
+## Sample JSON syntax
 ```json
 {
   "TrackCount": 2,
@@ -54,7 +50,7 @@ The Playlist object has the following specification.
           "Name": "Random Access Memories",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-          "Source": "Collection"
+          "Source": "Collection",
           "CompatibleSources": "Catalog, Collection"
         },
         "Artists": [
@@ -65,7 +61,7 @@ The Playlist object has the following specification.
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-              "Source": "Collection"
+              "Source": "Collection",
               "CompatibleSources": "Catalog, Collection"
             }
           },
@@ -76,7 +72,7 @@ The Playlist object has the following specification.
               "Name": "Daft Punk",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-              "Source": "Collection"
+              "Source": "Collection",
               "CompatibleSources": "Catalog, Collection"
             }
           }
@@ -85,7 +81,7 @@ The Playlist object has the following specification.
         "Name": "Get Lucky (feat. Pharrell Williams)",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-        "Source": "Collection"
+        "Source": "Collection",
         "CompatibleSources": "Catalog, Collection"
       },
       {
@@ -105,7 +101,7 @@ The Playlist object has the following specification.
           "Name": "Aleph",
           "ImageUrl": "http://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-          "Source": "Collection"
+          "Source": "Collection",
           "CompatibleSources": "Catalog, Collection"
         },
         "Artists": [
@@ -116,7 +112,7 @@ The Playlist object has the following specification.
               "Name": "Gesaffelstein",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-              "Source": "Collection"
+              "Source": "Collection",
               "CompatibleSources": "Catalog, Collection"
             }
           },
@@ -127,7 +123,7 @@ The Playlist object has the following specification.
               "Name": "Gesaffelstein",
               "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-              "Source": "Collection"
+              "Source": "Collection",
               "CompatibleSources": "Catalog, Collection"
             }
           }
@@ -136,7 +132,7 @@ The Playlist object has the following specification.
         "Name": "Aleph",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.2debea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
-        "Source": "Collection"
+        "Source": "Collection",
         "CompatibleSources": "Catalog, Collection"
       }
     ],
@@ -146,13 +142,10 @@ The Playlist object has the following specification.
   "Name": "Playlist1",
   "ImageUrl": "http://musicimage.xboxlive.com/content/music.playlist.56c99764-800a-00fe-552f-ee11db9370d1/image?locale=en-US",
   "Link": "https://music.microsoft.com/Playlist/56c99764-800a-00fe-552f-ee11db9370d1?partnerID=AwesomePartner",
-  "Source": "Collection"
+  "Source": "Collection",
   "Compatible Sources": "Catalog, Collection"
 }
 ```
-##See also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

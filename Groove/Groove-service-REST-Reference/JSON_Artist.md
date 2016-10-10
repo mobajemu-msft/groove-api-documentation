@@ -1,12 +1,7 @@
 # Artist (JSON)              
-
-
-
 The creator or creators of a musical recording.
 
-##Artist
-
-
+## Artist
 The Artist object has the following specification.
 
 | **Member**        | **Type**                                                 | **Description**                                                                                                                                                                                                                                                                                                                                            |
@@ -24,7 +19,7 @@ The Artist object has the following specification.
 | TopTracks         | List of [Track](JSON_Track.md) | A paginated list of the artist's top tracks, ordered by decreasing order of popularity. This list is null by default unless requested as extra information in a lookup request. Tracks in this list contain only a few fields, including the ID that should be used in a lookup request in order to have the full track properties.                        |
 | Biography         | string                                                   | The artist's biography, if available.                                                                                                                                                                                                                                                                                                                      |
 
-##Sample JSON syntax
+## Sample JSON syntax
 ```json  
 {
   "Biography": "Daft Punk is a French house music group consisting [...]",
@@ -41,13 +36,10 @@ The Artist object has the following specification.
   "OtherIds": {
     "music.amg": "P   168791"
   },
-  "Source": "Catalog"
+  "Source": "Catalog",
   "Compatible Sources": "Catalog, Collection"
 }
 ```
-##See also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

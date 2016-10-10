@@ -1,4 +1,4 @@
-﻿#Obtaining a Developer Access Token
+# Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
  [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
  [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
@@ -22,15 +22,15 @@ Developer authentication is mandatory for all functions in the Groove API. All t
 + [Renewing the token before it expires](#renew)
 + [Sample code](#sample-code)
 
-##Authentication token
+## Authentication token
 The authentication token is based on the Simple Web Token (SWT) format. It contains a list of name-value claims that identify the client application and validity period of the token; it also contains a signature to prevent malicious users from modifying the contents of the token. For more information about SWT, see Simple Web Token on MSDN.  
 
 This authentication token is obtained from the Azure Marketplace authentication endpoint, and it should be considered opaque and be passed as-is in requests to the Groove Service; the only change necessary is to prefix the token with "Bearer", a standard prefix for OAuth tokens.   
 
 The tokens have a validity period of 10 minutes, and there is a mechanism for renewing tokens described in Renewing the token before it expires, later in this topic.   
 
-##Using valid tokens from Azure Marketplace
-In order to be able to use the Groove RESTful API, a third-party developer must first create a developer account on Azure Marketplace and then subscribe to the Groove Platform offer (for free).   
+## Using valid tokens from Azure Marketplace
+In order to be able to use the Groove RESTful API, a third-party developer must first create a developer account on Azure Marketplace and then subscribe to the Groove API offer (for free).   
 
 Once properly subscribed, the third-party app should obtain authentication tokens from the ADM service by using the procedure in this section; the scope to use is ``` http://music.xboxlive.com/``` . The tokens have a validity   
 period of 10 minutes and must be renewed after they expire—or ideally, before they expire.   
@@ -39,17 +39,15 @@ You must obtain an access token to use the Groove RESTful API. The access token 
 
 Microsoft provides methods to obtain access tokens safely, repeatedly, and easily. To obtain an access token, complete the steps in the following procedure; each step links to a subsection in this topic that describes the step in more detail.
 
-###To obtain an access token
+### To obtain an access token
 1. Subscribe to the Groove RESTful API on Azure Marketplace .
 2. Register your application with Azure Marketplace.
 3. Make an HTTP POST request to the token service.
 
-
 ## Create a developer account on Azure Marketplace
 Subscribe to the Groove RESTful API on Azure Marketplace. Subscriptions are free.  
 
-###To subscribe to the Groove RESTful API  
-
+### To subscribe to the Groove RESTful API  
 1. Visit <https://datamarket.azure.com>.  
 2. Click **Sign In** in the upper right corner.   
  ![SignIn]
@@ -62,10 +60,11 @@ If you don't have a Microsoft Account, you'll need to create a new one.
  ![Accept ToU]
 
 <a name="register">
-##Register your application with Azure Marketplace
+## Register your application with Azure Marketplace
 </a>
 After subscribing to the Groove RESTful API, you must register your application with Azure Marketplace.
-###To register your application with Azure Marketplace
+
+### To register your application with Azure Marketplace
 1. To register your application, sign in with the Microsoft account you used above.  
  ![Login Azure]
 2. Click **My account** and then **Developers** in the menu on the left side of the screen.   
@@ -87,7 +86,7 @@ The secret value should be hidden from the client. The secret value should be us
   >**Note**
 These are the credentials that you will use to authenticate with the Groove RESTful API. Do not confuse  these client ID and secret with the customer ID and account key you received in the earlier step [Create a developer account on Azure Marketplace].
 
-##Sign up
+## Sign up
 Sign up to the Groove RESTful API in the Azure Marketplace by visiting [the final page](https://datamarket.azure.com/dataset/xboxmusic/XboxMusicPlatform) and clicking **SIGN UP**.
 
 ![SignUp]
@@ -118,7 +117,7 @@ The response for the token request contains the access token that you can use to
 |scope|The domain for which this token is valid. For the Groove RESTful API, the domain is *http://music.xboxlive.com*.  |
 
 <a name="accesstoken">
-##Using the access token
+## Using the access token
 </a>
 As mentioned earlier in this topic, you must obtain an access token to use the Groove RESTful API. The access token is secure, OAuth standard compliant, and flexible. The value of access token can be used for subsequent calls to the Groove RESTful API. The access token expires after 10 minutes.  
 
@@ -130,14 +129,14 @@ Remember the following points about using the access token:
 + The access token is valid for 10 minutes. If the access token expires, you need to generate a new access token. The sample code in C#, linked at the end of this topic , can generate a new access token prior to exceeding the 10-minute period.
 
 <a name="protectclient">
-##Protecting the client's secret value
+## Protecting the client's secret value
 </a>
 The tokens are obtained from Azure Marketplace in exchange for a client ID and secret value, obtained during the subscription. If possible, these should be secured and used in such a way that cannot be intercepted on the client machine.  
 
 If the application has a server component, then the server should be responsible for storing the client ID and secret value, and the server should obtain the tokens on behalf of the client component so that the secret value cannot be intercepted on the client machines.
 
 <a name="callapi">
-##Calling the Groove RESTful API with the token
+## Calling the Groove RESTful API with the token
 </a>
 Once it is in possession of a valid authentication token, a third-party application may call the Groove RESTful API and provide the OAuth token in one of the following two ways:  
 
@@ -148,10 +147,11 @@ Once it is in possession of a valid authentication token, a third-party applicat
 The standard OAuth prefix "Bearer " must be prepended to the contents of the actual token retrieved from Azure.  
 
 <a name="renew">
-##Renewing the token before it expires
+## Renewing the token before it expires
 </a>
 Because the access tokens are only valid for 10 minutes, they must be refreshed by sending a second request to the Azure Data Market service (located at <https://datamarket.accesscontrol.windows.net/v2/OAuth2-13>). We recommended that your code refresh them proactively before the end of the 10 minutes in order to avoid having a period of time when the Groove Service can't be used.  
 
-This 10-minute duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the response by Azure Datamarket along with the access token.   
-##Sample code
+This 10-minute duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the response by Azure Datamarket along with the access token.  
+
+## Sample code
 +  [Getting Started with the Groove SDK](../Getting-Started.md)

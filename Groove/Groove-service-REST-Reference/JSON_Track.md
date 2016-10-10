@@ -1,4 +1,4 @@
-# Track (JSON)              
+# Track (JSON)
 Describes a *track*, an individual piece of musical content from an album.
 
 This topic describes *track*, an individual piece of musical content from an album.
@@ -6,9 +6,7 @@ This topic describes *track*, an individual piece of musical content from an alb
 -   [Specification of **Track**](#specification-of-track)
 -   [Sample JSON syntax](#sample-json-syntax)
 
-##Specification of Track
-
-
+## Specification of Track
 The **Track** object has the following specification.
 
 | **Member**            | **Type**                                                             | **Description**                                                                                                                                                                                                                                                                                                                                |
@@ -26,13 +24,12 @@ The **Track** object has the following specification.
 | **IsExplicit**        | Boolean                                                              | Nullable. True if the track contains explicit content.                                                                                                                                                                                                                                                                                         |
 | **Genres**            | List of String                                                       | The list of musical genres associated with this track.                                                                                                                                                                                                                                                                                         |
 | **Subgenres**         | List of String                                                       | The list of musical sub-genres associated with this track.                                                                                                                                                                                                                                                                                     |
-| **Rights**            | List of String                                                       | The list of distribution rights associated with this track in Groove (for example, Stream, Purchase, and so on).                                                                                                                                                                                                                               |
+| **Rights**            | List of String                                                       | The list of distribution rights associated with this track in Groove Music (for example, Stream, Purchase, and so on).                                                                                                                                                                                                                               |
 | **Subtitle**          | string                                                               | The track's subtitle.                                                                                                                                                                                                                                                                                                                          |
 | **Album**             | Album                                                                | The album this track belongs to. Only a few fields are populated in this Album element, including the ID that should be used in a lookup request in order to have the full album properties.                                                                                                                                                   |
 | **Artists**           | List of [Contributor](JSON_Contributor.md) | The list of contributors (artists and their roles) to the album.                                                                                                                                                                                                                                                                               |
 
-##Sample JSON syntax
-
+## Sample JSON syntax
 ```json
 {
   "ReleaseDate": "2013-05-09T00:00:00Z",
@@ -56,7 +53,7 @@ The **Track** object has the following specification.
     "Name": "Random Access Memories",
     "ImageUrl": "http://musicimage.xboxlive.com/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
     "Link": "https://music.microsoft.com/Album/B13EB907-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-    "Source": "Catalog"
+    "Source": "Catalog",
     "CompatibleSources": "Catalog, Collection"
   },
   "Artists": [
@@ -67,7 +64,7 @@ The **Track** object has the following specification.
         "Name": "Daft Punk",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-        "Source": "Catalog"
+        "Source": "Catalog",
         "CompatibleSources": "Catalog, Collection"
       }
     }
@@ -79,13 +76,10 @@ The **Track** object has the following specification.
   "OtherIds": {
     "music.amg": "T 29381286"
   },
-  "Source": "Catalog"
+  "Source": "Catalog",
   "CompatibleSources": "Catalog, Collection"
 }
 ```
-##See Also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

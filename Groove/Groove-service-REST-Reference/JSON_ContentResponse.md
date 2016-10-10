@@ -1,8 +1,7 @@
 # ContentResponse (JSON)   
+Base object used in most APIs that return media content.
 
-##ContentResponse
-
-
+## ContentResponse
 The ContentResponse object has the following specification.
 
 | **Member** | **Type**                                                             | **Description**                                                                                                                                                                                                                                                                                                             |
@@ -16,8 +15,7 @@ The ContentResponse object has the following specification.
 | Genres     | GenreList                                                            | A list of string representing the different possible genres for a given locale. Used in the [Browse Genres](URI_ContentNamespaceCatalogGenresGET.md) API.                                                                                                                                         |
 | Culture    | string                                                               | The culture used for processing the [Browse Genres](URI_ContentNamespaceCatalogGenresGET.md) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
 
-##Sample JSON syntax
-
+## Sample JSON syntax
 ```json
 {
   "Artists": {
@@ -36,15 +34,13 @@ The ContentResponse object has the following specification.
         "OtherIds": {
           "music.amg": "P   168791"
         },
-        "Source": "Catalog"
+        "Source": "Catalog",
+        "Compatible Sources": "Catalog, Collection"
       }
     ]
   }
 }
 ```
-##See also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

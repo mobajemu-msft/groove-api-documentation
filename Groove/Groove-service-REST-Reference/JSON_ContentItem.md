@@ -1,11 +1,7 @@
 # ContentItem (JSON)         
+A piece of content (either an [**Album**](JSON_Album.md) or an [**Artist**](JSON_Artist.md)).
 
-
-An item of content (either an [**Album**](JSON_Album.md) or an [**Artist**](JSON_Artist.md)).
-
-##ContentItem
-
-
+## ContentItem
 The ContentItem object has the following specification.
 
 | **Member** | **Type**                                           | **Description**                                        |
@@ -14,8 +10,7 @@ The ContentItem object has the following specification.
 | Album      | [Album](JSON_Album.md)   | Album item if **Type** is **Albums**, null otherwise   |
 | Artist     | [Artist](JSON_Artist.md) | Artist item if **Type** is **Artists**, null otherwise |
 
-##Sample JSON syntax
-
+## Sample JSON syntax
 ```json
 {
   "Type": "Artists",
@@ -33,13 +28,11 @@ The ContentItem object has the following specification.
     "OtherIds": {
       "music.amg": "P   823418"
     },
-    "Source": "Catalog"
+    "Source": "Catalog",
+    "Compatible Sources": "Catalog, Collection"
   }
 }
 ```
-##See also
-
 
 #### Parent  
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

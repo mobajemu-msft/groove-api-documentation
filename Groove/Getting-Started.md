@@ -1,7 +1,5 @@
-#Getting Started with the Groove SDK
-
-##Subscribe to the Groove API on Azure Marketplace
-
+# Getting Started with the Groove SDK
+## Subscribe to the Groove API on Azure Marketplace
 The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)).
 
 [Azure registration image]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
@@ -106,7 +104,8 @@ tokenEnc = HttpUtility.UrlEncode(token);
   }
 Console.WriteLine(responseString);
 ```
-###Windows Runtime
+
+### Windows Runtime
 ```csharp
     using System;
     using System.Net;
@@ -152,8 +151,7 @@ Console.WriteLine(responseString);
     }
 ```
 
-###PHP
-
+### PHP
 ```php
 class GrooveMusic {
       var $serviceauth = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";

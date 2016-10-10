@@ -1,5 +1,4 @@
-﻿# GET (/1/content/{namespace}/catalog/{type}/browse) 
-
+# GET (/1/content/{namespace}/catalog/{type}/browse)
 Browse the music catalog.
 
 -   [Remarks](#remarks)
@@ -7,13 +6,12 @@ Browse the music catalog.
 -   [Query string parameters](#query-string-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
+## Remarks
 The Browse Catalog request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 
 ```
-/1/content/{namespace}/catalog/{type}/browse?orderBy={orderBy}&genre={genre}&maxItems={maxItems}&page={page} 
-&continuationToken={continuationToken}&country={country}&language={language}&accessToken={accessToken} 
+/1/content/{namespace}/catalog/{type}/browse?orderBy={orderBy}&genre={genre}&maxItems={maxItems}&page={page}
+&continuationToken={continuationToken}&country={country}&language={language}&accessToken={accessToken}
 &contentType={contentType}&jsonp={jsonp}
 ```
 
@@ -23,13 +21,10 @@ The Browse Catalog request is composed of mandatory and optional URL parts and q
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
 ## Query string parameters
-
 The following parameters are not available on the Common Parameters page.
 
 | **Parameter**     | **Type**              | **Description**                                                                                                                                                                                                                                                 |
@@ -43,16 +38,14 @@ The following parameters are not available on the Common Parameters page.
 | continuationToken | string                | A [continuation token](JSON_PaginatedList.md) provided in an earlier service response and optionally passed back to the service to request the continuation of an incomplete list of content.                                         |
 | extra             | string                | Required. The type of the requested sub-elements (for example, "Tracks" or "Albums"). See [Extras](Extras.md).                                                                                                                        |
 
-##Examples
-
-
-###Browse the most popular catalog artists in your region
-####Request
+## Examples
+### Browse the most popular catalog artists in your region
+#### Request
 ```http
 GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bearer+[...]
 ```      
 
-####Response
+#### Response
 ```json
 {
   "Artists": {
@@ -99,18 +92,14 @@ GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bear
 }
 ```
 
-###Browse the 5 most played albums in your region
-
-####Request
-
+### Browse the 5 most played albums in your region
+#### Request
 ```http
 GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&accessToken=Bearer
 +[...]
 ```
-      
-      
-####Response
 
+#### Response
 ```json
 {
   "Albums": {
@@ -187,15 +176,14 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
   }
 }
 ```
-   
-      
-###Browse the 50 most played tracks in France
-####Request
+
+### Browse the 50 most played tracks in France
+#### Request
 ```http
 GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&accessToken=Bearer+[...]
 ```
-      
-####Response
+
+#### Response
 ```json
 {
   "Tracks": {
@@ -291,14 +279,13 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
   }
 }
 ```
-      
-####Continuation Request (using "page=1", but it could also have used the ContinuationToken from the first response instead)
 
+#### Continuation Request (using "page=1", but it could also have used the ContinuationToken from the first response instead)
 ```http
 GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&page=1&accessToken=Bearer+[...]
 ```
-      
-####Response
+
+#### Response
 ```json
 {
   "Tracks": {
@@ -394,7 +381,6 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
   }
 }
 ```
-### See also
-  
+
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

@@ -1,8 +1,7 @@
-# StreamResponse (JSON)     
-Response to all stream APIs. 
+# StreamResponse (JSON)    
+Response to all stream APIs.
 
-##StreamResponse
-
+## StreamResponse
 The StreamResponse object has the following specification.
 
 | **Member**  | **Type**                                         | **Description**                                                                           |
@@ -12,7 +11,7 @@ The StreamResponse object has the following specification.
 | ContentType | string                                           | The stream's content type. Can be one of the following: **(1)** application/vnd.apple.mpegurl": HLS MPEG-TS AAC 128-kbit stream with AES encryption. **(2)** "audio/mpeg": MP3 HTTP progressive download.|
 | ExpiresOn   | DateTime                                         | GMT expiry time of the stream URL. |
 
-##Sample JSON syntax
+## Sample JSON syntax
 ```json
 {
   "Url": "https://webstream-vh.akamaihd.net/i/129/580/712/155/audio.mp4/
@@ -23,8 +22,6 @@ The StreamResponse object has the following specification.
   "ExpiresOn": "2014-07-18T12:38:12.349Z"
 }
 ```
-##See also
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

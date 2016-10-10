@@ -1,5 +1,4 @@
 # Groove User Authentication
-
 To use the user-authenticated APIs, you need to have an access token that authenticates
 your app to a particular set of permissions for a user.
 
@@ -10,7 +9,6 @@ The Groove API uses the standard [OAuth 2.0](http://oauth.net/2/) authentication
 Note that you'll still need to provide a [developer access token](Obtaining-a-Developer-Access-Token.md) in the *accessToken* query parameter.
 
 ## Register a Microsoft Account application
-
 To register your app to connect with Groove, you'll need a Microsoft account.
 
 1. Go to the [Microsoft Application Registration Portal](https://account.live.com/developers/applications)
@@ -26,13 +24,11 @@ After you've completed these steps, an application ID and application secret are
 Under the Platforms header, configure details about your app. By default a new app is created as a web app and needs one or more redirect URIs. To enable native client flows for your app as well, click the Add Platform button and choose Mobile.
 
 ## User Authentication
-
 The way you will implement user authentication depends on the platforms you are targeting.
 * If you are building a website, see the [User Authentication on the Web](User-Authentication-on-the-Web.md) documentation
 * If you are building an application, see the [User Authentication in Applications](User-Authentication-in-Applications.md) documentation
 
 ## Related topics
-
 The following topics contain high-level overviews of other concepts that apply
 to the Groove API.
 

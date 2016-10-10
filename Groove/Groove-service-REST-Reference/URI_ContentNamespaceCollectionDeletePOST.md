@@ -1,5 +1,4 @@
-# POST (/1/content/{namespace}/collection/delete) 
-
+# POST (/1/content/{namespace}/collection/delete)
 Delete tracks from a user's collection.
 
 -   [Remarks](#remarks)
@@ -7,23 +6,17 @@ Delete tracks from a user's collection.
 -   [URI parameters](#uri-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
-
+## Remarks
 | Important                                                                            |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-services/User-Authentication.md) is mandatory for this API. |
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##Response object
-
-
+## Response object
 [TrackActionResponse (JSON)](JSON_TrackActionResponse.md)
 
-##URI parameters
-
-
+## URI parameters
 The Delete Tracks request is composed of mandatory URL parts and query parameters, described in the table below. A Delete Tracks request containing all parameters would look like the following string:
 
 ```
@@ -32,28 +25,24 @@ The Delete Tracks request is composed of mandatory URL parts and query parameter
 
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| namespace     | string   | Required. The [namespace to browse] (Namespace.md).                                                                                                     |
-| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Platform APIs. |
+| namespace     | string   | Required. The namespace to browse (music for example).                                                                                                     |
+| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
 
 A valid user authentication token is also required in the Authorization header to access the user's collection.
 
-##Examples
-
-
+## Examples
 Request object: [TrackActionRequest (JSON)](JSON_TrackActionRequest.md).
 
 Response object: [TrackActionResponse (JSON)](JSON_TrackActionResponse.md).
 
-###Delete tracks from collection
-
-
+### Delete tracks from collection
 In this example we delete a valid track (which is in the user's collection), and an invalid one (randomly-generated ID).
 
 #### Request
 ```http
 POST /1/content/music/collection/delete?accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB\[...\]
+Authorization: Bearer eyJlbmMiOiJB[...]
 
 Content-Type: application/json
 
@@ -86,8 +75,6 @@ Content-Type: application/json
   }
 }
 ```
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

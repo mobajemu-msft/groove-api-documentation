@@ -1,4 +1,4 @@
-# GET (/1/content/{namespace}/search?q={query}) 
+# GET (/1/content/{namespace}/search?q={query})
 Search for items in a media catalog, user's collection, or both.
 
 -   [Remarks](#remarks)
@@ -7,8 +7,7 @@ Search for items in a media catalog, user's collection, or both.
 -   [Query string parameters](#query-string-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
+## Remarks
 A Search request is composed of mandatory and **Optional** URL parts and query parameters, as described in the following table. A Search request containing all parameters would look like the following string:
 ```
 /1/content/{namespace}/search?q={query}&language={language}&country={country}&maxItems={maxItems}&filters={filters}&source={source}&contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
@@ -16,26 +15,19 @@ A Search request is composed of mandatory and **Optional** URL parts and query p
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-
 | Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|
 | Using the **collection** source requires [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md). |
 
-##URI parameters
-
-
+## URI parameters
 | **Parameter** | **Type** | **Description**                                                           |
 |---------------|----------|---------------------------------------------------------------------------|
 | namespace     | string   | Required. The namespace in which to perform the search. Example: "music". |
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Query string parameters
-
-
+## Query string parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | query         | string   | Required unless a **continuationToken** is passed. The search query. Any special characters in the query should be properly URL-encoded (for example, multiple words should be separated by "+").                                                                                                                                                                                                                                                                                                                                                               |
@@ -43,17 +35,14 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | filters       | string   | **Optional**. A subcategory of item types, in case the client is interested in only one or more specific types of items. Multiple categories may be passed in this parameter by separating them with "+". Possible values for the "music" namespace are "artists", "albums", and "tracks". If this parameter is not provided, the search will be performed in all categories (for the "music" namespace, for example, the default value of the parameter is "artists+albums+tracks").                                                                               |
 | source        | string   | **Optional**. One or more data source(s), in case the client is interested in searching data from specific sources. Multiple sources may be passed in this parameter by separating them with "+". Possible values for the "music" namespace are "catalog", "collection", and "collection+catalog". The use of the "collection" source requires passing a valid user authentication token. If this parameter is not provided, the search will be performed in the "catalog" if no user authentication token is provided and "collection+catalog" if one is provided. |
 
-##Examples
-
-
-###Simple search
-
-
+## Examples
+### Simple search
 #### Request
 ```http
 GET /1/content/music/search?q=daft+punk&accessToken=Bearer+[...]
 ```
-####Response
+
+#### Response
 ```json
 {
   "Artists": {
@@ -286,15 +275,14 @@ GET /1/content/music/search?q=daft+punk&accessToken=Bearer+[...]
   }
 }
 ```
- 
-###Searching for only albums and tracks
-####Request
+
+### Searching for only albums and tracks
+#### Request
 ```http
-GET /1/content/music/search?q=daft+punk&filters=Albums+tracks
-&accessToken=Bearer+[...]
+GET /1/content/music/search?q=daft+punk&filters=Albums+tracks&accessToken=Bearer+[...]
 ```
-  
-####Response
+
+#### Response
 ```json
 {
   "Albums": {
@@ -474,17 +462,18 @@ GET /1/content/music/search?q=daft+punk&filters=Albums+tracks
   }
 }
 ```
-  
-###Searching in both the Collection and the Catalog
-The response for a Collection+Catalog search will contain for each item type (artists, albums, tracks) up to 25 (or maxItems if specified to a lower value) results per source. Collection items are returned before Catalog items, and if a continuation token is present for an incomplete list it is common to both sources if they have remaining items (which means the continuation response may also contain up to 25 Collection and 25 Catalog items). In this particular example, our user's collection is quite small and the only Collection result is one artist, followed by up to 10 Catalog artists, albums and tracks. Using one of the response continuation token would then produce only Catalog results because all Collection results are included in the first response. 
-####Request
+
+### Searching in both the Collection and the Catalog
+The response for a Collection+Catalog search will contain for each item type (artists, albums, tracks) up to 25 (or maxItems if specified to a lower value) results per source. Collection items are returned before Catalog items, and if a continuation token is present for an incomplete list it is common to both sources if they have remaining items (which means the continuation response may also contain up to 25 Collection and 25 Catalog items). In this particular example, our user's collection is quite small and the only Collection result is one artist, followed by up to 10 Catalog artists, albums and tracks. Using one of the response continuation token would then produce only Catalog results because all Collection results are included in the first response.
+
+#### Request
 ```http
 GET /1/content/music/search?q=daft+punk&source=collection+catalog&maxItems=10&accessToken=Bearer+[...]
 
 Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
-  
-####Response
+
+#### Response
 ```json
 {
   "Artists": {
@@ -724,8 +713,6 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
   }
 }
 ```
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

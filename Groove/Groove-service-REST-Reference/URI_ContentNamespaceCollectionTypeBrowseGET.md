@@ -1,5 +1,4 @@
-# GET (/1/content/{namespace}/collection/{type}/browse) 
-
+# GET (/1/content/{namespace}/collection/{type}/browse)
 Browse a user's collection or playlists.
 
 -   [Remarks](#remarks)
@@ -7,12 +6,10 @@ Browse a user's collection or playlists.
 -   [Query string parameters](#query-string-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
-
+## Remarks
 The full browse request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 ```
-/1/content/{namespace}/collection/{type}/browse?orderBy={orderBy}&maxItems={maxItems} 
+/1/content/{namespace}/collection/{type}/browse?orderBy={orderBy}&maxItems={maxItems}
 &page={page}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
@@ -21,13 +18,10 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | You must provide a valid [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) token for that user in the authorization header. |
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Query string parameters
-
+## Query string parameters
 The following parameters are not available on the Common Parameters page.
 
 | **Parameter** | **Type**              | **Description**                                                                                                        |
@@ -37,21 +31,16 @@ The following parameters are not available on the Common Parameters page.
 | maxItems      | 32-bit signed integer | Optional. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well. |
 | page          | 32-bit signed integer | Optional. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.         |
 
-##Examples
-
-
-###Browse artists
-
-
+## Examples
+### Browse artists
 #### Request
 ```http
-GET /1/content/music/collection/artists/browse?orderBy=ArtistName
-&accessToken=Bearer+[...]
+GET /1/content/music/collection/artists/browse?orderBy=ArtistName&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=1852535598;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
-      
-####Response
+
+#### Response
 ```json
 {
   "Artists": {
@@ -81,18 +70,18 @@ Authorization: XBL3.0 x=1852535598;eyJlbmMiOiJB[...]
   }
 }
 ```
-###Browse artists with invalid orderBy
-####Request
-```http
-GET /1/content/music/collection/artists/browse?orderBy=AlbumTitle&accessToken=
-Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+### Browse artists with invalid orderBy
+#### Request
+```http
+GET /1/content/music/collection/artists/browse?orderBy=AlbumTitle&accessToken=Bearer+[...]
+
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
-      
-####Response
+
+#### Response
 ```json
-400 BadRequest 
+400 BadRequest
 
 {
   "Error": {
@@ -103,16 +92,15 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 }
 ```
 
-###Browse albums
-####Request
+### Browse albums
+#### Request
 ```http
-GET /1/content/music/collection/albums/browse?orderBy=AlbumTitle&accessToken=
-Bearer+[...] 
+GET /1/content/music/collection/albums/browse?orderBy=AlbumTitle&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
-      
-####Response
+
+#### Response
 ```json
 {
   "Albums": {
@@ -197,17 +185,17 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
 }
 ```      
 
-###Browse playlists
+### Browse playlists
 This request specifies maxItems=1 and uses the continuation token to get the second one afterwards.
-####Request
-```http
-GET /1/content/music/collection/playlists/browse?maxItems=1&
-accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+#### Request
+```http
+GET /1/content/music/collection/playlists/browse?maxItems=1&accessToken=Bearer+[...]
+
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
-     
-####Response
+
+#### Response
 ```json
 {
   "Playlists": {
@@ -225,15 +213,16 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
   }
 }
 ```
-####Continuation Request
+
+#### Continuation Request
 ```http
 GET /1/content/music/collection/playlists/browse?continuationToken=ASQ6p3IBCQQADQcDAgABMQ
 &accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
-      
-####Continuation Response
+
+#### Continuation Response
 ```json
 {
   "Playlists": {
@@ -250,17 +239,16 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
   }
 }
 ```
-      
-###Browse tracks
-####Request
-```http
-GET /1/content/music/collection/tracks/browse?orderBy=TrackTitle&accessToken=
-Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+### Browse tracks
+#### Request
+```http
+GET /1/content/music/collection/tracks/browse?orderBy=TrackTitle&accessToken=Bearer+[...]
+
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```     
 
-####Response
+#### Response
 ```json
 {
   "Tracks": {
@@ -424,17 +412,18 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
   }
 }
 ```
-      
-###Browse tracks with invalid maxItems
-####Request
+
+### Browse tracks with invalid maxItems
+#### Request
 ```http
 GET /1/content/music/collection/tracks/browse?maxItems=42&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
-```      
-####Response
+Authorization: Bearer eyJlbmMiOiJB[...]
+```
+
+#### Response
 ```json
-400 BadRequest 
+400 BadRequest
 
 {
   "Error": {
@@ -444,9 +433,6 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
   }
 }
 ```
-
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

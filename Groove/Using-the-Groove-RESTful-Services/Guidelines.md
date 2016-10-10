@@ -1,4 +1,4 @@
-﻿#Guidelines
+# Guidelines
 Following are some important rules you must respect when using the Groove Service. This list is not meant to be exhaustive:   
 
 + Users of the Groove Service must comply with the [Groove API TERMS OF USE].    
@@ -9,7 +9,7 @@ Following are some important rules you must respect when using the Groove Servic
 
 + You may only display an item of album art in connection with an opportunity to purchase the corresponding track in Groove or to promote the availability of the track in Groove Music.    
 
-	These can be created using action deep links (play, buy, view, addtocollection) and/or text and images as described in the [Badges].
+	These can be created using action deep links (play, buy, view) and/or text and images as described in the [Badges].
 
 + For images, you must use the exact URLs returned by the Groove RESTful API.  
 
@@ -21,7 +21,7 @@ Following are some important rules you must respect when using the Groove Servic
 
 + The application or website may neither integrate nor redistribute the content obtained from the Groove Service to other services similar to Groove, such as radio services and other music services.
 
-+ The application or website may cache the content retrieved through the Groove RESTful API for a limited period of time—a maximum of 24 hours.  
++ The application or website may cache the content retrieved through the Groove RESTful API for a limited period of time — a maximum of 24 hours.  
 
   After 24 hours, the application must update the data by querying the Groove RESTful API again.
 

@@ -1,6 +1,4 @@
-#Groove Service
-
-
+# Groove Service
 The Groove Service makes it easy for you to connect your app or website to the world of Groove. The Groove API provides access to RESTful web services that offer many features and generate useful data:
 
 + It is compatible with the [Microsoft Affiliate Program](http://www.microsoftaffiliates.com/) that encompasses both streaming premium subscriptions and on-demand purchases.  
@@ -8,13 +6,11 @@ The Groove Service makes it easy for you to connect your app or website to the w
 + Streaming that can be integrated on any platform or browser.
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
-
-###In this section
-
+### In this section
 [Getting Started with the Groove SDK](Getting-Started.md)    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
 [SDK and Helpers](SdK-and-Helpers/SdK-and-Helpers.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software for programming the Groove Service.    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software to use the Groove RESTful API.    
 [Using-the-Groove-RESTful-Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to use the Groove RESTful API.    
 [Affiliate Program](http://www.microsoftaffiliates.com/)  
@@ -29,8 +25,3 @@ The Groove Service makes it easy for you to connect your app or website to the w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer support for the Groove API    
 [Privacy](Privacy.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notice about our collection and use of your personal information.
-
-###Online Resources  
-[Blog](http://www.google.com) - Microsoft blog focusing on Groove for developers.  
-
-

@@ -1,22 +1,18 @@
 # Groove User Authentication on the Web
-
 In this section, you'll learn how to:
 
 1. Sign your user in to Groove with the specified [scopes](#authentication-scopes) using the token flow or code flow.
 2. Sign the user out (optional).
 
 ## Sign users in
-
 Your app must initiate the sign-in process by contacting the
 Microsoft account authorization web service with a specified scope, and receive
 an access token. The flow follows standard OAuth 2.0 authentication flows and
 requires calls from a web browser or web-browser control.
 
 ## Authentication scopes
-
 Scopes determine what type of access the app is granted when the user is signed
 in.
-
 
 | Scope name         | Description                                                                                                                                                                                                                   | Required |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------|
@@ -30,7 +26,6 @@ MicrosoftMediaServices.GrooveApiAccess offline_access
 ```
 
 ## Supported Authentication flows
-
 There are two supported authentication flows to choose from:
 
 * [Token flow](#token-flow)
@@ -63,7 +58,6 @@ GET https://login.live.com/oauth20_authorize.srf?client_id={client_id}&scope={sc
 Use this redirect URL for mobile and desktop applications `https://login.live.com/oauth20_desktop.srf`.
 
 ### Response
-
 Upon successful authentication and authorization of your application, the web browser
 will be redirected to your redirect URL with additional parameters added to the URL.
 
@@ -80,7 +74,6 @@ are quite long.
 You can use the value of `access_token` to make requests to the Groove API.
 
 ## Code flow
-
 The code flow for authentication is a three-step process with separate calls to authenticate and authorize
 the application and to generate an access token to use the Groove API. This also
 allows your application to receive a refresh token that will enable long-term
@@ -106,7 +99,6 @@ GET https://login.live.com/oauth20_authorize.srf?client_id={client_id}&scope={sc
 | *response_type* | string | The type of response expected from the authorization flow. For this flow, the value must be **code**. |
 
 #### Response
-
 Upon successful authentication and authorization of your application, the web browser
 will be redirected to your redirect URL with additional parameters added to the URL.
 
@@ -238,7 +230,6 @@ that next time your app launches the sign in experience, the user will be reques
 enter a username and password to continue.
 
 ### Required query string parameters
-
 | Parameter name | Value  | Description                                                                                                                                                 |
 |:---------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *client_id*    | string | The client ID value created for your application.                                                                                                           |
@@ -249,7 +240,6 @@ you provided. When the browser loads your redirect page, no authentication query
 string parameters will be set, and you can infer the user has been logged out.
 
 ## Revoking Access
-
 Users can revoke an app's access to their account by visiting the
 [Microsoft account manage consent](https://account.live.com/consent/Manage) page.
 
@@ -258,7 +248,6 @@ will no longer be valid. You will need to repeat the authentication flow to
 request a new access and refresh token from scratch.
 
 ## Errors
-
 If there are errors with authentication, the web browser will be redirected to
 an error page. While the error page always presents an end-user friendly message
 the URL for the error page includes additional information that may help you
@@ -278,7 +267,6 @@ If the user selects not to provide consent to your application, the flow will
 redirect to your redirect_uri and include the same error parameters.
 
 ### Error parameters
-
 | Parameter name      | Value  | Description                                     |
 |:--------------------|:-------|:------------------------------------------------|
 | *error*             | string | Error code identifying the error that occurred. |
@@ -287,7 +275,6 @@ redirect to your redirect_uri and include the same error parameters.
 [app-portal]: http://go.microsoft.com/fwlink/p/?LinkId=193157
 
 ## Related topics
-
 The following topics contain high-level overviews of other concepts that apply
 to user authentication for the Groove API.
 

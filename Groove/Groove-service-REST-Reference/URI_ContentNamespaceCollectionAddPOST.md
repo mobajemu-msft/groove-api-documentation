@@ -1,14 +1,11 @@
-#POST (/1/content/{namespace}/collection/add) 
-
+# POST (/1/content/{namespace}/collection/add)
 Add tracks to a user's collection.
 
 -   [Remarks](#remarks)
 -   [URI parameters](#uri-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
-
+## Remarks
 | Important                                                                            |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) is mandatory for this API. |
@@ -19,30 +16,25 @@ The number of tracks per batch is limited to 100.
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##URI parameters
-
-
+## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| namespace     | string   | Required. The namespace to browse (Namespace).                                                                                                     |
-| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Platform APIs. |
+| namespace     | string   | Required. The namespace to browse (music for example).                                                                                                     |
+| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
 
-##Examples
-
-
+## Examples
 Request object: [TrackActionRequest (JSON)](JSON_TrackActionRequest.md).
 
 Response object: [TrackActionResponse (JSON)](JSON_TrackActionResponse.md).
 
-###Add tracks to collection
-
+### Add tracks to collection
 We will add one valid track ID, and one invalid ID (random-generated).
 
 #### Request
 ```http
 POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=945039495;eyJlbmMiOiJB\[...\]
+Authorization: Bearer eyJlbmMiOiJB[...]
 
 Content-Type: application/json
 {
@@ -52,6 +44,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 #### Response
 ```json
 {
@@ -76,123 +69,120 @@ Content-Type: application/json
 }
 ```
 
-###Add too many tracks at once
-
+### Add too many tracks at once
 The batch size is limited to 100 items.
 
 #### Request
 ```http
 POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=663179813;eyJlbmMiOiJB\[...\]
+Authorization: Bearer eyJlbmMiOiJB[...]
 
 Content-Type: application/json
 
 {
-"TrackIds": \[
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933",
-"music.A83EB907-0100-11DB-89CA-0019B92A3933"
-\]
-
+  "TrackIds": [
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933",
+    "music.A83EB907-0100-11DB-89CA-0019B92A3933"
+  ]
 }
 ```
 
@@ -210,13 +200,11 @@ Content-Type: application/json
 ```
 
 ### Add a track using XML instead of JSON
-
-
 #### Request
 ```http
 POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=663179813;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 
 Content-Type: application/xml
 
@@ -238,16 +226,15 @@ Content-Type: application/xml
   &lt;/TrackActionResults&gt;
 &lt;/TrackActionResponse&gt;
 ```
-###Access is denied if the user authentication token is missing or invalid
 
-
+### Access is denied if the user authentication token is missing or invalid
 The batch size is limited to 100 items.
 
 #### Request
 ```http
-POST /1/content/music/collection/add?accessToken=Bearer+[...] 
+POST /1/content/music/collection/add?accessToken=Bearer+[...]
 
-Content-Type: application/json 
+Content-Type: application/json
 
 {
   "TrackIds": [
@@ -268,8 +255,6 @@ Content-Type: application/json
   }
 }
 ```
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

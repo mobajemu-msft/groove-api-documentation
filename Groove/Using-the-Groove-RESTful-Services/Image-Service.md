@@ -1,4 +1,4 @@
-#Image Service
+# Image Service
 Every piece of content returned by content APIs contains a field, ImageUrl, that is a direct link to the content's default image, hosted on ```http://musicimage.xboxlive.com/```. This image link generates an image with specific default properties, but it is possible to modify the link in order to change some of the image properties, such as its size. Image resolution is context-aware, so the actual image might change depending on the size parameters used. The details of the image API are shown in this topic.  
 
 You should use the image URL given in the response. The URL should not be modified or altered other than with the parameters described below. Any other use of the images will be considered as a breach of the [terms of use] of the API.  
@@ -28,4 +28,4 @@ For example:
 ![Letterboxed](http://musicimage.xboxlive.com/content/music.24540000-0200-11DB-89CA-0019B92A3933/image?locale=en-US&w=240&h=200&mode=letterbox)
 
 
- [terms of use]: ../Groove-API-Terms-of-Use.md
+[terms of use]: ../Groove-API-Terms-of-Use.md

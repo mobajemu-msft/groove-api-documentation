@@ -1,11 +1,9 @@
-# PlaylistActionResponse (JSON) 
-
+# PlaylistActionResponse (JSON)
 The output element for every playlist action request: create, update, and delete.
 
 Contains an optional Error field if the operation or some sub-operations failed, and an object describing which sub-operations failed and which succeeded.
 
-##PlaylistActionResponse
-
+## PlaylistActionResponse
 The PlaylistActionResponse object has the following specification.
 
 | **Member**           | **Type**                                                                       | **Description**                                                 |
@@ -13,7 +11,7 @@ The PlaylistActionResponse object has the following specification.
 | Error                | [Error](JSON_Error.md)                               | Optional. Error if the operation or some sub-operations failed. |
 | PlaylistActionResult | [PlaylistActionResult](JSON_PlaylistActionResult.md) | Details on the playlist action.                                 |
 
-##Sample JSON syntax
+## Sample JSON syntax
 ```json
 {
   "PlaylistActionResult": {
@@ -30,15 +28,11 @@ The PlaylistActionResponse object has the following specification.
   }
 }
 ```
-##See also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)
 
 #### Reference
-
 [/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)  
 [/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)  
 [/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)

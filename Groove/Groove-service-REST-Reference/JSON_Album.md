@@ -1,9 +1,7 @@
-#Album(JSON)
-A musical recording
+# Album (JSON)
+A musical recording.
 
-##Album
-
-
+## Album
 The Album object has the following specification.
 
 | **Member**        | **Type**                                                             | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -27,9 +25,7 @@ The Album object has the following specification.
 | Artists           | List of [Contributor](JSON_Contributor.md) | The list of contributors (artists and their roles) to the album.                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tracks            | List of [Track](JSON_Track.md)             | A paginated list of the album's tracks. This list is null by default unless requested as extra information in a lookup request. If not null, it should most often be full without the need to use a continuation token; only a few cases of albums containing a very large number of tracks will use pagination. Tracks in this list contain only a few fields, including the ID that should be used in a lookup request in order to have the full track properties. |
 
-##Sample JSON syntax
-
-
+## Sample JSON syntax
 ```json  
 {
   "ReleaseDate": "2013-05-09T00:00:00Z",
@@ -52,7 +48,7 @@ The Album object has the following specification.
         "Name": "Daft Punk",
         "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
-        "Source": "Catalog"
+        "Source": "Catalog",
         "CompatibleSources": "Catalog, Collection"
       }
     }
@@ -64,14 +60,10 @@ The Album object has the following specification.
   "OtherIds": {
     "music.amg": "R  2749955"
   },
-  "Source": "Catalog"
+  "Source": "Catalog",
   "CompatibleSources": "Catalog, Collection"
 }
 ```  
 
-##See also
-
-
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

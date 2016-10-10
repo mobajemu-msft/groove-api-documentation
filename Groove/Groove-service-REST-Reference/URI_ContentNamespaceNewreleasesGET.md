@@ -1,5 +1,4 @@
-# GET (/1/content/{namespace}/newreleases) 
-
+# GET (/1/content/{namespace}/newreleases)
 Discover new releases.
 
 -   [Remarks](#remarks)
@@ -7,35 +6,28 @@ Discover new releases.
 -   [Response object](#response-object)
 -   [Examples](#examples)
 
-##Remarks
-
-
-The NewReleases request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would look like the following string:
+## Remarks
+The New Releases request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would look like the following string:
 ```
 /1/content/{namespace}/newreleases?genre={genre}&language={language}&country={country}&accessToken={accessToken}
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##URI parameters
-
-
+## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](URI_ContentNamespaceCatalogGenresGET.md) and must be URL-encoded. |
 
-##Response object
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Examples
-
-
-###New releases (all genres)
-
+## Examples
+### New releases (all genres)
 #### Request
 ```http
 GET /1/content/music/newreleases?accessToken=Bearer+[...]
 ```
+
 #### Response
 ```json
 {
@@ -121,13 +113,12 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
 }
 ```
 
-New releases (specific FR genre)
---------------------------------
-
+### New releases (specific FR genre)
 #### Request
 ```http
 GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
 ```
+
 #### Response
 ```json
 {
@@ -210,6 +201,5 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
 }
 ```
 
-## See also
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

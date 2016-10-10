@@ -1,9 +1,7 @@
-#Groove RESTful API HTTP Status Codes 
+# Groove RESTful API HTTP Status Codes
+The Hypertext Transfer Protocol (HTTP) standard describes a number of status codes that are returned by the server in response to a client request. The Groove API methods return HTTP protocol-compliant status codes to describe the status of the request.
 
-
-The Hypertext Transfer Protocol (HTTP) standard describes a number of status codes that are returned by the server in response to a client request. Groove API methods return HTTP protocol-compliant status codes to describe the status of the request.
-
-The table provides a list of status codes returned by Groove API, and their typical meanings.
+The table provides a list of status codes returned by the Groove API, and their typical meanings.
 
 | **Code** | **Reason phrase**               | **Description**                                                                                        |
 |----------|---------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -28,5 +26,5 @@ The table provides a list of status codes returned by Groove API, and their typi
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Some resources and methods provide specific information about the meaning of particular status codes in the context of that resource or method. For more details, refer to the documentation for the resources or methods that you are using. |
 
-##See Also
+## See Also
 [Error(JSON)](JSON_Error.md)

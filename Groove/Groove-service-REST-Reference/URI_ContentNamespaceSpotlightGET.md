@@ -1,12 +1,11 @@
-﻿# GET (/1/content/{namespace}/spotlight) 
-Discover content for a specified language or culture.
+# GET (/1/content/{namespace}/spotlight)
+Discover spotlight content for a specified language or culture.
 
 -   [Remarks](#remarks)
 -   [Response object](#response-object)
 -   [Examples](#examples)
 
-##Remarks
-
+## Remarks
 The Spotlight request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would look like the following string:
 ```
 /1/content/{namespace}/spotlight?language={language}&country={country}&accessToken={accessToken}
@@ -14,19 +13,12 @@ The Spotlight request is composed of mandatory and optional URL parts and query 
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Examples
-
-
-###Spotlight content
-
-
+## Examples
+### Spotlight content
 #### Request
-
 ```http
 GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ```
@@ -253,14 +245,14 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
   }
 }
 ```
-      
-###Spotlight for a specific culture
-####Request
+
+### Spotlight for a specific culture
+#### Request
 ```http
 GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ```
-      
-####Response
+
+#### Response
 ```json
 {
   "Results": {
@@ -467,8 +459,6 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
   }
 }
 ```
-##See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

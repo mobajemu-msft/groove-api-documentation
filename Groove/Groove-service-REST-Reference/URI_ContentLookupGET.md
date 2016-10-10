@@ -1,5 +1,4 @@
-# GET (/1/content/{id}/lookup) 
-
+# GET (/1/content/{id}/lookup)
 Look up one or several items from a media catalog and/or user's collection.
 
 -   [Remarks](#remarks)
@@ -11,51 +10,39 @@ Look up one or several items from a media catalog and/or user's collection.
 -   [Lookup by ICPN](#lookup-by-icpn)
 -   [Collection lookup examples](#collection-lookup-examples)
 
-##Remarks
-
-
+## Remarks
 A lookup request is composed of mandatory and optional URL parts and query parameters, as described in the following table. A lookup request containing all parameters would look like the following string:
 ```http
 /1/content/{id1+id2+id3}/lookup?language={language}&country={country}&extras={extras}&source={source}
 &contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
- 
+
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|
 | Using the **collection** source requires [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md). |
 
-##URI parameters
-
-
+## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                   |
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ids           | string   | Required. The ID or IDs to be looked up. Each ID is prefixed by a namespace and ".". Multiple IDs are separated by "+". The total length of all IDs must be less than or equal to 250 characters. 
-                                                                                                                                                                                                                               
+| ids           | string   | Required. The ID or IDs to be looked up. Each ID is prefixed by a namespace and ".". Multiple IDs are separated by "+". The total length of all IDs must be less than or equal to 250 characters.
+
 | Note|                       
 |------------------------|                  
 | ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Query string parameters
-
-
+## Query string parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | source        | string   | *Optional*. One or more data source(s), in case the client is interested in lookup up data in specific sources. Multiple sources may be passed in this parameter by separating them with "+". Possible values for the "music" namespace are "catalog", "collection", and "collection+catalog". The use of the "collection" source requires passing a valid user authentication token. If this parameter is not provided, the lookup will be performed in the "catalog" if no user authentication token is provided and "collection+catalog" if one is provided. |
 | extras        | string   | *Optional.* List of extra fields that can be optionally requested (at the cost of performance). Multiple values must be separated with "+".                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-##Catalog lookup examples
-
-
-###Artist lookup
-
-
+## Catalog lookup examples
+### Artist lookup
 #### Request
 ```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
@@ -86,13 +73,13 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
   }
 }
 ```
-###Album lookup
 
-
+### Album lookup
 #### Request
 ```http
 GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
 ```
+
 #### Response
 ```json
 {
@@ -137,9 +124,7 @@ GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
 }
 ```
 
-###Track lookup
-
-
+### Track lookup
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bearer+[...]
@@ -199,9 +184,8 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/lookup?accessToken=Bea
   }
 }
 ```
-###Lookup of a nonexistent ID
 
-
+### Lookup of a nonexistent ID
 #### Request
 ```http
 GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bearer+[...]
@@ -210,7 +194,7 @@ GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bea
 #### Response
 ```json
 HTTP/1.1 404 Not Found
-{ 
+{
  "Error": {
    "ErrorCode": "CATALOG_NO_RESULT",
    "Description": "Item does not exist"
@@ -218,9 +202,7 @@ HTTP/1.1 404 Not Found
 }
 ```
 
-###More complex example
-
-
+### More complex example
 The following examples use the following optional features:
 
 -   Batching: requests three music IDs at the same time
@@ -243,7 +225,6 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
 ```
 
 #### Response
-
 ```xml
 <ContentResponse xmlns="http://schemas.microsoft.com/xboxmusic/2013/10/platform" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <Albums>
@@ -365,16 +346,12 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
 </ContentResponse>
 ```
 
-Batch lookup with extra details
--------------------------------
-
+### Batch lookup with extra details
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933+
 music.B13EB907-0100-11DB-89CA-0019B92A3933+music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?
-
 extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
-
 &accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity%252fclaims
 %252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com%252faccesscontrolservice%252f2010
 %252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f
@@ -793,17 +770,14 @@ extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
 ```
 
 ## Lookup by ISRC
-
-
 ISRC is a standard music identifier that can be used as input to the Lookup API by prefixing it with the namespace music.isrc.
 
-###Request
-
+### Request
 ```json
 GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
 ```
-###Response
 
+### Response
 ```json
 {
   "Tracks": {
@@ -857,19 +831,15 @@ GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
 }
 ```
 
-##Lookup by ICPN
-
-
+## Lookup by ICPN
 ICPN is a standard music identifier that can be used as input to the Lookup API by prefixing it with the namespace music.icpn.
 
-###Request
-
+### Request
 ```http
 GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
 ```
 
-###Response
-
+### Response
 ```json
 {
   "Albums": {
@@ -914,17 +884,12 @@ GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
 ```
 
 ## Collection lookup examples
-
-
-###Collection album lookup
-
-
+### Collection album lookup
 #### Request
 ```http
-GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?source=collection&
-accessToken=Bearer+[...]
+GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?source=collection&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9\[...\]
+Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
 
 #### Response
@@ -948,14 +913,12 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
 }
 ```
 
-###Collection playlist lookup
-
+### Collection playlist lookup
 #### Request
 ```http
-GET /1/content/music.AQM2egu7ioD-AI-GF3usCeHQ/lookup?source=collection&
-accessToken=Bearer+[...]
+GET /1/content/music.AQM2egu7ioD-AI-GF3usCeHQ/lookup?source=collection&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9\[...\]
+Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
 
 #### Response
@@ -1092,17 +1055,12 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
 }
 ```
 
-###Collection+Catalog batch lookup
-
-
+### Collection+Catalog batch lookup
 Each of the input IDs is looked up in the collection first, and then in the catalog if not found in the collection. The "Source" field of each returned item indicates whether the item comes from the Collection or the Catalog.
 
 #### Request
 ```http
-GET /1/content/music.3770F306-0100-11DB-89CA-0019B92A3933+music.AQIPAAAcxgAC3GpkUPzr8EQ/lookup?
-
-source=collection+catalog
-
+GET /1/content/music.3770F306-0100-11DB-89CA-0019B92A3933+music.AQIPAAAcxgAC3GpkUPzr8EQ/lookup?source=collection+catalog
 &accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005
 %252f05%252fidentity%252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.
 microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a
@@ -1110,7 +1068,7 @@ microsoft.com%252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentitypr
 %252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
 %26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 
-Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9\[...\]
+Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
 
 #### Response
@@ -1173,9 +1131,6 @@ Authorization: XBL3.0 x=1047956662;eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBL
   }
 }
 ```
-
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

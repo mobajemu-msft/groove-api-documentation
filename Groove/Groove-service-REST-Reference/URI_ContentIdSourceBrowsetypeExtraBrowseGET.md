@@ -1,4 +1,4 @@
-# GET (/1/content/{id}/{source}/{browseType}/{extra}/browse) 
+# GET (/1/content/{id}/{source}/{browseType}/{extra}/browse)
 Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).
 
 -   [Remarks](#remarks)
@@ -6,9 +6,7 @@ Browse specific sub-items of a given ID (for example, the albums of an artist or
 -   [Response object](#response-object)
 -   [Examples](#examples)
 
-##Remarks
-
-
+## Remarks
 A Sub-Browse API call is equivalent to a Lookup call on the parent item with one extra and will produce the same response, but the Sub-Browse API offers extra features: pagination (the Lookup API only offers continuation) and [customizing the ordering](OrderBy.md).
 
 The Sub-Browse request is composed of mandatory and optional URL parts and query parameters, described in the table below. A Sub-Browse request containing all parameters would resemble the following:
@@ -23,8 +21,7 @@ Please note that pagination is zero-based (the first page is found at page=0).
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##URI parameters
-
+## URI parameters
 | **Parameter**     | **Type**              | **Description**                                                                                                                                                                                                                |
 |-------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                | string                | Required. The identifier of the parent element whose sub-items are being browsed.                                                                                                                                              |
@@ -36,17 +33,11 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | page              | 32-bit signed integer | Optional. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.                                                                                                                 |
 | continuationToken | string                | Optional. A token provided by an earlier service response and optionally returned to the service to request continuation of an incomplete list of content.                                                                     |
 
-##Response object
-
-
+## Response object
 [ContentResponse (JSON)](JSON_ContentResponse.md)
 
-##Examples
-
-
-###Browse Avicii's albums
-
-
+## Examples
+### Browse Avicii's albums
 This call obtains the exact same result as /1/content/music.2F531400-0200-11DB-89CA-0019B92A3933/lookup?extras=albums.
 
 #### Request
@@ -149,16 +140,15 @@ accessToken=Bearer+[...]
     ]
   }
 }
-``` 
+```
 
 ### Get the first 3 tracks of the album "Discovery"
-
-
 #### Request
 ```http
 GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/browse?maxItems=3
 &accessToken=Bearer+[...]
 ```
+
 #### Response
 ```json
 {
@@ -321,19 +311,18 @@ GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/b
 ```
 
 ### Browse the tracks of one of my playlists
-
-
 #### Request
 ```http
-GET /1/content/music.AQPRiQGUVID-ANj02JdwYA\_R/collection/playlist/tracks/browse?
+GET /1/content/music.AQPRiQGUVID-ANj02JdwYA_R/collection/playlist/tracks/browse?
 accessToken=Bearer+http%253a%252f%252fschemas.xmlsoap.org%252fws%252f2005%252f05%252fidentity
 %252fclaims%252fnameidentifier%3dAwesomePartner%26http%253a%252f%252fschemas.microsoft.com
 %252faccesscontrolservice%252f2010%252f07%252fclaims%252fidentityprovider%3dhttps%253a%252f
 %252fdatamarket.accesscontrol.windows.net%26Audience%3dhttp%253a%252f%252fmusic.xboxlive.com
 %252f%26ExpiresOn%3d1609459199%26Issuer%3dhttps%253a%252f%252fdatamarket.accesscontrol.windows.net
 %26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%253d HTTP/1.1
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB\[...\]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
+
 #### Response
 ```json
 {
@@ -459,9 +448,7 @@ Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB\[...\]
 }
 ```
 
-###Browse Daft Punk's top tracks 5 by 5
-
-
+### Browse Daft Punk's top tracks 5 by 5
 #### Request
 ```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptracks/browse
@@ -473,7 +460,6 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptrac
 %252fdatamarket.accesscontrol.windows.net%26HMACSHA256%3d0pVJ3%252fUig7mgeMtlM2wI27Sm
 QItFOQXTzSEbEmmDFG4%253d HTTP/1.1
 ```
-
 
 #### Response
 ```json
@@ -852,9 +838,6 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptrac
   }
 }
 ```
-
-###See also
-
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

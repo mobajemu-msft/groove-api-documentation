@@ -1,5 +1,4 @@
-#GET (/1/content/{id}/preview) 
-
+# GET (/1/content/{id}/preview)
 Request preview streaming.
 
 -   [Remarks](#remarks)
@@ -7,9 +6,7 @@ Request preview streaming.
 -   [Query string parameters](#query-string-parameters)
 -   [Examples](#examples)
 
-##Remarks
-
-
+## Remarks
 The preview streaming request is composed of mandatory and optional URL parts and query parameters. A preview request containing all parameters would resemble the following string:
 ```http
 /1/content/{namespace.id}/preview?country={country}&clientInstanceId={clientInstanceId} &contentType={contentType}&accessToken={accessToken}
@@ -17,28 +14,22 @@ The preview streaming request is composed of mandatory and optional URL parts an
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
-##Response object
-
-
+## Response object
 [StreamResponse (JSON)](JSON_StreamResponse.md)
 
-##Query string parameters
-
+## Query string parameters
 | **Parameter**    | **Type** | **Description**                                                                                             |
 |------------------|----------|-------------------------------------------------------------------------------------------------------------|
 | clientInstanceId | string   | Required. Unique client identifier. Should be persisted client-side. Can be from 32 to 128 characters long. |
 
-##Examples
-
-
-###Search example
-
-
+## Examples
+### Search example
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/preview?clientInstanceId=fa624b17-412c-454a-a5a5-950bb06ae019&
 accessToken=Bearer+[...]
 ```
+
 #### Response
 ```json
 {
@@ -46,7 +37,6 @@ accessToken=Bearer+[...]
   "ContentType": "audio/mp3"
 }
 ```
-##See also
 
 #### Parent
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)

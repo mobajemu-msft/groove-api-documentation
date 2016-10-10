@@ -44,7 +44,6 @@ private async void GetMsaTokenAsync(WebAccountProviderCommand command)
 ```
 
 ## Windows and Windows Phone 8(.1)
-
 You can use the following sample code on Windows 8, Windows 8.1, Windows Phone 8 and Windows Phone 8.1. If you plan on supporting Windows 10 universal platforms, it is recommended you use the samples above instead of this one.
 
 ```csharp
@@ -61,7 +60,6 @@ return "Bearer " + ticket.Value;
 ```
 
 ## Android
-
 On Android, you can use the [Live SDK for Android](https://msdn.microsoft.com/en-us/library/office/dn631814.aspx).
 
 ```java
@@ -129,7 +127,6 @@ public class JavaCodeSample extends Activity implements LiveAuthListener {
 ```
 
 ## iOS
-
 On iOS, you can use the [Live SDK for iOS](https://msdn.microsoft.com/en-us/library/hh875197.aspx).
 
 ```objc
@@ -187,7 +184,6 @@ NSString* APP_CLIENT_ID=@"000000004406774C";
 ```
 
 ## Related topics
-
 The following topics contain high-level overviews of other concepts that apply
 to user authentication for the Groove API.
 

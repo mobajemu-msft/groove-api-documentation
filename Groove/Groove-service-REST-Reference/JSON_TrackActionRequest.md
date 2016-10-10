@@ -1,16 +1,14 @@
 # TrackActionRequest (JSON)  
+The input element for every track action request: add and delete.
 
-The input element for every track action request: add and delete. 
-
-##TrackActionRequest
-
+## TrackActionRequest
 The TrackActionRequest object has the following specification.
 
 | **Member** | **Type**       | **Description**                                                                                                                                                                                                                                                       |
 |------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | TrackIds   | List of string | List of track IDs to add to the user's collection. These IDs can be found through [/1/content/{id}/lookup](URI_ContentLookupGET.md) or [/1/content/{namespace}/search?q={query}](URI_ContentSearchGET.md), for example. |
 
-##Sample JSON syntax
+## Sample JSON syntax
 ```json
 {
   "TrackIds": [
@@ -19,9 +17,6 @@ The TrackActionRequest object has the following specification.
   ]
 }
 ```
-##See also
-
 
 #### Parent
-
 [Groove Service REST Reference](Groove-Service-REST-Reference.md)
