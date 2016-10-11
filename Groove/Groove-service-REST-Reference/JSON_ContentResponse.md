@@ -29,13 +29,13 @@ The ContentResponse object has the following specification.
         ],
         "Id": "music.C61C0000-0200-11DB-89CA-0019B92A3933",
         "Name": "Daft Punk",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/C61C0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   168791"
         },
         "Source": "Catalog",
-        "Compatible Sources": "Catalog, Collection"
+        "CompatibleSources": "Catalog, Collection"
       }
     ]
   }

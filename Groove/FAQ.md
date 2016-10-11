@@ -16,7 +16,6 @@
 - [I'm coding a game. Can I use the Groove API?](#16)
 - [I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?](#17)
 - [May I download audio files with my application and provide a download feature to my application users?](#18)
-- [I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?](#19)
 - [Where did the Pilot program go?](#20)
 
 ### <a name="1"> </a>I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?
@@ -83,15 +82,6 @@ Look at the response body. It often contains an [Error](Groove-service-REST-Refe
 No, this is not allowed according to the TOUs of the APIs. The audio may only be provided in the form of streams. This applies to all of your users, even premium users.  
 
 Please refer to [Guidelines].
-
-###  <a name="19"> </a>I'm using the Windows Media Library on Windows Phone 8.1 to get details on the user's local files, but I can't find any art. How can I get the the images?
-On Windows Phone 8.1, images associated with local files are not available. Instead, call the image service with the MediaID you get from the local library when requesting the image.
-
-
-    Example:   
-    http://musicimage.xboxlive.com/content/music.<MediaIDRetreivedFromLocalLibrary>/image?locale=en-US&w=200&h=200
-
-See also [Windows Media Library](https://msdn.microsoft.com/en-us/library/microsoft.xna.framework.media.medialibrary.aspx).
 
 ###  <a name="20"> </a>Where did the Pilot program go?
 There is no need for a Pilot program anymore. You can integrate Groove in your application without even notifying us!

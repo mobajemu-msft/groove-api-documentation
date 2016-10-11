@@ -48,21 +48,21 @@ Authorization: Bearer eyJlbmMiOiJB[...]
       {
         "Id": "music.AQIPAATsXwACH-HZ7I1TxZk",
         "Name": "Boris Brejcha",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/5fec0400-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
       {
         "Id": "music.AQIPAAAcxgAC3GpkUPzr8EQ",
         "Name": "Daft Punk",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
       {
         "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
         "Name": "Gesaffelstein",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       }
@@ -118,7 +118,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
               "Name": "Gesaffelstein",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -126,7 +126,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQEPB-rrJgABM-vDUQcGa74",
         "Name": "Aleph",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
@@ -143,7 +143,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAATsXwACH-HZ7I1TxZk",
               "Name": "Boris Brejcha",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/5fec0400-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -151,7 +151,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQEPB75BmAABHDnC5GmB7_s",
         "Name": "Der Alchemyst",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/9841be07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
@@ -168,7 +168,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAAcxgAC3GpkUPzr8EQ",
               "Name": "Daft Punk",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -176,7 +176,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQEPB7k-sQABsrFst-olnIY",
         "Name": "Random Access Memories",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       }
@@ -268,7 +268,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           ],
           "Id": "music.AQEPB75BmAABHDnC5GmB7_s",
           "Name": "Der Alchemyst",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/9841be07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
           "Source": "Collection"
         },
@@ -278,7 +278,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAATsXwACH-HZ7I1TxZk",
               "Name": "Boris Brejcha",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/5fec0400-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -288,7 +288,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAATsXwACH-HZ7I1TxZk",
               "Name": "Boris Brejcha",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.5fec0400-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/5fec0400-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -296,7 +296,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQQfmed5A3bItEOZE7BO8k2nxQe-QZkAAQ",
         "Name": "Der Alchemyst",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.9941be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.9941be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/9941be07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
@@ -319,7 +319,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           ],
           "Id": "music.AQEPB7k-sQABsrFst-olnIY",
           "Name": "Random Access Memories",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.b13eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/b13eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
           "Source": "Collection"
         },
@@ -329,7 +329,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAAcxgAC3GpkUPzr8EQ",
               "Name": "Daft Punk",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -339,7 +339,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAABnCAACp2B24PJn-q4",
               "Name": "Pharrell Williams",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.08670000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.08670000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/08670000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -349,7 +349,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAAcxgAC3GpkUPzr8EQ",
               "Name": "Daft Punk",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c61c0000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c61c0000-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -357,7 +357,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQQfFbq8mTyjiEem8FCgKBVfbQe5PqgAAQ",
         "Name": "Get Lucky (feat. Pharrell Williams)",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       },
@@ -376,7 +376,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           ],
           "Id": "music.AQEPB-rrJgABM-vDUQcGa74",
           "Name": "Aleph",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.26ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/26ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
           "Source": "Collection"
         },
@@ -386,7 +386,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
               "Name": "Gesaffelstein",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -396,7 +396,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             "Artist": {
               "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
               "Name": "Gesaffelstein",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
               "Source": "Collection"
             }
@@ -404,7 +404,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         ],
         "Id": "music.AQQfF79vCNAqFku67NfthZPYEQfq6ycAAQ",
         "Name": "Pursuit",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.27ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.27ebea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/27ebea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
         "Source": "Collection"
       }

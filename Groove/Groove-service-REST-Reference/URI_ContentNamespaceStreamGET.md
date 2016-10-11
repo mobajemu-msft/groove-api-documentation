@@ -1,11 +1,29 @@
 # GET (/1/content/{id}/stream)
 Request streaming.
 
+-   [Streaming on Windows](#streaming-on-windows)
 -   [Remarks](#remarks)
 -   [Query string parameters](#query-string-parameters)
 -   [Response object](#response-object)
 -   [Examples](#examples)
--   [Streaming on Windows](#streaming-on-windows)
+
+## Streaming on Windows
+For playing streams from your application on windows versions prior to Windows 10, you can use the [Microsoft HLS SDK](http://github.com/MicrosoftDX/MicrosoftHLSSDK).
+
+On Windows 10 devices, you should use the [Media Player Element](https://msdn.microsoft.com/en-us/library/windows/apps/Windows.UI.Xaml.Controls.MediaPlayerElement.aspx) to stream content.
+
+You simply have to provide the streaming URL and it will handle standard streaming controls.
+
+```xaml
+<MediaPlayerElement
+  x:Name="GroovePlayer"
+  AreTransportControlsEnabled="True"
+  AutoPlay="True" />
+```
+
+```csharp
+GroovePlayer.Source = MediaSource.CreateFromUri(new Uri(streamUrl));
+```
 
 ## Remarks
 | Important                                                                        |
@@ -39,7 +57,7 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream
 ?clientInstanceId=5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer
 +[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
 
 #### Response
@@ -62,7 +80,7 @@ The user authentication token identifies a user who has a Music Pass.
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream?clientInstanceId=
 5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer+[...]
 
-Authorization: XBL3.0 x=218686063;eyJlbmMiOiJB[...]
+Authorization: Bearer eyJlbmMiOiJB[...]
 ```
 
 #### Response
@@ -74,24 +92,6 @@ acl=/i/129/580/712/155/audio.mp4*~hmac=22d99f90d60f28e9c12e618027dc611f973c9ba61
   "ContentType": "application/vnd.apple.mpegurl",
   "ExpiresOn": "2014-04-25T16:39:11.132Z"
 }
-```
-
-## Streaming on Windows
-For playing streams from your application on windows versions prior to Windows 10, you can use the [Microsoft HLS SDK](http://github.com/MicrosoftDX/MicrosoftHLSSDK).
-
-On Windows 10 devices, you should use the [Media Player Element](https://msdn.microsoft.com/en-us/library/windows/apps/Windows.UI.Xaml.Controls.MediaPlayerElement.aspx) to stream content.
-
-You simply have to provide the streaming URL and it will handle standard streaming controls.
-
-```xaml
-<MediaPlayerElement
-  x:Name="GroovePlayer"
-  AreTransportControlsEnabled="True"
-  AutoPlay="True" />
-```
-
-```csharp
-GroovePlayer.Source = MediaSource.CreateFromUri(new Uri(streamUrl));
 ```
 
 #### Parent

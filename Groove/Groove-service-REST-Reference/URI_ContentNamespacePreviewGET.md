@@ -23,7 +23,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | clientInstanceId | string   | Required. Unique client identifier. Should be persisted client-side. Can be from 32 to 128 characters long. |
 
 ## Examples
-### Search example
+### Preview example
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/preview?clientInstanceId=fa624b17-412c-454a-a5a5-950bb06ae019&

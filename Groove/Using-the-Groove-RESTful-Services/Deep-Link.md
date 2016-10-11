@@ -53,7 +53,7 @@ If the target parameter is not provided, the redirect will by default open the b
 |Track|https://music.microsoft.com/Track/xxx?action=yyy|https://music.microsoft.com/Track/c1afef07-0100-11db-89ca-0019b92a3933?action=buy|
 
 ## App-to-app direct linking
-In Windows 10 we currently don't support direct app-to-app linking. We recommend launching the deeplink in a browser that will handle opening the native application in some cases:
+In Windows 10 we currently don't support direct app-to-app linking. We recommend launching the deeplink in a browser which will handle opening the native application in some cases:
 
 ```csharp
 string deeplink = content.Link;

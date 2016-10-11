@@ -54,7 +54,7 @@ Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 {
   "HasSubscription": true,
   "IsSubscriptionAvailableForPurchase": true,
-  "Culture": "en-US",
+  "Culture": "fr-FR",
   "Collection": {
     "Token": "3.0.0.0.7.7.7",
     "PlaylistCount": 2,

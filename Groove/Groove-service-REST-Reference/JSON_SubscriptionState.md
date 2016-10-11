@@ -8,7 +8,7 @@ The SubscriptionState object has the following specification.
 |------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | Type       | string      | The user's subscription type (for example, "Paid" or "Trial").                                                    |
 | Region     | string      | Two-letter region code of the subscription. This usually matches the user's account country, but not necessarily. |
-| EndDate    | DateTime    | Expiration date of the current subscription (can be null if subscription is automatically renewed).               |
+| EndDate    | DateTime    | Estimated expiration date of the current subscription (can be null if subscription is automatically renewed).     |
 
 ## Sample JSON syntax
 ```json

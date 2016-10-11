@@ -60,7 +60,7 @@ extras=Tracks&accessToken=Bearer+[...]
             "Artist": {
               "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
               "Name": "Sexy Sushi",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -91,7 +91,7 @@ extras=Tracks&accessToken=Bearer+[...]
                   "Artist": {
                     "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
                     "Name": "Sexy Sushi",
-                    "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
                     "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
@@ -99,7 +99,7 @@ extras=Tracks&accessToken=Bearer+[...]
               ],
               "Id": "music.843FB507-0100-11DB-89CA-0019B92A3933",
               "Name": "Le prenom",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.843FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.843FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/843FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
@@ -126,7 +126,7 @@ extras=Tracks&accessToken=Bearer+[...]
                   "Artist": {
                     "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
                     "Name": "Sexy Sushi",
-                    "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
                     "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
@@ -134,7 +134,7 @@ extras=Tracks&accessToken=Bearer+[...]
               ],
               "Id": "music.853FB507-0100-11DB-89CA-0019B92A3933",
               "Name": "Mendiante (Version longue)",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.853FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.853FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/853FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
@@ -147,7 +147,7 @@ extras=Tracks&accessToken=Bearer+[...]
         },
         "Id": "music.833FB507-0100-11DB-89CA-0019B92A3933",
         "Name": "Vous n'allez pas repartir les mains vides?",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.833FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.833FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/833FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       }
@@ -185,7 +185,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
             "Artist": {
               "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
               "Name": "Sexy Sushi",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -216,7 +216,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
                   "Artist": {
                     "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
                     "Name": "Sexy Sushi",
-                    "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
                     "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
@@ -224,7 +224,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
               ],
               "Id": "music.9D3FB507-0100-11DB-89CA-0019B92A3933",
               "Name": "Les pommes (Ms Mix)",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.9D3FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.9D3FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/9D3FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
@@ -251,7 +251,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
                   "Artist": {
                     "Id": "music.5EB90600-0200-11DB-89CA-0019B92A3933",
                     "Name": "Sexy Sushi",
-                    "ImageUrl": "http://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.5EB90600-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
                     "Link": "https://music.microsoft.com/Artist/5EB90600-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
                     "Source": "Catalog"
                   }
@@ -259,7 +259,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
               ],
               "Id": "music.9E3FB507-0100-11DB-89CA-0019B92A3933",
               "Name": "XXX03XXX",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.9E3FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.9E3FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/9E3FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             },
@@ -271,7 +271,7 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
         },
         "Id": "music.833FB507-0100-11DB-89CA-0019B92A3933",
         "Name": "Vous n'allez pas repartir les mains vides?",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.833FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.833FB507-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/833FB507-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       }
@@ -300,7 +300,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.8E2C0300-0200-11DB-89CA-0019B92A3933",
         "Name": "B.o.B",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   926413"
@@ -316,7 +316,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.AC660A00-0200-11DB-89CA-0019B92A3933",
         "Name": "Bob",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.AC660A00-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.AC660A00-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/AC660A00-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   586594"
@@ -352,7 +352,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
             "Artist": {
               "Id": "music.8E2C0300-0200-11DB-89CA-0019B92A3933",
               "Name": "B.o.B",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -360,7 +360,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.7BE31706-0100-11DB-89CA-0019B92A3933",
         "Name": "B.o.B Presents: The Adventures of Bobby Ray",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.7BE31706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.7BE31706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/7BE31706-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "R  1766891"
@@ -386,7 +386,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
             "Artist": {
               "Id": "music.8E2C0300-0200-11DB-89CA-0019B92A3933",
               "Name": "B.o.B",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -394,7 +394,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.D491FF07-0100-11DB-89CA-0019B92A3933",
         "Name": "Underground Luxury",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.D491FF07-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.D491FF07-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/D491FF07-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "R  2857962"
@@ -429,7 +429,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         "Album": {
           "Id": "music.C1BE0400-0100-11DB-89CA-0019B92A3933",
           "Name": "Stankonia",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.C1BE0400-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.C1BE0400-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/C1BE0400-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -439,7 +439,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
             "Artist": {
               "Id": "music.DF620000-0200-11DB-89CA-0019B92A3933",
               "Name": "OutKast",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.DF620000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.DF620000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/DF620000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -447,7 +447,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.D7BE0400-0100-11DB-89CA-0019B92A3933",
         "Name": "B.O.B.",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.D7BE0400-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.D7BE0400-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/D7BE0400-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T  4227380"
@@ -474,7 +474,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         "Album": {
           "Id": "music.7BE31706-0100-11DB-89CA-0019B92A3933",
           "Name": "B.o.B Presents: The Adventures of Bobby Ray",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.7BE31706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.7BE31706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/7BE31706-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -484,7 +484,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
             "Artist": {
               "Id": "music.8E2C0300-0200-11DB-89CA-0019B92A3933",
               "Name": "B.o.B",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.8E2C0300-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/8E2C0300-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -492,7 +492,7 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
         ],
         "Id": "music.C2E11706-0100-11DB-89CA-0019B92A3933",
         "Name": "Airplanes",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.C2E11706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.C2E11706-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/C2E11706-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "T 19335955"
@@ -528,7 +528,7 @@ GET /1/content/music/search?continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ&accessT
         ],
         "Id": "music.A8CE1000-0200-11DB-89CA-0019B92A3933",
         "Name": "Bob DiPiero",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.A8CE1000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.A8CE1000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/A8CE1000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P    70787"
@@ -544,7 +544,7 @@ GET /1/content/music/search?continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ&accessT
         ],
         "Id": "music.DE0E0000-0200-11DB-89CA-0019B92A3933",
         "Name": "Bob James",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.DE0E0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.DE0E0000-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/DE0E0000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P     6800"

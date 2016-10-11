@@ -19,7 +19,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| namespace     | string   | Required. The namespace to browse (music for example).                                                                                                     |
+| namespace     | string   | Required. The namespace to browse ("music" for example).                                                                                                     |
 | accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
 
 ## Examples
@@ -228,8 +228,6 @@ Content-Type: application/xml
 ```
 
 ### Access is denied if the user authentication token is missing or invalid
-The batch size is limited to 100 items.
-
 #### Request
 ```http
 POST /1/content/music/collection/add?accessToken=Bearer+[...]

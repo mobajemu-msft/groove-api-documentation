@@ -59,7 +59,7 @@ GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bear
         ],
         "Id": "music.E6950200-0200-11DB-89CA-0019B92A3933",
         "Name": "Trey Songz",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.E6950200-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.E6950200-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/E6950200-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P   686292"
@@ -75,7 +75,7 @@ GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bear
         ],
         "Id": "music.1F154700-0200-11DB-89CA-0019B92A3933",
         "Name": "Iggy Azalea",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.1F154700-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.1F154700-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/1F154700-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "OtherIds": {
           "music.amg": "P  2703496"
@@ -123,7 +123,7 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
             "Artist": {
               "Id": "music.E6950200-0200-11DB-89CA-0019B92A3933",
               "Name": "Trey Songz",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.E6950200-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.E6950200-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/E6950200-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -131,7 +131,7 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
         ],
         "Id": "music.73CC6408-0100-11DB-89CA-0019B92A3933",
         "Name": "Trigga (Deluxe)",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.73CC6408-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.73CC6408-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/73CC6408-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
@@ -155,7 +155,7 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
             "Artist": {
               "Id": "music.1F154700-0200-11DB-89CA-0019B92A3933",
               "Name": "Iggy Azalea",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.1F154700-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.1F154700-0200-11DB-89CA-0019B92A3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/1F154700-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -163,7 +163,7 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
         ],
         "Id": "music.5C314608-0100-11DB-89CA-0019B92A3933",
         "Name": "The New Classic",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.5C314608-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.5C314608-0100-11DB-89CA-0019B92A3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/5C314608-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
@@ -207,7 +207,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         "Album": {
           "Id": "music.9D9D3D08-0100-11DB-89CA-0019B92A3933",
           "Name": "Les yeux plus gros que le monde",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.9D9D3D08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.9D9D3D08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
           "Link": "https://music.microsoft.com/Album/9D9D3D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -217,7 +217,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
             "Artist": {
               "Id": "music.359D2700-0200-11DB-89CA-0019B92A3933",
               "Name": "Black M",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.359D2700-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.359D2700-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
               "Link": "https://music.microsoft.com/Artist/359D2700-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -225,7 +225,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         ],
         "Id": "music.B09D3D08-0100-11DB-89CA-0019B92A3933",
         "Name": "Sur ma route",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.B09D3D08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.B09D3D08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/B09D3D08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
@@ -248,7 +248,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         "Album": {
           "Id": "music.97A21B08-0100-11DB-89CA-0019B92A3933",
           "Name": "Mini World",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.97A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.97A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
           "Link": "https://music.microsoft.com/Album/97A21B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -258,7 +258,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
             "Artist": {
               "Id": "music.F3FC2A00-0200-11DB-89CA-0019B92A3933",
               "Name": "Indila",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.F3FC2A00-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.F3FC2A00-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
               "Link": "https://music.microsoft.com/Artist/F3FC2A00-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -266,7 +266,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         ],
         "Id": "music.98A21B08-0100-11DB-89CA-0019B92A3933",
         "Name": "Dernière Danse",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.98A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.98A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/98A21B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
@@ -309,7 +309,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
         "Album": {
           "Id": "music.FE5A6008-0100-11DB-89CA-0019B92A3933",
           "Name": "NRJ Summer Hits Only 2014",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.FE5A6008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.FE5A6008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
           "Link": "https://music.microsoft.com/Album/FE5A6008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -319,7 +319,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
             "Artist": {
               "Id": "music.0A190000-0200-11DB-89CA-0019B92A3933",
               "Name": "Coldplay",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.0A190000-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.0A190000-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
               "Link": "https://music.microsoft.com/Artist/0A190000-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -327,7 +327,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
         ],
         "Id": "music.1A5B6008-0100-11DB-89CA-0019B92A3933",
         "Name": "Magic",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.1A5B6008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.1A5B6008-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/1A5B6008-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
@@ -350,7 +350,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
         "Album": {
           "Id": "music.1D474208-0100-11DB-89CA-0019B92A3933",
           "Name": "We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song]",
-          "ImageUrl": "http://musicimage.xboxlive.com/content/music.1D474208-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+          "ImageUrl": "https://musicimage.xboxlive.com/content/music.1D474208-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
           "Link": "https://music.microsoft.com/Album/1D474208-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
           "Source": "Catalog"
         },
@@ -360,7 +360,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
             "Artist": {
               "Id": "music.F48A0400-0200-11DB-89CA-0019B92A3933",
               "Name": "Pitbull",
-              "ImageUrl": "http://musicimage.xboxlive.com/content/music.F48A0400-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.F48A0400-0200-11DB-89CA-0019B92A3933/image?locale=fr-FR",
               "Link": "https://music.microsoft.com/Artist/F48A0400-0200-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
               "Source": "Catalog"
             }
@@ -368,7 +368,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
         ],
         "Id": "music.1E474208-0100-11DB-89CA-0019B92A3933",
         "Name": "We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song]",
-        "ImageUrl": "http://musicimage.xboxlive.com/content/music.1E474208-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.1E474208-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/1E474208-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
       },
