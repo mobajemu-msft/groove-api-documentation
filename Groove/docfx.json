@@ -22,19 +22,19 @@
     "fileMetadata": {
       "ms.prod":
       {
-        ["**/**.md","**/**.yml"]: "groove"
+        "**/**.md": "groove"
       },
       "ms.service":
       {
-       ["**/**.md","**/**.yml"]: "groove-music"
+       "**/**.md": "groove-music"
       },
             "ms.date":
       {
-        ["**/**.md","**/**.yml"]: "Oct 30, 2016"
+        "**/**.md": "Oct 30, 2016"
       },
       "manager":
       {
-        ["**/**.md","**/**.yml"]: "sakley"
+        "**/**.md": "sakley"
       }
     },
     "externalReference": [
