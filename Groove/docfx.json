@@ -19,6 +19,24 @@
         "layout": "Conceptual",
         "breadcrumb_path": "~/Breadcrumb/toc.yml"
     },
+    "fileMetadata": {
+      "ms.prod":
+      {
+        ["**/**.md","**/**.yml"]: "groove"
+      },
+      "ms.service":
+      {
+       ["**/**.md","**/**.yml"]: "groove-music"
+      },
+            "ms.date":
+      {
+        ["**/**.md","**/**.yml"]: "Oct 30, 2016"
+      },
+      "manager":
+      {
+        ["**/**.md","**/**.yml"]: "sakley"
+      }
+    },
     "externalReference": [
     ],
     "template": "op.html",
