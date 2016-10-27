@@ -1,6 +1,6 @@
 ---
 title: SDKs for Groove Music API| Groove Services
-description:  Find the list of SDKs available to develop with Groove Music API.
+description:  Find SDKs available to use in developing with the Groove Music API.
 keywords:  groove api, groove tou, groove music sdk
 author: sakley
 ms.assetid:ffff17c2-0312-2c5b-2600-a032136b4e36

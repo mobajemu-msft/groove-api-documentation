@@ -1,6 +1,6 @@
 ---
 title: Overview of the Groove Music API | Groove Services
-description:  Overview of the Groove API features and main documentation.
+description:  Learn the basics of using the Groove Music API and its main features.
 keywords: groove music, groove api, develop with groove
 author: sakley
 ms.assetid: 53da26dd-2573-8b1a-0454-821687f079cf

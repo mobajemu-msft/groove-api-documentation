@@ -1,6 +1,6 @@
 ---
 title: Deep linking to Groove Music content| Groove Services
-description:  Learn how to use deep linking for Groove music integration.
+description:  Learn how to use deep linking to integrate music and other third-party content into your Groove app.
 keywords: groove music, groove api, groove deeplinks
 author: sakley
 ms.assetid: 447e555b-1340-da86-c792-88abeaa921d1

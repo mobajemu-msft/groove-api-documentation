@@ -1,6 +1,6 @@
 ---
-title: Notice about privacy| Groove Services
-description:  Consult our notice about information we may disclose to our licensors.
+title: Privacy and personal information use| Groove Services
+description:  We strongly advise developers to read and understand the Groove API policies for the use of their personal information.
 keywords:  groove api, groove tou, groove api privacy statement
 author: sakley
 ms.assetid:410123f2-d334-e060-935f-9f08b671c8ac

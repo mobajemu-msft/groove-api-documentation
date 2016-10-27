@@ -1,6 +1,6 @@
 ---
-title: Get started withe the Groove SDK| Groove Services
-description:  Learn how to subscribe to the Groove API and start developing with Groove.
+title: Get started with the Groove SDK| Groove Services
+description:  Learn how to subscribe to the Groove API and get started developing with Groove.
 keywords: groove music, groove api, groove sdk
 author: sakley
 ms.assetid: bb08eb18-7a26-44a6-7181-ee673b0b04c2

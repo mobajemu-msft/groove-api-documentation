@@ -1,6 +1,6 @@
 ---
 title: Groove Music API Terms of Use| Groove Services
-description:  Consult Groove Music API Terms of Use and development rules.
+description: Consult the Groove Music API Terms of Use and other legal requirements for developers.
 keywords:  groove api, groove tou, groove api terms of use
 author: sakley
 ms.assetid: 9d69f48e-2d6f-ca5d-cd6a-dbdc65e97a50

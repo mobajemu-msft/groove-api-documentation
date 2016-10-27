@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions| Groove Services
-description:  Consult the most frequently asked questions for developing with Groove API.
+description: View answers to the most frequently asked questions about developing for the Grove API
 keywords: groove music, groove api, groove faq
 author: sakley
 ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
