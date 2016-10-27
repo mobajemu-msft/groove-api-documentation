@@ -15,8 +15,8 @@ These error structures can be optionally embedded in any Groove API service resp
 ## Error codes
 Error codes can be used to display custom error messages to the user.
 
-|**Category**                     | **Name**                                        | **Default HTTP code**     | **Description**                                                                                             |
-|-------------------------------------------------|---------------------------|-------------------------------------------------------------------------------------------------------------|
+|**Category**                     | **Name**                                        | **Default HTTP code**     | **Description** |
+|---------------------------------|-------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
 | Input validation                | MISSING\-INPUT\-PARAMETER                       | 400 Bad Request           | Missing or empty mandatory parameter.                                                                       |
 | Input validation                | INVALID\-INPUT\-PARAMETER                       | 400 Bad Request           | Invalid parameter value.                                                                                    |
 | Input validation                | INCOMPATIBLE\-INPUT\-PARAMETERS                 | 400 Bad Request           | Incompatible parameters.                                                                                    |
@@ -34,7 +34,7 @@ Error codes can be used to display custom error messages to the user.
 | Authentication                  | AUTHORIZATION\-TOKEN\-EXPIRED                   | 401 Unauthorized          | User's authorization token expired. You need to obtain a new one.                                           |
 | Authentication                  | MSA\-SCOPE\-REQUIRES\-USER\-CONSENT             | 401 Unauthorized          | User hasn't accepted the necessary Microsoft account scopes. Force the user to sign-in again.               |
 | Authentication                  | NO\-MUSIC\-PASS\-SUBSCRIPTION                   | 403 Forbidden             | The user does not have a Groove Music subscription                                                          |
-| Catalog errors                  | CATALOG\-INVALID\-DATA                          | 200 OK                    | Error while reading catalog data; some results may be missing.                                              |
+| Catalog errors                  | CATALOG\-INVALID\-DATA                          | 200 OK Â                   | Error while reading catalog data; some results may be missing.                                              |
 | Catalog errors                  | CATALOG\-NO\-RESULT                             | 404 Not Found             | Item does not exist.                                                                                        |
 | Catalog errors                  | CATALOG\-UNAVAILABLE                            | 502 Bad Gateway           | No response from catalog.                                                                                   |
 | Collection errors               | COLLECTION\-INVALID\-DATA                       | 200 OK                    | Error while reading collection data, some results may be missing or incomplete                              |
