@@ -1,3 +1,11 @@
+---
+title: Notice about privacy| Groove Services
+description:  Consult our notice about information we may disclose to our licensors.
+keywords:  groove api, groove tou, groove api privacy statement
+author: sakley
+ms.assetid:410123f2-d334-e060-935f-9f08b671c8ac
+---
+
 #Privacy
 Personal Information. Notice about our collection and use of your personal information:   
 

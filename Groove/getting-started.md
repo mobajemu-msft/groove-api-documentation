@@ -1,3 +1,11 @@
+---
+title: Get started withe the Groove SDK| Groove Services
+description:  Learn how to subscribe to the Groove API and start developing with Groove.
+keywords: groove music, groove api, groove sdk
+author: sakley
+ms.assetid: bb08eb18-7a26-44a6-7181-ee673b0b04c2
+---
+
 # Getting Started with the Groove SDK
 ## Subscribe to the Groove API on Azure Marketplace
 The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)).

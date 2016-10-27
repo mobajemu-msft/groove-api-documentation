@@ -1,3 +1,11 @@
+---
+title: Frequently asked questions| Groove Services
+description:  Consult the most frequently asked questions for developing with Groove API.
+keywords: groove music, groove api, groove faq
+author: sakley
+ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
+---
+
 #FAQ
 - [I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?](#1)
 - [I have my application Client ID and Secret but the authentication fails. What am I doing wrong?](#2)

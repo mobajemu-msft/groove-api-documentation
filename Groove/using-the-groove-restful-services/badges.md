@@ -1,3 +1,11 @@
+---
+title: Badges to advertise Groove music products| Groove Services
+description:  Learn how to create badges for Groove music product in accordance with our TOU.
+keywords: groove music, groove api, badges, groove badges
+author: sakley
+ms.assetid: 48ed1bab-7b3d-f4db-4695-d35d2e0ec45a
+---
+
 # Badges
 Badges are Windows Store branded artwork that you can use to advertise Groove music products but also apps, games, movies and TV shows.
 Added directly to your site, these images capture attention and give additional credibility to your promotions.

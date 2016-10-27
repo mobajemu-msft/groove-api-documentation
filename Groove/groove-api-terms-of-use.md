@@ -1,3 +1,11 @@
+---
+title: Groove Music API Terms of Use| Groove Services
+description:  Consult Groove Music API Terms of Use and development rules.
+keywords:  groove api, groove tou, groove api terms of use
+author: sakley
+ms.assetid: 9d69f48e-2d6f-ca5d-cd6a-dbdc65e97a50
+---
+
 #Groove API TERMS OF USE
 **LAST UPDATED: December 2013**  
 

@@ -1,3 +1,11 @@
+---
+title: Deep linking to Groove Music content| Groove Services
+description:  Learn how to use deep linking for Groove music integration.
+keywords: groove music, groove api, groove deeplinks
+author: sakley
+ms.assetid: 447e555b-1340-da86-c792-88abeaa921d1
+---
+
 # Deep Link
 ## Introduction
 The Link property of every piece of content returned by content APIs is the key for third-party integration with Groove applications: it contains a deep link that opens the piece of content on a Groove client. These links exist and are used within Groove applications for sharing the pages of artists, albums, and tracks. (See the table of examples in this topic.) They open native applications, such as the Windows 10 Groove application, Windows Phone 10 Groove application, the Windows Store and the *https://music.microsoft.com* web client, depending on the user's platform.    
