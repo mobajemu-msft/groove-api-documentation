@@ -3,7 +3,7 @@
 # [SDK and Helpers](SDK-and-helpers/SdK-and-Helpers.md)
 # [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
 ## Basics
-### [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
+### [Overview](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
 ### [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)
 ### [Streaming Music](Using-the-Groove-RESTful-Services/Streaming-Music.md)
 
@@ -68,7 +68,7 @@
 ###[orderBy parameter for Catalog and Collection Browse APIs](Groove-service-REST-Reference/OrderBy.md)  
 ###[Groove RESTful API HTTP Status Codes](Groove-service-REST-Reference/HTTPStatusCodes.md)   
 
-# [FAQ](FAQ.md)
+# [FAQ](faq.md)
 # [Groove API TERMS OF USE](Groove-API-Terms-of-Use.md)
 # [Support](Support.md)
 # [Privacy](Privacy.md)
