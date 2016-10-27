@@ -1,4 +1,4 @@
-# [Overview of Groove service](Groove-service.md)
+# [Overview of Groove service](api-overview.md)
 # [Getting Started with the Groove SDK](Getting-Started.md)  
 # [SDK and Helpers](SDK-and-helpers/SdK-and-Helpers.md)
 # [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
