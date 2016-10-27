@@ -255,4 +255,4 @@ Content-Type: application/json
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

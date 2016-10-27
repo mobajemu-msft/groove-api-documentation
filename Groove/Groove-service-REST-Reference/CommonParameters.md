@@ -13,4 +13,4 @@ This topic describes parameters that are common to all methods in the Groove RES
 Some of the APIs also require a user authentication token in the Authorization header of the request in order to access user-authenticated features such as collection management or full track streaming. See [User Authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) for more information on how to create a user authentication header.
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

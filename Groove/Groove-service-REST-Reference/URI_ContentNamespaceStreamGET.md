@@ -95,4 +95,4 @@ acl=/i/129/580/712/155/audio.mp4*~hmac=22d99f90d60f28e9c12e618027dc611f973c9ba61
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

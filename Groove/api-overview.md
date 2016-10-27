@@ -11,11 +11,11 @@ The Groove API makes it easy for you to connect your app or website to the world
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
 [SDK and Helpers](SdK-and-Helpers/SdK-and-Helpers.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software to use the Groove RESTful API.    
-[Using-the-Groove-RESTful-Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)  
+[Using-the-Groove-RESTful-Services](Using-the-Groove-RESTful-Services/overview.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to use the Groove RESTful API.    
 [Affiliate Program](http://www.microsoftaffiliates.com/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to work with Groove service affiliates.    
-[Groove Service REST Reference](Groove-service-REST-Reference/Groove-Service-REST-Reference.md)  
+[Groove Service REST Reference](Groove-service-REST-Reference/overview.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivers Groove functionality to third-party application developers    
 [FAQ](FAQ.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frequently-Asked Questions about the Groove API    

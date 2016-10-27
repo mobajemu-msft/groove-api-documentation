@@ -1,4 +1,4 @@
-# Obtaining a Developer Access Token
+﻿# Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
  [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
  [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png

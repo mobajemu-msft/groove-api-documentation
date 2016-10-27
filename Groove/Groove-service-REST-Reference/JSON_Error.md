@@ -1,4 +1,4 @@
-# Error (JSON)
+﻿# Error (JSON)
 The error structure is the same across all APIs. Noteworthy elements are as follows.
 
 ## Error
@@ -71,4 +71,4 @@ Error codes can be used to display custom error messages to the user.
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

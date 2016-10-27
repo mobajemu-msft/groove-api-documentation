@@ -25,4 +25,4 @@ The Contributor object has the following specification.
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

@@ -1,4 +1,4 @@
-# GET (/1/content/{namespace}/catalog/genres)
+﻿# GET (/1/content/{namespace}/catalog/genres)
 Get a list of genres available for a locale.
 
 -   [Remarks](#remarks)
@@ -73,4 +73,4 @@ GET /1/content/music/catalog/genres?country=tr&language=tr&accessToken=Bearer+[.
 ```
 
 ### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

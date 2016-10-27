@@ -1,4 +1,4 @@
-# GET (/1/content/{namespace}/catalog/{type}/browse)
+﻿# GET (/1/content/{namespace}/catalog/{type}/browse)
 Browse the music catalog.
 
 -   [Remarks](#remarks)
@@ -383,4 +383,4 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&p
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

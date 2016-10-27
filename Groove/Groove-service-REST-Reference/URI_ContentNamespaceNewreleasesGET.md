@@ -202,4 +202,4 @@ GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

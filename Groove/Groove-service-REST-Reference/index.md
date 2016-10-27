@@ -1,3 +1,3 @@
 ---
-redirect_url: /GrooveDoc/Groove-service-REST-Reference/Groove-Service-REST-Reference
+redirect_url: /groove/groove-service-rest-reference/overview
 ---

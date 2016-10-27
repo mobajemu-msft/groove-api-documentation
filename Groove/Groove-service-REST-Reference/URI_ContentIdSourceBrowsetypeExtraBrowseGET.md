@@ -830,4 +830,4 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptrac
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

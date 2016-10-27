@@ -14,4 +14,4 @@ Be aware that these extras don't come for free; each of them has a negative impa
 |               | artistDetails      | Catalog                       | Extra fields in the track's artist (level of detail equivalent to a Lookup call on the artist)      |
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

@@ -1,4 +1,4 @@
-# GET (/1/content/{namespace}/spotlight)
+﻿# GET (/1/content/{namespace}/spotlight)
 Discover spotlight content for a specified language or culture.
 
 -   [Remarks](#remarks)
@@ -461,4 +461,4 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ```
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)

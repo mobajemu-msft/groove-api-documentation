@@ -32,6 +32,6 @@ The way you will implement user authentication depends on the platforms you are 
 The following topics contain high-level overviews of other concepts that apply
 to the Groove API.
 
-* [Develop with the Groove API](../Groove-service.md)
+* [Develop with the Groove API](../api-overview.md)
 * [User Authentication on the Web](User-Authentication-on-the-Web.md)
 * [User Authentication in Applications](User-Authentication-in-Applications.md)
