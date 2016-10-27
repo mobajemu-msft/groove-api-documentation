@@ -1,9 +1,9 @@
 # [Overview of Groove service](api-overview.md)
 # [Getting Started with the Groove SDK](Getting-Started.md)  
 # [SDK and Helpers](SDK-and-helpers/SdK-and-Helpers.md)
-# [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
+# [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/overview.md)
 ## Basics
-### [Overview](Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services.md)
+### [Overview](Using-the-Groove-RESTful-Services/overview.md)
 ### [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)
 ### [Streaming Music](Using-the-Groove-RESTful-Services/Streaming-Music.md)
 
