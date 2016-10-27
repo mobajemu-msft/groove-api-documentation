@@ -19,7 +19,7 @@ The Playlist object has the following specification.
 | IsPublished          | Boolean value                                                                                                         | Whether the playlist is publicly visible or not.                                                                                                                                                                                                                                                                                                                            |
 | UserIsOwner          | Boolean value                                                                                                         | Whether the current user is the actual owner of the playlist.                                                                                                                                                                                                                                                                                                               |
 | CollectionStateToken | string                                                                                                                | Token indicating the current version of the collection.                                                                                                                                                                                                                                                                                                                     |
-| Tracks               | [Paginated list](JSON_PaginatedList.md) of [Track](JSON_Track.md) | A paginated list of the tracks in the playlist. In case of a browse, this list is null, and you'll need a lookup on that playlist to get its tracks.                                                                                                                                                                                                                        |
+| Tracks               | [Paginated list](JSON-PaginatedList.md) of [Track](JSON-Track.md) | A paginated list of the tracks in the playlist. In case of a browse, this list is null, and you'll need a lookup on that playlist to get its tracks.                                                                                                                                                                                                                        |
 
 ## Sample JSON syntax
 ```json
@@ -128,7 +128,7 @@ The Playlist object has the following specification.
             }
           }
         ],
-        "Id": "music.AQQfObc7JPSYfEi_EiGVYbdyHAfq6y0AAQ",
+        "Id": "music.AQQfObc7JPSYfEi-EiGVYbdyHAfq6y0AAQ",
         "Name": "Aleph",
         "ImageUrl": "https://musicimage.xboxlive.com/content/music.2debea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",

@@ -11,7 +11,7 @@ The full create request is composed of mandatory and optional URL parts and quer
 /1/content/{namespace}/collection/playlists/create?accessToken={accessToken}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Important                                                                        |
 |------------------------------------------------------------------------------------------|
@@ -22,9 +22,9 @@ In case of partial failure (when some of the tracks aren't added), the API will 
 The number of tracks per batch is limited to 100. Playlist names are restricted to 256 characters and cannot be empty.
 
 ## Examples
-Request object: [PlaylistAction (JSON)](JSON_PlaylistAction.md).
+Request object: [PlaylistAction (JSON)](JSON-PlaylistAction.md).
 
-Response object: [PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md).
+Response object: [PlaylistActionResponse (JSON)](JSON-PlaylistActionResponse.md).
 
 ### Create a playlist without tracks
 You can use this API to create a playlist with only its metadata. For this, you must provide at least a name for the playlist. The API will then return the ID of the newly-created playlist.
@@ -95,7 +95,7 @@ Content-Type: application/json
       },
       {
         "InputId": "music.9941BE07-0100-11DB-89CA-0019B92A3933",
-        "Id": "music.AQQfjw6CZhj_6Ua4uRjTbuDD0we-QZkAAQ"
+        "Id": "music.AQQfjw6CZhj-6Ua4uRjTbuDD0we-QZkAAQ"
       }
     ]
   }
@@ -144,7 +144,7 @@ Content-Type: application/json
       {
         "InputId": "music.9F41BE07-357E-23A5-7B54-0019B92A3933",
         "Error": {
-          "ErrorCode": "COLLECTION_INVALID_ID",
+          "ErrorCode": "COLLECTION-INVALID-ID",
           "Description": "Invalid collection id for this operation",
           "Message": "Collection ErrorCode=ArgumentInvalid, Details=ContentId"
         }
@@ -152,7 +152,7 @@ Content-Type: application/json
     ]
   },
   "Error": {
-    "ErrorCode": "COLLECTION_SOME_OPERATIONS_FAILED",
+    "ErrorCode": "COLLECTION-SOME-OPERATIONS-FAILED",
     "Description": "Some of the operations failed"
   }
 }

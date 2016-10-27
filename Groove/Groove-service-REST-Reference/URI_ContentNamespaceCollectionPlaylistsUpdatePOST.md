@@ -21,12 +21,12 @@ Playlist names are restricted to 256 characters and cannot be empty.
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) is mandatory for this API. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Examples
-Request object: [PlaylistAction (JSON)](JSON_PlaylistAction.md).
+Request object: [PlaylistAction (JSON)](JSON-PlaylistAction.md).
 
-Response object: [PlaylistActionResponse (JSON)](JSON_PlaylistActionResponse.md).
+Response object: [PlaylistActionResponse (JSON)](JSON-PlaylistActionResponse.md).
 
 ### Update playlist metadata
 You can use this API to update the name of a playlist and control whether it's published, read-only, or both.
@@ -98,7 +98,7 @@ Content-Type: application/json
       },
       {
         "InputId": "music.2DEBEA07-0100-11DB-89CA-0019B92A3933",
-        "Id": "music.AQQfB5dE_kGIEUeJYkX_sl9HXgfq6y0AAQ"
+        "Id": "music.AQQfB5dE-kGIEUeJYkX-sl9HXgfq6y0AAQ"
       }
     ]
   }
@@ -106,7 +106,7 @@ Content-Type: application/json
 ```
 
 ### Add an invalid track to a playlist
-If you add an invalid track to a playlist, you'll receive a non-null [Error](JSON_Error.md) field at the sub-operation level, and an Error at the top-level saying that some sub-operations failed. You must parse the sub-operations to determine the failure.
+If you add an invalid track to a playlist, you'll receive a non-null [Error](JSON-Error.md) field at the sub-operation level, and an Error at the top-level saying that some sub-operations failed. You must parse the sub-operations to determine the failure.
 
 In this example, we try to add a random GUID as a track ID to a playlist.
 
@@ -137,14 +137,14 @@ Content-Type: application/json
       {
         "InputId": "music.E8AEDB01-23D6-4659-9916-2349BE9F9C26",
         "Error": {
-          "ErrorCode": "COLLECTION_INVALID_ID",
+          "ErrorCode": "COLLECTION-INVALID-ID",
           "Description": "Invalid collection id for this operation"
         }
       }
     ]
   },
   "Error": {
-    "ErrorCode": "COLLECTION_SOME_OPERATIONS_FAILED",
+    "ErrorCode": "COLLECTION-SOME-OPERATIONS-FAILED",
     "Description": "Some of the operations failed"
   }
 }

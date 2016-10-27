@@ -1,4 +1,4 @@
-ï»¿# GET (/1/content/{namespace}/catalog/{type}/browse)
+# GET (/1/content/{namespace}/catalog/{type}/browse)
 Browse the music catalog.
 
 -   [Remarks](#remarks)
@@ -19,10 +19,10 @@ The Browse Catalog request is composed of mandatory and optional URL parts and q
 |------------------------------------------------------------------------------------------------------------------------------|
 | Pagination is zero-based (the first page is found at page 0), and catalog browse will not return more than 1000 total items. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
 The following parameters are not available on the Common Parameters page.
@@ -32,10 +32,10 @@ The following parameters are not available on the Common Parameters page.
 | namespace         | string                | The [namespace](Namespace.md) to browse.                                                                                                                                                                                              |
 | type              | string                | Required. The type of item to browse. The following values are supported: "albums", "artists", "tracks".                                                                                                                                                        |
 | orderBy           | string                | *Optional*. Ordering chosen for that content (**orderBy** field). If incompatible, an HTTP 400 error will be emitted.                                                                                                                                             |
-| genre             | string                | *Optional*. Genre name; filters browsing to return only items in a specific genre of content. Possible values can be obtained using the [browse genres API](URI_ContentNamespaceCatalogGenresGET.md), and must be properly URL-encoded. |
+| genre             | string                | *Optional*. Genre name; filters browsing to return only items in a specific genre of content. Possible values can be obtained using the [browse genres API](URI-ContentNamespaceCatalogGenresGET.md), and must be properly URL-encoded. |
 | maxItems          | 32-bit signed integer | *Optional*. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well.                                                                                                                                          |
 | page              | 32-bit signed integer | *Optional*. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.                                                                                                                                                  |
-| continuationToken | string                | A [continuation token](JSON_PaginatedList.md) provided in an earlier service response and optionally passed back to the service to request the continuation of an incomplete list of content.                                         |
+| continuationToken | string                | A [continuation token](JSON-PaginatedList.md) provided in an earlier service response and optionally passed back to the service to request the continuation of an incomplete list of content.                                         |
 | extra             | string                | Required. The type of the requested sub-elements (for example, "Tracks" or "Albums"). See [Extras](Extras.md).                                                                                                                        |
 
 ## Examples
@@ -235,10 +235,10 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         "TrackNumber": 1,
         "IsExplicit": false,
         "Genres": [
-          "Chanson FranÃ§aise"
+          "Chanson Française"
         ],
         "Subgenres": [
-          "Pop FranÃ§aise"
+          "Pop Française"
         ],
         "Rights": [
           "Purchase",
@@ -265,7 +265,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
           }
         ],
         "Id": "music.98A21B08-0100-11DB-89CA-0019B92A3933",
-        "Name": "DerniÃ¨re Danse",
+        "Name": "Dernière Danse",
         "ImageUrl": "https://musicimage.xboxlive.com/content/music.98A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/98A21B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"

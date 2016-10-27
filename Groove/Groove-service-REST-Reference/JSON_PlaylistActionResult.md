@@ -10,7 +10,7 @@ The PlaylistActionResult object has the following specification.
 | Name         | string                                                                           | *Optional*. Name of the playlist.                        |
 | IsReadOnly   | Boolean value                                                                    | *Optional*. Whether the playlist can be modified or not. |
 | IsPublished  | Boolean value                                                                    | *Optional*. Whether the playlist is public or not.       |
-| TrackActions | List of [TrackActionResult](JSON_TrackActionResult.md) | *Optional*. Details on the results of track actions.     |
+| TrackActions | List of [TrackActionResult](JSON-TrackActionResult.md) | *Optional*. Details on the results of track actions.     |
 
 ## Sample JSON syntax
 ```json

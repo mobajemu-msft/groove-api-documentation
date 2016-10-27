@@ -11,15 +11,15 @@ The new releases request is composed of mandatory and optional URL parts and que
 ```
 /1/content/{namespace}/newreleases?genre={genre}&language={language}&country={country}&accessToken={accessToken}
 ```
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](URI_ContentNamespaceCatalogGenresGET.md) and must be URL-encoded. |
+| genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](URI-ContentNamespaceCatalogGenresGET.md) and must be URL-encoded. |
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Examples
 ### New releases (all genres)

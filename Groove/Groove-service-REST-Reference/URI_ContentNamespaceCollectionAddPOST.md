@@ -14,7 +14,7 @@ Provide a batch of IDs and the API will try to add them to the user's collection
 
 The number of tracks per batch is limited to 100.
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
@@ -23,9 +23,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
 
 ## Examples
-Request object: [TrackActionRequest (JSON)](JSON_TrackActionRequest.md).
+Request object: [TrackActionRequest (JSON)](JSON-TrackActionRequest.md).
 
-Response object: [TrackActionResponse (JSON)](JSON_TrackActionResponse.md).
+Response object: [TrackActionResponse (JSON)](JSON-TrackActionResponse.md).
 
 ### Add tracks to collection
 We will add one valid track ID, and one invalid ID (random-generated).
@@ -52,7 +52,7 @@ Content-Type: application/json
     {
       "InputId": "music.9BB2C5C5-455C-4C15-827C-F9BFD759A458",
       "Error": {
-        "ErrorCode": "COLLECTION_INVALID_ID",
+        "ErrorCode": "COLLECTION-INVALID-ID",
         "Description": "Invalid collection id for this operation",
         "Message": "Collection ErrorCode=ArgumentInvalid, Details=ContentId"
       }
@@ -63,7 +63,7 @@ Content-Type: application/json
     }
   ],
   "Error": {
-    "ErrorCode": "COLLECTION_SOME_OPERATIONS_FAILED",
+    "ErrorCode": "COLLECTION-SOME-OPERATIONS-FAILED",
     "Description": "Some of the operations failed"
   }
 }
@@ -192,7 +192,7 @@ Content-Type: application/json
 
 {
   "Error": {
-    "ErrorCode": "COLLECTION_INVALID_OPERATION",
+    "ErrorCode": "COLLECTION-INVALID-OPERATION",
     "Description": "This operation is not supported",
     "Message": "Number of tracks for this operation is limited to 100"
   }
@@ -247,7 +247,7 @@ Content-Type: application/json
 
 {
   "Error": {
-    "ErrorCode": "INVALID_AUTHORIZATION_HEADER",
+    "ErrorCode": "INVALID-AUTHORIZATION-HEADER",
     "Description": "Missing or invalid authorization header",
     "Message": "You need user authentication to use this API"
   }

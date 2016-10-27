@@ -1,5 +1,5 @@
 # ContentItem (JSON)         
-A piece of content (either an [**Album**](JSON_Album.md) or an [**Artist**](JSON_Artist.md)).
+A piece of content (either an [**Album**](JSON-Album.md) or an [**Artist**](JSON-Artist.md)).
 
 ## ContentItem
 The ContentItem object has the following specification.
@@ -7,8 +7,8 @@ The ContentItem object has the following specification.
 | **Member** | **Type**                                           | **Description**                                        |
 |------------|----------------------------------------------------|--------------------------------------------------------|
 | Type       | ItemType                                           | The type of the content element wrapped in this item.  |
-| Album      | [Album](JSON_Album.md)   | Album item if **Type** is **Albums**, null otherwise   |
-| Artist     | [Artist](JSON_Artist.md) | Artist item if **Type** is **Artists**, null otherwise |
+| Album      | [Album](JSON-Album.md)   | Album item if **Type** is **Albums**, null otherwise   |
+| Artist     | [Artist](JSON-Artist.md) | Artist item if **Type** is **Artists**, null otherwise |
 
 ## Sample JSON syntax
 ```json

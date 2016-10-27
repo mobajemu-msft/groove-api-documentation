@@ -6,11 +6,11 @@ Be aware that these extras don't come for free; each of them has a negative impa
 ## Possible values
 | **Item type** | **"Extras" value** | **Available in data sources** | **Corresponding extra information**                                                                 |
 |---------------|--------------------|-------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Artist](JSON_Artist.md)      | albums             | Catalog, Collection           | The artist's paginated list of albums                                                               |
+| [Artist](JSON-Artist.md)      | albums             | Catalog, Collection           | The artist's paginated list of albums                                                               |
 |               | topTracks          | Catalog                       | The artist's paginated list of top tracks                                                           |
-| [Album](JSON_Album.md)         | tracks             | Catalog, Collection           | The album's paginated list of tracks                                                                |
+| [Album](JSON-Album.md)         | tracks             | Catalog, Collection           | The album's paginated list of tracks                                                                |
 |               | artistDetails      | Catalog                       | Extra fields in the album's artist list (level of detail equivalent to a Lookup call on the artist) |
-| [Track](JSON_Track.md)         | albumDetails       | Catalog                       | Extra fields in the track's album (level of detail equivalent to a Lookup call on the album)        |
+| [Track](JSON-Track.md)         | albumDetails       | Catalog                       | Extra fields in the track's album (level of detail equivalent to a Lookup call on the album)        |
 |               | artistDetails      | Catalog                       | Extra fields in the track's artist (level of detail equivalent to a Lookup call on the artist)      |
 
 #### Parent

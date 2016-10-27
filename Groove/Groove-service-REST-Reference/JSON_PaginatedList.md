@@ -158,7 +158,7 @@ extras=Tracks&accessToken=Bearer+[...]
 
 ### Continuation request (same URL, "extras" optional parameter removed, "continuationToken" from initial track list passed instead)
 ```html
-GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationToken=AXHsdfMACQQIAAcCB7U_gwAB2xGJygAZuSo5MwEAAjI1&accessToken=Bearer+[...]
+GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationToken=AXHsdfMACQQIAAcCB7U-gwAB2xGJygAZuSo5MwEAAjI1&accessToken=Bearer+[...]
 ```
 
 ### Continuation response (contains the rest of the tracks)

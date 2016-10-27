@@ -12,14 +12,14 @@ The full browse request is composed of mandatory and optional URL parts and quer
 /1/content/{namespace}/collection/{type}/browse?orderBy={orderBy}&maxItems={maxItems}
 &page={page}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Note                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | You must provide a valid [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) token for that user in the authorization header. |
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
 The following parameters are not available on the Common Parameters page.
@@ -60,7 +60,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
         "Source": "Collection"
       },
       {
-        "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
+        "Id": "music.AQIPAAdbyQACHfwgGCrXS-0",
         "Name": "Gesaffelstein",
         "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -85,7 +85,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 
 {
   "Error": {
-    "ErrorCode": "INCOMPATIBLE_INPUT_PARAMETERS",
+    "ErrorCode": "INCOMPATIBLE-INPUT-PARAMETERS",
     "Description": "Incompatible parameters",
     "Message": "Invalid ordering for this content"
   }
@@ -116,7 +116,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           {
             "Role": "AlbumArtist",
             "Artist": {
-              "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
+              "Id": "music.AQIPAAdbyQACHfwgGCrXS-0",
               "Name": "Gesaffelstein",
               "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -149,7 +149,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
             }
           }
         ],
-        "Id": "music.AQEPB75BmAABHDnC5GmB7_s",
+        "Id": "music.AQEPB75BmAABHDnC5GmB7-s",
         "Name": "Der Alchemyst",
         "ImageUrl": "https://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
         "Link": "https://music.microsoft.com/Album/9841be07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -266,7 +266,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           "Genres": [
             "Electronic / Dance"
           ],
-          "Id": "music.AQEPB75BmAABHDnC5GmB7_s",
+          "Id": "music.AQEPB75BmAABHDnC5GmB7-s",
           "Name": "Der Alchemyst",
           "ImageUrl": "https://musicimage.xboxlive.com/content/music.9841be07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
           "Link": "https://music.microsoft.com/Album/9841be07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -384,7 +384,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           {
             "Role": "PrimaryArtist",
             "Artist": {
-              "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
+              "Id": "music.AQIPAAdbyQACHfwgGCrXS-0",
               "Name": "Gesaffelstein",
               "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -394,7 +394,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           {
             "Role": "AlbumArtist",
             "Artist": {
-              "Id": "music.AQIPAAdbyQACHfwgGCrXS_0",
+              "Id": "music.AQIPAAdbyQACHfwgGCrXS-0",
               "Name": "Gesaffelstein",
               "ImageUrl": "https://musicimage.xboxlive.com/content/music.c95b0700-0200-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Artist/c95b0700-0200-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -427,7 +427,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 
 {
   "Error": {
-    "ErrorCode": "INVALID_INPUT_PARAMETER",
+    "ErrorCode": "INVALID-INPUT-PARAMETER",
     "Description": "Invalid parameter value",
     "Message": "Parameter maxItems must have a value of at most 25"
   }

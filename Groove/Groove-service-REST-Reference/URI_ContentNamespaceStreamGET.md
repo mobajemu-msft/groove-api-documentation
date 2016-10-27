@@ -35,7 +35,7 @@ The full streaming request is composed of mandatory and optional URL parts and q
 /1/content/{id}/stream?clientInstanceId={clientInstanceId}&contentType={contentType}&accessToken={accessToken}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 Please make sure your usage of the streaming API follows the [guidelines](../Using-the-Groove-RESTful-Services/Guidelines.md).
 
@@ -45,7 +45,7 @@ Please make sure your usage of the streaming API follows the [guidelines](../Usi
 | clientInstanceId | string   | Required. Unique client identifier. Should be persisted client-side. Can be from 32 to 128 characters long. |
 
 ## Response object
-[StreamResponse (JSON)](JSON_StreamResponse.md)
+[StreamResponse (JSON)](JSON-StreamResponse.md)
 
 ## Examples
 ### Unauthorized stream
@@ -66,7 +66,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 
 {
   "Error": {
-    "ErrorCode": "NO_MUSIC_PASS_SUBSCRIPTION",
+    "ErrorCode": "NO-MUSIC-PASS-SUBSCRIPTION",
     "Description": "The user does not have an Groove subscription"
   }
 }
@@ -87,7 +87,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 ```json
 {
   "Url": "https://webstream-vh.akamaihd.net/i/129/580/712/155/audio.mp4/master.m3u8?
-rid=40117aff-3edc-432a-a81d-1967a61e826d_i2_fr-FR_music_asset_location&hdnea=exp=1398443951~
+rid=40117aff-3edc-432a-a81d-1967a61e826d-i2-fr-FR-music-asset-location&hdnea=exp=1398443951~
 acl=/i/129/580/712/155/audio.mp4*~hmac=22d99f90d60f28e9c12e618027dc611f973c9ba614ad04c7210570d807e6398c",
   "ContentType": "application/vnd.apple.mpegurl",
   "ExpiresOn": "2014-04-25T16:39:11.132Z"

@@ -19,14 +19,14 @@ The Sub-Browse request is composed of mandatory and optional URL parts and query
 
 Please note that pagination is zero-based (the first page is found at page=0).
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## URI parameters
 | **Parameter**     | **Type**              | **Description**                                                                                                                                                                                                                |
 |-------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                | string                | Required. The identifier of the parent element whose sub-items are being browsed.                                                                                                                                              |
 | source            | string                | Required. The source where the data should be looked up. Possible values are "catalog" and "collection". Collections require [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) on top of developer authentication. |
-| browseType        | string                | Required. The type of the parent element ([Album](JSON_Album.md), [Artist](JSON_Artist.md) or [Playlist](JSON_Playlist.md)).                     |
+| browseType        | string                | Required. The type of the parent element ([Album](JSON-Album.md), [Artist](JSON-Artist.md) or [Playlist](JSON-Playlist.md)).                     |
 | extra             | string                | Required. The type of the requested sub-elements (for example, "Tracks" or "Albums"). See [Extras](Extras.md).                                                                                       |
 | orderBy           | string                | Optional. Ordering chosen for that content ([orderBy](OrderBy.md) field). If incompatible, an HTTP 400 error will be emitted.                                                                        |
 | maxItems          | 32-bit signed integer | Optional. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well.                                                                                                         |
@@ -34,7 +34,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | continuationToken | string                | Optional. A token provided by an earlier service response and optionally returned to the service to request continuation of an incomplete list of content.                                                                     |
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Examples
 ### Browse Avicii's albums
@@ -313,7 +313,7 @@ GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/b
 ### Browse the tracks of one of my playlists
 #### Request
 ```http
-GET /1/content/music.AQPRiQGUVID-ANj02JdwYA_R/collection/playlist/tracks/browse
+GET /1/content/music.AQPRiQGUVID-ANj02JdwYA-R/collection/playlist/tracks/browse
 ?accessToken=Bearer+[...] HTTP/1.1
 
 Authorization: Bearer eyJlbmMiOiJB[...]
@@ -376,7 +376,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
                   }
                 }
               ],
-              "Id": "music.AQQfj5Lz_MSn2025RlcuS6VkDge5PqgAAQ",
+              "Id": "music.AQQfj5Lz-MSn2025RlcuS6VkDge5PqgAAQ",
               "Name": "Get Lucky (feat. Pharrell Williams)",
               "ImageUrl": "https://musicimage.xboxlive.com/content/music.a83eb907-0100-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/a83eb907-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",
@@ -434,7 +434,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
           ],
           "TotalItemCount": 2
         },
-        "Id": "music.AQPRiQGUVID-ANj02JdwYA_R",
+        "Id": "music.AQPRiQGUVID-ANj02JdwYA-R",
         "Name": "Playlist1",
         "Link": "https://music.microsoft.com/Playlist/940189d1-8054-00fe-d8f4-d89770600fd1?partnerID=AwesomePartner",
         "Source": "Collection"

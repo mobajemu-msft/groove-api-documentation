@@ -13,7 +13,7 @@ A Search request is composed of mandatory and **Optional** URL parts and query p
 /1/content/{namespace}/search?q={query}&language={language}&country={country}&maxItems={maxItems}&filters={filters}&source={source}&contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|
@@ -25,7 +25,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | namespace     | string   | Required. The namespace in which to perform the search. Example: "music". |
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |

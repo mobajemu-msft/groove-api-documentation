@@ -6,7 +6,7 @@ The Contributor object has the following specification.
 
 | **Member** | **Type**                                           | **Description**                                         |
 |------------|----------------------------------------------------|---------------------------------------------------------|
-| Artist     | [Artist](JSON_Artist.md) | The contributing artist.                                |
+| Artist     | [Artist](JSON-Artist.md) | The contributing artist.                                |
 | Role       | string                                             | The type of contribution, such as "Main" or "Featured". |
 
 ## Sample JSON syntax

@@ -11,10 +11,10 @@ Delete tracks from a user's collection.
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-services/User-Authentication.md) is mandatory for this API. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
-[TrackActionResponse (JSON)](JSON_TrackActionResponse.md)
+[TrackActionResponse (JSON)](JSON-TrackActionResponse.md)
 
 ## URI parameters
 The Delete Tracks request is composed of mandatory URL parts and query parameters, described in the table below. A Delete Tracks request containing all parameters would look like the following string:
@@ -31,9 +31,9 @@ The Delete Tracks request is composed of mandatory URL parts and query parameter
 A valid user authentication token is also required in the Authorization header to access the user's collection.
 
 ## Examples
-Request object: [TrackActionRequest (JSON)](JSON_TrackActionRequest.md).
+Request object: [TrackActionRequest (JSON)](JSON-TrackActionRequest.md).
 
-Response object: [TrackActionResponse (JSON)](JSON_TrackActionResponse.md).
+Response object: [TrackActionResponse (JSON)](JSON-TrackActionResponse.md).
 
 ### Delete tracks from collection
 In this example we delete a valid track (which is in the user's collection), and an invalid one (randomly-generated ID).
@@ -49,7 +49,7 @@ Content-Type: application/json
 {
   "TrackIds": [
     "music.9bb2c5c5-455c-4c15-827c-f9bfd759a458",
-    "music.AQQfjl2zcVUd602kG1MvCy4e_Ae-QZkAAQ"
+    "music.AQQfjl2zcVUd602kG1MvCy4e-Ae-QZkAAQ"
   ]
 }
 ```
@@ -61,16 +61,16 @@ Content-Type: application/json
     {
       "InputId": "music.9BB2C5C5-455C-4C15-827C-F9BFD759A458",
       "Error": {
-        "ErrorCode": "COLLECTION_INVALID_ID",
+        "ErrorCode": "COLLECTION-INVALID-ID",
         "Description": "Invalid collection id for this operation"
       }
     },
     {
-      "InputId": "music.AQQfjl2zcVUd602kG1MvCy4e_Ae-QZkAAQ"
+      "InputId": "music.AQQfjl2zcVUd602kG1MvCy4e-Ae-QZkAAQ"
     }
   ],
   "Error": {
-    "ErrorCode": "COLLECTION_SOME_OPERATIONS_FAILED",
+    "ErrorCode": "COLLECTION-SOME-OPERATIONS-FAILED",
     "Description": "Some of the operations failed"
   }
 }

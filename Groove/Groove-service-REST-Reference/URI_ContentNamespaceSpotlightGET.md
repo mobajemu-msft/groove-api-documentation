@@ -1,4 +1,4 @@
-ï»¿# GET (/1/content/{namespace}/spotlight)
+# GET (/1/content/{namespace}/spotlight)
 Discover spotlight content for a specified language or culture.
 
 -   [Remarks](#remarks)
@@ -11,10 +11,10 @@ The Spotlight request is composed of mandatory and optional URL parts and query 
 /1/content/{namespace}/spotlight?language={language}&country={country}&accessToken={accessToken}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Examples
 ### Spotlight content
@@ -303,10 +303,10 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "IsExplicit": false,
           "LabelName": "Universal Music Division Mercury Records",
           "Genres": [
-            "Chanson FranÃ§aise"
+            "Chanson Française"
           ],
           "Subgenres": [
-            "Pop FranÃ§aise"
+            "Pop Française"
           ],
           "AlbumType": "Album",
           "Artists": [

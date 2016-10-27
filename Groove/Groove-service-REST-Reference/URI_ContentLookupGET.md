@@ -17,7 +17,7 @@ A lookup request is composed of mandatory and optional URL parts and query param
 &contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|
@@ -33,7 +33,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | ISRC and ICPN external IDs are accepted as input by the Lookup API (see [Namespaces supported](Namespace.md)), but only when the source is Catalog. |                  
 
 ## Response object
-[ContentResponse (JSON)](JSON_ContentResponse.md)
+[ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -196,7 +196,7 @@ GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bea
 HTTP/1.1 404 Not Found
 {
  "Error": {
-   "ErrorCode": "CATALOG_NO_RESULT",
+   "ErrorCode": "CATALOG-NO-RESULT",
    "Description": "Item does not exist"
  }
 }
@@ -1033,7 +1033,7 @@ Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
                   }
                 }
               ],
-              "Id": "music.AQQf3-wXiuSFS0yqPmC_ZUazfgfq6y0AAQ",
+              "Id": "music.AQQf3-wXiuSFS0yqPmC-ZUazfgfq6y0AAQ",
               "Name": "Aleph",
               "ImageUrl": "https://musicimage.xboxlive.com/content/music.2debea07-0100-11db-89ca-0019b92a3933/image?locale=en-US",
               "Link": "https://music.microsoft.com/Track/2debea07-0100-11db-89ca-0019b92a3933?partnerID=AwesomePartner",

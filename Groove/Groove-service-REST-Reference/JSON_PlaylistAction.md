@@ -12,7 +12,7 @@ The PlaylistAction object has the following specification.
 | Name                 | string                                                               | *Optional*. Name of the playlist.                                                                                                                                                        |
 | IsPublished          | Boolean value                                                        | *Optional.* Whether the playlist is public or not.                                                                                                                                       |
 | InsertBeforeTrackId  | string                                                               | *Optional* When reordering tracks, track before which you want to insert the tracks specified in the TrackActions field. Can be null if you want to insert at the end of the playlist. |
-| TrackActions         | List of [TrackAction](JSON_TrackAction.md) | Optional. List of actions to perform on the playlist's tracks.                                                                                                                         |
+| TrackActions         | List of [TrackAction](JSON-TrackAction.md) | Optional. List of actions to perform on the playlist's tracks.                                                                                                                         |
 
 ## Sample JSON syntax
 ```json
@@ -35,6 +35,6 @@ The PlaylistAction object has the following specification.
 [Groove Service REST Reference](overview.md)
 
 #### Reference
-[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)  
-[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)  
-[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)
+[/1/content/{namespace}/collection/playlists/create](URI-ContentNamespaceCollectionPlaylistsCreatePOST.md)  
+[/1/content/{namespace}/collection/playlists/delete](URI-ContentNamespaceCollectionPlaylistsDeletePOST.md)  
+[/1/content/{namespace}/collection/playlists/update](URI-ContentNamespaceCollectionPlaylistsUpdatePOST.md)

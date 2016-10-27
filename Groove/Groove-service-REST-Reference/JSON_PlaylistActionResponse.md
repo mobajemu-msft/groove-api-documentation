@@ -8,8 +8,8 @@ The PlaylistActionResponse object has the following specification.
 
 | **Member**           | **Type**                                                                       | **Description**                                                 |
 |----------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| Error                | [Error](JSON_Error.md)                               | Optional. Error if the operation or some sub-operations failed. |
-| PlaylistActionResult | [PlaylistActionResult](JSON_PlaylistActionResult.md) | Details on the playlist action.                                 |
+| Error                | [Error](JSON-Error.md)                               | Optional. Error if the operation or some sub-operations failed. |
+| PlaylistActionResult | [PlaylistActionResult](JSON-PlaylistActionResult.md) | Details on the playlist action.                                 |
 
 ## Sample JSON syntax
 ```json
@@ -33,6 +33,6 @@ The PlaylistActionResponse object has the following specification.
 [Groove Service REST Reference](overview.md)
 
 #### Reference
-[/1/content/{namespace}/collection/playlists/create](URI_ContentNamespaceCollectionPlaylistsCreatePOST.md)  
-[/1/content/{namespace}/collection/playlists/delete](URI_ContentNamespaceCollectionPlaylistsDeletePOST.md)  
-[/1/content/{namespace}/collection/playlists/update](URI_ContentNamespaceCollectionPlaylistsUpdatePOST.md)
+[/1/content/{namespace}/collection/playlists/create](URI-ContentNamespaceCollectionPlaylistsCreatePOST.md)  
+[/1/content/{namespace}/collection/playlists/delete](URI-ContentNamespaceCollectionPlaylistsDeletePOST.md)  
+[/1/content/{namespace}/collection/playlists/update](URI-ContentNamespaceCollectionPlaylistsUpdatePOST.md)

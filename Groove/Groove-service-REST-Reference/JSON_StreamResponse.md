@@ -6,7 +6,7 @@ The StreamResponse object has the following specification.
 
 | **Member**  | **Type**                                         | **Description**                                                                           |
 |-------------|--------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Error       | [Error](JSON_Error.md) | Error returned.                                                                           |
+| Error       | [Error](JSON-Error.md) | Error returned.                                                                           |
 | Url         | string                                           | The URL of the stream.                                                                    |
 | ContentType | string                                           | The stream's content type. Can be one of the following: **(1)** application/vnd.apple.mpegurl": HLS MPEG-TS AAC 128-kbit stream with AES encryption. **(2)** "audio/mpeg": MP3 HTTP progressive download.|
 | ExpiresOn   | DateTime                                         | GMT expiry time of the stream URL. |

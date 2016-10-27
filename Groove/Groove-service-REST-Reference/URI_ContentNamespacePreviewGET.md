@@ -12,10 +12,10 @@ The preview streaming request is composed of mandatory and optional URL parts an
 /1/content/{namespace.id}/preview?country={country}&clientInstanceId={clientInstanceId} &contentType={contentType}&accessToken={accessToken}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON_Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
-[StreamResponse (JSON)](JSON_StreamResponse.md)
+[StreamResponse (JSON)](JSON-StreamResponse.md)
 
 ## Query string parameters
 | **Parameter**    | **Type** | **Description**                                                                                             |
@@ -33,7 +33,7 @@ accessToken=Bearer+[...]
 #### Response
 ```json
 {
-  "Url": "http://progdownload.zune.net/129/580/712/170/audio.mp3?rid=052d12ef-2084-45c4-9f02-c552ef834463_i2_en-US_music_asset_location",
+  "Url": "http://progdownload.zune.net/129/580/712/170/audio.mp3?rid=052d12ef-2084-45c4-9f02-c552ef834463-i2-en-US-music-asset-location",
   "ContentType": "audio/mp3"
 }
 ```

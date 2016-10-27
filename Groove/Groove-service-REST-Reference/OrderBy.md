@@ -8,15 +8,15 @@ If you specify an invalid value for a specific content, we will issue an HTTP 40
 ## Possible values in the Collection Browse API
 | **Item type**                                   | **orderBy value** | **Description**                                                      |
 |-------------------------------------------------|-------------------|----------------------------------------------------------------------|
-| [Artist](JSON_Artist.md)                        | ArtistName        | Default. The artist's name, sorted alphabetically.                   |
+| [Artist](JSON-Artist.md)                        | ArtistName        | Default. The artist's name, sorted alphabetically.                   |
 |                                                 | CollectionDate    | Date when the artist was added to the collection, most recent first. |
-| [Album](JSON_Album.md)                          | AlbumTitle        | Default. The album's title, sorted alphabetically.                   |
+| [Album](JSON-Album.md)                          | AlbumTitle        | Default. The album's title, sorted alphabetically.                   |
 |                                                 | ArtistName        | Name of the main artist of the album, sorted alphabetically.         |
 |                                                 | GenreName         | Genre of the album, sorted alphabetically.                           |
 |                                                 | ReleaseDate       | Release date of the album, most recent first.                        |
 |                                                 | CollectionDate    | Date when the album was added to the collection, most recent first   |
-| [Playlist](JSON_Playlist.md)                    | CollectionDate    | Default. Date when the playlist was created, most recent first       |
-| [Track](JSON_Track.md)                          | TrackTitle        | Default. The track's title, sorted alphabetically                    |
+| [Playlist](JSON-Playlist.md)                    | CollectionDate    | Default. Date when the playlist was created, most recent first       |
+| [Track](JSON-Track.md)                          | TrackTitle        | Default. The track's title, sorted alphabetically                    |
 |                                                 | AlbumTitle        | Title of the album containing the track, sorted alphabetically.      |
 |                                                 | ArtistName        | Name of the main artist of the track, sorted alphabetically          |
 |                                                 | GenreName         | Genre of the track, sorted alphabetically                            |
@@ -27,7 +27,7 @@ If you specify an invalid value for a specific content, we will issue an HTTP 40
 ## Possible values in the Catalog Browse API
 | **Item type**                                                                  | **orderBy value** | **Description**                               |
 |--------------------------------------------------------------------------------|-------------------|-----------------------------------------------|
-| [Artist](JSON_Artist.md), [Album](JSON_Album.md), or [Track](JSON_Track.md)    | AllTimePlayCount  | The number of times the item has been played. |
+| [Artist](JSON-Artist.md), [Album](JSON-Album.md), or [Track](JSON-Track.md)    | AllTimePlayCount  | The number of times the item has been played. |
 |                                                                                | ReleaseDate       | Default. Release date.                        |
 |                                                                                | MostPopular       | Popularity.                                   |
 
