@@ -1,3 +1,3 @@
 ---
-redirect_url: /Groove/SDK-and-helpers/SdK-and-Helpers
+redirect_url: /Groove/sdk-and-helpers/sdK-and-helpers
 ---

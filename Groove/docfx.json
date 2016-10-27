@@ -40,6 +40,6 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "Groove"
+    "dest": "groove"
   }
 }
