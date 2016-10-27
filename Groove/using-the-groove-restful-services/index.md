@@ -1,3 +1,3 @@
 ---
-redirect_url: /GrooveDoc/Using-the-Groove-RESTful-Services/Using-the-Groove-RESTful-Services
+redirect_url: /groove/Using-the-Groove-RESTful-Services/overview
 ---
