@@ -1,3 +1,11 @@
+---
+title: Stream music for a subscribed user | Groove Services
+description: Users subscripted to Groove Music Pass can stream full music tracks from your application.
+keywords:
+author:
+ms.assetid:
+---
+
 # Streaming music
 To stream a full music track you need an authenticated user with an active Groove Music Pass subscription.
 See [User Authentication] for more details on how to authenticate users.

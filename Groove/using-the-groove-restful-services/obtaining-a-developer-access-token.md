@@ -1,4 +1,12 @@
-﻿# Obtaining a Developer Access Token
+﻿---
+title: Register for the Groove music service | Groove Services
+description: Register your application with the Groove RESTful API to gain a authentication token, which is necessary for using all functions in the Groove API.
+keywords:
+author:
+ms.assetid:
+---
+
+# Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
  [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
  [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png

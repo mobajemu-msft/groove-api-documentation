@@ -1,3 +1,11 @@
+---
+title: Authenticate a Groove user | Groove Services
+description: When using user-dependent APIs, follow these steps to authenticate Groove users and validate their perimissions.
+keywords:
+author:
+ms.assetid:
+---
+
 # Groove User Authentication
 To use the user-authenticated APIs, you need to have an access token that authenticates
 your app to a particular set of permissions for a user.

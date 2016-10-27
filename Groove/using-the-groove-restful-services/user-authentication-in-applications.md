@@ -1,3 +1,11 @@
+---
+title: Implement user authentication in an application | Groove Services
+description: Follow these steps to authenticate a Groove user from within an application on Windows 10, Windows 81, IOS, or Android.
+keywords:
+author:
+ms.assetid:
+---
+
 # Groove User Authentication in your Application
 
 In this section, you'll learn how to sign your user in on many platforms.

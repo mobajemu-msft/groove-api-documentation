@@ -1,3 +1,12 @@
+---
+title: Guidelines on using the Groove Service in your application | Groove Services
+description: Developers must respect and follow these guidelines in any applicated that uses the Groove Service.
+keywords:
+author:
+ms.assetid:
+---
+
+
 # Guidelines
 Following are some important rules you must respect when using the Groove Service. This list is not meant to be exhaustive:   
 

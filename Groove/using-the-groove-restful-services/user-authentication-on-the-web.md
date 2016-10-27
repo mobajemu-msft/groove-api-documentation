@@ -1,3 +1,11 @@
+---
+title: Implement user authentication on the web | Groove Services
+description: Follow these steps to authenticate a Groove user from within any web application.
+keywords:
+author:
+ms.assetid:
+---
+
 # Groove User Authentication on the Web
 In this section, you'll learn how to:
 

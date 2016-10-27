@@ -1,3 +1,11 @@
+---
+title: Add images to your Grove music products | Groove Services
+description: Learn how to incorporate images returned by the Grove API seamlessly into your application.
+keywords:
+author:
+ms.assetid:
+---
+
 # Image Service
 Every piece of content returned by content APIs contains a field, ImageUrl, that is a direct link to the content's default image, hosted on ```https://musicimage.xboxlive.com/```. This image link generates an image with specific default properties, but it is possible to modify the link in order to change some of the image properties, such as its size. Image resolution is context-aware, so the actual image might change depending on the size parameters used. The details of the image API are shown in this topic.  
 
