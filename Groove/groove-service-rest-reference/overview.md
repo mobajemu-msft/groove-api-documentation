@@ -69,5 +69,5 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 [orderBy parameter for Catalog and Collection Browse APIs](OrderBy.md)  
 	&nbsp;&nbsp;&nbsp;&nbsp;Allows ordering browse results in a specific order.  
 
-[Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md)   
+[Groove RESTful API HTTP Status Codes](http-status-codes.md)   
 	&nbsp;&nbsp;&nbsp;&nbsp;Describes the standard HTTP status codes that are returned by the service.
