@@ -11,7 +11,7 @@ The new releases request is composed of mandatory and optional URL parts and que
 ```
 /1/content/{namespace}/newreleases?genre={genre}&language={language}&country={country}&accessToken={accessToken}
 ```
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |

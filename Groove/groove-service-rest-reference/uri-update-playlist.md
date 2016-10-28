@@ -21,7 +21,7 @@ Playlist names are restricted to 256 characters and cannot be empty.
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) is mandatory for this API. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## Examples
 Request object: [PlaylistAction (JSON)](JSON-PlaylistAction.md).

@@ -13,7 +13,7 @@ A Search request is composed of mandatory and **Optional** URL parts and query p
 /1/content/{namespace}/search?q={query}&language={language}&country={country}&maxItems={maxItems}&filters={filters}&source={source}&contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 | Note                                                                                                |
 |---------------------------------------------------------------------------------------------------------|

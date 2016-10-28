@@ -11,7 +11,7 @@ The full request is composed of mandatory and optional URL parts and query param
 language={language}&country={country}&accessToken={accessToken}&contentType={contentType}&jsonp={jsonp}
 ```
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 | Important                                                                        |
 |------------------------------------------------------------------------------------------|

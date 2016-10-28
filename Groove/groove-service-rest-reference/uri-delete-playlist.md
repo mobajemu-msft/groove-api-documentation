@@ -9,7 +9,7 @@ The full delete request is composed of mandatory and optional URL parts and quer
 ```
 /1/content/{namespace}/collection/playlists/delete?accessToken={accessToken}
 ```
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 You can delete only one playlist at a time. Provide the ID of the playlist to delete; all other metadata will be ignored.
 
