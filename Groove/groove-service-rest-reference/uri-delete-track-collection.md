@@ -11,7 +11,7 @@ Delete tracks from a user's collection.
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-services/User-Authentication.md) is mandatory for this API. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
 [TrackActionResponse (JSON)](JSON-TrackActionResponse.md)

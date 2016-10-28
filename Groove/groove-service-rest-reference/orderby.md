@@ -32,4 +32,5 @@ If you specify an invalid value for a specific content, we will issue an HTTP 40
 |                                                                                | MostPopular       | Popularity.                                   |
 
 #### Parent
-[Groove Service REST Reference](Groove-Service-REST-Reference.md)
+[Groove Service REST Reference](overview.md)
+

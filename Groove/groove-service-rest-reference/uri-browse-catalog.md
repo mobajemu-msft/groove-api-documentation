@@ -19,7 +19,7 @@ The Browse Catalog request is composed of mandatory and optional URL parts and q
 |------------------------------------------------------------------------------------------------------------------------------|
 | Pagination is zero-based (the first page is found at page 0), and catalog browse will not return more than 1000 total items. |
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## Response object
 [ContentResponse (JSON)](JSON-ContentResponse.md)

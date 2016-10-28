@@ -14,7 +14,7 @@ Provide a batch of IDs and the API will try to add them to the user's collection
 
 The number of tracks per batch is limited to 100.
 
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                    |

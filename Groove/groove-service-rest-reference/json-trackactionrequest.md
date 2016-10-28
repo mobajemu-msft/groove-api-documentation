@@ -6,7 +6,7 @@ The TrackActionRequest object has the following specification.
 
 | **Member** | **Type**       | **Description**                                                                                                                                                                                                                                                       |
 |------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TrackIds   | List of string | List of track IDs to add to the user's collection. These IDs can be found through [/1/content/{id}/lookup](URI-ContentLookupGET.md) or [/1/content/{namespace}/search?q={query}](URI-ContentSearchGET.md), for example. |
+| TrackIds   | List of string | List of track IDs to add to the user's collection. These IDs can be found through [/1/content/{id}/lookup](uri-content-lookup.md) or [/1/content/{namespace}/search?q={query}](uri-search-content.md), for example. |
 
 ## Sample JSON syntax
 ```json

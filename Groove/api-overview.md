@@ -18,7 +18,7 @@ The Groove Music API makes it easy for you to connect your app or website to the
 ### In this section
 [Getting Started with the Groove SDK](Getting-Started.md)    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
-[SDK and Helpers](SdK-and-Helpers/SdK-and-Helpers.md)  
+[SDK and Helpers](SdK-and-Helpers/sdk-list.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software to use the Groove RESTful API.    
 [Using-the-Groove-RESTful-Services](Using-the-Groove-RESTful-Services/overview.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes how to use the Groove Music RESTful API.    

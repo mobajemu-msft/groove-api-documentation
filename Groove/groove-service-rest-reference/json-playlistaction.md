@@ -35,6 +35,6 @@ The PlaylistAction object has the following specification.
 [Groove Service REST Reference](overview.md)
 
 #### Reference
-[/1/content/{namespace}/collection/playlists/create](URI-ContentNamespaceCollectionPlaylistsCreatePOST.md)  
-[/1/content/{namespace}/collection/playlists/delete](URI-ContentNamespaceCollectionPlaylistsDeletePOST.md)  
-[/1/content/{namespace}/collection/playlists/update](URI-ContentNamespaceCollectionPlaylistsUpdatePOST.md)
+[/1/content/{namespace}/collection/playlists/create](uri-create-playlist.md)  
+[/1/content/{namespace}/collection/playlists/delete](uri-delete-playlist.md)  
+[/1/content/{namespace}/collection/playlists/update](uri-update-playlist.md)

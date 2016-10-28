@@ -12,7 +12,7 @@ The full browse request is composed of mandatory and optional URL parts and quer
 /1/content/{namespace}/collection/{type}/browse?orderBy={orderBy}&maxItems={maxItems}
 &page={page}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
 ```
-For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](CommonParameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
+For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](HTTPStatusCodes.md).
 
 | Note                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
