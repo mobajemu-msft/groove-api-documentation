@@ -1,3 +1,3 @@
 ---
-redirect-url: /groove/groove-service-rest-reference/overview
+redirect_url: /groove/groove-service-rest-reference/overview
 ---
