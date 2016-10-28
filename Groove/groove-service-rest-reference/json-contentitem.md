@@ -1,3 +1,11 @@
+---
+title: ContentItem JSON object | Groove Services
+description:  Learn about ContentItem JSON object in Groove Music API.
+keywords: groove music, groove api, groove contentitem json
+author: sakley
+ms.assetid: 
+---
+
 # ContentItem (JSON)         
 A piece of content (either an [**Album**](JSON-Album.md) or an [**Artist**](JSON-Artist.md)).
 

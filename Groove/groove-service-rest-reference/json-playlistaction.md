@@ -1,3 +1,11 @@
+---
+title: PlaylistAction JSON object | Groove Services
+description:  Learn about PlaylistActiob JSON object in Groove Music API.
+keywords: groove music, groove api, groove playlistaction json
+author: sakley
+ms.assetid: 
+---
+
 # PlaylistAction (JSON)     
 The input element for every playlist action request: create, update, and delete.  
 A PlaylistAction contains playlist metadata and a list of actions to perform on the tracks in the playlist.

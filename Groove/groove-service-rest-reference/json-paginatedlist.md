@@ -1,3 +1,11 @@
+---
+title: PaginatedList JSON object | Groove Services
+description:  Learn about PaginatedList JSON object in Groove Music API.
+keywords: groove music, groove api, groove paginatedlist json
+author: sakley
+ms.assetid: 
+---
+
 # PaginatedList (JSON)       
 Describes paginated lists, a type of response from the Groove Service that can be continued by using a continuation token.
 

@@ -1,3 +1,11 @@
+---
+title: Sub-browse a given ID | Groove Services
+description:  Learn how to browse sub-items of a Groove Music catalog ID with our API.
+keywords: groove music, groove api, groove catalog browse
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{id}/{source}/{browseType}/{extra}/browse)
 Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).
 

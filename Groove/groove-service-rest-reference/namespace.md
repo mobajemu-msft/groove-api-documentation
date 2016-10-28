@@ -1,3 +1,11 @@
+---
+title: Namespaces supported by Groove Music APIs| Groove Services
+description:  Learn about the namespaces used by Groove Music APIs to indicate type of content delivered.
+keywords: groove music, groove api, groove userprofileresponse json
+author: sakley
+ms.assetid: 
+---
+
 # Namespaces supported
 The Groove APIs use namespaces to indicate the type of content that is being referenced or asked for, and to separate ID spaces. All of the content IDs returned in content API responses are always prefixed with their namespace. For example, ``` music.{ID} ```identifies a particular piece of music content. The namespaces should be considered as part of the ID when passing a specific ID in a request.
 

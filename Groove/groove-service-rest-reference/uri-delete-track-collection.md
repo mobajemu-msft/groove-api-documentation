@@ -1,3 +1,11 @@
+---
+title: Delete tracks with Groove Music API| Groove Services
+description:  Learn how to delete a track from a user's collection with Groove Music APIs.
+keywords: groove music, groove api, groove user collection, groove delete track
+author: sakley
+ms.assetid: 
+---
+
 # POST (/1/content/{namespace}/collection/delete)
 Delete tracks from a user's collection.
 

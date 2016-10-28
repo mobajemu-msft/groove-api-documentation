@@ -1,3 +1,11 @@
+---
+title: Groove Music API REST Reference overview | Groove Services
+description:  Discover Groove Music API REST Reference, endpoints and parameters.
+keywords: groove music, groove api, groove rest
+author: sakley
+ms.assetid: 
+---
+
 # Groove Service REST Reference  
 The Groove Service delivers Groove functionality to third-party application developers for integration within their own apps.
 

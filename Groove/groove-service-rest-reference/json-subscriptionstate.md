@@ -1,3 +1,11 @@
+---
+title: SubscriptionState JSON object | Groove Services
+description:  Learn about SubscriptionState JSON object in Groove Music API.
+keywords: groove music, groove api, groove SubscriptionState json
+author: sakley
+ms.assetid: 
+---
+
 # SubscriptionState (JSON)
 Subscription information for the user.
 

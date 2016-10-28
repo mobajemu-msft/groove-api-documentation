@@ -1,3 +1,12 @@
+---
+title: Search for items in Groove Music| Groove Services
+description:  Learn how to create a Groove Music playlist on behalf of a user.
+keywords: groove music, groove api, groove api search
+author: sakley
+ms.assetid: 
+---
+
+
 # GET (/1/content/{namespace}/search?q={query})
 Search for items in a media catalog, user's collection, or both.
 

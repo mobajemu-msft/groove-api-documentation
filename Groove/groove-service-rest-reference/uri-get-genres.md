@@ -1,3 +1,11 @@
+---
+title: Get available genres for a given locale| Groove Services
+description:  Learn how to browse available genres in Groove Music with the APIs.
+keywords: groove music, groove api, groove user collection, groove genres api
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{namespace}/catalog/genres)
 Get a list of genres available for a locale.
 

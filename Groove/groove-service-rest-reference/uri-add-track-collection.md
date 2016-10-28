@@ -1,3 +1,11 @@
+---
+title: Add a track to a user's collection| Groove Services
+description:  Learn how toadd a track to a user's collection in Groove Music.
+keywords: groove music, groove api, groove user collection
+author: sakley
+ms.assetid: 
+---
+
 # POST (/1/content/{namespace}/collection/add)
 Add tracks to a user's collection.
 

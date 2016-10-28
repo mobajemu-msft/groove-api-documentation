@@ -1,9 +1,9 @@
 ﻿---
 title: Register for the Groove music service | Groove Services
 description: Register your application with the Groove RESTful API to gain a authentication token, which is necessary for using all functions in the Groove API.
-keywords:
-author:
-ms.assetid:
+keywords: groove api, groove api developer, groove access token, groove developer registration
+author: sakley
+ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
 ---
 
 # Obtaining a Developer Access Token

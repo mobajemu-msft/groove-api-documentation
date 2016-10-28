@@ -1,9 +1,9 @@
 ---
 title: Add images to your Grove music products | Groove Services
 description: Learn how to incorporate images returned by the Grove API seamlessly into your application.
-keywords:
-author:
-ms.assetid:
+keywords: groove api, groove api image, groove api album artwork
+author: sakley
+ms.assetid: 3b9c158c-e714-97d1-e262-44856d139cc5
 ---
 
 # Image Service

@@ -1,9 +1,9 @@
 ---
 title: Stream music for a subscribed user | Groove Services
 description: Users subscripted to Groove Music Pass can stream full music tracks from your application.
-keywords:
-author:
-ms.assetid:
+keywords: groove api, groove stream music, groove music streaming 
+author: sakley
+ms.assetid: 988202c1-efd7-d43b-ee7e-89b134c96c58
 ---
 
 # Streaming music

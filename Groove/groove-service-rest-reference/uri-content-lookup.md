@@ -1,3 +1,11 @@
+---
+title: Lookup items from the catalog| Groove Services
+description:  Learn how to lookup items from a media catalog with Groove Music API.
+keywords: groove music, groove api, groove user collection, groove api lookup
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{id}/lookup)
 Look up one or several items from a media catalog and/or user's collection.
 

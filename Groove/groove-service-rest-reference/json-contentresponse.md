@@ -1,3 +1,11 @@
+---
+title: ContentResponse JSON object | Groove Services
+description:  Learn about ContentResponse JSON object in Groove Music API.
+keywords: groove music, groove api, groove contentresponse json
+author: sakley
+ms.assetid: 
+---
+
 # ContentResponse (JSON)   
 Base object used in most APIs that return media content.
 

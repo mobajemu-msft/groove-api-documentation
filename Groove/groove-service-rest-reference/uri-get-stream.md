@@ -1,3 +1,11 @@
+---
+title: Stream full tracks with Groove Music API| Groove Services
+description:  Learn how to stream full tracks with the Groove Music API for authenticated users.
+keywords: groove music, groove api, groove api authenticated, groove api stream, groove api full tracks
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{id}/stream)
 Request streaming.
 

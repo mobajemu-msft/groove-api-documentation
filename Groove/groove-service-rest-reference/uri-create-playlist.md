@@ -1,3 +1,11 @@
+---
+title: Create a playlist in Groove Music| Groove Services
+description:  Learn how to create a Groove Music playlist on behalf of a user.
+keywords: groove music, groove api, groove user collection, groove api playlist
+author: sakley
+ms.assetid: 
+---
+
 # POST (/1/content/{namespace}/collection/playlists/create)
 Create a playlist on behalf of a user.
 

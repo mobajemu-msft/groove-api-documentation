@@ -1,3 +1,11 @@
+---
+title: Discover the new releases API for Groove Music| Groove Services
+description:  Get a list of new releases in Groove Music catalog with this API
+keywords: groove music, groove api, groove new releases
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{namespace}/newreleases)
 Discover new releases.
 

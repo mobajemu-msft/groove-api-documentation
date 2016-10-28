@@ -1,3 +1,11 @@
+---
+title: TrackAction JSON object | Groove Services
+description:  Learn about TrackAction JSON object in Groove Music API.
+keywords: groove music, groove api, groove trackaction json
+author: sakley
+ms.assetid: 
+---
+
 # TrackAction (JSON)        
 An action (such as add or delete) on a specific track.
 

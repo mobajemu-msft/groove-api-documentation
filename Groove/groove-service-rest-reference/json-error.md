@@ -1,3 +1,11 @@
+﻿---
+title: Error JSON object | Groove Services
+description:  Learn about Error JSON object in Groove Music API.
+keywords: groove music, groove api, groove error json
+author: sakley
+ms.assetid: 
+---
+
 # Error (JSON)
 The error structure is the same across all APIs. Noteworthy elements are as follows.
 

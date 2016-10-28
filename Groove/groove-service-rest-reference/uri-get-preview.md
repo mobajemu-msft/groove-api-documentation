@@ -1,3 +1,11 @@
+---
+title: Stream tracks preview with Groove Music API| Groove Services
+description:  Learn how to stream a 30s preview for most tracks of the Groove Music catalog.
+keywords: groove music, groove api, groove api preview, groove api stream
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{id}/preview)
 Request preview streaming.
 

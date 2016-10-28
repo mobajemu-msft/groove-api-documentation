@@ -1,3 +1,11 @@
+---
+title: Contributor JSON object | Groove Services
+description:  Learn about Contributor JSON object in Groove Music API.
+keywords: groove music, groove api, groove contributor json
+author: sakley
+ms.assetid: 
+---
+
 # Contributor (JSON)        
 An artist and the artist's role.
 

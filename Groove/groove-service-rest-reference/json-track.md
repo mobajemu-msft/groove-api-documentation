@@ -1,3 +1,11 @@
+---
+title: Track JSON object | Groove Services
+description:  Learn about Track JSON object in Groove Music API.
+keywords: groove music, groove api, groove track json
+author: sakley
+ms.assetid: 
+---
+
 # Track (JSON)
 Describes a *track*, an individual piece of musical content from an album.
 

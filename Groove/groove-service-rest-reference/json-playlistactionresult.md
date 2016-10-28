@@ -1,3 +1,10 @@
+---
+title: PlaylistActionResult JSON object | Groove Services
+description:  Learn about PlaylistActionResult JSON object in Groove Music API.
+keywords: groove music, groove api, groove playlistactionresult json
+author: sakley
+ms.assetid: 
+---
 # PlaylistActionResult (JSON)
 The object describing a playlist action result, used by add and delete.
 

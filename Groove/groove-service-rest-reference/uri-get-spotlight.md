@@ -1,3 +1,11 @@
+---
+title: Discover the Spotlight content API for Groove Music| Groove Services
+description:  Get a list of spotlight content in Groove Music catalog with this API
+keywords: groove music, groove api, groove new releases, groove spotlight api
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/content/{namespace}/spotlight)
 Discover spotlight content for a specified language or culture.
 

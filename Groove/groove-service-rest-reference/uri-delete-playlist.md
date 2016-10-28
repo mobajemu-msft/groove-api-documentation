@@ -1,3 +1,11 @@
+---
+title: Delete a playlist in Groove Music| Groove Services
+description:  Learn how to delete a Groove Music playlist on behalf of a user.
+keywords: groove music, groove api, groove user collection, groove delete playlist
+author: sakley
+ms.assetid: 
+---
+
 # POST (/1/content/{namespace}/collection/playlists/delete)
 Delete a playlist of a user.
 

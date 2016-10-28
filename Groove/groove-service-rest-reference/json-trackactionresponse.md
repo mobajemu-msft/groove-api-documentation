@@ -1,3 +1,11 @@
+---
+title: TrackActionResponse JSON object | Groove Services
+description:  Learn about TrackActionResponse JSON object in Groove Music API.
+keywords: groove music, groove api, groove trackactionresponse json
+author: sakley
+ms.assetid: 
+---
+
 # TrackActionResponse (JSON)
 The output element for every track action request: add and delete.
 

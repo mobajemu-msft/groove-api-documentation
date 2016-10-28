@@ -1,8 +1,8 @@
 ---
 title: Implement user authentication on the web | Groove Services
 description: Follow these steps to authenticate a Groove user from within any web application.
-keywords:
-author:
+keywords: groove api, groove authentication web, groove music web
+author: sakley
 ms.assetid:
 ---
 

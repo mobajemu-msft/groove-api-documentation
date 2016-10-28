@@ -1,8 +1,8 @@
 ---
 title: Authenticate a Groove user | Groove Services
 description: When using user-dependent APIs, follow these steps to authenticate Groove users and validate their perimissions.
-keywords:
-author:
+keywords: groove api, groove api authentication, groove user authentication
+author: sakley
 ms.assetid:
 ---
 

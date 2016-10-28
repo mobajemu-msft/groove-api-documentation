@@ -1,3 +1,11 @@
+---
+title: OrderBy parameter for Groove Music APIs | Groove Services
+description:  Learn about the use of orderBy parameter for Catalog and Collection Browse APIs.
+keywords: groove music, groove api, groove orderby parameter
+author: sakley
+ms.assetid: 
+---
+
 # orderBy parameter for Catalog and Collection Browse APIs
 The Catalog Browse and Collection Browse APIs offer an optional query parameter **orderBy** that allows ordering the results in a specific order.
 

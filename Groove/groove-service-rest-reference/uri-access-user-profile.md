@@ -1,3 +1,11 @@
+---
+title: Access a Groove Music user profile| Groove Services
+description:  Learn how to get access to user profile with Groove Music API.
+keywords: groove music, groove api, groove user profile
+author: sakley
+ms.assetid: 
+---
+
 # GET (/1/user/{namespace}/profile)
 Retrieve a user's profile or the features available in a given region.
 
