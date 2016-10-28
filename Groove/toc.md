@@ -1,6 +1,6 @@
 # [Overview of Groove service](api-overview.md)
 # [Getting Started with the Groove SDK](Getting-Started.md)  
-# [SDK and Helpers](SDK-and-helpers/SdK-and-Helpers.md)
+# [SDK and Helpers](SDK-and-helpers/sdk-list.md)
 # [Using the Groove RESTful Services](Using-the-Groove-RESTful-Services/overview.md)
 ## Basics
 ### [Overview](Using-the-Groove-RESTful-Services/overview.md)
@@ -20,7 +20,7 @@
 ### [Image Service](Using-the-Groove-RESTful-Services/Image-Service.md)
 
 # [Affiliate Program](http://aka.ms/MicrosoftAffiliates)
-# [Groove-service-REST-Reference](Groove-service-REST-Reference/Groove-Service-REST-Reference.md)
+# [Groove-service-REST-Reference](Groove-service-REST-Reference/overview.md)
 ## JSON objects
 ###[Album (JSON)](Groove-service-REST-Reference/JSON-Album.md)
 ###[Artist (JSON)](Groove-service-REST-Reference/JSON-Artist.md)
@@ -49,7 +49,7 @@
 ###[Add track to a user's collection](Groove-service-REST-Reference/uri-add-track-collection.md)
 ###[Delete track from a user's collection](Groove-service-REST-Reference/uri-delete-track-collection.md)
 ###[Create a playlist](Groove-service-REST-Reference/uri-create-playlist.md)
-###[Delete a playlist](Groove-service-REST-Reference/uri-delete-playlist.md.md)
+###[Delete a playlist](Groove-service-REST-Reference/uri-delete-playlist.md)
 ###[Update a playlist](Groove-service-REST-Reference/uri-update-playlist.md)
 ###[Browse a user's collection or playlist](Groove-service-REST-Reference/uri-browse-user-collection-playlist.md)
 ###[Lookup for catalog content](Groove-service-REST-Reference/uri-content-lookup.md)

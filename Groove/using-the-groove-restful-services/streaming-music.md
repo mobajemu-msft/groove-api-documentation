@@ -19,6 +19,6 @@ OneDrive content is in its source format (whatever the user uploaded to his OneD
 Catalog full music tracks are in HLS format.
 Refer to the stream APIs for more details: [/1/content/{id}/stream].
 
-[/1/content/{id}/preview]: ../Groove-service-REST-Reference/URI_ContentNamespacePreviewGET.md
-[/1/content/{id}/stream]: ../Groove-service-REST-Reference/URI_ContentNamespaceStreamGET.md
+[/1/content/{id}/preview]: ../Groove-service-REST-Reference/uri-get-preview.md
+[/1/content/{id}/stream]: ../Groove-service-REST-Reference/uri-get-stream.md
 [User Authentication]: User-Authentication.md

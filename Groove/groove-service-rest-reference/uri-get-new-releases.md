@@ -16,7 +16,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ## URI parameters
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](URI-ContentNamespaceCatalogGenresGET.md) and must be URL-encoded. |
+| genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](uri-get-genres.md) and must be URL-encoded. |
 
 ## Response object
 [ContentResponse (JSON)](JSON-ContentResponse.md)
