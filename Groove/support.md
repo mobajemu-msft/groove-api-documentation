@@ -1,10 +1,12 @@
 ---
 title: Support for Groove Music API developers| Groove Services
-description:  Find support to solve your issues in developing with the Groove Music API.
+description: Find support to solve your issues in developing with the Groove Music API.
 keywords:  groove api, groove tou, groove support
 author: sakley
-ms.assetid:694fef27-e0b3-c590-4ff8-5293524e78ac
+ms.assetid: 694fef27-e0b3-c590-4ff8-5293524e78ac
 ---
+
+
 
 # Support
 First, please check that your question is not already answered in the [FAQ](FAQ.md).   
