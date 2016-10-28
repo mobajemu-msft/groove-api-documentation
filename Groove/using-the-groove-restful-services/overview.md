@@ -2,7 +2,7 @@
 title: How to use the Groove RESTful Services | Groove Services
 description:  Learn how to register for and develop apps using the Groove API RESTful services.
 keywords: groove restful service, groove api
-author: Sacha Kley
+author: sakley
 ms.assetid: afc18046-e642-ad5b-2d3c-128fdf007f9f
 ---
 # How to use the Groove RESTful Services?
