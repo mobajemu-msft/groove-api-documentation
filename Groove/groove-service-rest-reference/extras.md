@@ -1,3 +1,11 @@
+---
+title: Extra parameters for Groove Music lookup API| Groove Services
+description:  Learn about extra parameters for Groove Music lookup API requests.
+keywords: groove music, groove api, groove api extra parameters
+author: sakley
+ms.assetid: 
+---
+
 # Extra parameters for Lookup API
 The lookup API offers an optional query parameter **extras** that allows requesting a list of extra fields that are by default not included in the responses. Multiple values in that list must be separated with **+**. Some combinations of extras and sources are not supported, in that case the extra is ignored.
 

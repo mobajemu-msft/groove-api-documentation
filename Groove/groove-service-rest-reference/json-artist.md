@@ -1,3 +1,11 @@
+---
+title: Artist JSON object | Groove Services
+description:  Learn about Artist JSON object in Groove Music API.
+keywords: groove music, groove api, groove artist json
+author: sakley
+ms.assetid: 
+---
+
 # Artist (JSON)              
 The creator or creators of a musical recording.
 

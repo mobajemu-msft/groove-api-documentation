@@ -1,3 +1,11 @@
+---
+title: Album JSON object | Groove Services
+description:  Learn about Album JSON object in Groove Music API.
+keywords: groove music, groove api, groove album json
+author: sakley
+ms.assetid: 
+---
+
 # Album (JSON)
 A musical recording.
 

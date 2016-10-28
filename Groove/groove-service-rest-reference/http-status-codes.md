@@ -1,3 +1,11 @@
+---
+title:  Groove Music API HTTP Status Codes| Groove Services
+description:  Learn about the HTTP Status codes returned by Groove Music API.
+keywords: groove music, groove api, groove http status codes
+author: sakley
+ms.assetid: 
+---
+
 # Groove RESTful API HTTP Status Codes
 The Hypertext Transfer Protocol (HTTP) standard describes a number of status codes that are returned by the server in response to a client request. The Groove API methods return HTTP protocol-compliant status codes to describe the status of the request.
 
