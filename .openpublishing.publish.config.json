@@ -4,12 +4,26 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "groove",
-      "build_source_folder": "groove",
+      "docset_name": "Groove",
+      "build_source_folder": "Groove",
       "build_output_subfolder": "groove",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "GrooveDoc",
+      "build_source_folder": "GrooveDoc",
+      "build_output_subfolder": "groovedoc",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
