@@ -5,7 +5,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "Groove",
-      "build_source_folder": "groove",
+      "build_source_folder": "Groove",
       "build_output_subfolder": "groove",
       "locale": "en-us",
       "version": 0,
