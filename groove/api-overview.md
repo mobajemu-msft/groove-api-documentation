@@ -16,7 +16,7 @@ The Groove Music API makes it easy for you to connect your app or website to the
 + In addition to PC and mobile, you can reach Xbox 360 and Xbox One.
 
 ### In this section
-[Getting Started with the Groove SDK](Getting-Started.md)    
+[Getting Started with the Groove SDK](getting-started.md)    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provides scenarios in various environments for using the Groove service.    
 [SDK and Helpers](SdK-and-Helpers/sdk-list.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample code and other software to use the Groove RESTful API.    
