@@ -16,10 +16,26 @@
         "RestApi": "Content"
       },
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "GrooveDoc",
+      "build_source_folder": "GrooveDoc",
+      "build_output_subfolder": "groovedoc",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": ["live"],
+  "branches_to_filter": [
+    "live"
+  ],
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
