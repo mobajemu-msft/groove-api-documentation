@@ -1,4 +1,4 @@
-﻿---
+---
 title: Error JSON object | Groove Services
 description:  Learn about Error JSON object in Groove Music API.
 keywords: groove music, groove api, groove error json
