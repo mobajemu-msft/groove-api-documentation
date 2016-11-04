@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guidelines on using the Groove Service in your application | Groove Services
 description: Developers must respect and follow these guidelines in any application that uses the Groove Service.
 keywords: groove api, groove api guidelines, groove api faq
