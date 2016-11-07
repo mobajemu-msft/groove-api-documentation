@@ -14,10 +14,10 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "NOINDEX, NOFOLLOW",
+        "ROBOTS": "INDEX, FOLLOW",
         "ms.sitesec": "library",
         "layout": "Conceptual",
-        "breadcrumb_path": "~/Breadcrumb/toc.yml"
+        "breadcrumb_path": "groove/breadcrumb/toc.yml"
     },
     "fileMetadata": {
       "ms.prod":
