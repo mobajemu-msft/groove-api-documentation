@@ -17,7 +17,7 @@
         "ROBOTS": "INDEX, FOLLOW",
         "ms.sitesec": "library",
         "layout": "Conceptual",
-        "breadcrumb_path": "groove/breadcrumb/toc.yml"
+        "breadcrumb_path": "~/breadcrumb/toc.yml"
     },
     "fileMetadata": {
       "ms.prod":
