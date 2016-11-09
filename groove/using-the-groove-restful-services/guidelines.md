@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guidelines on using the Groove Service in your application | Groove Services
 description: Developers must respect and follow these guidelines in any application that uses the Groove Service.
 keywords: groove api, groove api guidelines, groove api faq
@@ -10,7 +10,7 @@ ms.assetid: d6fafbb7-2c07-cf9d-684b-74cba337a0af
 # Guidelines
 Following are some important rules you must respect when using the Groove Service. This list is not meant to be exhaustive:   
 
-+ Users of the Groove Service must comply with the [Groove API TERMS OF USE].    
++ Users of the Groove Service must comply with the [Groove API TERMS OF USE]. We remind you that any commercial use (including but not limited to selling your app, access to your app, advertising etc) is subjected to a formal agreement from Microsoft. Please contact us at groovepartners [@] microsoft.com if you intend any such use.
 
 + Every time data from the Groove Service is used in your application or web site, you must display a deep link to the relevant content.
 
