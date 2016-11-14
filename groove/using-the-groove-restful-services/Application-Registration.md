@@ -1,3 +1,10 @@
+---
+title: Register your application or service for the Groove API| Groove Services
+description:  Learn how to create your app and start integrating Groove.
+keywords: groove music, groove api, groove api registration
+author: sakley
+---
+
 # Registering your application or service for the Groove API
 
 To use the Groove API, you need to first register your application or
