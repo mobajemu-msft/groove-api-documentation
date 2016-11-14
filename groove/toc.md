@@ -20,7 +20,7 @@
 ### [Image Service](Using-the-Groove-RESTful-Services/Image-Service.md)
 
 # [Affiliate Program](http://aka.ms/MicrosoftAffiliates)
-# [Groove service REST Reference](Groove-service-REST-Reference/overview.md)
+# [Groove service REST Reference](groove-service-rest-reference/overview.md)
 ## JSON objects
 ###[Album (JSON)](Groove-service-REST-Reference/JSON-Album.md)
 ###[Artist (JSON)](Groove-service-REST-Reference/JSON-Artist.md)
