@@ -315,3 +315,5 @@ $MusicAPI = new GrooveMusic;
 $token = $MusicAPI->auth();
 $json_response = $MusicAPI->search("madonna", $token);
 ```
+## See also
++  [Getting Started with the Groove SDK](../getting-started.md)
