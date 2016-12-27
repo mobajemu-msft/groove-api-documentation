@@ -62,7 +62,7 @@ If you don't have a Microsoft Account, you'll need to create a new one.
 
 5. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
 
-6. Read the [Terms Of Use](groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
+6. Read the [Terms Of Use](../groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
 
 
 You are now a member of the Groove Music API Program!
