@@ -10,13 +10,14 @@ ms.assetid: bb08eb18-7a26-44a6-7181-ee673b0b04c2
 ## Subscribe to the Groove API on Microsoft Developer Center
 The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)).
 
-[Dev Center Signin]: https://datamarket.azure.com/developer/applications
-[Groove Dev Center]: https://datamarket.azure.com/developer/applications
-[Groove signup]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
-[Register your app]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
+[Dev Center Signin]: site-images/dev-center-signin.png
+[Dev Center Signin Account]: site-images/dev-center-signin-account.png
+[Groove Dev Center]: site-images/groove-dev-center.png
+[Groove signup]: site-images/groove-signup.png
+[Register your app]: site-images/register-your-app.png
 
-1. Visit <https://developer.microsoft.com/groove>.
-2. Sign in with your Microsoft account or create a Microsoft account if you don't already have one.![Dev Center Signin]
+1. Visit <https://developer.microsoft.com/groove>. Click on sign-in. ![Dev Center Signin]
+2. Sign in with your Microsoft account or create a Microsoft account if you don't already have one.![Dev Center Signin Account]
 3. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
 4. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
 5. Read the [Terms Of Use](groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
@@ -52,7 +53,7 @@ Under the Platforms header, configure details about your app. By default a new a
 
 #### Getting an authentication token
 The request consists of a form encoded POST call to
-https://login.live.com/access.srf with parameters:
+https://login.live.com/accesstoken.srf with parameters:
 
 | Parameter name  | Value  | Description                                                                              |
 |:---------------:|:------:|:-----------------------------------------------------------------------------------------|
