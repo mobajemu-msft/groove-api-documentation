@@ -169,4 +169,5 @@ This 10-minute duration may change in the future. You should not hardcode it, bu
 
 ## Sample code
 +  [Getting Started with the Groove SDK](../getting-started.md)
-TODO: Update Groove SDK
+
+**TODO: Update Groove SDK**
