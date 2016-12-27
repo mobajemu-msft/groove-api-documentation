@@ -112,15 +112,10 @@ In order to register your application or afterwards to call our unauthenticated 
 **Table 1. Token request input parameters**  
 
 | Parameter name  | Value  | Description                                                                              |
-
-|:---------------:|:------:|:-----------------------------------------------------------------------------------------|
-
+|:---------------|:------|:----------------------------------------------------------------------------------------|
 | *grant_type*    | string | Use "client" as value for application token authentication. |
-
 | *client_id*     | string | Your Application ID as displayed on your application page on the [Microsoft Application Registration Portal](https://account.live.com/developers/applications) |
-
 | *client_secret* | string | Your Application Secret as displayed on your application page on the [Microsoft Application Registration Portal](https://account.live.com/developers/applications). The value needs to be URL encoded. |
-
 | *scope*         | string | The scope your application requires. For application access to the Groove API the scope is "app.music.xboxlive.com" |
 
 The response for the token request contains the access token that you can use to access the Groove Music API. The response is JSON-encoded and includes the output properties shown in Table 2.   
