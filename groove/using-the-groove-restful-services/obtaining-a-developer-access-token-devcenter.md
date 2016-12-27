@@ -157,6 +157,7 @@ Once it is in possession of a valid authentication token, a third-party applicat
 The standard OAuth prefix "Bearer " must be prepended to the contents of the actual retrieved token.  
 
 **TODO: Update? **
+
 <a name="renew">
 ## Renewing the token before it expires
 </a>
