@@ -27,8 +27,11 @@ Developer authentication is mandatory for all functions in the Groove API. All t
 + [Sample code](#sample-code)
 
 ## Authentication token
+###Nota Bene
 There are two distinct use cases depending on the API you are using. If your API calls are user authenticated, follow instructions on
-[Groove User Authentication](User-Authentication.md).
+[Groove User Authentication](User-Authentication.md). For authenticated calls, you need only include the **User Authentication** token to your request.
+
+### For unauthenticated API
 
 The authentication token is based on the Simple Web Token (SWT) format. It contains a list of name-value claims that identify the client application and validity period of the token; it also contains a signature to prevent malicious users from modifying the contents of the token. For more information about SWT, see Simple Web Token on MSDN.  
 
