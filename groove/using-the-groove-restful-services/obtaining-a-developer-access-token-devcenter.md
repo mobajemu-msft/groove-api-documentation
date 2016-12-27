@@ -9,25 +9,16 @@ ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
 # Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
 
- [Dev Center Signin]: site-images/dev-center-signin.png
- [Dev Center Signin Account]: site-images/dev-center-signin-account.png
- [Groove Dev Center]: site-images/groove-dev-center.png
- [Groove signup]: site-images/groove-signup.png
- [Register your app]: site-images/register-your-app.png [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
- [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
- [Accept ToU]: https://i-msdn.sec.s-msft.com/dynimg/IC702607.png
- [Login Azure]: https://i-msdn.sec.s-msft.com/dynimg/IC702608.png
- [my account]: https://i-msdn.sec.s-msft.com/dynimg/IC702611.png
- [Registered applications]: https://i-msdn.sec.s-msft.com/dynimg/IC702609.png
- [Register your app]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
- [Registeredapp2]: https://i-msdn.sec.s-msft.com/dynimg/IC702613.png  
- [SignUp]: https://i-msdn.sec.s-msft.com/dynimg/IC702614.png
-
+ [Dev Center Signin]: ../site-images/dev-center-signin.png
+ [Dev Center Signin Account]: ../site-images/dev-center-signin-account.png
+ [Groove Dev Center]: ../site-images/groove-dev-center.png
+ [Groove signup]: ../site-images/groove-signup.png
+ [Register your app]: ../site-images/register-your-app.png 
+ 
 + [Authentication token](#authentication-token)
-+ [Using valid tokens from Azure Marketplace](#using-valid-tokens-from-azure-marketplace)
-+ [Create a developer account on Azure Marketplace](#create-a-developer-account-on-azure-marketplace)
-+ [Register your application with Azure Marketplace](#register)
-+ [Sign up](#sign-up)
++ [Using valid tokens](#using-valid-tokens)
++ [Create a developer account on Microsoft Developer Center and subscrive to Groove API](#create-a-developer-account-on-microsoft-developer-center)
++ [Register your application for the Groove Music API](#register)
 + [Make an HTTP POST request to the token service](#httppost)
 + [Using the access token](#accesstoken)
 + [Protecting the client's secret value](#protectclient)
@@ -62,16 +53,16 @@ Subscribe to the Groove Music API on Microsoft Developer Center. Subscriptions a
 ### To subscribe to the Groove Music API  
 1. Visit <https://developer.microsoft.com/groove>. 
 2. Click **Sign In** in the upper right corner.   
- ![SignIn]
+ ![Dev Center Signin]
 
 3. Register with the Microsoft account of your choice.  
 If you don't have a Microsoft Account, you'll need to create a new one.  
- ![Registration]  
-3. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
+ ![Dev Center Signin Account]  
+4. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
 
-4. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
+5. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
 
-5. Read the [Terms Of Use](groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
+6. Read the [Terms Of Use](groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
 
 
 You are now a member of the Groove Music API Program!
