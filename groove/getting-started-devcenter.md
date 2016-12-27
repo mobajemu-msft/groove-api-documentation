@@ -92,16 +92,6 @@ account and reauthenticate before access token expiry.
 securely as you would a user's password.
 
 
-#####For example:#####
-
-```
-GET https://music.xboxlive.com/1/content/music/search?q=hello HTTP/1.1
-Accept: application/json
-Authorization: Bearer Eg...==
-Host: music.xboxlive.com
-```
-
-
 #####Using Powershell on Windows:#####
 
 ```powershell
@@ -130,6 +120,15 @@ expires_in   : 86400
 ## Start using our API
  
  You can now copy and paste your preferred sample code from below (C#, Windows Runtime or PHP) to start querying the API for Music data.
+
+####For example:####
+
+```
+GET https://music.xboxlive.com/1/content/music/search?q=hello HTTP/1.1
+Accept: application/json
+Authorization: Bearer Eg...==
+Host: music.xboxlive.com
+```
 
 TODO: update code samples
 ### Windows
