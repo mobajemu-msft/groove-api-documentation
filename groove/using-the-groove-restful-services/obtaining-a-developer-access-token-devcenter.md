@@ -8,7 +8,12 @@ ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
 
 # Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
- [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
+
+ [Dev Center Signin]: site-images/dev-center-signin.png
+ [Dev Center Signin Account]: site-images/dev-center-signin-account.png
+ [Groove Dev Center]: site-images/groove-dev-center.png
+ [Groove signup]: site-images/groove-signup.png
+ [Register your app]: site-images/register-your-app.png [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
  [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
  [Accept ToU]: https://i-msdn.sec.s-msft.com/dynimg/IC702607.png
  [Login Azure]: https://i-msdn.sec.s-msft.com/dynimg/IC702608.png
