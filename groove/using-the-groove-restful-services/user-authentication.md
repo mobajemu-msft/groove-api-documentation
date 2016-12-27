@@ -41,5 +41,5 @@ The following topics contain high-level overviews of other concepts that apply
 to the Groove API.
 
 * [Develop with the Groove API](../api-overview.md)
-* [User Authentication on the Web](User-Authentication-on-the-Web.md)
-* [User Authentication in Applications](User-Authentication-in-Applications.md)
+* [User Authentication on the Web](user-authentication-on-the-web.md)
+* [User Authentication in Applications](user-authentication-in-applications.md)
