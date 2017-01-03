@@ -131,7 +131,6 @@ Authorization: Bearer Eg...==
 Host: music.xboxlive.com
 ```
 
-TODO: update code samples
 ### Windows
 ```csharp
 //authentication endpoint, must be https
