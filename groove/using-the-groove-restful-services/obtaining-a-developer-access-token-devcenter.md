@@ -151,15 +151,10 @@ If the application has a server component, then the server should be responsible
 <a name="callapi">
 ## Calling the Groove Music API with the token
 </a>
-Once it is in possession of a valid authentication token, a third-party application may call the Groove Music API and provide the OAuth token in one of the following two ways:  
-
-+ As the value of the URI query parameter, accessToken; be sure to encode the token for incorporation into a URL.
-+ As the value of the **Authorization** HTTP header; however, we discourage the use of the **Authorization** header for developer authentication in favor of the query parameter instead, because the **Authorization** header will be used for user authentication in the functions that require it.  
+Once it is in possession of a valid authentication token, a third-party application may call the Groove Music API and provide the OAuth token as the value of the **Authorization** HTTP header.
 
   >**Note**
 The standard OAuth prefix "Bearer " must be prepended to the contents of the actual retrieved token.  
-
-**TODO: Update? **
 
 <a name="renew">
 ## Renewing the token before it expires
