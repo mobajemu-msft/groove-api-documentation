@@ -217,48 +217,58 @@ Console.WriteLine(responseString);
 
 ### Windows Runtime
 ```csharp
-    using System;
-    using System.Net;
-    using System.Text.RegularExpressions;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using Windows.Web.Http;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Net;
+using System.Text.RegularExpressions;
+using Windows.Web.Http;
 
-    namespace RestTest
+namespace RestTest
+{
+    public class Test
     {
-      public class Test
-      {
-          public static async void Go()
-          {
-              var client = new HttpClient();
+        public static async void Go()
+        {
+            var client = new HttpClient();
 
-              // Define the data needed to request an authorization token.
-              var service = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
-              var clientId = "myClient";
-              var clientSecret = "REDACTED";
-              var scope = "http://music.xboxlive.com";
-              var grantType = "client_credentials";
+            // Define the data needed to request an authorization token.
+            var service = "https://login.live.com/accesstoken.srf";
+            var clientId = "myClient";
+            var clientSecret = "REDACTED";
+            var scope = "app.music.xboxlive.com";
+            var grantType = "client_credentials";
 
-              // Create the request data.
-              var requestData = new Dictionary<string, string>();
-              requestData["client_id"] = clientId;
-              requestData["client_secret"] = clientSecret;
-              requestData["scope"] = scope;
-              requestData["grant_type"] = grantType;
+            // Create the request data.
+            var requestData = new Dictionary<string, string>();
+            requestData["client_id"] = clientId;
+            requestData["client_secret"] = clientSecret;
+            requestData["scope"] = scope;
+            requestData["grant_type"] = grantType;
 
-              // Post the request and retrieve the response.
-              var response = await client.PostAsync(new Uri(service), new HttpFormUrlEncodedContent(requestData));
-              var responseString = await response.Content.ReadAsStringAsync();
-              var token = Regex.Match(responseString, ".*\"access_token\":\"(.*?)\".*", RegexOptions.IgnoreCase).Groups[1].Value;
+            // Post the request and retrieve the response.
+            var response = await client.PostAsync(new Uri(service), new HttpFormUrlEncodedContent(requestData));
+            var responseString = await response.Content.ReadAsStringAsync();
+            var token = Regex.Match(responseString, ".*\"access_token\":\"(.*?)\".*", RegexOptions.IgnoreCase).Groups[1].Value;
 
-              // Use the token in a new request.
-              service = "https://music.xboxlive.com/1/content/music/search?q=daft+punk&accessToken=Bearer+";
-              response = await client.GetAsync(new Uri(service + WebUtility.UrlEncode(token)));
-              responseString = await response.Content.ReadAsStringAsync();
-              Debug.WriteLine(responseString);
-          }
-       }
+            // Use the token in a new request.
+            var request = (HttpWebRequest)WebRequest.Create("https://music.xboxlive.com/1/content/music/search?q=daft+punk");
+            request.Accept = "application/json";
+            request.Headers["Authorization"] = "Bearer " + token;
+
+            WebResponse contentResponse;
+            using (contentResponse = await request.GetResponseAsync())
+            {
+                using (var sr = new StreamReader(contentResponse.GetResponseStream()))
+                {
+                    responseString = sr.ReadToEnd();
+                }
+            }
+            Debug.WriteLine(responseString);
+        }
     }
+}
 ```
 
 ### PHP
