@@ -268,11 +268,11 @@ Console.WriteLine(responseString);
 ### PHP
 ```php
 class GrooveMusic {
-      var $serviceauth = "https://datamarket.accesscontrol.windows.net/v2/OAuth2-13";
+      var $serviceauth = "https://login.live.com/accesstoken.srf";
       var $serviceapi = "https://music.xboxlive.com/1/content";
       var $clientId = "yourclientID";
       var $clientSecret = "yourapplicationclientsecret";
-      var $scope = "http://music.xboxlive.com";
+      var $scope = "app.music.xboxlive.com";
       var $grantType = "client_credentials";
 
       public function auth() {
@@ -291,8 +291,8 @@ class GrooveMusic {
       }
 
       public function search($string,$token) {
-          $url = $this->serviceapi.'/music/search?q='.urlencode($string).'&accessToken=Bearer+'.urlencode($token);
-          $response = @file_get_contents($url);
+          $url = $this->serviceapi.'/music/search?q='.urlencode($string);
+          $response = @file_get_contents($url, false, $this->getContextForToken($token));
           return $response;
       }
 
@@ -302,12 +302,22 @@ class GrooveMusic {
               $string .= $value.'+';
           }
           $string = rtrim($string, '+');
-          if(!empty($extras)) $url = $this->serviceapi.'/'.$string.'/lookup?accessToken=Bearer+'.urlencode($token).'&extras='.$extras;
-          else $url = $this->serviceapi.'/'.$string.'/lookup?accessToken=Bearer+'.urlencode($token);
-          $response = @file_get_contents($url,true);
+          if(!empty($extras)) $url = $this->serviceapi.'/'.$string.'/lookup&extras='.$extras;
+          else $url = $this->serviceapi.'/'.$string.'/lookup';
+          $response = @file_get_contents($url,true,$this->getContextForToken($token));
           return $response;
-      }
+      }  
 
+      private function getContextForToken($token) {
+           $opts = array(
+              'http'=>array(
+                'method'=>"GET",
+                'header'=>'Authorization: Bearer '.$token.'\r\n'
+              )
+            );
+          $context = stream_context_create($opts);
+          return $context;
+      }
   }
 
 //using the class
