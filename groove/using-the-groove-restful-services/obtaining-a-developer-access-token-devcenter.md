@@ -99,7 +99,7 @@ Under the Platforms header, configure details about your app. By default a new a
 2. Follow the instructions on the page. You'll need to obtain an authentication token [see also below](#httppost) ![Register your app]
 3. Enter the obtained authentication token in the field and click on Register.
 **TODO: include sample**
-4. You can register up to **xx** apps. You can manage them on this page. 
+4. You can register up to **16** apps. You can manage them on this page. 
 **TODO: include screenshot with dashboard rempli**
 
 
