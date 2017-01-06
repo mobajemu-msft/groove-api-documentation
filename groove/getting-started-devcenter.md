@@ -15,6 +15,7 @@ The following are the minimal steps you need to complete to start experimenting 
 [Groove Dev Center]: site-images/groove-dev-center.png
 [Groove signup]: site-images/groove-signup.png
 [Register your app]: site-images/register-your-app.png
+[My applications (DevCenter)]: site-images/myappsscreens.png
 
 1. Visit <https://developer.microsoft.com/groove>. Click on sign-in. ![Dev Center Signin]
 2. Sign in with your Microsoft account or create a Microsoft account if you don't already have one.![Dev Center Signin Account]
@@ -48,8 +49,7 @@ Under the Platforms header, configure details about your app. By default a new a
 1. When signed-in to the developer center, on <https://developer.microsoft.com/groove>, click the **Sign up** link or visit <https://developer.microsoft.com/dashboard/groove>.
 2. Follow the instructions on the page. You'll need to obtain an authentication token (see below) ![Register your app]
 3. Enter the obtained authentication token in the field (ie: EgBtAQMAAAAEgA9BCG...c1Ni05YTNwA=) and click on Register.
-4. You can register up to 16 apps. You can manage them on this page. 
-**TODO: include screenshot with dashboard rempli**
+4. You can register up to 16 apps. You can manage them on this page. ![My applications (DevCenter)]
 
 #### Getting an authentication token
 The request consists of a form encoded POST call to
