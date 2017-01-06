@@ -165,4 +165,3 @@ This 24 hours duration may change in the future. You should not hardcode it, but
 ## Sample code
 +  [Getting Started with the Groove SDK](../getting-started.md)
 
-**TODO: Update Groove SDK**
