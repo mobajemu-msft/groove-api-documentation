@@ -13,7 +13,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 
  + Parameters are provided as query parameters in the GET HTTP method. Response content is serialized in JSON by default, but can be switched to XML if the HTTP header ``` Accept: application/xml ```  is provided.  
  + The API is versioned. Version is to be prepended to the URI. Currently, all Groove RESTful API calls must begin with **/1/.**
- + Third-party developer authentication is mandatory in all methods and is done by passing an Azure Data Market OAuth token as a mandatory query parameter in all methods.
+ + Third-party developer authentication is mandatory in all methods and is done by passing an OAuth token as a mandatory query parameter in all methods.
  +  GZIP compression is supported and responses are compressed if the HTTP header ``` Accept-Encoding: gzip ``` is provided in the request.
  +   CORS is supported in the standard way, by using the headers  ```Origin ``` and  ```Access-Control-Request-*. ```
  +   JSONP is also supported via an optional query parameter, **&jsonp**=value, in all methods.
