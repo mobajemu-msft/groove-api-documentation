@@ -1,6 +1,6 @@
 ---
 title: Register for the Groove music service | Groove Services
-description: Register your application with the Groove RESTful API to gain a authentication token, which is necessary for using all functions in the Groove API.
+description: Register your application with the Groove Music API to gain a authentication token, which is necessary for using all functions in the Groove API.
 keywords: groove api, groove api developer, groove access token, groove developer registration
 author: sakley
 ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
@@ -8,133 +8,139 @@ ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
 
 # Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   
- [SignIn]: https://i-msdn.sec.s-msft.com/dynimg/IC702605.png
- [Registration]: https://i-msdn.sec.s-msft.com/dynimg/IC702606.png
- [Accept ToU]: https://i-msdn.sec.s-msft.com/dynimg/IC702607.png
- [Login Azure]: https://i-msdn.sec.s-msft.com/dynimg/IC702608.png
- [my account]: https://i-msdn.sec.s-msft.com/dynimg/IC702611.png
- [Registered applications]: https://i-msdn.sec.s-msft.com/dynimg/IC702609.png
- [Register your app]: https://i-msdn.sec.s-msft.com/dynimg/IC702612.png
- [Registeredapp2]: https://i-msdn.sec.s-msft.com/dynimg/IC702613.png  
- [SignUp]: https://i-msdn.sec.s-msft.com/dynimg/IC702614.png
 
+ [Dev Center Signin]: ../site-images/dev-center-signin.png
+ [Dev Center Signin Account]: ../site-images/dev-center-signin-account.png
+ [Groove Dev Center]: ../site-images/groove-dev-center.png
+ [Groove signup]: ../site-images/groove-signup.png
+ [Register your app]: ../site-images/register-your-app.png
+ [My applications (DevCenter)]: ../site-images/myappsscreens.png
+ 
 + [Authentication token](#authentication-token)
-+ [Using valid tokens from Azure Marketplace](#using-valid-tokens-from-azure-marketplace)
-+ [Create a developer account on Azure Marketplace](#create-a-developer-account-on-azure-marketplace)
-+ [Register your application with Azure Marketplace](#register)
-+ [Sign up](#sign-up)
++ [Using valid tokens](#using-valid-tokens)
++ [Create a developer account on Microsoft Developer Center and subscrive to Groove API](#create-a-developer-account-on-microsoft-developer-center)
++ [Register your application for the Groove Music API](#register)
 + [Make an HTTP POST request to the token service](#httppost)
 + [Using the access token](#accesstoken)
 + [Protecting the client's secret value](#protectclient)
-+ [Calling the Groove RESTful API with the token](#callapi)
++ [Calling the Groove Music API with the token](#callapi)
 + [Renewing the token before it expires](#renew)
 + [Sample code](#sample-code)
 
 ## Authentication token
+###Nota Bene
+There are two distinct use cases depending on the API you are using. If your API calls are user authenticated, follow instructions on
+[Groove User Authentication](User-Authentication.md). For authenticated calls, you need only include the **User Authentication** token to your request.
+
+### For unauthenticated API
+
 The authentication token is based on the Simple Web Token (SWT) format. It contains a list of name-value claims that identify the client application and validity period of the token; it also contains a signature to prevent malicious users from modifying the contents of the token. For more information about SWT, see Simple Web Token on MSDN.  
 
-This authentication token is obtained from the Azure Marketplace authentication endpoint, and it should be considered opaque and be passed as-is in requests to the Groove Service; the only change necessary is to prefix the token with "Bearer", a standard prefix for OAuth tokens.   
+This authentication token is obtained from the Live authentication endpoint, and it should be considered opaque and be passed as-is in requests to the Groove Service; the only change necessary is to prefix the token with "Bearer", a standard prefix for OAuth tokens.   
 
-The tokens have a validity period of 10 minutes, and there is a mechanism for renewing tokens described in Renewing the token before it expires, later in this topic.   
+The tokens have a validity period of 24 hours, and there is a mechanism for renewing tokens described in Renewing the token before it expires, later in this topic.   
 
-## Using valid tokens from Azure Marketplace
-In order to be able to use the Groove RESTful API, a third-party developer must first create a developer account on Azure Marketplace and then subscribe to the Groove API offer (for free).   
+## Using valid tokens 
+In order to be able to use the Groove Music API, a third-party developer must first create a developer account on [Microsoft Developer Center](https://developer.microsoft.com/groove)  and then sign up to the Groove Music API program (for free).   
 
-Once properly subscribed, the third-party app should obtain authentication tokens from the ADM service by using the procedure in this section; the scope to use is ``` http://music.xboxlive.com/``` . The tokens have a validity   
-period of 10 minutes and must be renewed after they expire—or ideally, before they expire.   
+Once properly subscribed, the third-party app should obtain authentication tokens from the Live service by using the procedure in this section; the scope to use is ``` app.music.xboxlive.com``` . The tokens have a validity   
+period of 24 hours and must be renewed after they expire—or ideally, before they expire.   
 
-You must obtain an access token to use the Groove RESTful API. The access token is passed with each API call and is used to authenticate your access to the Groove RESTful API. It provides a secure access to the Groove RESTful API and allows the API to associate your application's requests to the Groove Service with your account on Azure Marketplace.   
+You must obtain an access token to use the Groove Music API. The access token is passed with each API call and is used to authenticate your access to the Groove Music API. It provides a secure access to the Groove Music API and allows the API to associate your application's requests to the Groove Service with your account on the Developer Center.   
 
 Microsoft provides methods to obtain access tokens safely, repeatedly, and easily. To obtain an access token, complete the steps in the following procedure; each step links to a subsection in this topic that describes the step in more detail.
 
-### To obtain an access token
-1. Subscribe to the Groove RESTful API on Azure Marketplace .
-2. Register your application with Azure Marketplace.
-3. Make an HTTP POST request to the token service.
 
-## Create a developer account on Azure Marketplace
-Subscribe to the Groove RESTful API on Azure Marketplace. Subscriptions are free.  
+## Create a developer account on Microsoft Developer Center
+Subscribe to the Groove Music API on Microsoft Developer Center. Subscriptions are free.  
 
-### To subscribe to the Groove RESTful API  
-1. Visit <https://datamarket.azure.com>.  
+### To subscribe to the Groove Music API  
+1. Visit <https://developer.microsoft.com/groove>. 
 2. Click **Sign In** in the upper right corner.   
- ![SignIn]
+ ![Dev Center Signin]
 
 3. Register with the Microsoft account of your choice.  
 If you don't have a Microsoft Account, you'll need to create a new one.  
+ ![Dev Center Signin Account]  
+4. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
 
- ![Registration]  
-4. Accept the Terms of Use.  
- ![Accept ToU]
+5. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
+
+6. Read the [Terms Of Use](../groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
+
+
+You are now a member of the Groove Music API Program!
+
+You will now need to associate Applications to your account.
 
 <a name="register">
-## Register your application with Azure Marketplace
+## Register your application for the Groove Music API.
 </a>
-After subscribing to the Groove RESTful API, you must register your application with Azure Marketplace.
+After subscribing to the Groove Music API, you must associate your application to your program.
 
-### To register your application with Azure Marketplace
-1. To register your application, sign in with the Microsoft account you used above.  
- ![Login Azure]
-2. Click **My account** and then **Developers** in the menu on the left side of the screen.   
- ![my account]
-3. Click the **Register** button, or go directly to <https://datamarket.azure.com/developer/applications>.    
-![Registered applications]
-4. Fill in the form with the required information.  
-You can define your own client ID and application name. You must supply a URI for redirection to obtain the access code. A description is optional.    
-![Register your app]   
+### Create an application 
 
-    >Note  
-      The client secret value is not shown in the preceding screenshot.
+To register your app to connect with Groove, you'll need a Microsoft account.
 
-5. Take a note of the client ID and the client secret value.  
-The secret value should be hidden from the client. The secret value should be used only on the server side for Azure Marketplace server authentication, to prevent it from being stolen and used by someone else.  
+1. Go to the [Microsoft Application Registration Portal](https://account.live.com/developers/applications)
+2. When prompted, sign in with your Microsoft account credentials.
+3. Find My applications and click Add an app.
+4. Enter your app's name and click Create application.
+5. Scroll to the bottom of the page and check the Live SDK support box.
 
-![Registeredapp2]     
+After you've completed these steps, an application ID and application secret are created for your app and displayed on your new app's properties page.
 
-  >**Note**
-These are the credentials that you will use to authenticate with the Groove RESTful API. Do not confuse  these client ID and secret with the customer ID and account key you received in the earlier step [Create a developer account on Azure Marketplace].
+**Important** Treat the value of client secret the same as you would a user's password. The secret represents the key to your application and, if made available, can be used to impersonate your application.
 
-## Sign up
-Sign up to the Groove RESTful API in the Azure Marketplace by visiting [the final page](https://datamarket.azure.com/dataset/xboxmusic/XboxMusicPlatform) and clicking **SIGN UP**.
+Under the Platforms header, configure details about your app. By default a new app is created as a web app and needs one or more redirect URIs. To enable native client flows for your app as well, click the Add Platform button and choose Mobile.
 
-![SignUp]
+### Allow this application to access Groove Music API
+
+1. When signed-in to the developer center, on <https://developer.microsoft.com/groove>, click the **Sign up** link or visit <https://developer.microsoft.com/dashboard/groove>.
+2. Follow the instructions on the page. You'll need to obtain an authentication token [see also below](#httppost) ![Register your app]
+3. Enter the obtained authentication token in the field and click on Register. (ie: EgBtAQMAAAAEgA9BCG...c1Ni05YTNwA=)
+4. You can register up to **16** apps. You can manage them on this page. 
+
+![My applications (DevCenter)]
+
 
 <a name="httppost">
 ## Make an HTTP POST request to the token service  
 </a>
-After you register your application with Azure Marketplace, make a POST request to the token service to obtain the access token. The parameters for the token request are URL-encoded and passed in the HTTP request body. Table 1 lists the mandatory input parameters and their descriptions.   
+In order to register your application or afterwards to call our unauthenticated API, make a POST request to the token service to obtain the access token. The parameters for the token request are URL-encoded and passed in the HTTP request body. Table 1 lists the mandatory input parameters and their descriptions.   
 
 **Table 1. Token request input parameters**  
 
-|Parameter|Description |
-|:------------|:---------------|
-|client_id|Required. The client ID that you specified when you registered your application with Azure Data Market.|
-|client_secret|Required. The client secret value that you obtained when you registered your application with Azure Marketplace.|
-|scope|Required. Use the URL *http://music.xboxlive.com* as the scope value for the Groove RESTful API.|
-|grant_type|Required. Use "client_credentials" as the grant_type value for the Groove RESTful API.|
+| Parameter name  | Value  | Description                                                                              |
+|:---------------|:------|:----------------------------------------------------------------------------------------|
+| *grant_type*    | string | Use "client" as value for application token authentication. |
+| *client_id*     | string | Your Application ID as displayed on your application page on the [Microsoft Application Registration Portal](https://account.live.com/developers/applications) |
+| *client_secret* | string | Your Application Secret as displayed on your application page on the [Microsoft Application Registration Portal](https://account.live.com/developers/applications). The value needs to be URL encoded. |
+| *scope*         | string | The scope your application requires. For application access to the Groove API the scope is "app.music.xboxlive.com" |
 
-The response for the token request contains the access token that you can use to access the Groove RESTful API. The response is JSON-encoded and includes the output properties shown in Table 2.   
+The response for the token request contains the access token that you can use to access the Groove Music API. The response is JSON-encoded and includes the output properties shown in Table 2.   
 
 **Table 2. Token request output properties**  
 
 |Property|Description|
 |:------|:------|
-|accessToken|The access token that you can use to authenticate you access to the Groove RESTful API.|
-|token_type|The data type of the token. Currently, Azure Marketplace returns *http://schemas.xmlsoap.org/ws/2009/11/swt-token-profile-1.0*, which indicates that a Simple Web Token will be returned.|
+|accessToken|The access token that you can use to authenticate you access to the Groove Music API.|
+|token_type|The type of the token.|
 |expires_in|The number of seconds for which the access token is valid.|
-|scope|The domain for which this token is valid. For the Groove RESTful API, the domain is *http://music.xboxlive.com*.  |
+
 
 <a name="accesstoken">
 ## Using the access token
 </a>
-As mentioned earlier in this topic, you must obtain an access token to use the Groove RESTful API. The access token is secure, OAuth standard compliant, and flexible. The value of access token can be used for subsequent calls to the Groove RESTful API. The access token expires after 10 minutes.  
+As mentioned earlier in this topic, you must obtain an access token to use the Groove Music API. To use authenticated API, please refer to the [dedicated page](user-authentication.md).
+The access token is secure, OAuth standard compliant, and flexible. The value of access token can be used for subsequent calls to the Groove Music API. The access token expires after 24 hours.  
 
-It is always better to check elapsed time between the time at which the token was issued and the current time. If the elapsed time exceeds 10 minutes, renew the access token by following the procedure for obtaining the access token.  
+It is always better to check elapsed time between the time at which the token was issued and the current time. If the elapsed time exceeds 24 hours, renew the access token by following the procedure for obtaining the access token.  
 
 Remember the following points about using the access token:   
 
-+ Either pass the 10-minute token you obtain as the parameter accessToken, or use the value of the accessToken property as the Authorization header to the calls to the Groove RESTful API. In either case, use the prefix "Bearer ".
-+ The access token is valid for 10 minutes. If the access token expires, you need to generate a new access token. The sample code in C#, linked at the end of this topic , can generate a new access token prior to exceeding the 10-minute period.
++ Either pass the 24 hours token you obtain as the parameter accessToken, or use the value of the accessToken property as the Authorization header to the calls to the Groove Music API. In either case, use the prefix "Bearer ".
++ The access token is valid for 24 hours. If the access token expires, you need to generate a new access token. The sample code in C#, linked at the end of this topic , can generate a new access token prior to exceeding the 24 hours period.
 
 <a name="protectclient">
 ## Protecting the client's secret value
@@ -144,22 +150,20 @@ The tokens are obtained from Azure Marketplace in exchange for a client ID and s
 If the application has a server component, then the server should be responsible for storing the client ID and secret value, and the server should obtain the tokens on behalf of the client component so that the secret value cannot be intercepted on the client machines.
 
 <a name="callapi">
-## Calling the Groove RESTful API with the token
+## Calling the Groove Music API with the token
 </a>
-Once it is in possession of a valid authentication token, a third-party application may call the Groove RESTful API and provide the OAuth token in one of the following two ways:  
-
-+ As the value of the URI query parameter, accessToken; be sure to encode the token for incorporation into a URL.
-+ As the value of the **Authorization** HTTP header; however, we discourage the use of the **Authorization** header for developer authentication in favor of the query parameter instead, because the **Authorization** header will be used for user authentication in the future functions that will require it.  
+Once it is in possession of a valid authentication token, a third-party application may call the Groove Music API and provide the OAuth token as the value of the **Authorization** HTTP header.
 
   >**Note**
-The standard OAuth prefix "Bearer " must be prepended to the contents of the actual token retrieved from Azure.  
+The standard OAuth prefix "Bearer " must be prepended to the contents of the actual retrieved token.  
 
 <a name="renew">
 ## Renewing the token before it expires
 </a>
-Because the access tokens are only valid for 10 minutes, they must be refreshed by sending a second request to the Azure Data Market service (located at <https://datamarket.accesscontrol.windows.net/v2/OAuth2-13>). We recommended that your code refresh them proactively before the end of the 10 minutes in order to avoid having a period of time when the Groove Service can't be used.  
+Because the access tokens are only valid for 24 hours, they must be refreshed by sending a second request to the Live service (located at <https://login.live.com/accesstoken.srf>). We recommended that your code refresh them proactively before the end of the period in order to avoid having a period of time when the Groove Service can't be used.  
 
-This 10-minute duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the response by Azure Datamarket along with the access token.  
+This 24 hours duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the response by Azure Datamarket along with the access token.  
 
 ## Sample code
 +  [Getting Started with the Groove SDK](../getting-started.md)
+
