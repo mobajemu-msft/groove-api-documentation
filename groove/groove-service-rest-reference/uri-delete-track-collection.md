@@ -34,7 +34,7 @@ The Delete Tracks request is composed of mandatory URL parts and query parameter
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | namespace     | string   | Required. The namespace to browse (music for example).                                                                                                     |
-| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
+| accessToken   | string   | A valid developer authentication Access Token, used to identify the 3rd party application using the Groove APIs. |
 
 A valid user authentication token is also required in the Authorization header to access the user's collection.
 
