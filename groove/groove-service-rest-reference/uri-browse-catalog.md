@@ -18,14 +18,14 @@ Browse the music catalog.
 The Browse Catalog request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 
 ```
-/1/content/{namespace}/catalog/{type}/browse?orderBy={orderBy}&genre={genre}&maxItems={maxItems}&page={page}
-&continuationToken={continuationToken}&country={country}&language={language}&accessToken={accessToken}
-&contentType={contentType}&jsonp={jsonp}
+/1/content/{namespace}/catalog/{type}/browse?orderBy={orderBy}&genre={genre}&mood={mood}&activity={activity}&maxItems={maxItems}&page={page}
+&continuationToken={continuationToken}&country={country}&language={language}&contentType={contentType}&jsonp={jsonp}
 ```
 
 | Note                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------|
 | Pagination is zero-based (the first page is found at page 0), and catalog browse will not return more than 1000 total items. |
+| You cannot combine the following filters together in the same request: <b>genre, mood, activity</b>.
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
@@ -41,6 +41,8 @@ The following parameters are not available on the Common Parameters page.
 | type              | string                | Required. The type of item to browse. The following values are supported: "albums", "artists", "tracks".                                                                                                                                                        |
 | orderBy           | string                | *Optional*. Ordering chosen for that content (**orderBy** field). If incompatible, an HTTP 400 error will be emitted.                                                                                                                                             |
 | genre             | string                | *Optional*. Genre name; filters browsing to return only items in a specific genre of content. Possible values can be obtained using the [browse genres API](uri-get-genres.md), and must be properly URL-encoded. |
+| mood              | string                | *Optional*. Mood name; filters  browsing to return only playlists in a specific mood category. Possible values can be obtained using the [browse moods API](uri-get-moods.md), and must be properly URL-encoded. |
+| activity          | string                | *Optional*. Activity name; filters  browsing to return only playlists in a specific activity category. Possible values can be obtained using the [browse moods API](uri-get-activities.md), and must be properly URL-encoded. |
 | maxItems          | 32-bit signed integer | *Optional*. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well.                                                                                                                                          |
 | page              | 32-bit signed integer | *Optional*. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.                                                                                                                                                  |
 | continuationToken | string                | A [continuation token](JSON-PaginatedList.md) provided in an earlier service response and optionally passed back to the service to request the continuation of an incomplete list of content.                                         |
@@ -50,7 +52,9 @@ The following parameters are not available on the Common Parameters page.
 ### Browse the most popular catalog artists in your region
 #### Request
 ```http
-GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bearer+[...]
+GET /1/content/music/catalog/artists/browse?orderBy=MostPopular
+
+Authorization: Bearer [...]
 ```      
 
 #### Response
@@ -100,11 +104,200 @@ GET /1/content/music/catalog/artists/browse?orderBy=MostPopular&accessToken=Bear
 }
 ```
 
+### Browse the playlists in the "Sleepy" mood category
+#### Request
+```http
+GET /1/content/music/Catalog/Playlists/browse?country=US&language=en&mood=Sleepy
+
+Authorization: Bearer [...]
+```      
+
+#### Response
+```json
+{
+  "Playlists": {
+    "Items": [
+      {
+        "Description": "Quiet indie for soothing purposes",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.b1d950d1-a733-00fe-fc93-3c51f3c78fd3",
+        "Name": "The Wind Down",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.b1d950d1-a733-00fe-fc93-3c51f3c78fd3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/the-wind-down/b1d950d1-a733-00fe-fc93-3c51f3c78fd3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Calming sounds to keep you centered",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.8421336c-2d1c-00fe-cfb1-56000bac67d3",
+        "Name": "Meditation Music",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.8421336c-2d1c-00fe-cfb1-56000bac67d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/meditation-music/8421336c-2d1c-00fe-cfb1-56000bac67d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Music to relax the body and mind",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.7ee9bf15-ce68-00fe-2f42-2a0650b32ed4",
+        "Name": "Meditation Music 2",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.7ee9bf15-ce68-00fe-2f42-2a0650b32ed4/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/meditation-music-2/7ee9bf15-ce68-00fe-2f42-2a0650b32ed4?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "New chill tracks with calming effects",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.066a9dfe-8916-00fe-a91f-a6f10c2e75d3",
+        "Name": "Upbeat Downtempo",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.066a9dfe-8916-00fe-a91f-a6f10c2e75d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/upbeat-downtempo/066a9dfe-8916-00fe-a91f-a6f10c2e75d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Keep calm and chill with r&b/soul",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.2e7e51d9-9e60-00fe-35c1-c4b8c6a467d3",
+        "Name": "Soul Cool Down",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.2e7e51d9-9e60-00fe-35c1-c4b8c6a467d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/soul-cool-down/2e7e51d9-9e60-00fe-35c1-c4b8c6a467d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Rootsy sounds to start or end your day",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.e1a3fa77-3884-00fe-c1b7-b1ffca265cd3",
+        "Name": "Quiet Campfire",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.e1a3fa77-3884-00fe-c1b7-b1ffca265cd3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/quiet-campfire/e1a3fa77-3884-00fe-c1b7-b1ffca265cd3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Songs to stay in bed for",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.2ad2857e-808f-00fe-11bb-be6d38a972d3",
+        "Name": "Snooze Alarm",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.2ad2857e-808f-00fe-11bb-be6d38a972d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/snooze-alarm/2ad2857e-808f-00fe-11bb-be6d38a972d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Drift off to downtempo Electronica",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.a7d039e1-9ee4-00fe-fc2a-08b62daa67d3",
+        "Name": "Sleepy Time Chill",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.a7d039e1-9ee4-00fe-fc2a-08b62daa67d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/sleepy-time-chill/a7d039e1-9ee4-00fe-fc2a-08b62daa67d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Fall asleep sophisticated",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.ba003590-863c-00fe-4548-9efb7aaf7dd3",
+        "Name": "Sleepy Time Classical",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.ba003590-863c-00fe-4548-9efb7aaf7dd3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/sleepy-time-classical/ba003590-863c-00fe-4548-9efb7aaf7dd3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Smooth Jazz to fall asleep to",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.bb413c91-dbd3-00fe-30d9-f0729fe975d3",
+        "Name": "Sleepy Time Jazz",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.bb413c91-dbd3-00fe-30d9-f0729fe975d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/sleepy-time-jazz/bb413c91-dbd3-00fe-30d9-f0729fe975d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Time to tune out that chatty neighbor and snooze",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.fffead3a-8284-00fe-5051-a351b6e9f2d3",
+        "Name": "Time To Recline",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.fffead3a-8284-00fe-5051-a351b6e9f2d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/time-to-recline/fffead3a-8284-00fe-5051-a351b6e9f2d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "More songs to fall asleep to",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.59d0459c-51e6-00fe-2158-1e554fb17dd3",
+        "Name": "Sleepy Time Chill 2",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.59d0459c-51e6-00fe-2158-1e554fb17dd3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/sleepy-time-chill-2/59d0459c-51e6-00fe-2158-1e554fb17dd3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "More Smooth Jazz to fall asleep to",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.9651acf6-9f73-00fe-448c-dc6d03eb75d3",
+        "Name": "Sleepy Time Jazz 2",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.9651acf6-9f73-00fe-448c-dc6d03eb75d3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/sleepy-time-jazz-2/9651acf6-9f73-00fe-448c-dc6d03eb75d3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      },
+      {
+        "Description": "Put baby to sleep with these interpretations of popular hits",
+        "IsReadOnly": true,
+        "IsPublished": true,
+        "Provider": "Groove Editors",
+        "Id": "music.playlist.4c5223a0-836f-00fe-4a93-e0a8e7cf6ed3",
+        "Name": "Rockabye Baby Style",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.playlist.4c5223a0-836f-00fe-4a93-e0a8e7cf6ed3/image?locale=en-US",
+        "Link": "https://music.microsoft.com/playlist/rockabye-baby-style/4c5223a0-836f-00fe-4a93-e0a8e7cf6ed3?partnerID=AppId:00000000401C1787",
+        "Source": "Catalog",
+        "CompatibleSources": "Catalog"
+      }
+    ],
+    "TotalItemCount": 14
+  },
+  "Culture": "en-US"
+}
+```
+
 ### Browse the 5 most played albums in your region
 #### Request
 ```http
-GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&accessToken=Bearer
-+[...]
+GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -188,7 +381,9 @@ GET /1/content/music/catalog/albums/browse?orderBy=AllTimePlayCount&maxItems=5&a
 ### Browse the 50 most played tracks in France
 #### Request
 ```http
-GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&accessToken=Bearer+[...]
+GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -243,10 +438,10 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
         "TrackNumber": 1,
         "IsExplicit": false,
         "Genres": [
-          "Chanson Française"
+          "Chanson Franï¿½aise"
         ],
         "Subgenres": [
-          "Pop Française"
+          "Pop Franï¿½aise"
         ],
         "Rights": [
           "Purchase",
@@ -273,7 +468,7 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
           }
         ],
         "Id": "music.98A21B08-0100-11DB-89CA-0019B92A3933",
-        "Name": "Dernière Danse",
+        "Name": "Derniï¿½re Danse",
         "ImageUrl": "https://musicimage.xboxlive.com/content/music.98A21B08-0100-11DB-89CA-0019B92A3933/image?locale=fr-FR",
         "Link": "https://music.microsoft.com/Track/98A21B08-0100-11DB-89CA-0019B92A3933?partnerID=AwesomePartner",
         "Source": "Catalog"
@@ -290,7 +485,9 @@ GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&a
 
 #### Continuation Request (using "page=1", but it could also have used the ContinuationToken from the first response instead)
 ```http
-GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&page=1&accessToken=Bearer+[...]
+GET /1/content/music/catalog/tracks/browse?orderBy=AllTimePlayCount&country=FR&page=1
+
+Authorization: Bearer [...]
 ```
 
 #### Response
