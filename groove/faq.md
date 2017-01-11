@@ -25,7 +25,7 @@ ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
 - [May I download audio files with my application and provide a download feature to my application users?](#18)
 - [Where did the Pilot program go?](#20)
 
-g### <a name="1"> </a>I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?
+### <a name="1"> </a>I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?
 When developing a Windows UWA, you need to provision your application from Visual Studio first. Then the Application ID and secret will show up on your (Apps Registration Portal) [https://apps.dev.microsoft.com/#/appList] and you can use it for access to our API from your UWA app.
 
 ### <a name="2"> </a>I have my Application ID and Secret but the authentication fails. What am I doing wrong?  
