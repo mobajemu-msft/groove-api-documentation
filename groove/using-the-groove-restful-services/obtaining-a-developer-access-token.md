@@ -128,6 +128,37 @@ The response for the token request contains the access token that you can use to
 |token_type|The type of the token.|
 |expires_in|The number of seconds for which the access token is valid.|
 
+### Example 
+
+```
+POST https://login.live.com/accesstoken.srf HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Host: login.live.com
+Content-Length: 123
+
+grant_type=client_credentials&client_id={APP ID HERE...}&client_secret={CLIENT SECRET HERE...}&scope=app.music.xboxlive.com
+```
+
+If the application id and secret values are correct, the service will
+reply with a JSON object containing the token type, the access token's
+value and an expiry delay.
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 524
+
+{"token_type":"bearer","access_token":"Eg...==","expires_in":86400}
+```
+
+The resulting application access token can then be used in application
+calls using the OAuth 2.0 bearer authorization method.
+
+Note that tokens expire. Applications should take token expiry into
+account and reauthenticate before access token expiry.
+
+**Important:** Treat the value of `access_token` in this response as
+securely as you would a user's password.
 
 <a name="accesstoken">
 ## Using the access token
