@@ -98,8 +98,7 @@ securely as you would a user's password.
 #####Using Powershell on Windows:#####
 
 ```powershell
-> Invoke-WebRequest -Uri https://login.live.com/accesstoken.srf -Method Post -Body "grant
-_type=client_credentials&client_id={APP ID HERE...}&client_secret={CLIENT SECRET HERE...}&scope=app.music.xboxlive.com"|ConvertFrom-Json|Format-List
+> Invoke-WebRequest -Uri https://login.live.com/accesstoken.srf -Method Post -Body ("grant_type=client_credentials&client_id={APP ID}&client_secret="+[System.Web.HttpUtility]::UrlEncode("{CLIENT SECRET}")+"&scope=app.music.xboxlive.com")|ConvertFrom-Json|Format-List
 
 token_type   : bearer
 access_token : Eg...
@@ -109,14 +108,14 @@ expires_in   : 86400
 #####Using curl:#####
 
 ```
-% curl https://login.live.com/accesstoken.srf -d "grant_type=client_credentials&client_id={APP ID HERE...}&client_secret={CLIENT SECRET HERE...}&scope=app.music.xboxlive.com"
+% curl https://login.live.com/accesstoken.srf -d $(sed s/+/%2/ <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com")
 {"token_type":"bearer","access_token":"Eg...","expires_in":86400}
 ```
 
 #####Using wget:#####
 
 ```
-% wget https://login.live.com/accesstoken.srf --post-data "grant_type=client_credentials&client_id={APP ID HERE...}&client_secret={CLIENT SECRET HERE...}&scope=app.music.xboxlive.com" -q -O -
+% wget https://login.live.com/accesstoken.srf --post-data  $(sed s/+/%2/ <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com") -q -O -
 {"token_type":"bearer","access_token":"Eg...","expires_in":86400}
 ```
   
