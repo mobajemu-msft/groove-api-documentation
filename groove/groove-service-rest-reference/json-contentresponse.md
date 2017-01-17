@@ -22,6 +22,8 @@ The ContentResponse object has the following specification.
 | Results    | List of [ContentItem](JSON-ContentItem.md) | A paginated list of ContentItems that matched the request criteria. These items are used for ordered lists mixing multiple types of content such as the [Spotlight](uri-get-spotlight.md) and [NewReleases](uri-get-new-releases.md) APIs. |
 | Genres     | GenreList                                  | A list of string representing the different possible genres for a given locale. Used in the [Browse Genres](uri-get-genres.md) API.                                                                                                                                         |
 | Culture    | string                                     | The culture used for processing the [Browse Genres](uri-get-genres.md) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
+| Activities | List of [Activity](JSON-Activity.md)       | A list of Activities representing the different possible activities for a given locale. Used in the [Browse Activities](uri-get-activities.md) API.                                                                                                                                         |
+| Moods      | List of [Mood](JSON-Mood.md)               | A list of Moods representing the different possible moods for a given locale. Used in the [Browse Moods](uri-get-moods.md) API.                                                                                                                                         |
 
 ## Sample JSON syntax
 ```json

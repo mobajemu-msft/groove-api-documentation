@@ -7,11 +7,10 @@ ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
 ---
 
 #FAQ
-- [I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?](#1)
+- [I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?](#1)
 - [I have my application Client ID and Secret but the authentication fails. What am I doing wrong?](#2)
 - [Can I use the same Client ID and Secret for more than one application?](#3)
 - [How long does the API access token last? ](#4)
-- [Why do I get an error when trying to use the Azure Datamarket Explorer and tools?](#5)
 - [Should I actually keep the application Secret secret?](#6)
 - [How can I link to Groove from my application or website?](#7)
 - [Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?](#8)
@@ -26,31 +25,24 @@ ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
 - [May I download audio files with my application and provide a download feature to my application users?](#18)
 - [Where did the Pilot program go?](#20)
 
-### <a name="1"> </a>I signed up to Azure Datamarket, but my Customer ID and my Primary Account Key do not work on the Groove API. What am I doing wrong?
-The Customer ID and Primary Account Key are your Azure Datamarket main account credentials. They cannot be used to authenticate on the Groove API.  
+### <a name="1"> </a>I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?
+When developing a Windows UWA, you need to provision your application from Visual Studio first. Then the Application ID and secret will show up on your (Apps Registration Portal) [https://apps.dev.microsoft.com/#/appList] and you can use it for access to our API from your UWA app.
 
-To get access to the Groove API, you must first register your application in Azure Datamarket. Make sure you provide accurate information about your application. Once registered, your application will be assigned a Client ID and a Client Secret. These credentials are the ones you should use to get a token and authenticate on the Groove API.  
-
-Finally, make sure that you subscribed to the Groove API on Datamarket [here](http://go.microsoft.com/fwlink/p/?LinkID=389224).  
-
-### <a name="2"> </a>I have my application Client ID and Secret but the authentication fails. What am I doing wrong?  
-Subscribe to the Groove API on Azure Datamarket [here](http://go.microsoft.com/fwlink/p/?LinkID=389224).  
+### <a name="2"> </a>I have my Application ID and Secret but the authentication fails. What am I doing wrong?  
+Subscribe to the Groove API on the Developer Center [here](https://developer.microsoft.com/groove/signup).  
 Also make sure that all parameter values in your authentication POST request are properly encoded.  
 
-###<a name="3"> </a>Can I use the same Client ID and Secret for more than one application?
-No, you should register an application in Azure Datamarket for every application or website that will use the Groove API. Every application should use its assigned Client ID and Secret. Also, make sure the details of your application are accurate.
+###<a name="3"> </a>Can I use the same Application ID and Secret for more than one application?
+No, you should register an application in the Developer Center for every application or website that will use the Groove API. Every application should use its assigned Application ID and Secret. Also, make sure the details of your application are accurate.
 
 ###<a name="4"> </a>How long does the API access token last?
-It lasts for 10 minutes, so you will need to refresh it before it expires. This can be done asynchronously for better performance within your app or server-side code. The expiration time is given in the response along with the token.
-
-### <a name="5"> </a>Why do I get an error when trying to use the Azure Datamarket Explorer and tools?
-The Groove API doesn't make use of the Azure Datamarket explorer and tools. You must use Azure Datamarket only to get the API authentication token. This token should then be used directly on the Groove API endpoint ```https://music.xboxlive.com.```
+It lasts for 24 hours, so you will need to refresh it before it expires. This can be done asynchronously for better performance within your app or server-side code. The expiration time is given in the response along with the token.
 
 ### <a name="6"> </a>Should I actually keep the application Secret secret?
-Yes, the Secret provided by the Azure Datamarket portal should be kept secret. If you're running a website, the recommended implementation is to run the authentication code server side to prevent the secret from being visible in client-side code or on the network.
+Yes, the Secret provided by the Applications portal should be kept secret. If you're running a website, the recommended implementation is to run the authentication code server side to prevent the secret from being visible in client-side code or on the network.
 
 ### <a name="7"> </a>How can I link to Groove from my application or website?
-Most of the API calls return a "Link" item in the response. That Link is an HTTP link designed to automatically redirect to the most appropriate Groove application on the target platform. For example, if you're adding a link to a website, and the user is on a Windows 8 machine, the click from Internet Explorer will open the Groove Native application on Windows 8 (with a browser redirection).
+Most of the API calls return a "Link" item in the response. That Link is an HTTP link designed to automatically redirect to the most appropriate Groove application on the target platform. For example, if you're adding a link to a website, and the user is on a Windows 8 machine, the click from Internet Explorer will open the Groove Native application on Windows 10 (with a browser redirection).
 
 ### <a name="8"> </a>Can I deep link to the native Groove app Windows, Windows Phone, and related platforms without going through a browser?
 No, you currently need to open a browser. See [examples](https://github.com/Microsoft/Groove-API-documentation/blob/master/Using-the-Groove-RESTful-Services/Deep-Link.md).

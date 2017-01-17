@@ -28,7 +28,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | namespace     | string   | Required. The namespace to browse ("music" for example).                                                                                                     |
-| accessToken   | string   | A valid developer authentication Access Token obtained from Azure Data Market, used to identify the 3rd party application using the Groove APIs. |
+| accessToken   | string   | A valid developer authentication Access Token, used to identify the 3rd party application using the Groove APIs. |
 
 ## Examples
 Request object: [TrackActionRequest (JSON)](JSON-TrackActionRequest.md).
