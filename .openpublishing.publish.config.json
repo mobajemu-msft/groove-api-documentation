@@ -4,7 +4,7 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "groove",
+      "docset_name": "Groove",
       "build_source_folder": "groove",
       "build_output_subfolder": "groove",
       "locale": "en-us",
