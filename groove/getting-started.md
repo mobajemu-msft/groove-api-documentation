@@ -108,14 +108,14 @@ expires_in   : 86400
 #####Using curl:#####
 
 ```
-% curl https://login.live.com/accesstoken.srf -d $(sed s/+/%2/ <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com")
+% curl https://login.live.com/accesstoken.srf -d $(sed s/+/%20/g <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com")
 {"token_type":"bearer","access_token":"Eg...","expires_in":86400}
 ```
 
 #####Using wget:#####
 
 ```
-% wget https://login.live.com/accesstoken.srf --post-data  $(sed s/+/%2/ <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com") -q -O -
+% wget https://login.live.com/accesstoken.srf --post-data  $(sed s/+/%20/g <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com") -q -O -
 {"token_type":"bearer","access_token":"Eg...","expires_in":86400}
 ```
   
