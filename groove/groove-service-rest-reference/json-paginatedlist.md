@@ -3,7 +3,7 @@ title: PaginatedList JSON object | Groove Services
 description:  Learn about PaginatedList JSON object in Groove Music API.
 keywords: groove music, groove api, groove paginatedlist json
 author: sakley
-ms.assetid: 
+ms.assetid: 560f7308-d51d-412e-97f4-6daa0ecc316e
 ---
 
 # PaginatedList (JSON)       
