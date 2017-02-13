@@ -3,7 +3,7 @@ title: PlaylistAction JSON object | Groove Services
 description:  Learn about PlaylistActiob JSON object in Groove Music API.
 keywords: groove music, groove api, groove playlistaction json
 author: sakley
-ms.assetid: 
+ms.assetid: 700c43a1-e5d7-4bed-b65c-ed5745370379
 ---
 
 # PlaylistAction (JSON)     
