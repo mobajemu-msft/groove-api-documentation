@@ -3,7 +3,7 @@ title: UserProfileResponse JSON object | Groove Services
 description:  Learn about UserProfileResponse JSON object in Groove Music API.
 keywords: groove music, groove api, groove userprofileresponse json
 author: sakley
-ms.assetid: 
+ms.assetid: 5b62bf5f-a1cd-4669-9bfc-e14c92906912
 ---
 
 # UserProfileResponse (JSON)
