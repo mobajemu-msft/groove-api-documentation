@@ -3,7 +3,7 @@ title: Get available activities for a given locale| Groove Services
 description:  Learn how to browse available activities in Groove Music with the APIs.
 keywords: groove music, groove api, groove user collection, groove activities api, activities
 author: bfreydier
-ms.assetid: 
+ms.assetid: c730ee39-f1bd-4000-a192-412708aaa975
 ---
 
 # GET (/1/content/{namespace}/catalog/activities)
