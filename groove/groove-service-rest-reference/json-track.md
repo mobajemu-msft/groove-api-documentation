@@ -3,7 +3,7 @@ title: Track JSON object | Groove Services
 description:  Learn about Track JSON object in Groove Music API.
 keywords: groove music, groove api, groove track json
 author: sakley
-ms.assetid: 
+ms.assetid: b5bc9409-322a-4bf2-9501-d95b92f78fa9
 ---
 
 # Track (JSON)
