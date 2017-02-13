@@ -3,7 +3,7 @@ title: ContentItem JSON object | Groove Services
 description:  Learn about ContentItem JSON object in Groove Music API.
 keywords: groove music, groove api, groove contentitem json
 author: sakley
-ms.assetid: 
+ms.assetid: 32dafb90-9740-405c-ad94-7fac34f36672
 ---
 
 # ContentItem (JSON)         
