@@ -3,7 +3,7 @@ title: Discover the new releases API for Groove Music| Groove Services
 description:  Get a list of new releases in Groove Music catalog with this API
 keywords: groove music, groove api, groove new releases
 author: sakley
-ms.assetid: 
+ms.assetid: a6104680-abbb-416d-a907-158adbae505b
 ---
 
 # GET (/1/content/{namespace}/newreleases)
