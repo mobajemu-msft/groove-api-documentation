@@ -3,7 +3,7 @@ title: Activity JSON object | Groove Services
 description:  Learn about Activity JSON object in Groove Music API.
 keywords: groove music, groove api, groove activity json
 author: bfreydier
-ms.assetid: 
+ms.assetid: 65d5cf33-99c9-4a31-a8ed-77eb5fa33c8e
 ---
 
 # Activity (JSON)
