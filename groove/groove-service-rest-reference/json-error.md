@@ -3,7 +3,7 @@ title: Error JSON object | Groove Services
 description:  Learn about Error JSON object in Groove Music API.
 keywords: groove music, groove api, groove error json
 author: sakley
-ms.assetid: 
+ms.assetid: 98da8582-1e75-400f-9898-f4321fb5034b
 ---
 
 # Error (JSON)
