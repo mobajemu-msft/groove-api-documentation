@@ -3,7 +3,7 @@ title: OrderBy parameter for Groove Music APIs | Groove Services
 description:  Learn about the use of orderBy parameter for Catalog and Collection Browse APIs.
 keywords: groove music, groove api, groove orderby parameter
 author: sakley
-ms.assetid: 
+ms.assetid: 1a8c2302-d30c-4359-99c0-c775ea5f0109
 ---
 
 # orderBy parameter for Catalog and Collection Browse APIs
