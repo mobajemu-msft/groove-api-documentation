@@ -3,7 +3,7 @@ title: Browse the Groove Music catalog| Groove Services
 description:  Learn how to browse the Groove Music catalog with our API.
 keywords: groove music, groove api, groove catalog browse
 author: sakley
-ms.assetid: 
+ms.assetid:2b32dabf-94b1-416c-9a95-94597e549870 
 ---
 
 # GET (/1/content/{namespace}/catalog/{type}/browse)
