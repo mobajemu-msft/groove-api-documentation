@@ -3,7 +3,7 @@ title: Mood JSON object | Groove Services
 description:  Learn about Mood JSON object in Groove Music API.
 keywords: groove music, groove api, groove mood json
 author: bfreydier
-ms.assetid: 
+ms.assetid: 91ed19b1-6de5-4b47-a4ff-a2160b7fd3cc
 ---
 
 # Mood (JSON)
