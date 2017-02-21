@@ -3,7 +3,7 @@ title: Extra parameters for Groove Music lookup API| Groove Services
 description:  Learn about extra parameters for Groove Music lookup API requests.
 keywords: groove music, groove api, groove api extra parameters
 author: sakley
-ms.assetid: 
+ms.assetid: aad6d784-ffce-4291-b9ae-b29de455ed33
 ---
 
 # Extra parameters for Lookup API

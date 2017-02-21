@@ -3,7 +3,7 @@ title: Playlist JSON object | Groove Services
 description:  Learn about Playlist JSON object in Groove Music API.
 keywords: groove music, groove api, groove playlist json
 author: sakley
-ms.assetid: 
+ms.assetid: a2196955-b162-4012-b4d9-993131cb7a3d
 ---
 
 # Playlist (JSON)           

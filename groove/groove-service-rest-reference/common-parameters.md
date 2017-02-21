@@ -3,7 +3,7 @@ title: Common parameters for Groove Music API endpoints| Groove Services
 description:  Learn about common parameters for Groove Music API requests.
 keywords: groove music, groove api, groove api parameters
 author: sakley
-ms.assetid: 
+ms.assetid: 99477573-7396-459b-9f4a-f0d568900321
 ---
 
 # Parameters common to every Groove RESTful API

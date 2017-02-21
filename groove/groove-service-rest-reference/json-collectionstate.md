@@ -3,7 +3,7 @@ title: CollectionStateJSON object | Groove Services
 description:  Learn about CollectionState JSON object in Groove Music API.
 keywords: groove music, groove api, groove collectionstate json
 author: sakley
-ms.assetid: 
+ms.assetid: cdfd1422-260d-48e5-937b-f7d8b0503679
 ---
 
 # CollectionState (JSON)     

@@ -3,7 +3,7 @@ title: Get available genres for a given locale| Groove Services
 description:  Learn how to browse available genres in Groove Music with the APIs.
 keywords: groove music, groove api, groove user collection, groove genres api
 author: sakley
-ms.assetid: 
+ms.assetid: 0f99ebbb-63be-42ef-9147-c6dee3a593f8
 ---
 
 # GET (/1/content/{namespace}/catalog/genres)
@@ -69,12 +69,12 @@ GET /1/content/music/catalog/genres?country=tr&language=tr&accessToken=Bearer+[.
     "Alternatif",
     "Caz",
     "Elektronik / Dans",
-    "Film müzikleri",
+    "Film mÃ¼zikleri",
     "Hip Hop / Soul",
     "Klasik",
     "Pop",
     "Rock",
-    "Daha fazla müzik türü"
+    "Daha fazla mÃ¼zik tÃ¼rÃ¼"
   ],
   "Culture": "tr-TR"
 }

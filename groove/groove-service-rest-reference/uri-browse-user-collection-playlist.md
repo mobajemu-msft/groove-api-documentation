@@ -3,7 +3,7 @@ title: Browse a user's collection or playlist| Groove Services
 description:  Learn how to browse a user's personal collection in Groove Music catalog with our API.
 keywords: groove music, groove api, groove user collection, groove api playlist
 author: sakley
-ms.assetid: 
+ms.assetid: fdf873e7-4519-4f16-83f1-de65ee0feb0d
 ---
 
 # GET (/1/content/{namespace}/collection/{type}/browse)

@@ -3,7 +3,7 @@ title: Update a playlist in Groove Music| Groove Services
 description:  Learn how to update a Groove Music playlist on behalf of a user with our API.
 keywords: groove music, groove api, groove user collection, groove api playlist
 author: sakley
-ms.assetid: 
+ms.assetid: 328b62fb-c332-486d-8888-cd764889ed95
 ---
 
 # POST (/1/content/{namespace}/collection/playlists/update)

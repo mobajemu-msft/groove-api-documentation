@@ -3,7 +3,7 @@ title: ContentResponse JSON object | Groove Services
 description:  Learn about ContentResponse JSON object in Groove Music API.
 keywords: groove music, groove api, groove contentresponse json
 author: sakley
-ms.assetid: 
+ms.assetid: b5b18ec2-b0da-43d7-870d-833cabee265e 
 ---
 
 # ContentResponse (JSON)   
