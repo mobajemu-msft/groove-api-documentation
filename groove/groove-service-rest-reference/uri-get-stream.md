@@ -81,7 +81,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 
 {
   "Error": {
-    "ErrorCode": "NO-MUSIC-PASS-SUBSCRIPTION",
+    "ErrorCode": "NO_MUSIC_PASS_SUBSCRIPTION",
     "Description": "The user does not have an Groove subscription"
   }
 }
