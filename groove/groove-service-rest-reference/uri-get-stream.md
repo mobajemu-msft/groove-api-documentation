@@ -29,7 +29,7 @@ You simply have to provide the streaming URL and it will handle standard streami
   AutoPlay="True" />
 ```
 
-Depending on the streamed resource's content-type, you should use an AdaptiveMediaSource:
+Depending on the streamed resource's content-type, you might have to use an AdaptiveMediaSource:
 ```csharp
 // For HLS (StreamingResponse's Content-Type = "application/vnd.apple.mpegurl" )
 AdaptiveMediaSourceCreationResult adaptiveMediaSourceCreation =
