@@ -29,7 +29,14 @@ You simply have to provide the streaming URL and it will handle standard streami
   AutoPlay="True" />
 ```
 
+Depending on the streamed resource's content-type, you should use an AdaptiveMediaSource:
 ```csharp
+// For HLS (StreamingResponse's Content-Type = "application/vnd.apple.mpegurl" )
+AdaptiveMediaSourceCreationResult adaptiveMediaSourceCreation =
+    await AdaptiveMediaSource.CreateFromUriAsync(new Uri(streamUrl));
+GroovePlayer.Source = MediaSource.CreateFromAdaptiveMediaSource(adaptiveMediaSourceCreation.MediaSource);
+
+// For non HLS
 GroovePlayer.Source = MediaSource.CreateFromUri(new Uri(streamUrl));
 ```
 
