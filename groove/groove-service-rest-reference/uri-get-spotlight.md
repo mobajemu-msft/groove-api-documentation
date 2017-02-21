@@ -3,7 +3,7 @@ title: Discover the Spotlight content API for Groove Music| Groove Services
 description:  Get a list of spotlight content in Groove Music catalog with this API
 keywords: groove music, groove api, groove new releases, groove spotlight api
 author: sakley
-ms.assetid: 
+ms.assetid: fcee1363-b920-4e8f-a63c-a5ffde7675a8
 ---
 
 # GET (/1/content/{namespace}/spotlight)
@@ -311,10 +311,10 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
           "IsExplicit": false,
           "LabelName": "Universal Music Division Mercury Records",
           "Genres": [
-            "Chanson Française"
+            "Chanson FranÃ§aise"
           ],
           "Subgenres": [
-            "Pop Française"
+            "Pop FranÃ§aise"
           ],
           "AlbumType": "Album",
           "Artists": [

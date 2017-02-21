@@ -3,7 +3,7 @@ title: PlaylistActionResponse JSON object | Groove Services
 description:  Learn about PlaylistActionResponse JSON object in Groove Music API.
 keywords: groove music, groove api, groove playlistactionresponse json
 author: sakley
-ms.assetid: 
+ms.assetid: 71052b84-03ba-4675-9afc-0591fc165155
 ---
 # PlaylistActionResponse (JSON)
 The output element for every playlist action request: create, update, and delete.

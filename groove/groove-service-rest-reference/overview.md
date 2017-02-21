@@ -3,7 +3,7 @@ title: Groove Music API REST Reference overview | Groove Services
 description:  Discover Groove Music API REST Reference, endpoints and parameters.
 keywords: groove music, groove api, groove rest
 author: sakley
-ms.assetid: 
+ms.assetid: f07471e2-96b0-48a9-b05d-66f270859bc4
 ---
 
 # Groove Service REST Reference  

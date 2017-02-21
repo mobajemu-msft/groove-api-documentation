@@ -3,7 +3,7 @@ title: StreamResponse JSON object | Groove Services
 description:  Learn about StreamResponse JSON object in Groove Music API.
 keywords: groove music, groove api, groove streamresponse json
 author: sakley
-ms.assetid: 
+ms.assetid: 1b766e27-62e8-4231-9a27-deab328cef92
 ---
 
 # StreamResponse (JSON)    

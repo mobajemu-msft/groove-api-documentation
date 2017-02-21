@@ -3,7 +3,7 @@ title: Album JSON object | Groove Services
 description:  Learn about Album JSON object in Groove Music API.
 keywords: groove music, groove api, groove album json
 author: sakley
-ms.assetid: 
+ms.assetid: e239800b-f47a-4279-88f6-928b88fd1d0b
 ---
 
 # Album (JSON)

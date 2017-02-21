@@ -3,7 +3,7 @@ title:  Groove Music API HTTP Status Codes| Groove Services
 description:  Learn about the HTTP Status codes returned by Groove Music API.
 keywords: groove music, groove api, groove http status codes
 author: sakley
-ms.assetid: 
+ms.assetid: 7f97c03f-003b-401c-a09d-c26ff4580d73
 ---
 
 # Groove RESTful API HTTP Status Codes

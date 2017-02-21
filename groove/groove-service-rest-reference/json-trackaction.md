@@ -3,7 +3,7 @@ title: TrackAction JSON object | Groove Services
 description:  Learn about TrackAction JSON object in Groove Music API.
 keywords: groove music, groove api, groove trackaction json
 author: sakley
-ms.assetid: 
+ms.assetid: 044d73ea-73f6-4c49-bcb0-32c2c1a8c88b
 ---
 
 # TrackAction (JSON)        

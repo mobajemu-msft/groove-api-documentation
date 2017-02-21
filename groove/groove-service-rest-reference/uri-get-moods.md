@@ -3,7 +3,7 @@ title: Get available moods for a given locale| Groove Services
 description:  Learn how to browse available moods in Groove Music with the APIs.
 keywords: groove music, groove api, groove user collection, groove moods api, moods
 author: bfreydier
-ms.assetid: 
+ms.assetid: 882780e0-1a96-4ae9-8558-db1c5eaa477f
 ---
 
 # GET (/1/content/{namespace}/catalog/moods)

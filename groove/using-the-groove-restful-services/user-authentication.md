@@ -14,6 +14,9 @@ The Groove API uses the standard [OAuth 2.0](http://oauth.net/2/) authentication
 
 * `Authorization: Bearer {token}`
 
+###Nota Bene
+There are two distinct use cases depending on the API you are using.  For authenticated calls, you need only include the **User Authentication** token to your request and not the App authentication token.
+
 
 ## Register a Microsoft Account application
 To register your app to connect with Groove, you'll need a Microsoft account.
