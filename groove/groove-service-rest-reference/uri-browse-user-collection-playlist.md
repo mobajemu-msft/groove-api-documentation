@@ -18,7 +18,9 @@ Browse a user's collection or playlists.
 The full browse request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 ```
 /1/content/{namespace}/collection/{type}/browse?orderBy={orderBy}&maxItems={maxItems}
-&page={page}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
+&page={page}&continuationToken={continuationToken}&jsonp={jsonp}
+
+Authorization: Bearer [...]
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
@@ -43,7 +45,7 @@ The following parameters are not available on the Common Parameters page.
 ### Browse artists
 #### Request
 ```http
-GET /1/content/music/collection/artists/browse?orderBy=ArtistName&accessToken=Bearer+[...]
+GET /1/content/music/collection/artists/browse?orderBy=ArtistName
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -82,7 +84,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 ### Browse artists with invalid orderBy
 #### Request
 ```http
-GET /1/content/music/collection/artists/browse?orderBy=AlbumTitle&accessToken=Bearer+[...]
+GET /1/content/music/collection/artists/browse?orderBy=AlbumTitle
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -103,7 +105,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 ### Browse albums
 #### Request
 ```http
-GET /1/content/music/collection/albums/browse?orderBy=AlbumTitle&accessToken=Bearer+[...]
+GET /1/content/music/collection/albums/browse?orderBy=AlbumTitle
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -198,7 +200,7 @@ This request specifies maxItems=1 and uses the continuation token to get the sec
 
 #### Request
 ```http
-GET /1/content/music/collection/playlists/browse?maxItems=1&accessToken=Bearer+[...]
+GET /1/content/music/collection/playlists/browse?maxItems=1
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -225,7 +227,6 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 #### Continuation Request
 ```http
 GET /1/content/music/collection/playlists/browse?continuationToken=ASQ6p3IBCQQADQcDAgABMQ
-&accessToken=Bearer+[...]
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -251,7 +252,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 ### Browse tracks
 #### Request
 ```http
-GET /1/content/music/collection/tracks/browse?orderBy=TrackTitle&accessToken=Bearer+[...]
+GET /1/content/music/collection/tracks/browse?orderBy=TrackTitle
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```     
@@ -424,7 +425,7 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 ### Browse tracks with invalid maxItems
 #### Request
 ```http
-GET /1/content/music/collection/tracks/browse?maxItems=42&accessToken=Bearer+[...]
+GET /1/content/music/collection/tracks/browse?maxItems=42
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```

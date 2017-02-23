@@ -16,7 +16,9 @@ Retrieve a user's profile or the features available in a given region.
 The full request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 ```http
 /1/user/{namespace}/profile?
-language={language}&country={country}&accessToken={accessToken}&contentType={contentType}&jsonp={jsonp}
+language={language}&country={country}&contentType={contentType}&jsonp={jsonp}
+
+Authorization: Bearer [...]
 ```
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
@@ -29,7 +31,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ### User doesn't have a Groove Music Pass
 #### Request
 ```http
-GET /1/user/music/profile?accessToken=Bearer+[...]
+GET /1/user/music/profile
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 ```
@@ -53,7 +55,7 @@ Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 ### User has a Groove Music Pass
 #### Request
 ```http
-GET /1/user/music/profile?accessToken=Bearer+[...]
+GET /1/user/music/profile
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 ```
@@ -80,7 +82,9 @@ Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 ### Check Groove Music Pass availability in France
 #### Request
 ```http
-GET /1/user/music/profile?country=fr&accessToken=Bearer+[...]
+GET /1/user/music/profile?country=fr
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -94,7 +98,9 @@ GET /1/user/music/profile?country=fr&accessToken=Bearer+[...]
 ### Check if your region is supported by Groove
 #### Request
 ```http
-GET /1/user/music/profile?accessToken=Bearer+[...]
+GET /1/user/music/profile
+
+Authorization: Bearer [...]
 ```
 
 #### Response

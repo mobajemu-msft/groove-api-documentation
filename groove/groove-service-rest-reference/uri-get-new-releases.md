@@ -17,7 +17,9 @@ Discover new releases.
 ## Remarks
 The new releases request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would look like the following string:
 ```
-/1/content/{namespace}/newreleases?genre={genre}&language={language}&country={country}&accessToken={accessToken}
+GET /1/content/{namespace}/newreleases?genre={genre}&language={language}&country={country}
+
+Authorization: Bearer [...]
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
@@ -33,7 +35,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ### New releases (all genres)
 #### Request
 ```http
-GET /1/content/music/newreleases?accessToken=Bearer+[...]
+GET /1/content/music/newreleases
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -124,7 +128,9 @@ GET /1/content/music/newreleases?accessToken=Bearer+[...]
 ### New releases (specific FR genre)
 #### Request
 ```http
-GET /1/content/music/newreleases?country=FR&genre=Rock&accessToken=Bearer+[...]
+GET /1/content/music/newreleases?country=FR&genre=Rock
+
+Authorization: Bearer [...]
 ```
 
 #### Response

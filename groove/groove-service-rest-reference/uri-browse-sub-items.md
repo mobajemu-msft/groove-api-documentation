@@ -21,8 +21,10 @@ The Sub-Browse request is composed of mandatory and optional URL parts and query
 
 ```http  
 /1/content/{id}/{source}/{browseType}/{extra}/browse?orderBy={orderBy}&maxItems={maxItems}&page={page}
-&language={language}&country={country}&continuationToken={continuationToken}&accessToken={accessToken}
+&language={language}&country={country}&continuationToken={continuationToken}
 &contentType={contentType}&jsonp={jsonp}
+
+Authorization: Bearer [...]
 ```  
 
 Please note that pagination is zero-based (the first page is found at page=0).
@@ -50,8 +52,9 @@ This call obtains the exact same result as /1/content/music.2F531400-0200-11DB-8
 
 #### Request
 ```http
-GET /1/content/music.2F531400-0200-11DB-89CA-0019B92A3933/catalog/artist/albums/browse?
-accessToken=Bearer+[...]
+GET /1/content/music.2F531400-0200-11DB-89CA-0019B92A3933/catalog/artist/albums/browse
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -154,7 +157,8 @@ accessToken=Bearer+[...]
 #### Request
 ```http
 GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/browse?maxItems=3
-&accessToken=Bearer+[...]
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -321,8 +325,7 @@ GET /1/content/music.3E362806-0100-11DB-89CA-0019B92A3933/catalog/album/tracks/b
 ### Browse the tracks of one of my playlists
 #### Request
 ```http
-GET /1/content/music.AQPRiQGUVID-ANj02JdwYA-R/collection/playlist/tracks/browse
-?accessToken=Bearer+[...] HTTP/1.1
+GET /1/content/music.AQPRiQGUVID-ANj02JdwYA-R/collection/playlist/tracks/browse HTTP/1.1
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -456,7 +459,9 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 #### Request
 ```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptracks/browse
-?maxItems=5&accessToken=Bearer+[...] HTTP/1.1
+?maxItems=5 HTTP/1.1
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -583,7 +588,9 @@ GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptrac
 #### Continuation Request
 ```http
 GET /1/content/music.C61C0000-0200-11DB-89CA-0019B92A3933/catalog/artist/toptracks/browse
-?maxItems=5&page=1&accessToken=Bearer+[...]
+?maxItems=5&page=1
+
+Authorization: Bearer [...]
 ```
 
 #### Continuation Response
