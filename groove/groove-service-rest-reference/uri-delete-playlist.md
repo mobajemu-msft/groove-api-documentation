@@ -15,7 +15,9 @@ Delete a playlist of a user.
 ## Remarks
 The full delete request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 ```
-/1/content/{namespace}/collection/playlists/delete?accessToken={accessToken}
+POST /1/content/{namespace}/collection/playlists/delete
+
+Authorization: Bearer [...]
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
@@ -34,10 +36,9 @@ Response object: [PlaylistActionResponse (JSON)](JSON-PlaylistActionResponse.md)
 #### Request
 This API can delete a playlist by providing its ID (obtained from an earlier Browse Playlist call).
 ```http
-POST /1/content/music/collection/playlists/delete?accessToken=Bearer+[...]
+POST /1/content/music/collection/playlists/delete
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
-
 Content-Type: application/json
 
 {

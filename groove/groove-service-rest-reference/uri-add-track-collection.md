@@ -40,7 +40,7 @@ We will add one valid track ID, and one invalid ID (random-generated).
 
 #### Request
 ```http
-POST /1/content/music/collection/add?accessToken=Bearer+[...]
+POST /1/content/music/collection/add
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 
@@ -82,7 +82,7 @@ The batch size is limited to 100 items.
 
 #### Request
 ```http
-POST /1/content/music/collection/add?accessToken=Bearer+[...]
+POST /1/content/music/collection/add
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 
@@ -210,7 +210,7 @@ Content-Type: application/json
 ### Add a track using XML instead of JSON
 #### Request
 ```http
-POST /1/content/music/collection/add?accessToken=Bearer+[...]
+POST /1/content/music/collection/add
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 
@@ -238,8 +238,9 @@ Content-Type: application/xml
 ### Access is denied if the user authentication token is missing or invalid
 #### Request
 ```http
-POST /1/content/music/collection/add?accessToken=Bearer+[...]
+POST /1/content/music/collection/add
 
+Authorization: Bearer [...]
 Content-Type: application/json
 
 {

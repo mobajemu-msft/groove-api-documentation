@@ -16,7 +16,9 @@ Update a playlist on behalf of a user.
 The full update request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 
 ```http
-/1/content/{namespace}/collection/playlists/update?accessToken={accessToken}
+POST /1/content/{namespace}/collection/playlists/update
+
+Authorization: Bearer [...]
 ```
 
 You can update only one playlist at a time. Provide the ID of the playlist to be updated, the metadata you want to update, and a list of actions to perform on the playlist's tracks.
@@ -41,7 +43,7 @@ You can use this API to update the name of a playlist and control whether it's p
 
 #### Request
 ```http
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
+POST /1/content/music/collection/playlists/update
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
 
@@ -72,10 +74,9 @@ In this example, we add a track and delete one. Both operations are successful.
 
 #### Request
 ```http
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
+POST /1/content/music/collection/playlists/update
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
-
 Content-Type: application/json
 
 {
@@ -120,10 +121,9 @@ In this example, we try to add a random GUID as a track ID to a playlist.
 
 #### Request
 ```http
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
+POST /1/content/music/collection/playlists/update
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Iiw[...]
-
 Content-Type: application/json
 
 {
@@ -167,10 +167,9 @@ Use the InsertBeforeTrackId field for the track before which you want to insert,
 
 #### Request
 ```http
-POST /1/content/music/collection/playlists/update?accessToken=Bearer+[...]
+POST /1/content/music/collection/playlists/update
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2Ii[...]
-
 Content-Type: application/json
 
 {

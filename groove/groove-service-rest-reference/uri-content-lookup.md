@@ -22,7 +22,7 @@ Look up one or several items from a media catalog and/or user's collection.
 A lookup request is composed of mandatory and optional URL parts and query parameters, as described in the following table. A lookup request containing all parameters would look like the following string:
 ```http
 /1/content/{id1+id2+id3}/lookup?language={language}&country={country}&extras={extras}&source={source}
-&contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
+&contentType={contentType}&continuationToken={continuationToken}&jsonp={jsonp}
 ```
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
@@ -1609,7 +1609,9 @@ Authorization: Bearer [...]
 ### Lookup of a nonexistent ID
 #### Request
 ```http
-GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup?accessToken=Bearer+[...]
+GET /1/content/music.00000000-0000-0000-0000-000000000000/lookup
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -1772,8 +1774,9 @@ https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.x
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933+
 music.B13EB907-0100-11DB-89CA-0019B92A3933+music.C61C0000-0200-11DB-89CA-0019B92A3933/lookup?
-extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails
-&accessToken=Bearer+[...] HTTP/1.1
+extras=Albums+TopTracks+ArtistDetails+Tracks+AlbumDetails HTTP/1.1
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -2191,7 +2194,9 @@ ISRC is a standard music identifier that can be used as input to the Lookup API 
 
 ### Request
 ```json
-GET /1/content/music.isrc.GBDJQ8800006/lookup?accessToken=Bearer+[...]
+GET /1/content/music.isrc.GBDJQ8800006/lookup
+
+Authorization: Bearer [...]
 ```
 
 ### Response
@@ -2253,7 +2258,9 @@ ICPN is a standard music identifier that can be used as input to the Lookup API 
 
 ### Request
 ```http
-GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
+GET /1/content/music.icpn.886443927087/lookup
+
+Authorization: Bearer [...]
 ```
 
 ### Response
@@ -2304,7 +2311,7 @@ GET /1/content/music.icpn.886443927087/lookup?accessToken=Bearer+[...]
 ### Collection album lookup
 #### Request
 ```http
-GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?source=collection&accessToken=Bearer+[...]
+GET /1/content/music.B13EB907-0100-11DB-89CA-0019B92A3933/lookup?source=collection
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
@@ -2333,7 +2340,7 @@ Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ### Collection playlist lookup
 #### Request
 ```http
-GET /1/content/music.AQM2egu7ioD-AI-GF3usCeHQ/lookup?source=collection&accessToken=Bearer+[...]
+GET /1/content/music.AQM2egu7ioD-AI-GF3usCeHQ/lookup?source=collection
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
@@ -2477,8 +2484,7 @@ Each of the input IDs is looked up in the collection first, and then in the cata
 
 #### Request
 ```http
-GET /1/content/music.3770F306-0100-11DB-89CA-0019B92A3933+music.AQIPAAAcxgAC3GpkUPzr8EQ/lookup?source=collection+catalog
-&accessToken=Bearer+[...] HTTP/1.1
+GET /1/content/music.3770F306-0100-11DB-89CA-0019B92A3933+music.AQIPAAAcxgAC3GpkUPzr8EQ/lookup?source=collection+catalog HTTP/1.1
 
 Authorization: Bearer eyJlbmMiOiJBMTI4Q0JDK0hTMjU2IiwiYWxnIjoiUlNBLU9[...]
 ```
