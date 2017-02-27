@@ -28,7 +28,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 The Delete Tracks request is composed of mandatory URL parts and query parameters, described in the table below. A Delete Tracks request containing all parameters would look like the following string:
 
 ```
-/1/content/{namespace}/collection/delete?accessToken={accessToken}
+POST /1/content/{namespace}/collection/delete
+
+Authorization: Bearer [...]
 ```
 
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
@@ -48,7 +50,7 @@ In this example we delete a valid track (which is in the user's collection), and
 
 #### Request
 ```http
-POST /1/content/music/collection/delete?accessToken=Bearer+[...]
+POST /1/content/music/collection/delete
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 

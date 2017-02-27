@@ -16,7 +16,9 @@ Get a list of genres available for a locale.
 ## Remarks
 The BrowseGenres request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would resemble the following string:
 ```
-/1/content/{namespace}/catalog/genres?language={language}&country={country}&accessToken={accessToken}
+/1/content/{namespace}/catalog/genres?language={language}&country={country}
+
+Authorization: Bearer [...]
 ```
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
@@ -27,7 +29,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ### Browse genres
 #### Request
 ```http
-GET /1/content/music/catalog/genres?accessToken=Bearer+[...]
+GET /1/content/music/catalog/genres
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -59,7 +63,9 @@ GET /1/content/music/catalog/genres?accessToken=Bearer+[...]
 #### Browse genres for a specific locale
 #### Request
 ```http
-GET /1/content/music/catalog/genres?country=tr&language=tr&accessToken=Bearer+[...]
+GET /1/content/music/catalog/genres?country=tr&language=tr
+
+Authorization: Bearer [...]
 ```
 
 #### Response

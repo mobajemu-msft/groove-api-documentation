@@ -19,7 +19,9 @@ Search for items in a media catalog, user's collection, or both.
 ## Remarks
 A Search request is composed of mandatory and **Optional** URL parts and query parameters, as described in the following table. A Search request containing all parameters would look like the following string:
 ```
-/1/content/{namespace}/search?q={query}&language={language}&country={country}&maxItems={maxItems}&filters={filters}&source={source}&contentType={contentType}&continuationToken={continuationToken}&accessToken={accessToken}&jsonp={jsonp}
+/1/content/{namespace}/search?q={query}&language={language}&country={country}&maxItems={maxItems}&filters={filters}&source={source}&contentType={contentType}&continuationToken={continuationToken}&jsonp={jsonp}
+
+Authorization: Bearer [...]
 ```
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).

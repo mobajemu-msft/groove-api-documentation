@@ -47,7 +47,9 @@ GroovePlayer.Source = MediaSource.CreateFromUri(new Uri(streamUrl));
 
 The full streaming request is composed of mandatory and optional URL parts and query parameters. A streaming request containing all parameters would resemble the following string:
 ```
-/1/content/{id}/stream?clientInstanceId={clientInstanceId}&contentType={contentType}&accessToken={accessToken}
+/1/content/{id}/stream?clientInstanceId={clientInstanceId}&contentType={contentType}
+
+Authorization: Bearer [...]
 ```
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
@@ -69,8 +71,7 @@ Only Groove Music Pass subscribers may play full streams.
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream
-?clientInstanceId=5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer
-+[...]
+?clientInstanceId=5b559245-96ed-4cf2-a4de-e0a13d66609c
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```
@@ -93,7 +94,7 @@ The user authentication token identifies a user who has a Music Pass.
 #### Request
 ```http
 GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/stream?clientInstanceId=
-5b559245-96ed-4cf2-a4de-e0a13d66609c&accessToken=Bearer+[...]
+5b559245-96ed-4cf2-a4de-e0a13d66609c
 
 Authorization: Bearer eyJlbmMiOiJB[...]
 ```

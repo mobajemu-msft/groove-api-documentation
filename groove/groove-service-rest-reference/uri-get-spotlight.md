@@ -16,7 +16,9 @@ Discover spotlight content for a specified language or culture.
 ## Remarks
 The Spotlight request is composed of mandatory and optional URL parts and query parameters. A request containing all parameters would look like the following string:
 ```
-/1/content/{namespace}/spotlight?language={language}&country={country}&accessToken={accessToken}
+/1/content/{namespace}/spotlight?language={language}&country={country}
+
+Authorization: Bearer [...]
 ```
 
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
@@ -28,7 +30,9 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ### Spotlight content
 #### Request
 ```http
-GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
+GET /1/content/music/spotlight?country=FR&language=FR
+
+Authorization: Bearer [...]
 ```
 
 #### Response
@@ -257,7 +261,9 @@ GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
 ### Spotlight for a specific culture
 #### Request
 ```http
-GET /1/content/music/spotlight?country=FR&language=FR&accessToken=Bearer+[...]
+GET /1/content/music/spotlight?country=FR&language=FR
+
+Authorization: Bearer [...]
 ```
 
 #### Response

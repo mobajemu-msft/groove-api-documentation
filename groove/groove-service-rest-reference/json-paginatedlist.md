@@ -41,7 +41,9 @@ A continuation token is an opaque string that should never be modified by the cl
 ##### First Request
 ```http
 GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?
-extras=Tracks&accessToken=Bearer+[...]
+extras=Tracks
+
+Authorization: Bearer [...]
 ```
 
 #### First response
@@ -291,7 +293,9 @@ GET /1/content/music.833FB507-0100-11DB-89CA-0019B92A3933/lookup?continuationTok
 ## Search and continue (artists)
 ### Initial search request
 ```html
-GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
+GET /1/content/music/search?q=bob
+
+Authorization: Bearer [...]
 ```
 
 ### First response
@@ -519,7 +523,9 @@ GET /1/content/music/search?q=bob&accessToken=Bearer+[...]
 
 ## Artists continuation
 ```http
-GET /1/content/music/search?continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ&accessToken=Bearer+[...]
+GET /1/content/music/search?continuationToken=AYdrKUUZQAAHAANib2IBAAIyNQ
+
+Authorization: Bearer [...]
 ```
 
 ## Continuation response (artists only)
