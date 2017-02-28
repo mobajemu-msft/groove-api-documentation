@@ -24,6 +24,7 @@ The ContentResponse object has the following specification.
 | Culture    | string                                     | The culture used for processing the [Browse Genres](uri-get-genres.md) request, computed from Country and Language parameters, user authentication and/or geolocation.                                                                                                      |
 | Activities | List of [Activity](JSON-Activity.md)       | A list of Activities representing the different possible activities for a given locale. Used in the [Browse Activities](uri-get-activities.md) API.                                                                                                                                         |
 | Moods      | List of [Mood](JSON-Mood.md)               | A list of Moods representing the different possible moods for a given locale. Used in the [Browse Moods](uri-get-moods.md) API.                                                                                                                                         |
+| Radios     | List of [Radio](JSON-Radio.md)             | A list of recently played radios. Retrieved from the [Recently Played Radios](uri-recently-played-radio.md) API.                                                                                                                                         |
 
 ## Sample JSON syntax
 ```json

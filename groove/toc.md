@@ -29,6 +29,7 @@
 ###[ContentItem (JSON)](Groove-service-REST-Reference/JSON-ContentItem.md)
 ###[ContentResponse (JSON)](Groove-service-REST-Reference/JSON-ContentResponse.md)
 ###[Contributor (JSON)](Groove-service-REST-Reference/JSON-Contributor.md)
+###[CreateRadioRequest (JSON)](Groove-service-REST-Reference/JSON-CreateRadioRequest.md)
 ###[Error (JSON)](Groove-service-REST-Reference/JSON-Error.md)
 ###[Mood (JSON)](Groove-service-REST-Reference/JSON-mood.md)
 ###[PaginatedList (JSON)](Groove-service-REST-Reference/JSON-PaginatedList.md)
@@ -36,6 +37,9 @@
 ###[PlaylistAction (JSON)](Groove-service-REST-Reference/JSON-PlaylistAction.md)
 ###[PlaylistActionResponse (JSON)](Groove-service-REST-Reference/JSON-PlaylistActionResponse.md)
 ###[PlaylistActionResult (JSON)](Groove-service-REST-Reference/JSON-PlaylistActionResult.md)
+###[Radio (JSON)](Groove-service-REST-Reference/JSON-Radio.md)
+###[RadioResponse (JSON)](Groove-service-REST-Reference/JSON-RadioResponse.md)
+###[Seed (JSON)](Groove-service-REST-Reference/JSON-Seed.md)
 ###[StreamResponse (JSON)](Groove-service-REST-Reference/JSON-StreamResponse.md)
 ###[Track (JSON)](Groove-service-REST-Reference/JSON-Track.md)
 ###[TrackAction (JSON)](Groove-service-REST-Reference/JSON-TrackAction.md)
@@ -63,7 +67,9 @@
 ###[Get spotlight](Groove-service-REST-Reference/uri-get-spotlight.md)
 ###[Get a track full stream](Groove-service-REST-Reference/uri-get-stream.md)
 ###[Access a user profile](Groove-service-REST-Reference/uri-access-user-profile.md)
-
+###[Create a radio station](Groove-service-REST-Reference/uri-create-radio.md)
+###[Continue a radio station](Groove-service-REST-Reference/uri-next-radio.md)
+###[Get a user's recently played radio stations](Groove-service-REST-Reference/uri-recently-played-radio.md)
 
 ## Additional material
 ###[Parameters common to every Groove RESTful API](Groove-service-REST-Reference/Common-Parameters.md)  

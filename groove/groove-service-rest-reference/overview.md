@@ -40,6 +40,9 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 |GET|[/1/content/{namespace}/spotlight](uri-get-spotlight.md)|Discover content for a specified language or culture.|[ContentResponse (JSON)](JSON-ContentResponse.md)||
 |GET|[/1/content/{id}/stream](uri-get-stream.md)|Request streaming.|[StreamResponse (JSON)](JSON-StreamResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
 |GET|[/1/user/{namespace}/profile](uri-access-user-profile.md)|Access a user's profile.|[UserProfileResponse (JSON)](JSON-UserProfileResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
+|POST|[/1/content/{namespace}/radio/create](uri-create-radio.md)|Create a radio station for the user|[RadioResponse (JSON)](JSON-RadioResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
+|GET|[/1/content/{namespace}/radio/{id}/next](uri-create-radio.md)|Continue a radio station|[RadioResponse (JSON)](JSON-RadioResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
+|GET|[/1/content/{namespace}/radio/recentlyplayed](uri-recently-played-radio.md)|Browse a user's recently played radio stations|[ContentResponse (JSON)](JSON-ContentResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
 
 ## JSON
 |OBJECT|DESCRIPTION|
@@ -50,12 +53,16 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 |[ContentItem (JSON)](JSON-ContentItem.md)|Media content (either an Album or an Artist).|
 |[ContentResponse (JSON)](JSON-ContentResponse.md)|The output element for most content APIs.|
 |[Contributor (JSON)](JSON-Contributor.md)|An artist and the artist's role
+|[CreateRadioRequest (JSON)](JSON-CreateRadioRequest.md)|The input element for every radio station creation request
 |[Error (JSON)](JSON-Error.md)|Error object for attempts to query the Music catalog.|
 |[PaginatedList (JSON)](JSON-PaginatedList.md)|Describes paginated lists, a type of response from the Groove Service that can be continued by using a token.|
 |[Playlist (JSON)](JSON-Playlist.md)|A list of tracks and their metadata.|
 |[PlaylistAction (JSON)](JSON-PlaylistAction.md)|The input element for every playlist action request: create, update, and delete.|
 |[PlaylistActionResponse (JSON)](JSON-PlaylistActionResponse.md)|The output element for every playlist action request: create, update, and delete.|
 |[PlaylistActionResult (JSON)](JSON-PlaylistActionResult.md)|The object describing a playlist action result, used by add and delete.|
+|[Radio (JSON)](JSON-Radio.md)|A radio station|
+|[RadioResponse (JSON)](JSON-RadioResponse.md)|A list of tracks for a given radio along with the radio session id
+|[Seed (JSON)](JSON-Seed.md)|A radio seed|
 |[StreamResponse (JSON)](JSON-StreamResponse.md)|Response to all stream APIs.|
 |[Track (JSON)](JSON-Track.md)|Describes a track, an individual piece of musical content from an album.|
 |[TrackAction (JSON)](JSON-TrackAction.md)|An action (such as add or delete) on a specific track.|
