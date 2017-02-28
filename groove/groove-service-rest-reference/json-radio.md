@@ -3,6 +3,7 @@ title: Radio JSON object | Groove Services
 description:  Learn about Radio JSON object in Groove Music API.
 keywords: groove music, groove api, groove radio json
 author: bfreydier
+ms.assetid:  
 ---
 
 # Radio (JSON)
