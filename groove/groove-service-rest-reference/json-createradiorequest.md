@@ -1,8 +1,9 @@
 ---
 title: CreateRadioRequest JSON object | Groove Services
 description:  Learn about CreateRadioRequest JSON object in Groove Music API.
-keywords: groove music, groove api, groove createradiorequest json
+keywords: groove music, groove api, groove createradiorequest json, groove radio
 author: bfreydier
+ms.assetid:  
 ---
 
 # CreateRadioRequest (JSON)  
