@@ -3,6 +3,7 @@ title: RadioResponse JSON object | Groove Services
 description:  Learn about RadioResponse JSON object in Groove Music API.
 keywords: groove music, groove api, groove radioresponse json
 author: bfreydier
+ms.assetid:  
 ---
 
 # RadioResponse (JSON)
