@@ -3,6 +3,7 @@ title: Recently played radio stations| Groove Services
 description:  Retrieve the list of recently played radio station
 keywords: groove music, groove api, groove radio station, radio, recent radio, recently played
 author: bfreydier
+ms.assetid:  
 ---
 
 # GET (/1/content/{namespace}/radio/recentlyplayed)
