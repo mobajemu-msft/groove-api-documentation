@@ -7,7 +7,7 @@ ms.assetid:
 ---
 
 # Radio (JSON)
-A radio generated automatically ny Groove Music Services. A radio is an infinite list of tracks generated from a seed, which can either be an artist or a track, forming a consistent listening experience.
+A radio generated automatically by Groove Music Services. A radio is an infinite list of tracks generated from a seed, which can either be an artist or a genre, forming a consistent listening experience.
 
 ## Radio
 The Radio object has the following specification.
