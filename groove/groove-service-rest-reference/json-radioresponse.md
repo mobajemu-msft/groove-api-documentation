@@ -7,7 +7,7 @@ ms.assetid:
 ---
 
 # RadioResponse (JSON)
-A list of tracks for a given radio along with the radio session id
+A list of tracks for a given radio along with the radio session id. The default number of tracks returned is 25.
 
 ## RadioResponse
 The RadioResponse object has the following specification.
