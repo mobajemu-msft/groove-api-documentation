@@ -3,10 +3,11 @@ title: Continue a radio station| Groove Services
 description:  Continue a recently played radio station
 keywords: groove music, groove api, groove radio station, radio, continue radio, next
 author: bfreydier
+ms.assetid:  
 ---
 
 # GET (/1/content/{namespace}/radio/{id}/next)
-Continue a radio station
+Continue a radio station that was previously created.
 
 -   [Remarks](#remarks)
 -   [URI parameters](#uri-parameters)
