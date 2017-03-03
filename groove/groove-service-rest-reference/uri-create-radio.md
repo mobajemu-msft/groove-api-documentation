@@ -3,6 +3,7 @@ title: Create a new radio station on Groove Music| Groove Services
 description:  Create a new radio station for a user,
 keywords: groove music, groove api, groove radio, radio
 author: bfreydier
+ms.assetid:  
 ---
 
 # POST (/1/content/{namespace}/radio/create)
