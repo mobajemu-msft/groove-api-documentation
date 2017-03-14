@@ -455,6 +455,96 @@ Authorization: Bearer eyJlbmMiOiJB[...]
 }
 ```
 
+### Browse the tracks of a "playlist for you"
+#### Request
+```http
+GET /1/content/music.playlistforyou.19b8e059-76ff-46bb-9282-f50271044710/collection/playlist/tracks/browse HTTP/1.1
+
+Authorization: Bearer eyJlbmMiOiJB[...]
+```
+
+#### Response
+```json
+{
+  "Playlists": {
+    "Items": [
+      {
+        "Description": "Based on your favorites songs",
+        "IsReadOnly": true,
+        "Tracks": {
+          "Items": [
+            {
+              "ReleaseDate": "2003-04-21T00:00:00Z",
+              "Duration": "00:04:36",
+              "TrackNumber": 10,
+              "IsExplicit": false,
+              "Genres": [
+                "Soundtracks"
+              ],
+              "Rights": [
+                "Purchase",
+                "Stream"
+              ],
+              "Album": {
+                "ReleaseDate": "2003-04-21T00:00:00Z",
+                "Genres": [
+                  "Soundtracks"
+                ],
+                "Id": "music.8D6KGX4ZL896",
+                "Name": "American Life (Edited)",
+                "ImageUrl": "https://musicimage.xboxlive.com/content/music.93d41e00-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+                "Link": "https://music.microsoft.com/album/madonna/american-life-edited/93d41e00-0100-11db-89ca-0019b92a3933?partnerID=AppId:0000000068164C94",
+                "Source": "Catalog",
+                "CompatibleSources": "Catalog, Collection"
+              },
+              "Artists": [
+                {
+                  "Role": "Main",
+                  "Artist": {
+                    "Id": "music.24540000-0200-11DB-89CA-0019B92A3933",
+                    "Name": "Madonna",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.24540000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+                    "Link": "https://music.microsoft.com/artist/madonna/24540000-0200-11db-89ca-0019b92a3933?partnerID=AppId:0000000068164C94",
+                    "Source": "Catalog",
+                    "CompatibleSources": "Catalog, Collection"
+                  }
+                },
+                {
+                  "Role": "AlbumArtist",
+                  "Artist": {
+                    "Id": "music.24540000-0200-11DB-89CA-0019B92A3933",
+                    "Name": "Madonna",
+                    "ImageUrl": "https://musicimage.xboxlive.com/content/music.24540000-0200-11db-89ca-0019b92a3933/image?locale=en-US",
+                    "Link": "https://music.microsoft.com/artist/madonna/24540000-0200-11db-89ca-0019b92a3933?partnerID=AppId:0000000068164C94",
+                    "Source": "Catalog",
+                    "CompatibleSources": "Catalog, Collection"
+                  }
+                }
+              ],
+              "Id": "music.8D6KGX4ZL87G",
+              "Name": "Die Another Day",
+              "ImageUrl": "https://musicimage.xboxlive.com/content/music.93d41e00-0100-11db-89ca-0019b92a3933/image?locale=en-US",
+              "Link": "https://music.microsoft.com/track/madonna/american-life-edited/die-another-day/a7d41e00-0100-11db-89ca-0019b92a3933?partnerID=AppId:0000000068164C94",
+              "Source": "Catalog",
+              "CompatibleSources": "Catalog, Collection"
+            },
+            ...
+          ],
+          "TotalItemCount": 25
+        },
+        "Duration": "00:58:05",
+        "TrackCount": 25,
+        "Id": "music.playlistforyou.19b8e059-76ff-46bb-9282-f50271044710",
+        "Name": "Discover your next favorite songs",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.mixtape.19b8e059-76ff-46bb-9282-f50271044710/image?locale=en-US",
+        "Source": "Collection",
+        "CompatibleSources": "Collection"
+      }
+    ]
+  }
+}
+```
+
 ### Browse Daft Punk's top tracks 5 by 5
 #### Request
 ```http

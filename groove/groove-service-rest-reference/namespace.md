@@ -16,6 +16,7 @@ Some namespaces have associated sub-namespaces that can identify other secondary
 |:----------------|:---------------------------|-------------------------------|-----------------|---------------------|---------|--------------------------------------------------------------------------------------------------|
 | music          | Primary namespace to identify all Groove content across all Music APIs.    | Music artists, albums, tracks  | yes                 | the ID property of all pieces of music content returned by content APIs  | all APIs that accept a music ID or just a namespace as input                                     |
 | music.playlist | Sub-namespace to identify Groove playlists                                 | Music playlists                     | no                  | the ID property of all music playlists returned by content APIs                                                                                             | all APIs that accept a music playlist ID as input (lookup, sub-browse, playlist edit, and so on) |
+| music.playlistforyou | Sub-namespace to identify Groove playlists for you                   | Music playlists                     | no                  | the ID property of all music playlists for you returned by content APIs                                                                                     | all APIs that accept a music playlist for you ID as input (lookup, sub-browse and browse)        |
 | music.amg      | Sub-namespace that references music content via its public AMG identifier  | Music tracks, albums, artists  | no                  | the property **OtherIds** of Groove pieces of content which have an associated AMG ID    | none of our APIs |
 | music.isrc     | Sub-namespace that references music content via its public ISRC identifier | Music albums, tracks                                                   | no                  | the property **OtherIds** of Groove pieces of content which have an associated ISRC ID, and only when accessed through the Lookup API on the Catalog source | the Lookup API when the source is Catalog|
 | music.icpn     | Sub-namespace that references music content via its public ICPN identifier | Music albums, tracks                                                                 | no                  | the property **OtherIds** of Groove pieces of content which have an associated ICPN ID, and only when accessed through the Lookup API on the Catalog source | the Lookup API when the source is Catalog                                                        |
@@ -31,6 +32,11 @@ music.A83EB907-0100-11DB-89CA-0019B92A3933,        music.AQQfoAnP2FoMuUGhob9VNyD
 ###music.playlist
 ```
 music.playlist.ef30cdb7-2ad1-404b-9478-8fdc89ad35f0 
+```
+
+###music.playlistforyou
+```
+music.playlistforyou.d0b76565-64cf-42a8-bdba-3f8678392f99 
 ```
 
 ###music.amg

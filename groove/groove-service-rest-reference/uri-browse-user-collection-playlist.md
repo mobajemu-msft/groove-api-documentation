@@ -34,12 +34,12 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ## Query string parameters
 The following parameters are not available on the Common Parameters page.
 
-| **Parameter** | **Type**              | **Description**                                                                                                        |
-|---------------|-----------------------|------------------------------------------------------------------------------------------------------------------------|
-| type          | string                | Required. The type of item to browse. The following values are supported: "albums", "artists", "playlists", "tracks".  |
-| orderBy       | string                | Optional. Ordering chosen for that content (**orderBy** field). If incompatible, an HTTP 400 error will be emitted.    |
-| maxItems      | 32-bit signed integer | Optional. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well. |
-| page          | 32-bit signed integer | Optional. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.         |
+| **Parameter** | **Type**              | **Description**                                                                                                                          |
+|---------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| type          | string                | Required. The type of item to browse. The following values are supported: "albums", "artists", "playlists", "playlistsforyou" "tracks".  |
+| orderBy       | string                | Optional. Ordering chosen for that content (**orderBy** field). If incompatible, an HTTP 400 error will be emitted.                      |
+| maxItems      | 32-bit signed integer | Optional. The number of items to browse per page. The default value is 25, and it's the maximum value allowed as well.                   |
+| page          | 32-bit signed integer | Optional. The page to browse (will skip **page**\***maxItems** items). The first (and default) page is page 0.                           |
 
 ## Examples
 ### Browse artists
@@ -247,6 +247,40 @@ Authorization: Bearer eyJlbmMiOiJB[...]
     ]
   }
 }
+```
+
+### Browse playlists for you
+"Playlists for you" are customized playlists automatically created based on user's musical tastes.
+
+#### Request
+```http
+GET /1/content/music/collection/playlistsforyou/browse
+
+Authorization: Bearer eyJlbmMiOiJB[...]
+```
+
+#### Response
+```json
+{
+  "Playlists": {
+    "Items": [
+      {
+        "Description": "Based on your favorites songs",
+        "IsReadOnly": true,
+        "Duration": "00:58:05",
+        "TrackCount": 25,
+        "Id": "music.playlistforyou.19b8e059-76ff-46bb-9282-f50271044710",
+        "Name": "Discover your next favorite songs",
+        "ImageUrl": "https://musicimage.xboxlive.com/content/music.mixtape.19b8e059-76ff-46bb-9282-f50271044710/image?locale=en-US",
+        "Source": "Collection",
+        "CompatibleSources": "Collection"
+      },
+      ...
+    ],
+	"TotalItemCount": 8
+  }
+}
+ 
 ```
 
 ### Browse tracks
