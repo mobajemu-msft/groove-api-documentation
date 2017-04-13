@@ -7,9 +7,9 @@ ms.assetid: 91ed19b1-6de5-4b47-a4ff-a2160b7fd3cc
 ---
 
 # Mood (JSON)
-Describes an *mood*, a category for playlists.
+Describes a *mood*, a category for playlists.
 
-This topic describes an *mood*, a category for playlists.
+This topic describes a *mood*, a category for playlists.
 
 -   [Specification of **mood**](#specification-of-mood)
 -   [Sample JSON syntax](#sample-json-syntax)
