@@ -6,7 +6,7 @@ author: sakley
 ms.assetid: 0f99ebbb-63be-42ef-9147-c6dee3a593f8
 ---
 
-# GET (/1/content/{namespace}/catalog/genres)
+# GET (/3/content/{namespace}/catalog/genres)
 Get a list of genres available for a locale.
 
 -   [Remarks](#remarks)
@@ -29,60 +29,105 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 ### Browse genres
 #### Request
 ```http
-GET /1/content/music/catalog/genres
+GET /3/content/music/catalog/genres?country=us&language=en
 
 Authorization: Bearer [...]
 ```
 
-#### Response
-```json   
-{
-  "Genres": [  
-    "Blues / Folk",  
-    "Christian / Gospel",
-    "Classical",
-    "Comedy / Spoken Word",
-    "Country",
-    "Electronic / Dance",
-    "Hip Hop",
-    "Jazz",
-    "Kids",
-    "Latin",
-    "Pop",
-    "R&B / Soul",
-    "Reggae / Dancehall",
-    "Rock",
-    "Soundtracks",
-    "World",
-    "More"
-  ],
-  "Culture": "en-US"
-}
-```
-
-#### Browse genres for a specific locale
-#### Request
-```http
-GET /1/content/music/catalog/genres?country=tr&language=tr
-
-Authorization: Bearer [...]
-```
-
-#### Response
+#### Response (list truncated)
 ```json
 {
-  "Genres": [
-    "Alternatif",
-    "Caz",
-    "Elektronik / Dans",
-    "Film müzikleri",
-    "Hip Hop / Soul",
-    "Klasik",
-    "Pop",
-    "Rock",
-    "Daha fazla müzik türü"
+  "CatalogGenres": [
+    {
+      "ParentName": "Blues / Folk",
+      "HasEditorialPlaylists": false,
+      "Name": "Acoustic Blues"
+    },
+    {
+      "ParentName": "Electronic / Dance",
+      "HasEditorialPlaylists": false,
+      "Name": "Ambient"
+    },
+    {
+      "HasEditorialPlaylists": false,
+      "Name": "Electronic / Dance"
+    },
+    {
+      "ParentName": "Country",
+      "HasEditorialPlaylists": false,
+      "Name": "Americana / Roots"
+    },
+    {
+      "HasEditorialPlaylists": true,
+      "Name": "Country"
+    },
+    {
+      "ParentName": "More",
+      "HasEditorialPlaylists": false,
+      "Name": "Avant-Garde / Experimental"
+    },
+    {
+      "HasEditorialPlaylists": false,
+      "Name": "More"
+    },
+        {
+      "ParentName": "Country",
+      "HasEditorialPlaylists": false,
+      "Name": "Bluegrass"
+    },
+    {
+      "HasEditorialPlaylists": false,
+      "Name": "Blues / Folk"
+    },
+    {
+      "ParentName": "Electronic / Dance",
+      "HasEditorialPlaylists": false,
+      "Name": "Breakbeat / Electro"
+    },
+    {
+      "ParentName": "World",
+      "HasEditorialPlaylists": false,
+      "Name": "Caribbean"
+    },
+    {
+      "ParentName": "Classical",
+      "HasEditorialPlaylists": false,
+      "Name": "Chamber"
+    },
+    {
+      "HasEditorialPlaylists": false,
+      "Name": "Christian / Gospel"
+    },
+    {
+      "ParentName": "Christian / Gospel",
+      "HasEditorialPlaylists": false,
+      "Name": "Christian Rock / Hip Hop"
+    },
+    {
+      "ParentName": "More",
+      "HasEditorialPlaylists": false,
+      "Name": "Christmas Music"
+    },
+    {
+      "HasEditorialPlaylists": false,
+      "Name": "World"
+    },
+    {
+      "HasEditorialPlaylists": true,
+      "Name": "Classical"
+    },
+    {
+      "ParentName": "Classical",
+      "HasEditorialPlaylists": false,
+      "Name": "Classical Guitar"
+    },
+    {
+      "ParentName": "Classical",
+      "HasEditorialPlaylists": false,
+      "Name": "Classical Period"
+    }
   ],
-  "Culture": "tr-TR"
+  "Culture": "en-US"
 }
 ```
 

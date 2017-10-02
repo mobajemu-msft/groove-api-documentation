@@ -55,6 +55,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 |[Contributor (JSON)](JSON-Contributor.md)|An artist and the artist's role
 |[CreateRadioRequest (JSON)](JSON-CreateRadioRequest.md)|The input element for every radio station creation request
 |[Error (JSON)](JSON-Error.md)|Error object for attempts to query the Music catalog.|
+|[Genre (JSON)](JSON-Genre.md)|A Musical genre|
 |[PaginatedList (JSON)](JSON-PaginatedList.md)|Describes paginated lists, a type of response from the Groove Service that can be continued by using a token.|
 |[Playlist (JSON)](JSON-Playlist.md)|A list of tracks and their metadata.|
 |[PlaylistAction (JSON)](JSON-PlaylistAction.md)|The input element for every playlist action request: create, update, and delete.|

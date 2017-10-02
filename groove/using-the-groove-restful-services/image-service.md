@@ -17,7 +17,7 @@ You can optionally append to the URL the parameters shown in the following table
 |:---|:---|:---|
 |w|integer|Optional. Image width. Cannot be set without height parameter.|
 |h|integer|Optional. Image height. Cannot be set without width parameter.|
-|mode|string|Image resize mode:   **1**.  *scale* to resize to maximum size which fits dimension without changing the aspect ratio.   **2**. *letterbox* to pad to dimension after resize if aspect ratio didn't match.   **3**. *crop* to get the required width and height but image is cropped. Defaults to *crop* if w and h are provided.|
+|mode|string|Image resize mode: <ul><li> **1**.  *scale* to resize to maximum size which fits dimension without changing the aspect ratio.</li><li>**2**. *letterbox* to pad to dimension after resize if aspect ratio didn't match.</li><li>**3**. *crop* to get the required width and height but image is cropped. Defaults to *crop* if w and h are provided.</li>|
 |background|string|HTML-compliant color for letterbox resize mode background. Cannot be specified if mode is not set to letterbox. The # character must be URL-encoded when specifying the letterbox background color. For example: *https://musicimage.xboxlive.com/content/music.A83EB907-0100-11DB-89CA-0019B92A3933/image?locale=en-US&w=200&h=100&mode=letterbox&background=%23ff00ff*|
 Changing these parameters can trigger different images. The service will always try to provide the best image for the requested ratio.  
 
