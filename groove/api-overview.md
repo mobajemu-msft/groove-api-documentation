@@ -6,6 +6,12 @@ author: sakley
 ms.assetid: 53da26dd-2573-8b1a-0454-821687f079cf
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
 
 # Groove Music API overview
 The Groove Music API makes it easy for you to connect your app or website to the world of Groove. The Groove Music API provides access to RESTful web services that offer many features and generate useful data:

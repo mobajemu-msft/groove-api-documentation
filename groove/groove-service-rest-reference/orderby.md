@@ -6,6 +6,13 @@ author: sakley
 ms.assetid: 1a8c2302-d30c-4359-99c0-c775ea5f0109
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
+
 # orderBy parameter for Catalog and Collection Browse APIs
 The Catalog Browse and Collection Browse APIs offer an optional query parameter **orderBy** that allows ordering the results in a specific order.
 

@@ -7,6 +7,7 @@ ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
 ---
 
 #FAQ
+- [I want to develop an app with the Groove API but it seems the Sign-up process is not working anymore, what is going on?](#0)
 - [I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?](#1)
 - [I have my application Client ID and Secret but the authentication fails. What am I doing wrong?](#2)
 - [Can I use the same Client ID and Secret for more than one application?](#3)
@@ -24,6 +25,12 @@ ms.assetid: efff8209-3f96-786d-0bec-bdd942294238
 - [I keep receiving 4xx/5xx HTTP error codes in response to my requests to the API. What am I doing wrong?](#17)
 - [May I download audio files with my application and provide a download feature to my application users?](#18)
 - [Where did the Pilot program go?](#20)
+
+
+### <a name="0"> </a>I want to develop an app with the Groove API but it seems the Sign-up process is not working anymore, what is going on?
+The Groove Music API programme is no longer onboarding any new developper or app.
+Please check [https://aka.ms/grooveCRMfaq]
+
 
 ### <a name="1"> </a>I'm developing a Universal Windows App, I created my app on Apps.dev.microsoft.com and registered it to the Groove API Program but I can't access the API. What am I doing wrong?
 When developing a Windows UWA, you need to provision your application from Visual Studio first. Then the Application ID and secret will show up on your (Apps Registration Portal) [https://apps.dev.microsoft.com/#/appList] and you can use it for access to our API from your UWA app.

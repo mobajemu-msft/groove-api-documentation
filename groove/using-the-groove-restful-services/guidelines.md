@@ -1,10 +1,16 @@
----
+﻿---
 title: Guidelines on using the Groove Service in your application | Groove Services
 description: Developers must respect and follow these guidelines in any application that uses the Groove Service.
 keywords: groove api, groove api guidelines, groove api faq
 author: sakley
 ms.assetid: d6fafbb7-2c07-cf9d-684b-74cba337a0af
 ---
+
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
 
 
 # Guidelines
