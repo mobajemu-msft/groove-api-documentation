@@ -6,6 +6,13 @@ author: sakley
 ms.assetid: 32318d73-7a7c-4273-9bd4-be1464504f10
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
+
 # Groove User Authentication in your Application
 
 In this section, you'll learn how to sign your user in on many platforms.

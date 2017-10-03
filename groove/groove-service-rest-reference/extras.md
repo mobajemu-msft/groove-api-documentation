@@ -6,6 +6,13 @@ author: sakley
 ms.assetid: aad6d784-ffce-4291-b9ae-b29de455ed33
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
+
 # Extra parameters for Lookup API
 The lookup API offers an optional query parameter **extras** that allows requesting a list of extra fields that are by default not included in the responses. Multiple values in that list must be separated with **+**. Some combinations of extras and sources are not supported, in that case the extra is ignored.
 

@@ -6,6 +6,13 @@ author: sakley
 ms.assetid: 99477573-7396-459b-9f4a-f0d568900321
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
+
 # Parameters common to every Groove RESTful API
 This topic describes parameters that are common to all methods in the Groove RESTful API.
 

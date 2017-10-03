@@ -1,10 +1,17 @@
----
+﻿---
 title: Register for the Groove music service | Groove Services
 description: Register your application with the Groove Music API to gain a authentication token, which is necessary for using all functions in the Groove API.
 keywords: groove api, groove api developer, groove access token, groove developer registration
 author: sakley
 ms.assetid: eb59a521-e5de-6913-0b71-019c0cb94726
 ---
+
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
 
 # Obtaining a Developer Access Token
 Developer authentication is mandatory for all functions in the Groove API. All the functions share a common mandatory query parameter, accessToken, in which a valid authentication token must be passed.   

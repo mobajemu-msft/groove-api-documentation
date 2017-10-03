@@ -6,6 +6,12 @@ author: sakley
 ms.assetid: bb08eb18-7a26-44a6-7181-ee673b0b04c2
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
 # Getting Started with the Groove SDK
 ## Subscribe to the Groove API on Microsoft Developer Center
 The following are the minimal steps you need to complete to start experimenting with the API (for more detailed instructions, visit [Obtaining a Developer Access Token](Using-the-Groove-RESTful-Services/Obtaining-a-Developer-Access-Token.md)).

@@ -6,6 +6,13 @@ author: sakley
 ms.assetid: 
 ---
 
+| Notice to customers|
+|----- |
+|Starting Oct 2nd, the Onboarding to the Groove Music API is disabled. As part of the partnership, the Groove Music Pass service will be discontinued on December 31, 2017.  
+After that date, Groove Music Pass content will not stream or play and our API features will not be accessible.
+Please check our FAQ on <https://aka.ms/groovepartnerfaq> . All features of the Music API will be supported until Dec 31st.|
+
+
 # Namespaces supported
 The Groove APIs use namespaces to indicate the type of content that is being referenced or asked for, and to separate ID spaces. All of the content IDs returned in content API responses are always prefixed with their namespace. For example, ``` music.{ID} ```identifies a particular piece of music content. The namespaces should be considered as part of the ID when passing a specific ID in a request.
 
