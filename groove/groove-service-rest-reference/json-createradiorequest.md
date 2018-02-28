@@ -21,11 +21,11 @@ The CreateRadioRequest object has the following specification.
 ## Sample JSON syntax
 ```json
 {
-	"Seeds" : [{
-			"Id" : "music.24540000-0200-11db-89ca-0019b92a3933",
-			"Type" : "Artist"
-		}
-	]
+    "Seeds" : [{
+            "Id" : "music.24540000-0200-11db-89ca-0019b92a3933",
+            "Type" : "Artist"
+        }
+    ]
 }
 ```
 

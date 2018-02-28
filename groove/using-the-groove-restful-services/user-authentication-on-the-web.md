@@ -56,6 +56,7 @@ GET https://login.live.com/oauth20_authorize.srf?client_id={client_id}&scope={sc
 ```
 
 ### Required query string parameters
+
 | Parameter name  | Value  | Description                                                                              |
 |:----------------|:-------|:-----------------------------------------------------------------------------------------|
 | *client_id*     | string | The client ID value created for your application.                                        |
@@ -99,6 +100,7 @@ GET https://login.live.com/oauth20_authorize.srf?client_id={client_id}&scope={sc
 ```
 
 #### Required query string parameters
+
 | Parameter name | Value  | Description                                                                   |
 |:---------------|:-------|:------------------------------------------------------------------------------|
 | *client_id*    | string | The client ID created for your app.                                           |
@@ -238,6 +240,7 @@ that next time your app launches the sign in experience, the user will be reques
 enter a username and password to continue.
 
 ### Required query string parameters
+
 | Parameter name | Value  | Description                                                                                                                                                 |
 |:---------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *client_id*    | string | The client ID value created for your application.                                                                                                           |
@@ -275,6 +278,7 @@ If the user selects not to provide consent to your application, the flow will
 redirect to your redirect_uri and include the same error parameters.
 
 ### Error parameters
+
 | Parameter name      | Value  | Description                                     |
 |:--------------------|:-------|:------------------------------------------------|
 | *error*             | string | Error code identifying the error that occurred. |

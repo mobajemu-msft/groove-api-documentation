@@ -16,10 +16,10 @@ The following are the minimal steps you need to complete to start experimenting 
 
 1. Visit <https://datamarket.azure.com>.
 2. Sign in with your Microsoft account and register to Datamarket by providing the required details.    
-![Azure registration image]
+   ![Azure registration image]
 
 3. Go to [Windows Azure Marketplace] to register your application that will make use of the API.    
-  ![Register your app]
+   ![Register your app]
 4. Fill in the correct details about your application (or website) carefully.
 5. When done, take note of the provided **ClientID** and the **Secret**. They will be required to authenticate against the API in your code. These are different from the customer ID and account key you got from step 2.
 

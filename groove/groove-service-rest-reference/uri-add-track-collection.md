@@ -14,6 +14,7 @@ Add tracks to a user's collection.
 -   [Examples](#examples)
 
 ## Remarks
+
 | Important                                                                            |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) is mandatory for this API. |
@@ -25,6 +26,7 @@ The number of tracks per batch is limited to 100.
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## URI parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | namespace     | string   | Required. The namespace to browse ("music" for example).                                                                                                     |

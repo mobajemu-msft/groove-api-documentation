@@ -32,6 +32,7 @@ Please note that pagination is zero-based (the first page is found at page=0).
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## URI parameters
+
 | **Parameter**     | **Type**              | **Description**                                                                                                                                                                                                                |
 |-------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                | string                | Required. The identifier of the parent element whose sub-items are being browsed.                                                                                                                                              |

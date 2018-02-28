@@ -14,6 +14,7 @@ When you don't specify a value for **orderBy**, we choose the default value depe
 If you specify an invalid value for a specific content, we will issue an HTTP 400 Bad Request error (for example, ordering Artists by ReleaseDate makes no sense).
 
 ## Possible values in the Collection Browse API
+
 | **Item type**                                   | **orderBy value** | **Description**                                                      |
 |-------------------------------------------------|-------------------|----------------------------------------------------------------------|
 | [Artist](JSON-Artist.md)                        | ArtistName        | Default. The artist's name, sorted alphabetically.                   |
@@ -33,6 +34,7 @@ If you specify an invalid value for a specific content, we will issue an HTTP 40
 |                                                 | TrackNumber       | Track number                                                         |
 
 ## Possible values in the Catalog Browse API
+
 | **Item type**                                                                  | **orderBy value** | **Description**                               |
 |--------------------------------------------------------------------------------|-------------------|-----------------------------------------------|
 | [Artist](JSON-Artist.md), [Album](JSON-Album.md), or [Track](JSON-Track.md)    | AllTimePlayCount  | The number of times the item has been played. |

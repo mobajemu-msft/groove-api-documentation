@@ -32,6 +32,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | Using the **collection** source requires [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md). |
 
 ## URI parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                   |
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ids           | string   | Required. The ID or IDs to be looked up. Each ID is prefixed by a namespace and ".". Multiple IDs are separated by "+". The total length of all IDs must be less than or equal to 250 characters.
@@ -44,6 +45,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 [ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | source        | string   | *Optional*. One or more data source(s), in case the client is interested in lookup up data in specific sources. Multiple sources may be passed in this parameter by separating them with "+". Possible values for the "music" namespace are "catalog", "collection", and "collection+catalog". The use of the "collection" source requires passing a valid user authentication token. If this parameter is not provided, the lookup will be performed in the "catalog" if no user authentication token is provided and "collection+catalog" if one is provided. |
@@ -1641,7 +1643,7 @@ GET /1/content/music.A83EB907-0100-11DB-89CA-0019B92A3933+music.B13EB907-0100-11
 
 Accept: application/xml
 
-Authorization: Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=AwesomePartner  	
+Authorization: Bearer http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameidentifier=AwesomePartner     
 &http%3a%2f%2fschemas.microsoft.com%2faccesscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=
 https%3a%2f%2fdatamarket.accesscontrol.windows.net&Audience=http%3a%2f%2fmusic.xboxlive.com%2f&ExpiresOn=1609459199
 &Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net&HMACSHA256=0pVJ3%2fUig7mgeMtlM2wI27SmQItFOQXTzSEbEmmDFG4%3d

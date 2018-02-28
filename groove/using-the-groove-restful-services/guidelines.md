@@ -18,11 +18,11 @@ Following are some important rules you must respect when using the Groove Servic
 
 + You may only display an item of album art in connection with an opportunity to purchase the corresponding track in Groove or to promote the availability of the track in Groove Music.    
 
-	These can be created using action deep links (play, buy, view) and/or text and images as described in the [Badges].
+    These can be created using action deep links (play, buy, view) and/or text and images as described in the [Badges].
 
 + For images, you must use the exact URLs returned by the Groove RESTful API.  
 
-	You may customize them only by using the parameters described in [Image Service]. Any other change that is not documented in [Image Service] will be considered a breach of the terms of use of the Groove Service.
+    You may customize them only by using the parameters described in [Image Service]. Any other change that is not documented in [Image Service] will be considered a breach of the terms of use of the Groove Service.
 
 + Affiliate sites and applications must comply with the [Badges].
 

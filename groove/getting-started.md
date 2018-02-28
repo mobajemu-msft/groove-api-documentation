@@ -19,7 +19,7 @@ The following are the minimal steps you need to complete to start experimenting 
 
 1. Visit <https://developer.microsoft.com/groove>. Click on sign-in. ![Dev Center Signin]
 2. Sign in with your Microsoft account or create a Microsoft account if you don't already have one.![Dev Center Signin Account]
-3. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
+3. On <https://developer.microsoft.com/groove>, click the <strong>Sign up</strong> link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
 4. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
 5. Read the [Terms Of Use](groove-api-terms-of-use.md) and accept them. Then click on **Subscribe to Groove Music API Program**.
 
@@ -95,7 +95,7 @@ account and reauthenticate before access token expiry.
 securely as you would a user's password.
 
 
-#####Using Powershell on Windows:#####
+##### Using Powershell on Windows:#####
 
 ```powershell
 > Invoke-WebRequest -Uri https://login.live.com/accesstoken.srf -Method Post -Body ("grant_type=client_credentials&client_id={APP ID}&client_secret="+[System.Web.HttpUtility]::UrlEncode("{CLIENT SECRET}")+"&scope=app.music.xboxlive.com")|ConvertFrom-Json|Format-List
@@ -105,14 +105,14 @@ access_token : Eg...
 expires_in   : 86400
 ```
 
-#####Using curl:#####
+##### Using curl:#####
 
 ```
 % curl https://login.live.com/accesstoken.srf -d $(sed s/+/%20/g <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com")
 {"token_type":"bearer","access_token":"Eg...","expires_in":86400}
 ```
 
-#####Using wget:#####
+##### Using wget:#####
 
 ```
 % wget https://login.live.com/accesstoken.srf --post-data  $(sed s/+/%20/g <<< "grant_type=client_credentials&client_id={APP ID}&client_secret={CLIENT SECRET}&scope=app.music.xboxlive.com") -q -O -
@@ -123,7 +123,7 @@ expires_in   : 86400
  
  You can now copy and paste your preferred sample code from below (C#, Windows Runtime or PHP) to start querying the API for Music data.
 
-####For example:####
+#### For example:####
 
 ```
 GET https://music.xboxlive.com/1/content/music/search?q=hello HTTP/1.1

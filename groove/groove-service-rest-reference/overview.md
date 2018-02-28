@@ -22,6 +22,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
  +   All APIs share a common notion of namespace that indicates the type of content referred to. Currently the only supported namespace is music.  
 
 ## URI  
+
 |METHOD  | ENDPOINT |  USAGE | RETURNS| |
 | :---|:-----|:----------| :---|:---|  
 |GET|[/1/content/{id}/{source}/{browseType}/{extra}/browse](uri-browse-sub-items.md)|Browse specific sub-items of a given ID (for example, the albums of an artist or the tracks of a playlist).|[ContentResponse (JSON)](JSON-ContentResponse.md)||
@@ -45,6 +46,7 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 |GET|[/1/content/{namespace}/radio/recentlyplayed](uri-recently-played-radio.md)|Browse a user's recently played radio stations|[ContentResponse (JSON)](JSON-ContentResponse.md)|[Auth](../Using-the-Groove-RESTful-Services/User-Authentication.md)|
 
 ## JSON
+
 |OBJECT|DESCRIPTION|
 |:---|:---|
 |[Album (JSON)](JSON-Album.md)|A musical recording.|
@@ -74,16 +76,16 @@ The API follows the REST API convention and returns JSON (or XML) results. The f
 
 ## Additional material  
 [Parameters common to every Groove RESTful API](Common-Parameters.md)  
-	&nbsp;&nbsp;&nbsp;&nbsp; Describes the parameters common to all methods in the Groove RESTful API.  
+    &nbsp;&nbsp;&nbsp;&nbsp; Describes the parameters common to all methods in the Groove RESTful API.  
 
 [Extra parameters for Lookup API](Extras.md)  
-	&nbsp;&nbsp;&nbsp;&nbsp;Optional query parameter that allows requesting a list of extra fields that are by default not included in the responses.  
+    &nbsp;&nbsp;&nbsp;&nbsp;Optional query parameter that allows requesting a list of extra fields that are by default not included in the responses.  
 
  [Namespaces supported](Namespace.md)  
-	&nbsp;&nbsp;&nbsp;&nbsp;Description of the different namespaces used across the Groove RESTful API .
+    &nbsp;&nbsp;&nbsp;&nbsp;Description of the different namespaces used across the Groove RESTful API .
 
 [orderBy parameter for Catalog and Collection Browse APIs](OrderBy.md)  
-	&nbsp;&nbsp;&nbsp;&nbsp;Allows ordering browse results in a specific order.  
+    &nbsp;&nbsp;&nbsp;&nbsp;Allows ordering browse results in a specific order.  
 
 [Groove RESTful API HTTP Status Codes](http-status-codes.md)   
-	&nbsp;&nbsp;&nbsp;&nbsp;Describes the standard HTTP status codes that are returned by the service.
+    &nbsp;&nbsp;&nbsp;&nbsp;Describes the standard HTTP status codes that are returned by the service.

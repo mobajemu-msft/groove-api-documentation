@@ -31,6 +31,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 | Using the **collection** source requires [user authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md). |
 
 ## URI parameters
+
 | **Parameter** | **Type** | **Description**                                                           |
 |---------------|----------|---------------------------------------------------------------------------|
 | namespace     | string   | Required. The namespace in which to perform the search. Example: "music". |
@@ -39,6 +40,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 [ContentResponse (JSON)](JSON-ContentResponse.md)
 
 ## Query string parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | query         | string   | Required unless a **continuationToken** is passed. The search query. Any special characters in the query should be properly URL-encoded (for example, multiple words should be separated by "+").                                                                                                                                                                                                                                                                                                                                                               |

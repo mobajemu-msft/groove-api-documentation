@@ -14,7 +14,7 @@ The Groove API uses the standard [OAuth 2.0](http://oauth.net/2/) authentication
 
 * `Authorization: Bearer {token}`
 
-###Nota Bene
+### Nota Bene
 There are two distinct use cases depending on the API you are using:
 - If the user must be authentified, you must send your request with a **User Authentication** token
 - Otherwise, you must send your request with either an application token or a user token

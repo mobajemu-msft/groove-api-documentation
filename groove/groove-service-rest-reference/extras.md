@@ -12,6 +12,7 @@ The lookup API offers an optional query parameter **extras** that allows request
 Be aware that these extras don't come for free; each of them has a negative impact on the response time of the Lookup API. Only request them if you need them.
 
 ## Possible values
+
 | **Item type** | **"Extras" value** | **Available in data sources** | **Corresponding extra information**                                                                 |
 |---------------|--------------------|-------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Artist](JSON-Artist.md)      | albums             | Catalog, Collection           | The artist's paginated list of albums                                                               |

@@ -277,10 +277,9 @@ Authorization: Bearer eyJlbmMiOiJB[...]
       },
       ...
     ],
-	"TotalItemCount": 8
+    "TotalItemCount": 8
   }
 }
- 
 ```
 
 ### Browse tracks

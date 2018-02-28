@@ -41,6 +41,7 @@ GroovePlayer.Source = MediaSource.CreateFromUri(new Uri(streamUrl));
 ```
 
 ## Remarks
+
 | Important                                                                        |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-Services/User-Authentication.md) is mandatory for this API. |
@@ -57,6 +58,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 Please make sure your usage of the streaming API follows the [guidelines](../Using-the-Groove-RESTful-Services/Guidelines.md).
 
 ## Query string parameters
+
 | **Parameter**    | **Type** | **Description**                                                                                             |
 |------------------|----------|-------------------------------------------------------------------------------------------------------------|
 | clientInstanceId | string   | Required. Unique client identifier. Should be persisted client-side. Can be from 32 to 128 characters long. |

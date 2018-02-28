@@ -15,7 +15,7 @@ Developer authentication is mandatory for all functions in the Groove API. All t
  [Groove signup]: ../site-images/groove-signup.png
  [Register your app]: ../site-images/register-your-app.png
  [My applications (DevCenter)]: ../site-images/myappsscreens.png
- 
+
 + [Authentication token](#authentication-token)
 + [Using valid tokens](#using-valid-tokens)
 + [Create a developer account on Microsoft Developer Center and subscrive to Groove API](#create-a-developer-account-on-microsoft-developer-center)
@@ -28,7 +28,7 @@ Developer authentication is mandatory for all functions in the Groove API. All t
 + [Sample code](#sample-code)
 
 ## Authentication token
-###Nota Bene
+### Nota Bene
 There are two distinct use cases depending on the API you are using. If your API calls are user authenticated, follow instructions on
 [Groove User Authentication](User-Authentication.md). For authenticated calls, you need only include the **User Authentication** token to your request.
 
@@ -56,13 +56,13 @@ Subscribe to the Groove Music API on Microsoft Developer Center. Subscriptions a
 
 ### To subscribe to the Groove Music API  
 1. Visit <https://developer.microsoft.com/groove>. 
-2. Click **Sign In** in the upper right corner.   
- ![Dev Center Signin]
+2. Click <strong>Sign In</strong> in the upper right corner.   
+   ![Dev Center Signin]
 
 3. Register with the Microsoft account of your choice.  
-If you don't have a Microsoft Account, you'll need to create a new one.  
- ![Dev Center Signin Account]  
-4. On <https://developer.microsoft.com/groove>, click the **Sign up** link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
+   If you don't have a Microsoft Account, you'll need to create a new one.  
+   ![Dev Center Signin Account]  
+4. On <https://developer.microsoft.com/groove>, click the <strong>Sign up</strong> link ![Groove Dev Center] or visit <https://developer.microsoft.com/dashboard/groove>.
 
 5. Fill in the correct details about you carefully - we'll need your valid email address to contact you. ![Groove signup] 
 
@@ -74,6 +74,7 @@ You are now a member of the Groove Music API Program!
 You will now need to associate Applications to your account.
 
 <a name="register">
+
 ## Register your application for the Groove Music API.
 </a>
 After subscribing to the Groove Music API, you must associate your application to your program.
@@ -105,9 +106,10 @@ Under the Platforms header, configure details about your app. By default a new a
 
 
 <a name="httppost">
+
 ## Make an HTTP POST request to the token service  
 </a>
-In order to register your application or afterwards to call our unauthenticated API, make a POST request to the token service to obtain the access token. The parameters for the token request are URL-encoded and passed in the HTTP request body. Table 1 lists the mandatory input parameters and their descriptions.   
+In order to register your application or afterwards to call our unauthenticated API, make a POST request to the token service to obtain the access token. The parameters for the token request are URL-encoded and passed in the HTTP request body. Table 1 lists the mandatory input parameters and their descriptions.   
 
 **Table 1. Token request input parameters**  
 
@@ -161,9 +163,11 @@ account and reauthenticate before access token expiry.
 securely as you would a user's password.
 
 <a name="accesstoken">
+
 ## Using the access token
 </a>
-As mentioned earlier in this topic, you must obtain an access token to use the Groove Music API. To use authenticated API, please refer to the [dedicated page](user-authentication.md).
+As mentioned earlier in this topic, you must obtain an access token to use the Groove Music API. To use authenticated API, please refer to the 
+[dedicated page](user-authentication.md).
 The access token is secure, OAuth standard compliant, and flexible. The value of access token can be used for subsequent calls to the Groove Music API. The access token expires after 24 hours.  
 
 It is always better to check elapsed time between the time at which the token was issued and the current time. If the elapsed time exceeds 24 hours, renew the access token by following the procedure for obtaining the access token.  
@@ -174,6 +178,7 @@ Remember the following points about using the access token:
 + The access token is valid for 24 hours. If the access token expires, you need to generate a new access token. The sample code in C#, linked at the end of this topic , can generate a new access token prior to exceeding the 24 hours period.
 
 <a name="protectclient">
+
 ## Protecting the client's secret value
 </a>
 The tokens are obtained from Azure Marketplace in exchange for a client ID and secret value, obtained during the subscription. If possible, these should be secured and used in such a way that cannot be intercepted on the client machine.  
@@ -181,17 +186,21 @@ The tokens are obtained from Azure Marketplace in exchange for a client ID and s
 If the application has a server component, then the server should be responsible for storing the client ID and secret value, and the server should obtain the tokens on behalf of the client component so that the secret value cannot be intercepted on the client machines.
 
 <a name="callapi">
+
 ## Calling the Groove Music API with the token
 </a>
-Once it is in possession of a valid authentication token, a third-party application may call the Groove Music API and provide the OAuth token as the value of the **Authorization** HTTP header.
+Once it is in possession of a valid authentication token, a third-party application may call the Groove Music API and provide the OAuth token as the value of the 
+<strong>Authorization</strong> HTTP header.
 
   >**Note**
 The standard OAuth prefix "Bearer " must be prepended to the contents of the actual retrieved token.  
 
 <a name="renew">
+
 ## Renewing the token before it expires
 </a>
-Because the access tokens are only valid for 24 hours, they must be refreshed by sending a second request to the Live service (located at <https://login.live.com/accesstoken.srf>). We recommended that your code refresh them proactively before the end of the period in order to avoid having a period of time when the Groove Service can't be used.  
+Because the access tokens are only valid for 24 hours, they must be refreshed by sending a second request to the Live service (located at 
+<https://login.live.com/accesstoken.srf>). We recommended that your code refresh them proactively before the end of the period in order to avoid having a period of time when the Groove Service can't be used.  
 
 This 24 hours duration may change in the future. You should not hardcode it, but rather rely on the validity duration returned in the Live service response along with the access token.  
 

@@ -24,6 +24,7 @@ Authorization: Bearer [...]
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## URI parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id          | string | **Radio Id** (from the [ContentResponse](JSON-contentresponse.md) of TODO ) or **Session Id** (from the [RadioResponse](JSON-radioresponse.md) of [/content/radio/create](uri-create-radio.md) & [/content/radio/next](uri-next-radio.md)) |

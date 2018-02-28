@@ -28,6 +28,7 @@ For parameters common to every Groove RESTful API, see [Parameters common to eve
 [StreamResponse (JSON)](JSON-StreamResponse.md)
 
 ## Query string parameters
+
 | **Parameter**    | **Type** | **Description**                                                                                             |
 |------------------|----------|-------------------------------------------------------------------------------------------------------------|
 | clientInstanceId | string   | Required. Unique client identifier. Should be persisted client-side. Can be from 32 to 128 characters long. |

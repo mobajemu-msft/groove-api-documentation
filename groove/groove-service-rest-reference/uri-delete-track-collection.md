@@ -15,6 +15,7 @@ Delete tracks from a user's collection.
 -   [Examples](#examples)
 
 ## Remarks
+
 | Important                                                                            |
 |------------------------------------------------------------------------------------------|
 | [User authentication](../Using-the-Groove-RESTful-services/User-Authentication.md) is mandatory for this API. |

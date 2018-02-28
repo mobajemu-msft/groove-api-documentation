@@ -24,6 +24,7 @@ Authorization: Bearer [...]
 For parameters common to every Groove RESTful API, see [Parameters common to every Groove RESTful API](common-parameters.md). For a table of error codes, see [Error (JSON)](JSON-Error.md). For HTTP status codes, see [Groove RESTful API HTTP Status Codes](http-status-codes.md).
 
 ## URI parameters
+
 | **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                                                                                                                    |
 |---------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | genre         | string   | Optional (used only when requesting new releases). Specifies the genre for which you want to see new releases. If it is not used, the API will return new releases in all available genres. Possible values may be obtained using the [browse genres API](uri-get-genres.md) and must be URL-encoded. |
