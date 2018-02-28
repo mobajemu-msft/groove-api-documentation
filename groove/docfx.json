@@ -40,6 +40,7 @@
     "externalReference": [
     ],
     "template": "op.html",
-    "dest": "groove"
+    "dest": "groove",
+    "markdownEngineName": "markdig"
   }
 }

@@ -30,6 +30,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "groovedoc"
+    "dest": "groovedoc",
+    "markdownEngineName": "markdig"
   }
 }
