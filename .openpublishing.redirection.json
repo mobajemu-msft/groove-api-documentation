@@ -1,0 +1,24 @@
+{
+  "redirections": [
+    {
+      "source_path": "groove/groove-service-rest-reference/index.md",
+      "redirect_url": "/groove/groove-service-rest-reference/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "groove/index.md",
+      "redirect_url": "/groove/api-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "groove/sdk-and-helpers/index.md",
+      "redirect_url": "/groove/sdk-and-helpers/sdK-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "groove/using-the-groove-restful-services/index.md",
+      "redirect_url": "/groove/Using-the-Groove-RESTful-Services/overview",
+      "redirect_document_id": false
+    }
+  ]
+}
