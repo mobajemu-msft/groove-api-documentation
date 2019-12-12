@@ -33,7 +33,9 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": ["msa-application-auth"],
+  "branches_to_filter": [
+    "msa-application-auth"
+  ],
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
@@ -42,5 +44,8 @@
       "branch": "master",
       "branch_mapping": {}
     }
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
