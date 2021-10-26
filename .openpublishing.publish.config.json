@@ -1,7 +1,5 @@
 {
   "build_entry_point": "docs",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "Groove",
@@ -33,18 +31,23 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": null,
   "branches_to_filter": [
     "msa-application-auth"
   ],
   "skip_source_output_uploading": false,
+  "contribution_branch_mappings": null,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": null,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
   "docs_build_engine": {
     "name": "docfx_v3"
   }
